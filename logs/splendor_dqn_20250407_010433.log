@@ -1,0 +1,3 @@
+2025-04-07 01:04:33,841 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-04-07 01:04:36,322 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-07 01:04:36,323 - INFO - Training parameters: episodes=1000, batch_size=64, gamma=0.99, epsilon_start=1.0

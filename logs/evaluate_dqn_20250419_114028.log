@@ -1,0 +1,15 @@
+2025-04-19 11:40:29,063 - INFO - Using device: cuda
+2025-04-19 11:40:30,158 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-19 11:40:30,158 - INFO - Starting evaluation of trained DQN model
+2025-04-19 11:40:32,559 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-19 11:40:32,970 - INFO - Episode 1: Rewards [98.60000000000002, 29.000000000000014, 19.800000000000033, -1.800000000000002] - Steps: 249 - Winner: 1 - Winner Steps: 62
+2025-04-19 11:40:33,457 - INFO - Episode 2: Rewards [29.40000000000005, -19.599999999999994, -14.200000000000014, -9.600000000000012] - Steps: 302 - Winner: 1 - Winner Steps: 76
+2025-04-19 11:40:33,857 - INFO - Episode 3: Rewards [44.6, 23.200000000000003, 17.600000000000005, -0.3999999999999997] - Steps: 175 - Winner: 1 - Winner Steps: 43
+2025-04-19 11:40:34,274 - INFO - Episode 4: Rewards [10.799999999999994, -2.800000000000002, 42.2, 8.8] - Steps: 241 - Winner: 3 - Winner Steps: 60
+2025-04-19 11:40:34,578 - INFO - Episode 5: Rewards [6.000000000000002, -9.600000000000007, 10.799999999999995, 45.80000000000001] - Steps: 169 - Winner: 0 - Winner Steps: 42
+2025-04-19 11:40:35,076 - INFO - Episode 6: Rewards [-4.000000000000013, -6.000000000000013, 28.800000000000054, -20.199999999999992] - Steps: 343 - Winner: 3 - Winner Steps: 84
+2025-04-19 11:40:35,344 - INFO - Episode 7: Rewards [34.2, 5.599999999999998, 13.399999999999999, 1.1999999999999993] - Steps: 149 - Winner: 1 - Winner Steps: 37
+2025-04-19 11:40:35,645 - INFO - Episode 8: Rewards [-7.000000000000001, 1.9999999999999973, -9.600000000000005, 40.60000000000001] - Steps: 172 - Winner: 0 - Winner Steps: 43
+2025-04-19 11:40:35,940 - INFO - Episode 9: Rewards [5.599999999999994, 77.4, -6.000000000000002, -14.80000000000001] - Steps: 171 - Winner: 2 - Winner Steps: 42
+2025-04-19 11:40:36,274 - INFO - Episode 10: Rewards [54.80000000000001, 10.799999999999999, 1.6000000000000014, -7.000000000000009] - Steps: 178 - Winner: 1 - Winner Steps: 45
+2025-04-19 11:40:36,275 - INFO - Evaluation completed: Avg Rewards: [27.3, 11.0, 10.440000000000008, 4.26], Avg Steps: 214.90, Wins: [2, 5, 1, 2]

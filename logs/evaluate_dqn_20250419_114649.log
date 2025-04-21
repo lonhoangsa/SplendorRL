@@ -1,0 +1,3 @@
+2025-04-19 11:46:49,355 - INFO - Using device: cuda
+2025-04-19 11:46:50,504 - INFO - Loaded DQN model weights from ../splendor/models/dqn_model_final.pth
+2025-04-19 11:46:50,505 - ERROR - Dueling DQN model file ../splendor/models/dueling_dqn_model_final.pth not found.

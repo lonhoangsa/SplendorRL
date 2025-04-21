@@ -1,0 +1,44 @@
+2025-04-08 12:00:25,786 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-04-08 12:00:28,547 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-08 12:00:28,547 - INFO - Training parameters: episodes=200, batch_size=512, gamma=0.99, epsilon_start=1.0
+2025-04-08 12:00:28,737 - INFO - Episode 1/200, Reward: [69.69999999999999, 25.699999999999992, 29.700000000000003, 18.5], Steps: 134, Avg Loss: 0.0000
+2025-04-08 12:00:28,941 - INFO - Episode 2/200, Reward: [49.6, 28.5, 20.499999999999996, 10.200000000000005], Steps: 146, Avg Loss: 0.0000
+2025-04-08 12:00:29,173 - INFO - Episode 3/200, Reward: [30.199999999999996, 55.099999999999994, 25.799999999999986, 47.79999999999999], Steps: 163, Avg Loss: 0.0000
+2025-04-08 12:00:32,484 - INFO - Episode 4/200, Reward: [86.9, 48.59999999999999, 38.8, 38.49999999999999], Steps: 138, Avg Loss: 1.9805
+2025-04-08 12:00:32,848 - INFO - Target network updated at step 100
+2025-04-08 12:00:33,837 - INFO - Target network updated at step 200
+2025-04-08 12:00:33,907 - INFO - Episode 5/200, Reward: [55.7, 50.499999999999986, 19.5, 15.500000000000004], Steps: 142, Avg Loss: 9.3335
+2025-04-08 12:00:34,914 - INFO - Target network updated at step 300
+2025-04-08 12:00:36,592 - INFO - Episode 6/200, Reward: [29.399999999999995, 26.299999999999997, 53.6, 24.599999999999994], Steps: 148, Avg Loss: 10.8779
+2025-04-08 12:00:37,121 - INFO - Target network updated at step 400
+2025-04-08 12:00:38,098 - INFO - Episode 7/200, Reward: [25.8, 40.599999999999994, 49.8, 23.599999999999994], Steps: 143, Avg Loss: 6.7454
+2025-04-08 12:00:38,141 - INFO - Target network updated at step 500
+2025-04-08 12:00:39,163 - INFO - Target network updated at step 600
+2025-04-08 12:00:39,385 - INFO - Episode 8/200, Reward: [31.599999999999998, 56.4, 17.0, 39.89999999999999], Steps: 127, Avg Loss: 13.5331
+2025-04-08 12:00:40,103 - INFO - Target network updated at step 700
+2025-04-08 12:00:40,376 - INFO - Episode 9/200, Reward: [33.3, 19.200000000000003, 81.69999999999999, 26.199999999999996], Steps: 116, Avg Loss: 9.3948
+2025-04-08 12:00:40,912 - INFO - Target network updated at step 800
+2025-04-08 12:00:41,525 - INFO - Episode 10/200, Reward: [29.499999999999996, 85.69999999999999, 26.499999999999993, 40.9], Steps: 143, Avg Loss: 7.5574
+2025-04-08 12:00:41,706 - INFO - Target network updated at step 900
+2025-04-08 12:00:42,741 - INFO - Target network updated at step 1000
+2025-04-08 12:00:42,932 - INFO - Episode 11/200, Reward: [42.599999999999994, 27.699999999999996, 2.900000000000001, 26.699999999999996], Steps: 142, Avg Loss: 12.3278
+2025-04-08 12:00:43,648 - INFO - Target network updated at step 1100
+2025-04-08 12:00:44,184 - INFO - Episode 12/200, Reward: [22.9, 30.799999999999997, 55.099999999999994, 21.799999999999997], Steps: 132, Avg Loss: 10.3984
+2025-04-08 12:00:44,792 - INFO - Target network updated at step 1200
+2025-04-08 12:00:45,653 - INFO - Episode 13/200, Reward: [2.1999999999999993, 32.199999999999996, 47.9, 52.4], Steps: 129, Avg Loss: 12.7837
+2025-04-08 12:00:45,870 - INFO - Target network updated at step 1300
+2025-04-08 12:00:46,818 - INFO - Target network updated at step 1400
+2025-04-08 12:00:47,224 - INFO - Episode 14/200, Reward: [31.199999999999996, 23.0, 63.39999999999999, 41.3], Steps: 161, Avg Loss: 20.7849
+2025-04-08 12:00:48,174 - INFO - Target network updated at step 1500
+2025-04-08 12:00:49,255 - INFO - Target network updated at step 1600
+2025-04-08 12:00:50,302 - INFO - Target network updated at step 1700
+2025-04-08 12:00:51,223 - INFO - Target network updated at step 1800
+2025-04-08 12:00:52,311 - INFO - Target network updated at step 1900
+2025-04-08 12:00:53,400 - INFO - Target network updated at step 2000
+2025-04-08 12:00:54,347 - INFO - Target network updated at step 2100
+2025-04-08 12:00:55,283 - INFO - Target network updated at step 2200
+2025-04-08 12:00:56,111 - INFO - Target network updated at step 2300
+2025-04-08 12:00:57,081 - INFO - Target network updated at step 2400
+2025-04-08 12:00:57,404 - INFO - Episode 15/200, Reward: [-1.1000000000000083, -2.200000000000016, -6.399999999999954, 2.3999999999999395], Steps: 1000, Avg Loss: 32.0007
+2025-04-08 12:00:57,970 - INFO - Target network updated at step 2500
+2025-04-08 12:00:58,584 - INFO - Episode 16/200, Reward: [20.7, 8.500000000000004, 45.899999999999984, 6.600000000000003], Steps: 132, Avg Loss: 37.1180

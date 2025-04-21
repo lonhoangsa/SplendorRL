@@ -1,0 +1,18 @@
+2025-04-11 02:12:11,457 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-04-11 02:12:15,648 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-11 02:12:15,648 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-11 02:12:15,648 - INFO - Training parameters: episodes=1000, batch_size=512, gamma=0.99, epsilon_start=1.0
+2025-04-11 02:12:15,921 - INFO - Episode 1/1000, Reward: [45.89999999999999, 17.5, 5.400000000000007, 64.19999999999999], Steps: 209, Epsilon: 1.000, Avg Loss: 0.0000
+2025-04-11 02:12:28,220 - INFO - Episode 2/1000, Reward: [31.099999999999945, 10.800000000000011, 76.39999999999993, 17.900000000000013], Steps: 364, Epsilon: 0.740, Avg Loss: 7109128717506836433196810240.0000
+2025-04-11 02:12:28,607 - INFO - Target network updated at step 100
+2025-04-11 02:12:29,461 - INFO - Target network updated at step 200
+2025-04-11 02:12:30,335 - INFO - Target network updated at step 300
+2025-04-11 02:12:30,336 - INFO - Episode 3/1000, Reward: [-1.7000000000000006, -0.5000000000000007, 19.700000000000003, 60.89999999999999], Steps: 241, Epsilon: 0.222, Avg Loss: 17402139024262334155176542208.0000
+2025-04-11 02:12:31,221 - INFO - Target network updated at step 400
+2025-04-11 02:12:31,962 - INFO - Episode 4/1000, Reward: [64.79999999999998, 25.400000000000006, 19.0, 36.49999999999999], Steps: 182, Epsilon: 0.090, Avg Loss: 19459776099847275029834235904.0000
+2025-04-11 02:12:32,119 - INFO - Target network updated at step 500
+2025-04-11 02:12:32,965 - INFO - Target network updated at step 600
+2025-04-11 02:12:33,457 - INFO - Episode 5/1000, Reward: [16.1, 38.79999999999999, 37.79999999999998, 16.299999999999997], Steps: 179, Epsilon: 0.037, Avg Loss: 19749379343269819693309886464.0000
+2025-04-11 02:12:33,799 - INFO - Target network updated at step 700
+2025-04-11 02:12:34,661 - INFO - Episode 6/1000, Reward: [25.9, -1.3000000000000012, 52.39999999999999, -2.3000000000000007], Steps: 140, Epsilon: 0.018, Avg Loss: 15506020657487666633622159360.0000
+2025-04-11 02:12:34,681 - INFO - Target network updated at step 800

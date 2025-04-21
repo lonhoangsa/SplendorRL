@@ -1,0 +1,5 @@
+2025-04-10 21:03:16,853 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-04-10 21:03:19,716 - INFO - Loaded model from ../splendor/models/dqn_model_final.pth, resuming from episode 1000, epsilon 0.00998645168764533
+2025-04-10 21:03:19,717 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-10 21:03:19,717 - INFO - Training parameters: episodes=1000, batch_size=512, gamma=0.99, epsilon_start=0.00998645168764533
+2025-04-10 21:03:19,778 - INFO - Final model saved at ../splendor/models/dqn_model_final.pth

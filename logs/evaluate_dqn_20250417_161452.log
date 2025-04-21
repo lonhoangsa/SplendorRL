@@ -1,0 +1,14 @@
+2025-04-17 16:14:52,822 - INFO - Using device: cuda
+2025-04-17 16:14:54,362 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-17 16:14:54,362 - INFO - Starting evaluation of trained DQN model
+2025-04-17 16:14:56,551 - INFO - Episode 1: Rewards [-2.2000000000000104, -0.4, -2.2000000000000033, 0] - Steps: 132 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:14:57,120 - INFO - Episode 2: Rewards [-3.1999999999999993, -0.40000000000000024, 7.999999999999995, -1.7999999999999998] - Steps: 99 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:14:57,577 - INFO - Episode 3: Rewards [2.200000000000001, 5.999999999999999, -6.000000000000002, 34.2] - Steps: 75 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:14:58,096 - INFO - Episode 4: Rewards [-9.800000000000004, 29.600000000000005, -3.7999999999999985, -2.0] - Steps: 90 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:14:59,141 - INFO - Episode 5: Rewards [-1.2000000000000046, 28.0, 0.40000000000000047, 14.999999999999998] - Steps: 170 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:14:59,847 - INFO - Episode 6: Rewards [-10.400000000000004, -2.0, 22.6, -0.8] - Steps: 117 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:15:00,726 - INFO - Episode 7: Rewards [-15.00000000000001, 3.1999999999999997, 3.4000000000000083, -4.8] - Steps: 171 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:15:01,554 - INFO - Episode 8: Rewards [-2.0, -8.200000000000003, -4.2, 0.7999999999999993] - Steps: 126 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:15:02,350 - INFO - Episode 9: Rewards [-12.200000000000006, 0.20000000000000084, 17.799999999999997, -5.600000000000002] - Steps: 135 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:15:04,642 - INFO - Episode 10: Rewards [-9.400000000000002, -70.99999999999994, -22.999999999999986, -59.99999999999986] - Steps: 500 - Winner: 0 - Winner Steps: 0
+2025-04-17 16:15:04,643 - INFO - Evaluation completed: Avg Rewards: [-6.320000000000005, -1.4999999999999942, 1.3000000000000014, -2.4999999999999867], Avg Steps: 161.50, Wins: [10, 0, 0, 0]

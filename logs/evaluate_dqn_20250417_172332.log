@@ -1,0 +1,14 @@
+2025-04-17 17:23:32,916 - INFO - Using device: cuda
+2025-04-17 17:23:34,180 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-17 17:23:34,180 - INFO - Starting evaluation of trained DQN model
+2025-04-17 17:23:35,897 - INFO - Episode 1: Rewards [-4.600000000000006, 65.8, -5.400000000000001, 3.3999999999999995] - Steps: 92 - Winner: 3 - Winner Steps: 0
+2025-04-17 17:23:37,110 - INFO - Episode 2: Rewards [9.799999999999997, -78.80000000000005, 5.799999999999994, -80.80000000000008] - Steps: 500 - Winner: 1 - Winner Steps: 0
+2025-04-17 17:23:38,602 - INFO - Episode 3: Rewards [-21.199999999999992, -75.6, -14.60000000000001, -76.0] - Steps: 500 - Winner: 1 - Winner Steps: 0
+2025-04-17 17:23:39,045 - INFO - Episode 4: Rewards [21.600000000000005, -4.6, -9.600000000000007, 16.600000000000023] - Steps: 125 - Winner: 2 - Winner Steps: 0
+2025-04-17 17:23:39,437 - INFO - Episode 5: Rewards [-6.400000000000001, 48.20000000000002, -3.1999999999999993, 27.200000000000003] - Steps: 100 - Winner: 3 - Winner Steps: 0
+2025-04-17 17:23:39,798 - INFO - Episode 6: Rewards [-0.20000000000000007, -2.4, 10.999999999999998, 41.0] - Steps: 100 - Winner: 1 - Winner Steps: 0
+2025-04-17 17:23:40,290 - INFO - Episode 7: Rewards [-9.600000000000005, 4.000000000000001, 1.0000000000000013, 3.3999999999999977] - Steps: 132 - Winner: 3 - Winner Steps: 0
+2025-04-17 17:23:40,796 - INFO - Episode 8: Rewards [25.2, -4.4, 12.799999999999999, -6.600000000000003] - Steps: 142 - Winner: 0 - Winner Steps: 0
+2025-04-17 17:23:41,485 - INFO - Episode 9: Rewards [-8.000000000000012, -6.600000000000002, 1.3999999999999932, -8.000000000000002] - Steps: 161 - Winner: 0 - Winner Steps: 0
+2025-04-17 17:23:42,097 - INFO - Episode 10: Rewards [-7.400000000000013, -6.400000000000001, 14.2, -6.000000000000001] - Steps: 145 - Winner: 0 - Winner Steps: 0
+2025-04-17 17:23:42,098 - INFO - Evaluation completed: Avg Rewards: [-0.08000000000000274, -6.080000000000003, 1.3399999999999967, -8.580000000000007], Avg Steps: 199.70, Wins: [3, 3, 1, 3]

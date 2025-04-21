@@ -1,0 +1,177 @@
+2025-04-07 17:50:03,454 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-04-07 17:50:05,955 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-07 17:50:05,955 - INFO - Training parameters: episodes=5000, batch_size=64, gamma=0.99, epsilon_start=1.0
+2025-04-07 17:50:08,529 - INFO - Target network updated at step 100
+2025-04-07 17:50:08,711 - INFO - Episode 1/5000, Reward: [38.09999999999996, 6.500000000000002, 34.300000000000004, 63.29999999999999], Steps: 205, Epsilon: 0.493, Avg Loss: 2.1388
+2025-04-07 17:50:09,037 - INFO - Target network updated at step 200
+2025-04-07 17:50:09,572 - INFO - Episode 2/5000, Reward: [43.599999999999994, 24.499999999999996, 72.6, 8.900000000000006], Steps: 152, Epsilon: 0.231, Avg Loss: 5.0833
+2025-04-07 17:50:09,617 - INFO - Target network updated at step 300
+2025-04-07 17:50:10,143 - INFO - Target network updated at step 400
+2025-04-07 17:50:10,270 - INFO - Episode 3/5000, Reward: [59.59999999999999, 16.6, 11.400000000000004, 12.800000000000002], Steps: 134, Epsilon: 0.119, Avg Loss: 7.4203
+2025-04-07 17:50:10,625 - INFO - Target network updated at step 500
+2025-04-07 17:50:11,194 - INFO - Target network updated at step 600
+2025-04-07 17:50:11,661 - INFO - Episode 4/5000, Reward: [22.5, 50.5, 14.4, 12.2], Steps: 267, Epsilon: 0.031, Avg Loss: 4.7410
+2025-04-07 17:50:11,723 - INFO - Target network updated at step 700
+2025-04-07 17:50:12,269 - INFO - Target network updated at step 800
+2025-04-07 17:50:12,525 - INFO - Episode 5/5000, Reward: [52.19999999999999, 33.39999999999999, 29.2, 14.0], Steps: 158, Epsilon: 0.014, Avg Loss: 7.0061
+2025-04-07 17:50:12,798 - INFO - Target network updated at step 900
+2025-04-07 17:50:13,241 - INFO - Episode 6/5000, Reward: [28.5, 25.6, 19.500000000000007, 35.8], Steps: 133, Epsilon: 0.010, Avg Loss: 5.5714
+2025-04-07 17:50:13,359 - INFO - Target network updated at step 1000
+2025-04-07 17:50:13,861 - INFO - Target network updated at step 1100
+2025-04-07 17:50:13,877 - INFO - Episode 7/5000, Reward: [24.0, 20.9, 54.89999999999999, 14.900000000000002], Steps: 124, Epsilon: 0.010, Avg Loss: 7.2731
+2025-04-07 17:50:14,386 - INFO - Target network updated at step 1200
+2025-04-07 17:50:14,737 - INFO - Episode 8/5000, Reward: [43.999999999999986, 40.19999999999998, 17.599999999999987, 36.1], Steps: 170, Epsilon: 0.010, Avg Loss: 6.3264
+2025-04-07 17:50:14,889 - INFO - Target network updated at step 1300
+2025-04-07 17:50:15,384 - INFO - Target network updated at step 1400
+2025-04-07 17:50:15,528 - INFO - Episode 9/5000, Reward: [11.6, 45.59999999999999, 20.099999999999998, 0.5999999999999984], Steps: 155, Epsilon: 0.010, Avg Loss: 5.5477
+2025-04-07 17:50:15,914 - INFO - Target network updated at step 1500
+2025-04-07 17:50:16,334 - INFO - Episode 10/5000, Reward: [29.299999999999983, 8.899999999999999, 7.099999999999999, 45.6], Steps: 149, Epsilon: 0.010, Avg Loss: 4.9628
+2025-04-07 17:50:16,488 - INFO - Target network updated at step 1600
+2025-04-07 17:50:17,052 - INFO - Target network updated at step 1700
+2025-04-07 17:50:17,150 - INFO - Episode 11/5000, Reward: [10.200000000000001, 51.699999999999996, 60.7, 29.29999999999999], Steps: 144, Epsilon: 0.010, Avg Loss: 4.6184
+2025-04-07 17:50:17,651 - INFO - Target network updated at step 1800
+2025-04-07 17:50:17,899 - INFO - Episode 12/5000, Reward: [30.799999999999997, 26.099999999999994, 38.79999999999999, 21.0], Steps: 132, Epsilon: 0.010, Avg Loss: 6.6265
+2025-04-07 17:50:18,170 - INFO - Target network updated at step 1900
+2025-04-07 17:50:18,657 - INFO - Episode 13/5000, Reward: [56.59999999999999, 40.49999999999999, 35.59999999999999, 35.69999999999999], Steps: 142, Epsilon: 0.010, Avg Loss: 8.6076
+2025-04-07 17:50:18,725 - INFO - Target network updated at step 2000
+2025-04-07 17:50:19,270 - INFO - Target network updated at step 2100
+2025-04-07 17:50:19,452 - INFO - Episode 14/5000, Reward: [40.5, 22.5, 1.7999999999999985, 26.499999999999996], Steps: 146, Epsilon: 0.010, Avg Loss: 8.6658
+2025-04-07 17:50:19,861 - INFO - Target network updated at step 2200
+2025-04-07 17:50:20,616 - INFO - Target network updated at step 2300
+2025-04-07 17:50:20,653 - INFO - Episode 15/5000, Reward: [67.0, 14.800000000000002, 6.500000000000005, 18.5], Steps: 170, Epsilon: 0.010, Avg Loss: 10.3596
+2025-04-07 17:50:21,309 - INFO - Target network updated at step 2400
+2025-04-07 17:50:21,570 - INFO - Episode 16/5000, Reward: [46.99999999999999, 28.599999999999998, 33.59999999999999, 14.200000000000001], Steps: 142, Epsilon: 0.010, Avg Loss: 11.3729
+2025-04-07 17:50:21,921 - INFO - Target network updated at step 2500
+2025-04-07 17:50:22,534 - INFO - Target network updated at step 2600
+2025-04-07 17:50:22,666 - INFO - Episode 17/5000, Reward: [37.69999999999998, 55.59999999999999, 49.8, 23.799999999999983], Steps: 179, Epsilon: 0.010, Avg Loss: 9.5715
+2025-04-07 17:50:23,172 - INFO - Target network updated at step 2700
+2025-04-07 17:50:23,757 - INFO - Target network updated at step 2800
+2025-04-07 17:50:23,930 - INFO - Episode 18/5000, Reward: [32.0, 50.19999999999998, 56.19999999999998, 25.9], Steps: 208, Epsilon: 0.010, Avg Loss: 12.4644
+2025-04-07 17:50:24,373 - INFO - Target network updated at step 2900
+2025-04-07 17:50:24,978 - INFO - Target network updated at step 3000
+2025-04-07 17:50:25,000 - INFO - Episode 19/5000, Reward: [37.19999999999999, 43.09999999999999, 38.79999999999998, 22.700000000000003], Steps: 175, Epsilon: 0.010, Avg Loss: 17.3873
+2025-04-07 17:50:25,615 - INFO - Target network updated at step 3100
+2025-04-07 17:50:25,957 - INFO - Episode 20/5000, Reward: [17.200000000000003, 27.200000000000003, 24.200000000000003, 41.29999999999999], Steps: 157, Epsilon: 0.010, Avg Loss: 35.8553
+2025-04-07 17:50:26,207 - INFO - Target network updated at step 3200
+2025-04-07 17:50:26,826 - INFO - Target network updated at step 3300
+2025-04-07 17:50:26,893 - INFO - Episode 21/5000, Reward: [52.8, 34.6, 6.800000000000001, 23.499999999999993], Steps: 150, Epsilon: 0.010, Avg Loss: 38.7451
+2025-04-07 17:50:27,479 - INFO - Target network updated at step 3400
+2025-04-07 17:50:27,896 - INFO - Episode 22/5000, Reward: [31.19999999999998, 11.900000000000006, 97.5, 16.69999999999999], Steps: 160, Epsilon: 0.010, Avg Loss: 28.2625
+2025-04-07 17:50:28,116 - INFO - Target network updated at step 3500
+2025-04-07 17:50:28,736 - INFO - Target network updated at step 3600
+2025-04-07 17:50:29,367 - INFO - Target network updated at step 3700
+2025-04-07 17:50:29,921 - INFO - Target network updated at step 3800
+2025-04-07 17:50:30,496 - INFO - Target network updated at step 3900
+2025-04-07 17:50:30,982 - INFO - Episode 23/5000, Reward: [15.199999999999891, 34.199999999999854, 41.19999999999987, 23.19999999999987], Steps: 524, Epsilon: 0.010, Avg Loss: 69.1654
+2025-04-07 17:50:31,054 - INFO - Target network updated at step 4000
+2025-04-07 17:50:31,698 - INFO - Target network updated at step 4100
+2025-04-07 17:50:32,293 - INFO - Target network updated at step 4200
+2025-04-07 17:50:32,860 - INFO - Target network updated at step 4300
+2025-04-07 17:50:33,459 - INFO - Target network updated at step 4400
+2025-04-07 17:50:34,054 - INFO - Target network updated at step 4500
+2025-04-07 17:50:34,617 - INFO - Target network updated at step 4600
+2025-04-07 17:50:35,210 - INFO - Target network updated at step 4700
+2025-04-07 17:50:35,738 - INFO - Target network updated at step 4800
+2025-04-07 17:50:36,316 - INFO - Target network updated at step 4900
+2025-04-07 17:50:36,789 - INFO - Episode 24/5000, Reward: [9.099999999999806, 52.400000000000404, 17.999999999999694, 1.9999999999999285], Steps: 1000, Epsilon: 0.010, Avg Loss: 150.2606
+2025-04-07 17:50:36,866 - INFO - Target network updated at step 5000
+2025-04-07 17:50:37,529 - INFO - Target network updated at step 5100
+2025-04-07 17:50:37,870 - INFO - Episode 25/5000, Reward: [19.900000000000002, 35.099999999999994, 34.1, 74.29999999999998], Steps: 169, Epsilon: 0.010, Avg Loss: 177.3132
+2025-04-07 17:50:38,174 - INFO - Target network updated at step 5200
+2025-04-07 17:50:38,784 - INFO - Target network updated at step 5300
+2025-04-07 17:50:39,015 - INFO - Episode 26/5000, Reward: [70.69999999999999, 28.599999999999994, 30.599999999999984, 33.59999999999999], Steps: 182, Epsilon: 0.010, Avg Loss: 182.9257
+2025-04-07 17:50:39,399 - INFO - Target network updated at step 5400
+2025-04-07 17:50:39,922 - INFO - Episode 27/5000, Reward: [20.29999999999999, 12.500000000000004, 59.1, 8.000000000000004], Steps: 144, Epsilon: 0.010, Avg Loss: 304.8706
+2025-04-07 17:50:40,049 - INFO - Target network updated at step 5500
+2025-04-07 17:50:40,658 - INFO - Target network updated at step 5600
+2025-04-07 17:50:41,049 - INFO - Episode 28/5000, Reward: [52.69999999999998, 22.89999999999999, 21.69999999999999, 6.1000000000000085], Steps: 178, Epsilon: 0.010, Avg Loss: 615.0613
+2025-04-07 17:50:41,292 - INFO - Target network updated at step 5700
+2025-04-07 17:50:41,926 - INFO - Target network updated at step 5800
+2025-04-07 17:50:42,339 - INFO - Episode 29/5000, Reward: [15.700000000000008, 13.400000000000004, 37.09999999999997, 25.10000000000001], Steps: 212, Epsilon: 0.010, Avg Loss: 540.0748
+2025-04-07 17:50:42,531 - INFO - Target network updated at step 5900
+2025-04-07 17:50:43,157 - INFO - Target network updated at step 6000
+2025-04-07 17:50:43,652 - INFO - Episode 30/5000, Reward: [67.1, 31.399999999999963, 23.29999999999996, 3.000000000000006], Steps: 218, Epsilon: 0.010, Avg Loss: 770.2726
+2025-04-07 17:50:43,760 - INFO - Target network updated at step 6100
+2025-04-07 17:50:44,443 - INFO - Target network updated at step 6200
+2025-04-07 17:50:44,695 - INFO - Episode 31/5000, Reward: [34.29999999999999, 52.099999999999994, 4.799999999999999, 37.300000000000004], Steps: 155, Epsilon: 0.010, Avg Loss: 733.6710
+2025-04-07 17:50:45,123 - INFO - Target network updated at step 6300
+2025-04-07 17:50:45,723 - INFO - Target network updated at step 6400
+2025-04-07 17:50:45,854 - INFO - Episode 32/5000, Reward: [26.600000000000005, 14.5, 15.800000000000006, 61.199999999999996], Steps: 181, Epsilon: 0.010, Avg Loss: 913.2004
+2025-04-07 17:50:46,365 - INFO - Target network updated at step 6500
+2025-04-07 17:50:46,898 - INFO - Episode 33/5000, Reward: [21.59999999999999, 42.99999999999999, 19.700000000000003, 23.0], Steps: 171, Epsilon: 0.010, Avg Loss: 3071.6156
+2025-04-07 17:50:46,989 - INFO - Target network updated at step 6600
+2025-04-07 17:50:47,615 - INFO - Target network updated at step 6700
+2025-04-07 17:50:48,204 - INFO - Target network updated at step 6800
+2025-04-07 17:50:48,704 - INFO - Episode 34/5000, Reward: [30.79999999999994, 22.399999999999963, 51.69999999999993, 22.899999999999995], Steps: 296, Epsilon: 0.010, Avg Loss: 2051.8857
+2025-04-07 17:50:48,809 - INFO - Target network updated at step 6900
+2025-04-07 17:50:49,559 - INFO - Target network updated at step 7000
+2025-04-07 17:50:50,185 - INFO - Target network updated at step 7100
+2025-04-07 17:50:50,231 - INFO - Episode 35/5000, Reward: [52.699999999999996, 34.4, 56.60000000000001, 28.800000000000004], Steps: 224, Epsilon: 0.010, Avg Loss: 2995.9003
+2025-04-07 17:50:50,832 - INFO - Target network updated at step 7200
+2025-04-07 17:50:51,179 - INFO - Episode 36/5000, Reward: [9.000000000000004, 43.3, 35.4, 26.700000000000003], Steps: 151, Epsilon: 0.010, Avg Loss: 3455.4748
+2025-04-07 17:50:51,468 - INFO - Target network updated at step 7300
+2025-04-07 17:50:52,067 - INFO - Target network updated at step 7400
+2025-04-07 17:50:52,190 - INFO - Episode 37/5000, Reward: [55.999999999999986, 62.19999999999999, 21.099999999999984, 22.79999999999999], Steps: 166, Epsilon: 0.010, Avg Loss: 4427.5011
+2025-04-07 17:50:52,701 - INFO - Target network updated at step 7500
+2025-04-07 17:50:53,300 - INFO - Target network updated at step 7600
+2025-04-07 17:50:53,526 - INFO - Episode 38/5000, Reward: [20.5, 16.700000000000006, 34.199999999999996, 58.00000000000001], Steps: 213, Epsilon: 0.010, Avg Loss: 9380.3337
+2025-04-07 17:50:53,933 - INFO - Target network updated at step 7700
+2025-04-07 17:50:54,530 - INFO - Target network updated at step 7800
+2025-04-07 17:50:55,152 - INFO - Target network updated at step 7900
+2025-04-07 17:50:55,697 - INFO - Target network updated at step 8000
+2025-04-07 17:50:56,243 - INFO - Target network updated at step 8100
+2025-04-07 17:50:56,860 - INFO - Target network updated at step 8200
+2025-04-07 17:50:57,472 - INFO - Target network updated at step 8300
+2025-04-07 17:50:58,081 - INFO - Target network updated at step 8400
+2025-04-07 17:50:58,665 - INFO - Target network updated at step 8500
+2025-04-07 17:50:59,303 - INFO - Target network updated at step 8600
+2025-04-07 17:50:59,511 - INFO - Episode 39/5000, Reward: [-3.999999999999982, -16.39999999999996, -10.09999999999996, -18.399999999999995], Steps: 1000, Epsilon: 0.010, Avg Loss: 25909.9677
+2025-04-07 17:50:59,934 - INFO - Target network updated at step 8700
+2025-04-07 17:51:00,704 - INFO - Target network updated at step 8800
+2025-04-07 17:51:00,883 - INFO - Episode 40/5000, Reward: [7.5, 20.5, 48.89999999999999, 22.299999999999997], Steps: 192, Epsilon: 0.010, Avg Loss: 106701.0356
+2025-04-07 17:51:01,399 - INFO - Target network updated at step 8900
+2025-04-07 17:51:02,045 - INFO - Episode 41/5000, Reward: [23.999999999999986, 46.29999999999999, 9.700000000000005, 43.39999999999999], Steps: 163, Epsilon: 0.010, Avg Loss: 127741.6565
+2025-04-07 17:51:02,137 - INFO - Target network updated at step 9000
+2025-04-07 17:51:02,809 - INFO - Target network updated at step 9100
+2025-04-07 17:51:03,283 - INFO - Episode 42/5000, Reward: [29.49999999999998, 43.69999999999999, 7.000000000000002, 28.39999999999999], Steps: 191, Epsilon: 0.010, Avg Loss: 161653.5989
+2025-04-07 17:51:03,425 - INFO - Target network updated at step 9200
+2025-04-07 17:51:04,107 - INFO - Target network updated at step 9300
+2025-04-07 17:51:04,151 - INFO - Episode 43/5000, Reward: [48.69999999999999, 14.800000000000002, 6.5000000000000036, 10.600000000000005], Steps: 130, Epsilon: 0.010, Avg Loss: 250025.4965
+2025-04-07 17:51:04,747 - INFO - Target network updated at step 9400
+2025-04-07 17:51:05,385 - INFO - Target network updated at step 9500
+2025-04-07 17:51:05,994 - INFO - Target network updated at step 9600
+2025-04-07 17:51:06,621 - INFO - Target network updated at step 9700
+2025-04-07 17:51:07,198 - INFO - Target network updated at step 9800
+2025-04-07 17:51:08,060 - INFO - Target network updated at step 9900
+2025-04-07 17:51:08,662 - INFO - Target network updated at step 10000
+2025-04-07 17:51:09,370 - INFO - Target network updated at step 10100
+2025-04-07 17:51:10,002 - INFO - Target network updated at step 10200
+2025-04-07 17:51:10,630 - INFO - Target network updated at step 10300
+2025-04-07 17:51:10,674 - INFO - Episode 44/5000, Reward: [-10.199999999999987, -9.099999999999982, 4.89999999999997, -18.299999999999994], Steps: 1000, Epsilon: 0.010, Avg Loss: 701211.8976
+2025-04-07 17:51:11,356 - INFO - Target network updated at step 10400
+2025-04-07 17:51:12,004 - INFO - Target network updated at step 10500
+2025-04-07 17:51:12,604 - INFO - Target network updated at step 10600
+2025-04-07 17:51:13,168 - INFO - Target network updated at step 10700
+2025-04-07 17:51:13,926 - INFO - Target network updated at step 10800
+2025-04-07 17:51:14,566 - INFO - Target network updated at step 10900
+2025-04-07 17:51:15,292 - INFO - Target network updated at step 11000
+2025-04-07 17:51:15,946 - INFO - Target network updated at step 11100
+2025-04-07 17:51:16,668 - INFO - Target network updated at step 11200
+2025-04-07 17:51:17,348 - INFO - Target network updated at step 11300
+2025-04-07 17:51:17,380 - INFO - Episode 45/5000, Reward: [21.199999999999925, -3.1999999999999527, -1.9000000000000015, 30.699999999999697], Steps: 1000, Epsilon: 0.010, Avg Loss: 75362.6823
+2025-04-07 17:51:18,140 - INFO - Target network updated at step 11400
+2025-04-07 17:51:18,851 - INFO - Target network updated at step 11500
+2025-04-07 17:51:19,576 - INFO - Target network updated at step 11600
+2025-04-07 17:51:20,297 - INFO - Target network updated at step 11700
+2025-04-07 17:51:20,968 - INFO - Target network updated at step 11800
+2025-04-07 17:51:21,684 - INFO - Target network updated at step 11900
+2025-04-07 17:51:22,306 - INFO - Target network updated at step 12000
+2025-04-07 17:51:22,910 - INFO - Target network updated at step 12100
+2025-04-07 17:51:23,508 - INFO - Target network updated at step 12200
+2025-04-07 17:51:24,244 - INFO - Target network updated at step 12300
+2025-04-07 17:51:24,268 - INFO - Episode 46/5000, Reward: [-14.099999999999973, -15.199999999999966, -7.3999999999999755, -16.199999999999964], Steps: 1000, Epsilon: 0.010, Avg Loss: 54888.1984
+2025-04-07 17:51:25,019 - INFO - Target network updated at step 12400
+2025-04-07 17:51:25,787 - INFO - Target network updated at step 12500
+2025-04-07 17:51:26,416 - INFO - Target network updated at step 12600
+2025-04-07 17:51:26,938 - INFO - Episode 47/5000, Reward: [98.60000000000005, -3.099999999999995, 12.499999999999996, -4.199999999999996], Steps: 386, Epsilon: 0.010, Avg Loss: 54575.4989
+2025-04-07 17:51:27,057 - INFO - Target network updated at step 12700

@@ -1,0 +1,3 @@
+2025-04-19 11:32:02,231 - INFO - Using device: cuda
+2025-04-19 11:32:03,381 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-19 11:32:03,381 - INFO - Starting evaluation of trained DQN model

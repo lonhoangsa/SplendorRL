@@ -1,0 +1,28 @@
+2025-04-15 15:53:36,346 - INFO - Starting Dueling DQN training for SplendorLightZeroEnv
+2025-04-15 15:53:37,526 - INFO - Loaded model weights from ../splendor/models/dueling_model_final.pth
+2025-04-15 15:53:37,526 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-15 15:53:37,526 - INFO - Training parameters: episodes=5000, batch_size=512, gamma=0.99, epsilon_start=1.0
+2025-04-15 15:53:37,806 - INFO - Episode 1/5000, Reward: [70.5, 1.599999999999996, 2.3999999999999986, 4.400000000000009], Steps: 242, Epsilon: 1.000, Avg Loss: 0.0000
+2025-04-15 15:53:39,998 - INFO - Episode 2/5000, Reward: [40.69999999999998, 26.700000000000003, 6.200000000000001, 51.79999999999994], Steps: 337, Epsilon: 0.718, Avg Loss: 49116098293615121344895232507904.0000
+2025-04-15 15:53:40,355 - INFO - Target network updated at step 100
+2025-04-15 15:53:41,319 - INFO - Target network updated at step 200
+2025-04-15 15:53:42,355 - INFO - Target network updated at step 300
+2025-04-15 15:53:43,326 - INFO - Target network updated at step 400
+2025-04-15 15:53:44,121 - INFO - Episode 3/5000, Reward: [-1.8000000000000023, -8.199999999999987, 49.099999999999916, 1.3000000000000083], Steps: 416, Epsilon: 0.090, Avg Loss: 16667256895105798437399131324416.0000
+2025-04-15 15:53:44,361 - INFO - Target network updated at step 500
+2025-04-15 15:53:45,500 - INFO - Target network updated at step 600
+2025-04-15 15:53:46,535 - INFO - Target network updated at step 700
+2025-04-15 15:53:47,762 - INFO - Target network updated at step 800
+2025-04-15 15:53:49,038 - INFO - Target network updated at step 900
+2025-04-15 15:53:49,363 - INFO - Episode 4/5000, Reward: [17.799999999999983, -9.099999999999985, 11.600000000000001, 60.39999999999999], Steps: 453, Epsilon: 0.010, Avg Loss: 5260731337883722267959765237760.0000
+2025-04-15 15:53:50,240 - INFO - Target network updated at step 1000
+2025-04-15 15:53:51,458 - INFO - Target network updated at step 1100
+2025-04-15 15:53:52,672 - INFO - Target network updated at step 1200
+2025-04-15 15:53:53,823 - INFO - Episode 5/5000, Reward: [50.19999999999996, 6.3000000000000185, 0.4999999999999958, 26.599999999999916], Steps: 366, Epsilon: 0.010, Avg Loss: 4965101336893867686871787634688.0000
+2025-04-15 15:53:53,854 - INFO - Target network updated at step 1300
+2025-04-15 15:53:55,072 - INFO - Target network updated at step 1400
+2025-04-15 15:53:56,412 - INFO - Target network updated at step 1500
+2025-04-15 15:53:57,748 - INFO - Target network updated at step 1600
+2025-04-15 15:53:59,176 - INFO - Episode 6/5000, Reward: [13.899999999999995, -1.4000000000000052, 2.6999999999999953, 47.30000000000002], Steps: 401, Epsilon: 0.010, Avg Loss: 5286763378491786526185142353920.0000
+2025-04-15 15:53:59,208 - INFO - Target network updated at step 1700
+2025-04-15 15:54:00,497 - INFO - Target network updated at step 1800

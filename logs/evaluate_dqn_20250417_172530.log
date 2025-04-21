@@ -1,0 +1,14 @@
+2025-04-17 17:25:30,366 - INFO - Using device: cuda
+2025-04-17 17:25:31,687 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-04-17 17:25:31,688 - INFO - Starting evaluation of trained DQN model
+2025-04-17 17:25:33,261 - INFO - Episode 1: Rewards [-4.3999999999999995, -10.000000000000005, 7.800000000000001, 11.599999999999998] - Steps: 83 - Winner: 0 - Winner Steps: 11
+2025-04-17 17:25:33,904 - INFO - Episode 2: Rewards [-9.400000000000013, 7.1999999999999975, 18.79999999999999, -8.400000000000002] - Steps: 157 - Winner: 0 - Winner Steps: 58
+2025-04-17 17:25:34,491 - INFO - Episode 3: Rewards [-7.800000000000011, 16.400000000000013, 33.99999999999999, 3.599999999999998] - Steps: 151 - Winner: 0 - Winner Steps: 53
+2025-04-17 17:25:34,905 - INFO - Episode 4: Rewards [-9.600000000000012, 0, 32.0, 0] - Steps: 116 - Winner: 0 - Winner Steps: 58
+2025-04-17 17:25:35,154 - INFO - Episode 5: Rewards [-6.000000000000003, 5, -4.600000000000003, -0.4] - Steps: 66 - Winner: 3 - Winner Steps: 1
+2025-04-17 17:25:35,595 - INFO - Episode 6: Rewards [4.0, -5.800000000000001, -4.8, 0.9999999999999994] - Steps: 104 - Winner: 2 - Winner Steps: 12
+2025-04-17 17:25:36,085 - INFO - Episode 7: Rewards [-13.400000000000007, -0.8, 31.4, -0.8] - Steps: 91 - Winner: 0 - Winner Steps: 44
+2025-04-17 17:25:36,571 - INFO - Episode 8: Rewards [10.399999999999999, -6.600000000000001, -12.200000000000005, -3.7999999999999994] - Steps: 138 - Winner: 1 - Winner Steps: 20
+2025-04-17 17:25:36,987 - INFO - Episode 9: Rewards [28.000000000000004, 5.399999999999993, -10.600000000000005, 6.399999999999995] - Steps: 132 - Winner: 2 - Winner Steps: 36
+2025-04-17 17:25:37,438 - INFO - Episode 10: Rewards [-15.400000000000007, 11.799999999999999, -0.9999999999999979, -2.1999999999999997] - Steps: 141 - Winner: 2 - Winner Steps: 60
+2025-04-17 17:25:37,439 - INFO - Evaluation completed: Avg Rewards: [-2.360000000000005, 2.2599999999999993, 9.079999999999998, 0.699999999999999], Avg Steps: 117.90, Wins: [5, 1, 3, 1]
