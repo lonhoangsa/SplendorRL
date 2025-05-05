@@ -1,0 +1,6 @@
+2025-04-22 00:30:22,705 - AlphaZero-Training - INFO - State shape: 162, Action size: 88
+2025-04-22 00:30:24,120 - AlphaZero-Training - INFO - Starting iteration 1/1000
+2025-04-22 00:30:28,927 - AlphaZero-Training - INFO - Game 0: 1 steps, reward: -0.4, actions: 1
+2025-04-22 00:30:34,363 - AlphaZero-Training - INFO - Game 2: 1 steps, reward: -0.4, actions: 1
+2025-04-22 00:30:39,054 - AlphaZero-Training - INFO - Game 4: 1 steps, reward: -0.4, actions: 1
+2025-04-22 00:30:43,152 - AlphaZero-Training - INFO - Game 6: 1 steps, reward: -0.4, actions: 1

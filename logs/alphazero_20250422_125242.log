@@ -1,0 +1,36 @@
+2025-04-22 12:52:43,174 - __main__ - INFO - Starting AlphaZero training for SplendorLightZeroEnv
+2025-04-22 12:52:43,189 - __main__ - INFO - AlphaZero configuration: {'batch_size': 512, 'replay_buffer_size': 100000, 'learning_rate': 0.001, 'weight_decay': 0.0001, 'num_simulations': 800, 'c_puct': 1.0, 'temperature_init': 1.0, 'temperature_final': 0.1, 'temperature_threshold': 30, 'num_self_play_games': 100, 'num_validation_games': 40}
+2025-04-22 12:52:44,454 - __main__ - INFO - Starting iteration 1/1000
+2025-04-22 12:52:44,457 - __main__ - INFO - Game 0 started
+2025-04-22 12:52:44,708 - __main__ - INFO - Game 0 ended: Total reward = -5.999999999999794, Steps = 233
+2025-04-22 12:52:44,711 - __main__ - INFO - Game 1 started
+2025-04-22 12:52:44,972 - __main__ - INFO - Game 1 ended: Total reward = -21.599999999999838, Steps = 241
+2025-04-22 12:52:44,975 - __main__ - INFO - Game 2 started
+2025-04-22 12:52:45,287 - __main__ - INFO - Game 2 ended: Total reward = 8.400000000000201, Steps = 292
+2025-04-22 12:52:45,290 - __main__ - INFO - Game 3 started
+2025-04-22 12:52:45,692 - __main__ - INFO - Game 3 ended: Total reward = 1.400000000000134, Steps = 403
+2025-04-22 12:52:45,696 - __main__ - INFO - Game 4 started
+2025-04-22 12:52:46,083 - __main__ - INFO - Game 4 ended: Total reward = -45.199999999999754, Steps = 366
+2025-04-22 12:52:46,086 - __main__ - INFO - Game 5 started
+2025-04-22 12:52:46,449 - __main__ - INFO - Game 5 ended: Total reward = -6.999999999999668, Steps = 373
+2025-04-22 12:52:46,453 - __main__ - INFO - Game 6 started
+2025-04-22 12:52:46,750 - __main__ - INFO - Game 6 ended: Total reward = -31.99999999999968, Steps = 307
+2025-04-22 12:52:46,754 - __main__ - INFO - Game 7 started
+2025-04-22 12:52:46,982 - __main__ - INFO - Game 7 ended: Total reward = 44.00000000000002, Steps = 186
+2025-04-22 12:52:46,985 - __main__ - INFO - Game 8 started
+2025-04-22 12:52:47,290 - __main__ - INFO - Game 8 ended: Total reward = -0.9999999999998055, Steps = 301
+2025-04-22 12:52:47,294 - __main__ - INFO - Game 9 started
+2025-04-22 12:52:47,605 - __main__ - INFO - Game 9 ended: Total reward = -18.99999999999971, Steps = 296
+2025-04-22 12:52:47,608 - __main__ - INFO - Game 10 started
+2025-04-22 12:52:47,875 - __main__ - INFO - Game 10 ended: Total reward = 6.20000000000017, Steps = 252
+2025-04-22 12:52:47,878 - __main__ - INFO - Game 11 started
+2025-04-22 12:52:48,271 - __main__ - INFO - Game 11 ended: Total reward = 35.60000000000028, Steps = 379
+2025-04-22 12:52:48,274 - __main__ - INFO - Game 12 started
+2025-04-22 12:52:48,529 - __main__ - INFO - Game 12 ended: Total reward = 4.40000000000002, Steps = 241
+2025-04-22 12:52:48,532 - __main__ - INFO - Game 13 started
+2025-04-22 12:52:48,894 - __main__ - INFO - Game 13 ended: Total reward = -12.399999999999615, Steps = 371
+2025-04-22 12:52:48,897 - __main__ - INFO - Game 14 started
+2025-04-22 12:52:49,207 - __main__ - INFO - Game 14 ended: Total reward = -17.799999999999898, Steps = 327
+2025-04-22 12:52:49,210 - __main__ - INFO - Game 15 started
+2025-04-22 12:52:49,587 - __main__ - INFO - Game 15 ended: Total reward = -22.599999999999632, Steps = 372
+2025-04-22 12:52:49,590 - __main__ - INFO - Game 16 started

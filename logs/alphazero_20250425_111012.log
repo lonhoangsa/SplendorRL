@@ -1,0 +1,4 @@
+2025-04-25 11:10:12,251 - __main__ - INFO - Starting AlphaZero training for SplendorLightZeroEnv
+2025-04-25 11:10:18,442 - __main__ - INFO - Environment initialized with input_dim=162, output_dim=88
+2025-04-25 11:10:18,444 - __main__ - INFO - Training parameters: episodes=1000, save_interval=100
+2025-04-25 11:10:18,480 - __main__ - INFO - Episode 1/1000 started

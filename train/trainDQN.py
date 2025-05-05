@@ -6,7 +6,7 @@ import logging
 import matplotlib.pyplot as plt  # Thêm import matplotlib
 from datetime import datetime
 from env.splendor_lightzero_env import SplendorLightZeroEnv  # Import từ package env
-from train.DQN_Agent import DQNAgent  # Import từ cùng package train
+from train.DQN.DQN_Agent import DQNAgent  # Import từ cùng package train
 
 # Setup logging
 def setup_logging():

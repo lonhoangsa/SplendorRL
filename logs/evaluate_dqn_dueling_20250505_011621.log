@@ -1,0 +1,13 @@
+2025-05-05 01:16:21,909 - INFO - Using device: cuda
+2025-05-05 01:16:23,430 - INFO - Loaded DQN1 model weights from ../splendor/models/dqn_model_final.pth
+2025-05-05 01:16:23,518 - INFO - Loaded DQN2 model weights from ../splendor/models/dqn_model_final.pth
+2025-05-05 01:16:23,628 - INFO - Loaded DuelingDQN1 model weights from ../splendor/models/dueling_model_final.pth
+2025-05-05 01:16:23,759 - INFO - Loaded DuelingDQN2 model weights from ../splendor/models/dueling_model_final.pth
+2025-05-05 01:16:23,759 - INFO - 
+=== Starting Model Comparison ===
+2025-05-05 01:16:23,760 - INFO - Player order: 1. DQN1, 2. DQN2, 3. DuelingDQN1, 4. DuelingDQN2
+2025-05-05 01:16:23,760 - INFO - Starting evaluation of DQN1, DQN2, DuelingDQN1, DuelingDQN2
+2025-05-05 01:16:23,771 - INFO - 
+=== Starting Game 1 ===
+2025-05-05 01:16:25,406 - INFO - Round 1, Player 1 (DQN1):
+2025-05-05 01:16:25,406 - INFO - Action: 47

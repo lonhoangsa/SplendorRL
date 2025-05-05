@@ -1,0 +1,36 @@
+2025-04-26 20:13:35,845 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-26 20:13:35,845 - __main__ - INFO - Debug mode: False
+2025-04-26 20:13:36,053 - __main__ - INFO - Using device: cuda
+2025-04-26 20:13:37,115 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-26 20:13:37,115 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=10
+2025-04-26 20:13:37,116 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 1 iterations
+2025-04-26 20:13:37,116 - __main__ - INFO - Starting iteration 1/1
+2025-04-26 20:13:37,117 - __main__ - INFO - Starting self-play phase
+2025-04-26 20:13:37,131 - __main__ - INFO - Starting game 1/3
+2025-04-26 20:14:25,292 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 20:14:25,294 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [14, 11, 14, 14], Winners: [0 2 3]
+2025-04-26 20:14:25,312 - __main__ - INFO - Starting game 2/3
+2025-04-26 20:14:43,246 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 20:14:43,248 - __main__ - INFO - Game 2 completed in 341 steps. Scores: [7, 18, 12, 6], Winners: [1]
+2025-04-26 20:14:43,261 - __main__ - INFO - Starting game 3/3
+2025-04-26 20:15:29,068 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 20:15:29,070 - __main__ - INFO - Game 3 completed in 1000 steps. Scores: [0, 3, 12, 14], Winners: [3]
+2025-04-26 20:15:29,073 - __main__ - INFO - Self-play phase completed. Average steps: 780.33, Average rewards: [ 7.         10.66666667 12.66666667 11.33333333]
+2025-04-26 20:15:29,073 - __main__ - INFO - Starting training phase
+2025-04-26 20:15:29,087 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,096 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,108 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,119 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,121 - __main__ - WARNING - Inconsistent dimensions in batch: found 92, expected 254
+2025-04-26 20:15:29,129 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (255x254 and 162x256)
+2025-04-26 20:15:29,132 - __main__ - WARNING - Inconsistent dimensions in batch: found 92, expected 254
+2025-04-26 20:15:29,141 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (255x254 and 162x256)
+2025-04-26 20:15:29,151 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,162 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,166 - __main__ - WARNING - Inconsistent dimensions in batch: found 92, expected 254
+2025-04-26 20:15:29,175 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (255x254 and 162x256)
+2025-04-26 20:15:29,185 - __main__ - ERROR - Error in training: mat1 and mat2 shapes cannot be multiplied (256x254 and 162x256)
+2025-04-26 20:15:29,186 - __main__ - INFO - Training completed. Average Policy Loss: 0.0000, Average Value Loss: 0.0000, Average Total Loss: 0.0000
+2025-04-26 20:15:29,374 - __main__ - INFO - Model and training state saved at models/alphazero_final.pth
+2025-04-26 20:15:29,633 - __main__ - INFO - Loss history plots saved to plots/alphazero_final_loss_history_20250426_201529.png
+2025-04-26 20:15:29,634 - __main__ - INFO - AlphaZero training completed. Final model saved at models/alphazero_final.pth

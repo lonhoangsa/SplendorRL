@@ -112,13 +112,8 @@ class SplendorLightZeroEnv(BaseEnv):
             if timestep.done and self.replay_path:
                 self.save_replay()
             return timestep
-
-    def _step(self, action):
-        if action not in self.legal_actions:
-            action = self.random_action()
-            
-        current_action = "skip"
-        # type of action
+        
+    def get_action_type(self, action):
         if action < len(self.pick_tokens):  # Pick tokens
             current_action = "pick token"
         elif action < len(self.pick_tokens) + 12:  # Buy card
@@ -131,6 +126,17 @@ class SplendorLightZeroEnv(BaseEnv):
                 
         elif action < len(self.pick_tokens) + 24 + MAXIMUM_RESERVATIONS + len(self.pick_tokens):  # Return tokens
             current_action = "return token"
+        else:
+            current_action = "skip"
+        return current_action
+    
+    def _step(self, action):
+        if action not in self.legal_actions:
+            action = self.random_action()
+            
+        current_action = "skip"
+        # type of action
+        
             
         self.episode += 1   
         prev_score = self.players[self.current_player_index]['score']
@@ -141,6 +147,7 @@ class SplendorLightZeroEnv(BaseEnv):
         reward = sum(self.players[self.current_player_index]["cards"].values()) - prev_card + (self.players[self.current_player_index]['score'] - prev_score)**2
         if reward == 0: 
             reward = -0.4
+            
         done = self.players[self.current_player_index]['score'] >= WINNING_SCORE or self.episode >= self.max_episode_steps
         
         # Kiểm tra tổng token sau hành động
@@ -337,8 +344,10 @@ class SplendorLightZeroEnv(BaseEnv):
             else:
                 player['tokens'][color] -= cost
             self.tokens[color] += cost
+            
         player['cards'][self.colors[int(card['color']) - 1]] += 1
         player['score'] += int(card['value'])
+        
         if card.name in self.tier1.index:
             self.tier1 = self.tier1.drop(card.name).reset_index(drop=True)
         elif card.name in self.tier2.index:

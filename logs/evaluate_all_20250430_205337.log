@@ -1,0 +1,66 @@
+2025-04-30 20:53:37,661 - INFO - Using device: cuda
+2025-04-30 20:53:39,251 - INFO - Loaded AlphaZero model weights from ../splendor/models/alphazero_final.pth
+2025-04-30 20:53:39,309 - INFO - Loaded DQN1 model weights from ../splendor/models/dqn_model_final.pth
+2025-04-30 20:53:39,367 - INFO - Loaded DQN2 model weights from ../splendor/models/dqn_model_final.pth
+2025-04-30 20:53:39,444 - INFO - Loaded DuelingDQN model weights from ../splendor/models/dueling_model_final.pth
+2025-04-30 20:53:39,445 - INFO - 
+=== Starting Model Comparison ===
+2025-04-30 20:53:39,445 - INFO - Player order: 1. AlphaZero, 2. DQN1, 3. DQN2, 4. DuelingDQN
+2025-04-30 20:53:39,445 - INFO - Starting evaluation of AlphaZero, DQN1, DQN2, DuelingDQN
+2025-04-30 20:53:41,211 - INFO - Episode 1: Scores [0, 19, 9, 0] - Winner Steps: 42 - Winner: DQN1
+2025-04-30 20:53:41,748 - INFO - Episode 2: Scores [0, 15, 0, 0] - Winner Steps: 44 - Winner: DQN1
+2025-04-30 20:53:42,277 - INFO - Episode 3: Scores [0, 12, 16, 0] - Winner Steps: 38 - Winner: DQN2
+2025-04-30 20:53:42,799 - INFO - Episode 4: Scores [0, 5, 15, 1] - Winner Steps: 49 - Winner: DQN2
+2025-04-30 20:53:43,191 - INFO - Episode 5: Scores [0, 1, 17, 0] - Winner Steps: 38 - Winner: DQN2
+2025-04-30 20:53:43,485 - INFO - Episode 6: Scores [0, 0, 15, 0] - Winner Steps: 33 - Winner: DQN2
+2025-04-30 20:53:43,805 - INFO - Episode 7: Scores [0, 15, 5, 0] - Winner Steps: 41 - Winner: DQN1
+2025-04-30 20:53:44,025 - INFO - Episode 8: Scores [0, 15, 12, 5] - Winner Steps: 25 - Winner: DQN1
+2025-04-30 20:53:44,578 - INFO - Episode 9: Scores [0, 1, 15, 1] - Winner Steps: 51 - Winner: DQN2
+2025-04-30 20:53:45,087 - INFO - Episode 10: Scores [0, 10, 15, 0] - Winner Steps: 54 - Winner: DQN2
+2025-04-30 20:53:45,703 - INFO - Episode 11: Scores [0, 15, 4, 0] - Winner Steps: 60 - Winner: DQN1
+2025-04-30 20:53:46,160 - INFO - Episode 12: Scores [0, 10, 17, 2] - Winner Steps: 48 - Winner: DQN2
+2025-04-30 20:53:48,306 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:53:48,915 - INFO - Episode 13: Scores [0, 15, 12, 0] - Winner Steps: 56 - Winner: DQN1
+2025-04-30 20:53:49,083 - INFO - Episode 14: Scores [0, 15, 12, 5] - Winner Steps: 17 - Winner: DQN1
+2025-04-30 20:53:49,480 - INFO - Episode 15: Scores [0, 0, 15, 0] - Winner Steps: 42 - Winner: DQN2
+2025-04-30 20:53:51,755 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:53:52,688 - INFO - Episode 16: Scores [0, 16, 7, 3] - Winner Steps: 81 - Winner: DQN1
+2025-04-30 20:53:53,065 - INFO - Episode 17: Scores [0, 8, 16, 3] - Winner Steps: 34 - Winner: DQN2
+2025-04-30 20:53:53,580 - INFO - Episode 18: Scores [0, 15, 2, 0] - Winner Steps: 52 - Winner: DQN1
+2025-04-30 20:53:54,247 - INFO - Episode 19: Scores [0, 2, 4, 18] - Winner Steps: 70 - Winner: DuelingDQN
+2025-04-30 20:53:54,707 - INFO - Episode 20: Scores [0, 17, 1, 2] - Winner Steps: 48 - Winner: DQN1
+2025-04-30 20:53:55,154 - INFO - Episode 21: Scores [0, 0, 16, 0] - Winner Steps: 40 - Winner: DQN2
+2025-04-30 20:53:55,494 - INFO - Episode 22: Scores [0, 15, 2, 1] - Winner Steps: 41 - Winner: DQN1
+2025-04-30 20:53:56,073 - INFO - Episode 23: Scores [0, 7, 8, 16] - Winner Steps: 58 - Winner: DuelingDQN
+2025-04-30 20:53:56,837 - INFO - Episode 24: Scores [0, 1, 2, 16] - Winner Steps: 79 - Winner: DuelingDQN
+2025-04-30 20:53:57,946 - INFO - Episode 25: Scores [0, 15, 5, 5] - Winner Steps: 113 - Winner: DQN1
+2025-04-30 20:53:58,347 - INFO - Episode 26: Scores [0, 2, 19, 1] - Winner Steps: 45 - Winner: DQN2
+2025-04-30 20:53:58,637 - INFO - Episode 27: Scores [0, 15, 6, 0] - Winner Steps: 35 - Winner: DQN1
+2025-04-30 20:53:59,013 - INFO - Episode 28: Scores [0, 9, 15, 0] - Winner Steps: 43 - Winner: DQN2
+2025-04-30 20:54:00,969 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:01,270 - INFO - Episode 29: Scores [0, 15, 7, 4] - Winner Steps: 28 - Winner: DQN1
+2025-04-30 20:54:03,269 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:03,700 - INFO - Episode 30: Scores [0, 16, 12, 1] - Winner Steps: 46 - Winner: DQN1
+2025-04-30 20:54:04,255 - INFO - Episode 31: Scores [1, 14, 20, 1] - Winner Steps: 66 - Winner: DQN2
+2025-04-30 20:54:04,592 - INFO - Episode 32: Scores [0, 6, 6, 15] - Winner Steps: 37 - Winner: DuelingDQN
+2025-04-30 20:54:05,090 - INFO - Episode 33: Scores [0, 2, 5, 15] - Winner Steps: 50 - Winner: DuelingDQN
+2025-04-30 20:54:07,297 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:07,982 - INFO - Episode 34: Scores [2, 18, 6, 0] - Winner Steps: 88 - Winner: DQN1
+2025-04-30 20:54:08,353 - INFO - Episode 35: Scores [0, 15, 0, 0] - Winner Steps: 45 - Winner: DQN1
+2025-04-30 20:54:09,107 - INFO - Episode 36: Scores [0, 10, 15, 0] - Winner Steps: 89 - Winner: DQN2
+2025-04-30 20:54:11,112 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:11,555 - INFO - Episode 37: Scores [0, 7, 15, 5] - Winner Steps: 45 - Winner: DQN2
+2025-04-30 20:54:11,937 - INFO - Episode 38: Scores [0, 16, 0, 0] - Winner Steps: 38 - Winner: DQN1
+2025-04-30 20:54:12,286 - INFO - Episode 39: Scores [0, 5, 16, 2] - Winner Steps: 31 - Winner: DQN2
+2025-04-30 20:54:12,763 - INFO - Episode 40: Scores [0, 17, 10, 0] - Winner Steps: 48 - Winner: DQN1
+2025-04-30 20:54:14,821 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:16,858 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:17,801 - INFO - Episode 41: Scores [0, 4, 15, 0] - Winner Steps: 92 - Winner: DQN2
+2025-04-30 20:54:18,204 - INFO - Episode 42: Scores [0, 14, 15, 0] - Winner Steps: 40 - Winner: DQN2
+2025-04-30 20:54:20,263 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:20,659 - INFO - Episode 43: Scores [0, 1, 17, 0] - Winner Steps: 39 - Winner: DQN2
+2025-04-30 20:54:21,187 - INFO - Episode 44: Scores [0, 16, 0, 1] - Winner Steps: 49 - Winner: DQN1
+2025-04-30 20:54:23,389 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:25,581 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:27,851 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-04-30 20:54:28,315 - INFO - Episode 45: Scores [0, 0, 7, 16] - Winner Steps: 56 - Winner: DuelingDQN

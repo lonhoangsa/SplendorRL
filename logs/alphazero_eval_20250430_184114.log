@@ -1,0 +1,20 @@
+2025-04-30 18:41:14,941 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 18:41:15,175 - __main__ - INFO - Using device: cuda
+2025-04-30 18:41:15,190 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 18:41:15,191 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 18:41:16,905 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 18:41:16,910 - __main__ - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 18:41:18,811 - __main__ - INFO - ==================================================
+2025-04-30 18:41:18,812 - __main__ - INFO - EVALUATION RESULTS
+2025-04-30 18:41:18,813 - __main__ - INFO - ==================================================
+2025-04-30 18:41:18,814 - __main__ - INFO - Games played: 1
+2025-04-30 18:41:18,814 - __main__ - INFO - Candidate model (Player 0):
+2025-04-30 18:41:18,814 - __main__ - INFO - Wins: 1 (1.0000)
+2025-04-30 18:41:18,814 - __main__ - INFO - Placements: 1st: 1, 2nd: 0, 3rd: 0, 4th: 0
+2025-04-30 18:41:18,815 - __main__ - INFO - Average candidate score: 17.00
+2025-04-30 18:41:18,815 - __main__ - INFO - Average game length: 341.00 steps
+2025-04-30 18:41:18,815 - __main__ - INFO - Player 0 (candidate): Avg score: 17.00, Avg rank: 1.00
+2025-04-30 18:41:18,815 - __main__ - INFO - Player 1 (random): Avg score: 0.00, Avg rank: 4.00
+2025-04-30 18:41:18,816 - __main__ - INFO - Player 2 (random): Avg score: 4.00, Avg rank: 2.00
+2025-04-30 18:41:18,816 - __main__ - INFO - Player 3 (random): Avg score: 1.00, Avg rank: 3.00
+2025-04-30 18:41:18,816 - __main__ - INFO - ==================================================

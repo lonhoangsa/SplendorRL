@@ -1,0 +1,30 @@
+2025-04-30 18:44:01,334 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 18:44:01,562 - __main__ - INFO - Using device: cuda
+2025-04-30 18:44:01,575 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 18:44:01,576 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 18:44:02,936 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 18:44:02,942 - __main__ - INFO - Starting evaluation: 100 games with player types: ['candidate', 'bot', 'bot', 'bot']
+2025-04-30 18:44:37,045 - __main__ - INFO - Progress: 10/100, Candidate win rate: 0.4000
+2025-04-30 18:45:05,785 - __main__ - INFO - Progress: 20/100, Candidate win rate: 0.6000
+2025-04-30 18:45:37,397 - __main__ - INFO - Progress: 30/100, Candidate win rate: 0.5667
+2025-04-30 18:46:09,289 - __main__ - INFO - Progress: 40/100, Candidate win rate: 0.5750
+2025-04-30 18:46:37,474 - __main__ - INFO - Progress: 50/100, Candidate win rate: 0.5400
+2025-04-30 18:47:04,921 - __main__ - INFO - Progress: 60/100, Candidate win rate: 0.5500
+2025-04-30 18:47:37,455 - __main__ - INFO - Progress: 70/100, Candidate win rate: 0.5571
+2025-04-30 18:48:08,314 - __main__ - INFO - Progress: 80/100, Candidate win rate: 0.5875
+2025-04-30 18:48:36,592 - __main__ - INFO - Progress: 90/100, Candidate win rate: 0.5667
+2025-04-30 18:49:04,834 - __main__ - INFO - Progress: 100/100, Candidate win rate: 0.5400
+2025-04-30 18:49:04,835 - __main__ - INFO - ==================================================
+2025-04-30 18:49:04,835 - __main__ - INFO - EVALUATION RESULTS
+2025-04-30 18:49:04,835 - __main__ - INFO - ==================================================
+2025-04-30 18:49:04,836 - __main__ - INFO - Games played: 100
+2025-04-30 18:49:04,836 - __main__ - INFO - Candidate model (Player 0):
+2025-04-30 18:49:04,836 - __main__ - INFO - Wins: 54 (0.5400)
+2025-04-30 18:49:04,837 - __main__ - INFO - Placements: 1st: 54, 2nd: 18, 3rd: 17, 4th: 11
+2025-04-30 18:49:04,837 - __main__ - INFO - Average candidate score: 10.77
+2025-04-30 18:49:04,837 - __main__ - INFO - Average game length: 214.27 steps
+2025-04-30 18:49:04,837 - __main__ - INFO - Player 0 (candidate): Avg score: 10.77, Avg rank: 1.85
+2025-04-30 18:49:04,837 - __main__ - INFO - Player 1 (bot): Avg score: 5.19, Avg rank: 2.56
+2025-04-30 18:49:04,837 - __main__ - INFO - Player 2 (bot): Avg score: 4.99, Avg rank: 2.56
+2025-04-30 18:49:04,837 - __main__ - INFO - Player 3 (bot): Avg score: 5.50, Avg rank: 2.41
+2025-04-30 18:49:04,838 - __main__ - INFO - ==================================================

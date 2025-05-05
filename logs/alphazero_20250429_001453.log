@@ -1,0 +1,32 @@
+2025-04-29 00:14:53,612 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-29 00:14:53,613 - __main__ - INFO - Debug mode: False
+2025-04-29 00:14:53,625 - __main__ - INFO - ==================================================
+2025-04-29 00:14:53,625 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-29 00:14:53,625 - __main__ - INFO - ==================================================
+2025-04-29 00:14:53,626 - __main__ - INFO - Card feature dimension: 8
+2025-04-29 00:14:53,626 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-29 00:14:53,626 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-29 00:14:53,626 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-29 00:14:53,626 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-29 00:14:53,626 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-29 00:14:53,626 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-29 00:14:53,627 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-29 00:14:53,627 - __main__ - INFO - Action dimension: 88
+2025-04-29 00:14:53,627 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-29 00:14:53,627 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-29 00:14:53,627 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-29 00:14:53,628 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-29 00:14:53,994 - __main__ - INFO - Using device: cuda
+2025-04-29 00:14:57,657 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-29 00:14:57,657 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=64, replay_size=10000, num_simulations=800
+2025-04-29 00:14:57,657 - __main__ - INFO - ==================================================
+2025-04-29 00:14:57,828 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-29 00:14:57,832 - __main__ - INFO - Loaded model from iteration 6
+2025-04-29 00:14:57,834 - __main__ - INFO - Starting AlphaZero training from iteration 7 for 1 iterations
+2025-04-29 00:14:57,834 - __main__ - INFO - Starting iteration 7/7
+2025-04-29 00:14:57,835 - __main__ - INFO - Starting self-play phase
+2025-04-29 00:14:57,835 - __main__ - INFO - Current curriculum stage: {'max_tokens': 4, 'min_score': 5}
+2025-04-29 00:14:57,849 - __main__ - INFO - Starting game 1/100

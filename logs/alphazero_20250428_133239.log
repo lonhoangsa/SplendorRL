@@ -1,0 +1,1564 @@
+2025-04-28 13:32:39,601 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-28 13:32:39,601 - __main__ - INFO - Debug mode: True
+2025-04-28 13:32:39,611 - __main__ - INFO - ==================================================
+2025-04-28 13:32:39,612 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-28 13:32:39,612 - __main__ - INFO - ==================================================
+2025-04-28 13:32:39,612 - __main__ - INFO - Card feature dimension: 8
+2025-04-28 13:32:39,612 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-28 13:32:39,612 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-28 13:32:39,612 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-28 13:32:39,613 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-28 13:32:39,613 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-28 13:32:39,613 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-28 13:32:39,614 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-28 13:32:39,614 - __main__ - INFO - Action dimension: 88
+2025-04-28 13:32:39,614 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-28 13:32:39,614 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-28 13:32:39,614 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-28 13:32:39,615 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-28 13:32:39,818 - __main__ - INFO - Using device: cuda
+2025-04-28 13:32:41,387 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-28 13:32:41,388 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=30
+2025-04-28 13:32:41,388 - __main__ - INFO - ==================================================
+2025-04-28 13:32:41,525 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-28 13:32:41,528 - __main__ - INFO - Loaded model from iteration 4
+2025-04-28 13:32:41,531 - __main__ - INFO - Starting AlphaZero training from iteration 5 for 1 iterations
+2025-04-28 13:32:41,532 - __main__ - INFO - Starting iteration 5/5
+2025-04-28 13:32:41,532 - __main__ - INFO - Starting self-play phase
+2025-04-28 13:32:41,544 - __main__ - INFO - Starting game 1/5
+2025-04-28 13:32:42,959 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:42,996 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,036 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,041 - __main__ - DEBUG - Game 1, Step 1: Player 0 chose action 23
+2025-04-28 13:32:43,042 - __main__ - DEBUG - Step 1: Player 1 received reward -0.4
+2025-04-28 13:32:43,078 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,114 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,153 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,158 - __main__ - DEBUG - Game 1, Step 2: Player 1 chose action 7
+2025-04-28 13:32:43,159 - __main__ - DEBUG - Step 2: Player 2 received reward -0.4
+2025-04-28 13:32:43,195 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,232 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,275 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,279 - __main__ - DEBUG - Game 1, Step 3: Player 2 chose action 17
+2025-04-28 13:32:43,281 - __main__ - DEBUG - Step 3: Player 3 received reward -0.4
+2025-04-28 13:32:43,317 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,353 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,393 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,397 - __main__ - DEBUG - Game 1, Step 4: Player 3 chose action 0
+2025-04-28 13:32:43,399 - __main__ - DEBUG - Step 4: Player 0 received reward -0.4
+2025-04-28 13:32:43,436 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,472 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,509 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,514 - __main__ - DEBUG - Game 1, Step 5: Player 0 chose action 17
+2025-04-28 13:32:43,516 - __main__ - DEBUG - Step 5: Player 1 received reward -0.4
+2025-04-28 13:32:43,554 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,591 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,628 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,632 - __main__ - DEBUG - Game 1, Step 6: Player 1 chose action 3
+2025-04-28 13:32:43,634 - __main__ - DEBUG - Step 6: Player 2 received reward -0.4
+2025-04-28 13:32:43,668 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,706 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,743 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,747 - __main__ - DEBUG - Game 1, Step 7: Player 2 chose action 46
+2025-04-28 13:32:43,749 - __main__ - DEBUG - Step 7: Player 3 received reward -0.4
+2025-04-28 13:32:43,786 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,823 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:43,870 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:43,876 - __main__ - DEBUG - Game 1, Step 8: Player 3 chose action 1
+2025-04-28 13:32:43,878 - __main__ - DEBUG - Step 8: Player 0 received reward -0.4
+2025-04-28 13:32:43,920 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:43,960 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,004 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,009 - __main__ - DEBUG - Game 1, Step 9: Player 0 chose action 6
+2025-04-28 13:32:44,011 - __main__ - DEBUG - Step 9: Player 1 received reward -0.4
+2025-04-28 13:32:44,053 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,095 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,133 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,138 - __main__ - DEBUG - Game 1, Step 10: Player 1 chose action 10
+2025-04-28 13:32:44,139 - __main__ - DEBUG - Step 10: Player 2 received reward -0.4
+2025-04-28 13:32:44,174 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,210 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,248 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,254 - __main__ - DEBUG - Game 1, Step 11: Player 2 chose action 25
+2025-04-28 13:32:44,256 - __main__ - DEBUG - Step 11: Player 3 received reward -0.4
+2025-04-28 13:32:44,290 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,327 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,367 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,373 - __main__ - DEBUG - Game 1, Step 12: Player 3 chose action 21
+2025-04-28 13:32:44,374 - __main__ - DEBUG - Step 12: Player 0 received reward -0.4
+2025-04-28 13:32:44,408 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,456 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,506 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,512 - __main__ - DEBUG - Game 1, Step 13: Player 0 chose action 27
+2025-04-28 13:32:44,514 - __main__ - DEBUG - Step 13: Player 1 received reward -0.4
+2025-04-28 13:32:44,550 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,589 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,626 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,630 - __main__ - DEBUG - Game 1, Step 14: Player 1 chose action 52
+2025-04-28 13:32:44,633 - __main__ - DEBUG - Step 14: Player 2 received reward -0.4
+2025-04-28 13:32:44,668 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,705 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,751 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,757 - __main__ - DEBUG - Game 1, Step 15: Player 2 chose action 1
+2025-04-28 13:32:44,758 - __main__ - DEBUG - Step 15: Player 3 received reward -0.4
+2025-04-28 13:32:44,792 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,830 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:44,878 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:44,883 - __main__ - DEBUG - Game 1, Step 16: Player 3 chose action 2
+2025-04-28 13:32:44,885 - __main__ - DEBUG - Step 16: Player 0 received reward -0.4
+2025-04-28 13:32:44,920 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:44,960 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,004 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,009 - __main__ - DEBUG - Game 1, Step 17: Player 0 chose action 4
+2025-04-28 13:32:45,011 - __main__ - DEBUG - Step 17: Player 1 received reward -0.4
+2025-04-28 13:32:45,051 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,091 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,137 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,143 - __main__ - DEBUG - Game 1, Step 18: Player 1 chose action 50
+2025-04-28 13:32:45,145 - __main__ - DEBUG - Step 18: Player 2 received reward -0.4
+2025-04-28 13:32:45,181 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,220 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,263 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,267 - __main__ - DEBUG - Game 1, Step 19: Player 2 chose action 13
+2025-04-28 13:32:45,269 - __main__ - DEBUG - Step 19: Player 3 received reward -0.4
+2025-04-28 13:32:45,298 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,333 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,377 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,382 - __main__ - DEBUG - Game 1, Step 20: Player 3 chose action 3
+2025-04-28 13:32:45,383 - __main__ - DEBUG - Step 20: Player 0 received reward -0.4
+2025-04-28 13:32:45,419 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,454 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,488 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,494 - __main__ - DEBUG - Game 1, Step 21: Player 0 chose action 66
+2025-04-28 13:32:45,496 - __main__ - DEBUG - Step 21: Player 1 received reward -0.4
+2025-04-28 13:32:45,532 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,571 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,610 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,615 - __main__ - DEBUG - Game 1, Step 22: Player 1 chose action 33
+2025-04-28 13:32:45,617 - __main__ - DEBUG - Step 22: Player 2 received reward 1
+2025-04-28 13:32:45,653 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,701 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,756 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,762 - __main__ - DEBUG - Game 1, Step 23: Player 2 chose action 1
+2025-04-28 13:32:45,763 - __main__ - DEBUG - Step 23: Player 3 received reward -0.4
+2025-04-28 13:32:45,799 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,840 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:45,887 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:45,893 - __main__ - DEBUG - Game 1, Step 24: Player 3 chose action 28
+2025-04-28 13:32:45,895 - __main__ - DEBUG - Step 24: Player 0 received reward -0.4
+2025-04-28 13:32:45,935 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:45,982 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,039 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,045 - __main__ - DEBUG - Game 1, Step 25: Player 0 chose action 31
+2025-04-28 13:32:46,047 - __main__ - DEBUG - Step 25: Player 1 received reward 1
+2025-04-28 13:32:46,084 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,127 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,182 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,189 - __main__ - DEBUG - Game 1, Step 26: Player 1 chose action 2
+2025-04-28 13:32:46,191 - __main__ - DEBUG - Step 26: Player 2 received reward -0.4
+2025-04-28 13:32:46,229 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,290 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,355 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,362 - __main__ - DEBUG - Game 1, Step 27: Player 2 chose action 2
+2025-04-28 13:32:46,364 - __main__ - DEBUG - Step 27: Player 3 received reward -0.4
+2025-04-28 13:32:46,407 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,460 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,512 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,518 - __main__ - DEBUG - Game 1, Step 28: Player 3 chose action 0
+2025-04-28 13:32:46,519 - __main__ - DEBUG - Step 28: Player 0 received reward -0.4
+2025-04-28 13:32:46,558 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,602 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,668 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,674 - __main__ - DEBUG - Game 1, Step 29: Player 0 chose action 4
+2025-04-28 13:32:46,676 - __main__ - DEBUG - Step 29: Player 1 received reward -0.4
+2025-04-28 13:32:46,709 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,767 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,824 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,830 - __main__ - DEBUG - Game 1, Step 30: Player 1 chose action 4
+2025-04-28 13:32:46,832 - __main__ - DEBUG - Step 30: Player 2 received reward -0.4
+2025-04-28 13:32:46,874 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:46,933 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:46,982 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:46,987 - __main__ - DEBUG - Game 1, Step 31: Player 2 chose action 57
+2025-04-28 13:32:46,988 - __main__ - DEBUG - Step 31: Player 3 received reward -0.4
+2025-04-28 13:32:47,030 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,085 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,146 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,153 - __main__ - DEBUG - Game 1, Step 32: Player 3 chose action 4
+2025-04-28 13:32:47,155 - __main__ - DEBUG - Step 32: Player 0 received reward -0.4
+2025-04-28 13:32:47,197 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,252 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,315 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,324 - __main__ - DEBUG - Game 1, Step 33: Player 0 chose action 4
+2025-04-28 13:32:47,326 - __main__ - DEBUG - Step 33: Player 1 received reward -0.4
+2025-04-28 13:32:47,372 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,426 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,484 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,491 - __main__ - DEBUG - Game 1, Step 34: Player 1 chose action 0
+2025-04-28 13:32:47,493 - __main__ - DEBUG - Step 34: Player 2 received reward -0.4
+2025-04-28 13:32:47,536 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,586 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,638 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,643 - __main__ - DEBUG - Game 1, Step 35: Player 2 chose action 0
+2025-04-28 13:32:47,645 - __main__ - DEBUG - Step 35: Player 3 received reward -0.4
+2025-04-28 13:32:47,688 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,730 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,770 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,776 - __main__ - DEBUG - Game 1, Step 36: Player 3 chose action 85
+2025-04-28 13:32:47,777 - __main__ - DEBUG - Step 36: Player 0 received reward -0.4
+2025-04-28 13:32:47,822 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:47,870 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:47,926 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:47,933 - __main__ - DEBUG - Game 1, Step 37: Player 0 chose action 3
+2025-04-28 13:32:47,934 - __main__ - DEBUG - Step 37: Player 1 received reward -0.4
+2025-04-28 13:32:47,972 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,019 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,082 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,087 - __main__ - DEBUG - Game 1, Step 38: Player 1 chose action 4
+2025-04-28 13:32:48,088 - __main__ - DEBUG - Step 38: Player 2 received reward -0.4
+2025-04-28 13:32:48,127 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,179 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,238 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,244 - __main__ - DEBUG - Game 1, Step 39: Player 2 chose action 57
+2025-04-28 13:32:48,245 - __main__ - DEBUG - Step 39: Player 3 received reward -0.4
+2025-04-28 13:32:48,288 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,348 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,413 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,420 - __main__ - DEBUG - Game 1, Step 40: Player 3 chose action 0
+2025-04-28 13:32:48,422 - __main__ - DEBUG - Step 40: Player 0 received reward -0.4
+2025-04-28 13:32:48,472 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,529 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,604 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,612 - __main__ - DEBUG - Game 1, Step 41: Player 0 chose action 3
+2025-04-28 13:32:48,614 - __main__ - DEBUG - Step 41: Player 1 received reward -0.4
+2025-04-28 13:32:48,662 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,721 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,788 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,796 - __main__ - DEBUG - Game 1, Step 42: Player 1 chose action 30
+2025-04-28 13:32:48,798 - __main__ - DEBUG - Step 42: Player 2 received reward 1
+2025-04-28 13:32:48,861 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:48,923 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:48,982 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:48,988 - __main__ - DEBUG - Game 1, Step 43: Player 2 chose action 1
+2025-04-28 13:32:48,990 - __main__ - DEBUG - Step 43: Player 3 received reward -0.4
+2025-04-28 13:32:49,045 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,108 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,170 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,178 - __main__ - DEBUG - Game 1, Step 44: Player 3 chose action 4
+2025-04-28 13:32:49,179 - __main__ - DEBUG - Step 44: Player 0 received reward -0.4
+2025-04-28 13:32:49,228 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,281 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,337 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,343 - __main__ - DEBUG - Game 1, Step 45: Player 0 chose action 4
+2025-04-28 13:32:49,345 - __main__ - DEBUG - Step 45: Player 1 received reward -0.4
+2025-04-28 13:32:49,386 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,433 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,481 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,487 - __main__ - DEBUG - Game 1, Step 46: Player 1 chose action 53
+2025-04-28 13:32:49,489 - __main__ - DEBUG - Step 46: Player 2 received reward -0.4
+2025-04-28 13:32:49,521 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,557 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,593 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,597 - __main__ - DEBUG - Game 1, Step 47: Player 2 chose action 68
+2025-04-28 13:32:49,598 - __main__ - DEBUG - Step 47: Player 3 received reward -0.4
+2025-04-28 13:32:49,626 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,658 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,689 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,693 - __main__ - DEBUG - Game 1, Step 48: Player 3 chose action 65
+2025-04-28 13:32:49,694 - __main__ - DEBUG - Step 48: Player 0 received reward -0.4
+2025-04-28 13:32:49,734 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,780 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,834 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,840 - __main__ - DEBUG - Game 1, Step 49: Player 0 chose action 69
+2025-04-28 13:32:49,842 - __main__ - DEBUG - Step 49: Player 1 received reward -0.4
+2025-04-28 13:32:49,886 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:49,932 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:49,979 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:49,985 - __main__ - DEBUG - Game 1, Step 50: Player 1 chose action 20
+2025-04-28 13:32:49,987 - __main__ - DEBUG - Step 50: Player 2 received reward -0.4
+2025-04-28 13:32:50,044 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:50,113 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:50,176 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:50,184 - __main__ - DEBUG - Game 1, Step 51: Player 2 chose action 13
+2025-04-28 13:32:50,186 - __main__ - DEBUG - Step 51: Player 3 received reward -0.4
+2025-04-28 13:32:50,236 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:50,299 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:50,378 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:50,389 - __main__ - DEBUG - Game 1, Step 52: Player 3 chose action 44
+2025-04-28 13:32:50,391 - __main__ - DEBUG - Step 52: Player 0 received reward -0.4
+2025-04-28 13:32:50,440 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:50,499 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:50,570 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:50,579 - __main__ - DEBUG - Game 1, Step 53: Player 0 chose action 37
+2025-04-28 13:32:50,581 - __main__ - DEBUG - Step 53: Player 1 received reward 5
+2025-04-28 13:32:50,620 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:50,667 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:50,724 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:50,731 - __main__ - DEBUG - Game 1, Step 54: Player 1 chose action 1
+2025-04-28 13:32:50,732 - __main__ - DEBUG - Step 54: Player 2 received reward -0.4
+2025-04-28 13:32:50,779 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:50,834 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:50,884 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:50,891 - __main__ - DEBUG - Game 1, Step 55: Player 2 chose action 79
+2025-04-28 13:32:50,892 - __main__ - DEBUG - Step 55: Player 3 received reward -0.4
+2025-04-28 13:32:50,953 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,021 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,083 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,091 - __main__ - DEBUG - Game 1, Step 56: Player 3 chose action 4
+2025-04-28 13:32:51,093 - __main__ - DEBUG - Step 56: Player 0 received reward -0.4
+2025-04-28 13:32:51,146 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,198 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,251 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,258 - __main__ - DEBUG - Game 1, Step 57: Player 0 chose action 3
+2025-04-28 13:32:51,260 - __main__ - DEBUG - Step 57: Player 1 received reward -0.4
+2025-04-28 13:32:51,305 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,357 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,408 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,413 - __main__ - DEBUG - Game 1, Step 58: Player 1 chose action 4
+2025-04-28 13:32:51,415 - __main__ - DEBUG - Step 58: Player 2 received reward -0.4
+2025-04-28 13:32:51,457 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,501 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,616 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,621 - __main__ - DEBUG - Game 1, Step 59: Player 2 chose action 13
+2025-04-28 13:32:51,622 - __main__ - DEBUG - Step 59: Player 3 received reward -0.4
+2025-04-28 13:32:51,665 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,715 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,762 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,770 - __main__ - DEBUG - Game 1, Step 60: Player 3 chose action 57
+2025-04-28 13:32:51,772 - __main__ - DEBUG - Step 60: Player 0 received reward -0.4
+2025-04-28 13:32:51,813 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:51,854 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:51,902 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:51,909 - __main__ - DEBUG - Game 1, Step 61: Player 0 chose action 3
+2025-04-28 13:32:51,911 - __main__ - DEBUG - Step 61: Player 1 received reward -0.4
+2025-04-28 13:32:51,955 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,005 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,053 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,059 - __main__ - DEBUG - Game 1, Step 62: Player 1 chose action 74
+2025-04-28 13:32:52,061 - __main__ - DEBUG - Step 62: Player 2 received reward -0.4
+2025-04-28 13:32:52,113 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,177 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,230 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,237 - __main__ - DEBUG - Game 1, Step 63: Player 2 chose action 42
+2025-04-28 13:32:52,240 - __main__ - DEBUG - Step 63: Player 3 received reward -0.4
+2025-04-28 13:32:52,300 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,365 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,428 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,436 - __main__ - DEBUG - Game 1, Step 64: Player 3 chose action 0
+2025-04-28 13:32:52,438 - __main__ - DEBUG - Step 64: Player 0 received reward -0.4
+2025-04-28 13:32:52,486 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,542 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,597 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,603 - __main__ - DEBUG - Game 1, Step 65: Player 0 chose action 4
+2025-04-28 13:32:52,605 - __main__ - DEBUG - Step 65: Player 1 received reward -0.4
+2025-04-28 13:32:52,654 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,702 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,749 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,755 - __main__ - DEBUG - Game 1, Step 66: Player 1 chose action 1
+2025-04-28 13:32:52,756 - __main__ - DEBUG - Step 66: Player 2 received reward -0.4
+2025-04-28 13:32:52,786 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,828 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:52,875 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:52,883 - __main__ - DEBUG - Game 1, Step 67: Player 2 chose action 76
+2025-04-28 13:32:52,884 - __main__ - DEBUG - Step 67: Player 3 received reward -0.4
+2025-04-28 13:32:52,942 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:52,998 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,059 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,066 - __main__ - DEBUG - Game 1, Step 68: Player 3 chose action 57
+2025-04-28 13:32:53,067 - __main__ - DEBUG - Step 68: Player 0 received reward -0.4
+2025-04-28 13:32:53,116 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:53,165 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,218 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,225 - __main__ - DEBUG - Game 1, Step 69: Player 0 chose action 50
+2025-04-28 13:32:53,227 - __main__ - DEBUG - Step 69: Player 1 received reward -0.4
+2025-04-28 13:32:53,274 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:53,325 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,385 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,394 - __main__ - DEBUG - Game 1, Step 70: Player 1 chose action 0
+2025-04-28 13:32:53,395 - __main__ - DEBUG - Step 70: Player 2 received reward -0.4
+2025-04-28 13:32:53,446 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:53,512 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,576 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,583 - __main__ - DEBUG - Game 1, Step 71: Player 2 chose action 1
+2025-04-28 13:32:53,585 - __main__ - DEBUG - Step 71: Player 3 received reward -0.4
+2025-04-28 13:32:53,645 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:53,711 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,777 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,785 - __main__ - DEBUG - Game 1, Step 72: Player 3 chose action 0
+2025-04-28 13:32:53,787 - __main__ - DEBUG - Step 72: Player 0 received reward -0.4
+2025-04-28 13:32:53,841 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:53,896 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:53,956 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:53,964 - __main__ - DEBUG - Game 1, Step 73: Player 0 chose action 4
+2025-04-28 13:32:53,966 - __main__ - DEBUG - Step 73: Player 1 received reward -0.4
+2025-04-28 13:32:54,012 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,066 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,126 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,133 - __main__ - DEBUG - Game 1, Step 74: Player 1 chose action 31
+2025-04-28 13:32:54,136 - __main__ - DEBUG - Step 74: Player 2 received reward 1
+2025-04-28 13:32:54,179 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,218 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,276 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,281 - __main__ - DEBUG - Game 1, Step 75: Player 2 chose action 27
+2025-04-28 13:32:54,283 - __main__ - DEBUG - Step 75: Player 3 received reward -0.4
+2025-04-28 13:32:54,329 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,381 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,443 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,451 - __main__ - DEBUG - Game 1, Step 76: Player 3 chose action 60
+2025-04-28 13:32:54,453 - __main__ - DEBUG - Step 76: Player 0 received reward -0.4
+2025-04-28 13:32:54,508 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,561 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,610 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,618 - __main__ - DEBUG - Game 1, Step 77: Player 0 chose action 53
+2025-04-28 13:32:54,620 - __main__ - DEBUG - Step 77: Player 1 received reward -0.4
+2025-04-28 13:32:54,656 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,698 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,757 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,764 - __main__ - DEBUG - Game 1, Step 78: Player 1 chose action 0
+2025-04-28 13:32:54,766 - __main__ - DEBUG - Step 78: Player 2 received reward -0.4
+2025-04-28 13:32:54,816 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:54,876 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:54,938 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:54,945 - __main__ - DEBUG - Game 1, Step 79: Player 2 chose action 57
+2025-04-28 13:32:54,947 - __main__ - DEBUG - Step 79: Player 3 received reward -0.4
+2025-04-28 13:32:55,001 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:55,052 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:55,107 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:55,113 - __main__ - DEBUG - Game 1, Step 80: Player 3 chose action 53
+2025-04-28 13:32:55,115 - __main__ - DEBUG - Step 80: Player 0 received reward -0.4
+2025-04-28 13:32:55,168 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:55,226 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:55,281 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:55,287 - __main__ - DEBUG - Game 1, Step 81: Player 0 chose action 46
+2025-04-28 13:32:55,290 - __main__ - DEBUG - Step 81: Player 1 received reward -0.4
+2025-04-28 13:32:55,346 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:55,412 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:55,498 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:55,507 - __main__ - DEBUG - Game 1, Step 82: Player 1 chose action 14
+2025-04-28 13:32:55,509 - __main__ - DEBUG - Step 82: Player 2 received reward -0.4
+2025-04-28 13:32:55,564 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:55,633 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:55,702 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:55,710 - __main__ - DEBUG - Game 1, Step 83: Player 2 chose action 19
+2025-04-28 13:32:55,712 - __main__ - DEBUG - Step 83: Player 3 received reward -0.4
+2025-04-28 13:32:55,767 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:55,823 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:55,881 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:55,889 - __main__ - DEBUG - Game 1, Step 84: Player 3 chose action 0
+2025-04-28 13:32:55,891 - __main__ - DEBUG - Step 84: Player 0 received reward -0.4
+2025-04-28 13:32:55,946 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,001 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,059 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,067 - __main__ - DEBUG - Game 1, Step 85: Player 0 chose action 0
+2025-04-28 13:32:56,068 - __main__ - DEBUG - Step 85: Player 1 received reward -0.4
+2025-04-28 13:32:56,112 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,159 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,211 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,216 - __main__ - DEBUG - Game 1, Step 86: Player 1 chose action 14
+2025-04-28 13:32:56,218 - __main__ - DEBUG - Step 86: Player 2 received reward -0.4
+2025-04-28 13:32:56,258 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,300 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,346 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,352 - __main__ - DEBUG - Game 1, Step 87: Player 2 chose action 86
+2025-04-28 13:32:56,354 - __main__ - DEBUG - Step 87: Player 2 received reward -0.4
+2025-04-28 13:32:56,386 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,438 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,492 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,498 - __main__ - DEBUG - Game 1, Step 88: Player 2 chose action 57
+2025-04-28 13:32:56,499 - __main__ - DEBUG - Step 88: Player 3 received reward -0.4
+2025-04-28 13:32:56,549 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,601 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,656 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,664 - __main__ - DEBUG - Game 1, Step 89: Player 3 chose action 81
+2025-04-28 13:32:56,666 - __main__ - DEBUG - Step 89: Player 0 received reward -0.4
+2025-04-28 13:32:56,720 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,775 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:56,847 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:56,856 - __main__ - DEBUG - Game 1, Step 90: Player 0 chose action 13
+2025-04-28 13:32:56,858 - __main__ - DEBUG - Step 90: Player 1 received reward -0.4
+2025-04-28 13:32:56,922 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:56,986 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,051 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,057 - __main__ - DEBUG - Game 1, Step 91: Player 1 chose action 0
+2025-04-28 13:32:57,059 - __main__ - DEBUG - Step 91: Player 2 received reward -0.4
+2025-04-28 13:32:57,116 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,171 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,225 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,231 - __main__ - DEBUG - Game 1, Step 92: Player 2 chose action 48
+2025-04-28 13:32:57,233 - __main__ - DEBUG - Step 92: Player 3 received reward -0.4
+2025-04-28 13:32:57,274 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,321 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,364 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,370 - __main__ - DEBUG - Game 1, Step 93: Player 3 chose action 4
+2025-04-28 13:32:57,371 - __main__ - DEBUG - Step 93: Player 0 received reward -0.4
+2025-04-28 13:32:57,406 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,443 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,483 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,490 - __main__ - DEBUG - Game 1, Step 94: Player 0 chose action 60
+2025-04-28 13:32:57,491 - __main__ - DEBUG - Step 94: Player 1 received reward -0.4
+2025-04-28 13:32:57,547 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,612 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,676 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,683 - __main__ - DEBUG - Game 1, Step 95: Player 1 chose action 57
+2025-04-28 13:32:57,684 - __main__ - DEBUG - Step 95: Player 2 received reward -0.4
+2025-04-28 13:32:57,739 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,799 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:57,866 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:57,874 - __main__ - DEBUG - Game 1, Step 96: Player 2 chose action 0
+2025-04-28 13:32:57,876 - __main__ - DEBUG - Step 96: Player 3 received reward -0.4
+2025-04-28 13:32:57,930 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:57,985 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,053 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:58,062 - __main__ - DEBUG - Game 1, Step 97: Player 3 chose action 4
+2025-04-28 13:32:58,064 - __main__ - DEBUG - Step 97: Player 0 received reward -0.4
+2025-04-28 13:32:58,117 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:58,183 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,259 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:58,267 - __main__ - DEBUG - Game 1, Step 98: Player 0 chose action 56
+2025-04-28 13:32:58,269 - __main__ - DEBUG - Step 98: Player 1 received reward 2
+2025-04-28 13:32:58,323 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:58,381 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,439 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:58,446 - __main__ - DEBUG - Game 1, Step 99: Player 1 chose action 1
+2025-04-28 13:32:58,448 - __main__ - DEBUG - Step 99: Player 2 received reward -0.4
+2025-04-28 13:32:58,490 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:58,549 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,611 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:58,620 - __main__ - DEBUG - Game 1, Step 100: Player 2 chose action 57
+2025-04-28 13:32:58,621 - __main__ - DEBUG - Step 100: Player 3 received reward -0.4
+2025-04-28 13:32:58,670 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:58,727 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,856 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:58,864 - __main__ - DEBUG - Game 1, Step 101: Player 3 chose action 43
+2025-04-28 13:32:58,866 - __main__ - DEBUG - Step 101: Player 0 received reward -0.4
+2025-04-28 13:32:58,908 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:58,953 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:58,997 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,002 - __main__ - DEBUG - Game 1, Step 102: Player 0 chose action 0
+2025-04-28 13:32:59,003 - __main__ - DEBUG - Step 102: Player 1 received reward -0.4
+2025-04-28 13:32:59,055 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,105 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:59,159 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,165 - __main__ - DEBUG - Game 1, Step 103: Player 1 chose action 57
+2025-04-28 13:32:59,166 - __main__ - DEBUG - Step 103: Player 2 received reward -0.4
+2025-04-28 13:32:59,202 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,246 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:59,300 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,306 - __main__ - DEBUG - Game 1, Step 104: Player 2 chose action 0
+2025-04-28 13:32:59,307 - __main__ - DEBUG - Step 104: Player 3 received reward -0.4
+2025-04-28 13:32:59,353 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,404 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:59,466 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,473 - __main__ - DEBUG - Game 1, Step 105: Player 3 chose action 57
+2025-04-28 13:32:59,475 - __main__ - DEBUG - Step 105: Player 0 received reward -0.4
+2025-04-28 13:32:59,527 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,579 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:59,640 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,645 - __main__ - DEBUG - Game 1, Step 106: Player 0 chose action 45
+2025-04-28 13:32:59,648 - __main__ - DEBUG - Step 106: Player 1 received reward -0.4
+2025-04-28 13:32:59,706 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,768 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:32:59,831 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:32:59,837 - __main__ - DEBUG - Game 1, Step 107: Player 1 chose action 12
+2025-04-28 13:32:59,838 - __main__ - DEBUG - Step 107: Player 2 received reward -0.4
+2025-04-28 13:32:59,882 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:32:59,942 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,011 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,019 - __main__ - DEBUG - Game 1, Step 108: Player 2 chose action 63
+2025-04-28 13:33:00,021 - __main__ - DEBUG - Step 108: Player 3 received reward -0.4
+2025-04-28 13:33:00,075 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,136 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,201 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,208 - __main__ - DEBUG - Game 1, Step 109: Player 3 chose action 8
+2025-04-28 13:33:00,210 - __main__ - DEBUG - Step 109: Player 0 received reward -0.4
+2025-04-28 13:33:00,264 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,310 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,372 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,380 - __main__ - DEBUG - Game 1, Step 110: Player 0 chose action 12
+2025-04-28 13:33:00,381 - __main__ - DEBUG - Step 110: Player 1 received reward -0.4
+2025-04-28 13:33:00,431 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,484 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,544 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,551 - __main__ - DEBUG - Game 1, Step 111: Player 1 chose action 69
+2025-04-28 13:33:00,552 - __main__ - DEBUG - Step 111: Player 2 received reward -0.4
+2025-04-28 13:33:00,593 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,642 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,694 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,701 - __main__ - DEBUG - Game 1, Step 112: Player 2 chose action 18
+2025-04-28 13:33:00,703 - __main__ - DEBUG - Step 112: Player 3 received reward -0.4
+2025-04-28 13:33:00,747 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,802 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:00,867 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:00,874 - __main__ - DEBUG - Game 1, Step 113: Player 3 chose action 82
+2025-04-28 13:33:00,876 - __main__ - DEBUG - Step 113: Player 0 received reward -0.4
+2025-04-28 13:33:00,926 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:00,981 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,055 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,061 - __main__ - DEBUG - Game 1, Step 114: Player 0 chose action 0
+2025-04-28 13:33:01,063 - __main__ - DEBUG - Step 114: Player 1 received reward -0.4
+2025-04-28 13:33:01,106 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:01,165 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,216 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,225 - __main__ - DEBUG - Game 1, Step 115: Player 1 chose action 27
+2025-04-28 13:33:01,227 - __main__ - DEBUG - Step 115: Player 2 received reward -0.4
+2025-04-28 13:33:01,275 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:01,334 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,391 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,399 - __main__ - DEBUG - Game 1, Step 116: Player 2 chose action 57
+2025-04-28 13:33:01,400 - __main__ - DEBUG - Step 116: Player 2 received reward -0.4
+2025-04-28 13:33:01,451 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:01,528 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,600 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,608 - __main__ - DEBUG - Game 1, Step 117: Player 2 chose action 59
+2025-04-28 13:33:01,610 - __main__ - DEBUG - Step 117: Player 3 received reward -0.4
+2025-04-28 13:33:01,665 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:01,724 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,789 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,797 - __main__ - DEBUG - Game 1, Step 118: Player 3 chose action 0
+2025-04-28 13:33:01,799 - __main__ - DEBUG - Step 118: Player 0 received reward -0.4
+2025-04-28 13:33:01,840 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:01,891 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:01,943 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:01,951 - __main__ - DEBUG - Game 1, Step 119: Player 0 chose action 29
+2025-04-28 13:33:01,953 - __main__ - DEBUG - Step 119: Player 1 received reward -0.4
+2025-04-28 13:33:01,998 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:02,052 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:02,110 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:02,116 - __main__ - DEBUG - Game 1, Step 120: Player 1 chose action 69
+2025-04-28 13:33:02,118 - __main__ - DEBUG - Step 120: Player 2 received reward -0.4
+2025-04-28 13:33:02,159 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:02,214 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:02,283 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:02,294 - __main__ - DEBUG - Game 1, Step 121: Player 2 chose action 0
+2025-04-28 13:33:02,296 - __main__ - DEBUG - Step 121: Player 3 received reward -0.4
+2025-04-28 13:33:02,348 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:02,402 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:02,470 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:02,479 - __main__ - DEBUG - Game 1, Step 122: Player 3 chose action 83
+2025-04-28 13:33:02,480 - __main__ - DEBUG - Step 122: Player 0 received reward -0.4
+2025-04-28 13:33:02,530 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:02,597 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:02,668 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:02,674 - __main__ - DEBUG - Game 1, Step 123: Player 0 chose action 1
+2025-04-28 13:33:02,676 - __main__ - DEBUG - Step 123: Player 1 received reward -0.4
+2025-04-28 13:33:02,733 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:02,868 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:02,924 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:02,930 - __main__ - DEBUG - Game 1, Step 124: Player 1 chose action 2
+2025-04-28 13:33:02,932 - __main__ - DEBUG - Step 124: Player 2 received reward -0.4
+2025-04-28 13:33:02,981 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,044 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:03,109 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:03,118 - __main__ - DEBUG - Game 1, Step 125: Player 2 chose action 73
+2025-04-28 13:33:03,119 - __main__ - DEBUG - Step 125: Player 3 received reward -0.4
+2025-04-28 13:33:03,170 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,241 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:03,306 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:03,313 - __main__ - DEBUG - Game 1, Step 126: Player 3 chose action 1
+2025-04-28 13:33:03,316 - __main__ - DEBUG - Step 126: Player 0 received reward -0.4
+2025-04-28 13:33:03,360 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,401 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:03,461 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:03,468 - __main__ - DEBUG - Game 1, Step 127: Player 0 chose action 30
+2025-04-28 13:33:03,470 - __main__ - DEBUG - Step 127: Player 1 received reward 1
+2025-04-28 13:33:03,525 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,587 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:03,648 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:03,656 - __main__ - DEBUG - Game 1, Step 128: Player 1 chose action 57
+2025-04-28 13:33:03,658 - __main__ - DEBUG - Step 128: Player 2 received reward -0.4
+2025-04-28 13:33:03,712 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,766 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:03,825 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:03,831 - __main__ - DEBUG - Game 1, Step 129: Player 2 chose action 7
+2025-04-28 13:33:03,833 - __main__ - DEBUG - Step 129: Player 3 received reward -0.4
+2025-04-28 13:33:03,891 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:03,947 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,008 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,017 - __main__ - DEBUG - Game 1, Step 130: Player 3 chose action 28
+2025-04-28 13:33:04,019 - __main__ - DEBUG - Step 130: Player 0 received reward -0.4
+2025-04-28 13:33:04,085 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:04,144 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,216 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,225 - __main__ - DEBUG - Game 1, Step 131: Player 0 chose action 31
+2025-04-28 13:33:04,230 - __main__ - DEBUG - Step 131: Player 1 received reward 1
+2025-04-28 13:33:04,314 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:04,379 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,443 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,450 - __main__ - DEBUG - Game 1, Step 132: Player 1 chose action 0
+2025-04-28 13:33:04,452 - __main__ - DEBUG - Step 132: Player 2 received reward -0.4
+2025-04-28 13:33:04,497 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:04,553 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,609 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,617 - __main__ - DEBUG - Game 1, Step 133: Player 2 chose action 1
+2025-04-28 13:33:04,619 - __main__ - DEBUG - Step 133: Player 3 received reward -0.4
+2025-04-28 13:33:04,663 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:04,713 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,759 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,764 - __main__ - DEBUG - Game 1, Step 134: Player 3 chose action 78
+2025-04-28 13:33:04,766 - __main__ - DEBUG - Step 134: Player 0 received reward -0.4
+2025-04-28 13:33:04,806 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:04,854 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:04,912 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:04,918 - __main__ - DEBUG - Game 1, Step 135: Player 0 chose action 1
+2025-04-28 13:33:04,919 - __main__ - DEBUG - Step 135: Player 1 received reward -0.4
+2025-04-28 13:33:04,973 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,027 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,087 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:05,094 - __main__ - DEBUG - Game 1, Step 136: Player 1 chose action 69
+2025-04-28 13:33:05,095 - __main__ - DEBUG - Step 136: Player 2 received reward -0.4
+2025-04-28 13:33:05,143 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,194 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,255 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:05,261 - __main__ - DEBUG - Game 1, Step 137: Player 2 chose action 57
+2025-04-28 13:33:05,263 - __main__ - DEBUG - Step 137: Player 3 received reward -0.4
+2025-04-28 13:33:05,314 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,368 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,434 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:05,441 - __main__ - DEBUG - Game 1, Step 138: Player 3 chose action 24
+2025-04-28 13:33:05,443 - __main__ - DEBUG - Step 138: Player 0 received reward -0.4
+2025-04-28 13:33:05,495 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,554 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,631 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:05,639 - __main__ - DEBUG - Game 1, Step 139: Player 0 chose action 20
+2025-04-28 13:33:05,640 - __main__ - DEBUG - Step 139: Player 1 received reward -0.4
+2025-04-28 13:33:05,692 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,746 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,806 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:05,812 - __main__ - DEBUG - Game 1, Step 140: Player 1 chose action 2
+2025-04-28 13:33:05,815 - __main__ - DEBUG - Step 140: Player 2 received reward -0.4
+2025-04-28 13:33:05,860 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:05,919 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:05,992 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,000 - __main__ - DEBUG - Game 1, Step 141: Player 2 chose action 2
+2025-04-28 13:33:06,002 - __main__ - DEBUG - Step 141: Player 3 received reward -0.4
+2025-04-28 13:33:06,041 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:06,091 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:06,157 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,167 - __main__ - DEBUG - Game 1, Step 142: Player 3 chose action 69
+2025-04-28 13:33:06,168 - __main__ - DEBUG - Step 142: Player 0 received reward -0.4
+2025-04-28 13:33:06,222 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:06,287 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:06,351 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,360 - __main__ - DEBUG - Game 1, Step 143: Player 0 chose action 27
+2025-04-28 13:33:06,361 - __main__ - DEBUG - Step 143: Player 1 received reward -0.4
+2025-04-28 13:33:06,415 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:06,467 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:06,522 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,529 - __main__ - DEBUG - Game 1, Step 144: Player 1 chose action 2
+2025-04-28 13:33:06,530 - __main__ - DEBUG - Step 144: Player 2 received reward -0.4
+2025-04-28 13:33:06,576 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:06,713 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:06,777 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,783 - __main__ - DEBUG - Game 1, Step 145: Player 2 chose action 58
+2025-04-28 13:33:06,785 - __main__ - DEBUG - Step 145: Player 3 received reward -0.4
+2025-04-28 13:33:06,832 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:06,887 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:06,939 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:06,945 - __main__ - DEBUG - Game 1, Step 146: Player 3 chose action 31
+2025-04-28 13:33:06,947 - __main__ - DEBUG - Step 146: Player 0 received reward 1
+2025-04-28 13:33:06,982 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,020 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,057 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,063 - __main__ - DEBUG - Game 1, Step 147: Player 0 chose action 73
+2025-04-28 13:33:07,064 - __main__ - DEBUG - Step 147: Player 1 received reward -0.4
+2025-04-28 13:33:07,121 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,181 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,245 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,253 - __main__ - DEBUG - Game 1, Step 148: Player 1 chose action 57
+2025-04-28 13:33:07,255 - __main__ - DEBUG - Step 148: Player 2 received reward -0.4
+2025-04-28 13:33:07,308 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,363 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,428 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,436 - __main__ - DEBUG - Game 1, Step 149: Player 2 chose action 5
+2025-04-28 13:33:07,438 - __main__ - DEBUG - Step 149: Player 3 received reward -0.4
+2025-04-28 13:33:07,489 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,554 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,629 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,637 - __main__ - DEBUG - Game 1, Step 150: Player 3 chose action 7
+2025-04-28 13:33:07,640 - __main__ - DEBUG - Step 150: Player 0 received reward -0.4
+2025-04-28 13:33:07,696 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,752 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,810 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,816 - __main__ - DEBUG - Game 1, Step 151: Player 0 chose action 56
+2025-04-28 13:33:07,819 - __main__ - DEBUG - Step 151: Player 1 received reward 1
+2025-04-28 13:33:07,871 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:07,919 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:07,960 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:07,967 - __main__ - DEBUG - Game 1, Step 152: Player 1 chose action 3
+2025-04-28 13:33:07,969 - __main__ - DEBUG - Step 152: Player 2 received reward -0.4
+2025-04-28 13:33:08,019 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,073 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:08,132 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:08,137 - __main__ - DEBUG - Game 1, Step 153: Player 2 chose action 57
+2025-04-28 13:33:08,139 - __main__ - DEBUG - Step 153: Player 2 received reward -0.4
+2025-04-28 13:33:08,187 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,249 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:08,319 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:08,327 - __main__ - DEBUG - Game 1, Step 154: Player 2 chose action 69
+2025-04-28 13:33:08,329 - __main__ - DEBUG - Step 154: Player 3 received reward -0.4
+2025-04-28 13:33:08,385 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,440 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:08,497 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:08,504 - __main__ - DEBUG - Game 1, Step 155: Player 3 chose action 5
+2025-04-28 13:33:08,506 - __main__ - DEBUG - Step 155: Player 0 received reward -0.4
+2025-04-28 13:33:08,544 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,587 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:08,629 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:08,634 - __main__ - DEBUG - Game 1, Step 156: Player 0 chose action 53
+2025-04-28 13:33:08,636 - __main__ - DEBUG - Step 156: Player 1 received reward -0.4
+2025-04-28 13:33:08,694 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,769 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:08,833 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:08,840 - __main__ - DEBUG - Game 1, Step 157: Player 1 chose action 58
+2025-04-28 13:33:08,842 - __main__ - DEBUG - Step 157: Player 2 received reward -0.4
+2025-04-28 13:33:08,899 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:08,958 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:09,011 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:09,017 - __main__ - DEBUG - Game 1, Step 158: Player 2 chose action 11
+2025-04-28 13:33:09,019 - __main__ - DEBUG - Step 158: Player 3 received reward -0.4
+2025-04-28 13:33:09,071 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:09,129 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:09,203 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:09,210 - __main__ - DEBUG - Game 1, Step 159: Player 3 chose action 3
+2025-04-28 13:33:09,212 - __main__ - DEBUG - Step 159: Player 0 received reward -0.4
+2025-04-28 13:33:09,263 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:09,317 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:09,391 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:09,398 - __main__ - DEBUG - Game 1, Step 160: Player 0 chose action 4
+2025-04-28 13:33:09,401 - __main__ - DEBUG - Step 160: Player 1 received reward -0.4
+2025-04-28 13:33:09,466 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:09,546 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:09,626 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:09,636 - __main__ - DEBUG - Game 1, Step 161: Player 1 chose action 1
+2025-04-28 13:33:09,638 - __main__ - DEBUG - Step 161: Player 2 received reward -0.4
+2025-04-28 13:33:09,685 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:09,754 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:09,818 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:09,825 - __main__ - DEBUG - Game 1, Step 162: Player 2 chose action 61
+2025-04-28 13:33:09,827 - __main__ - DEBUG - Step 162: Player 3 received reward -0.4
+2025-04-28 13:33:09,894 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:09,968 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,043 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,054 - __main__ - DEBUG - Game 1, Step 163: Player 3 chose action 4
+2025-04-28 13:33:10,056 - __main__ - DEBUG - Step 163: Player 0 received reward -0.4
+2025-04-28 13:33:10,098 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:10,149 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,211 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,218 - __main__ - DEBUG - Game 1, Step 164: Player 0 chose action 2
+2025-04-28 13:33:10,220 - __main__ - DEBUG - Step 164: Player 1 received reward -0.4
+2025-04-28 13:33:10,271 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:10,322 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,386 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,392 - __main__ - DEBUG - Game 1, Step 165: Player 1 chose action 69
+2025-04-28 13:33:10,393 - __main__ - DEBUG - Step 165: Player 2 received reward -0.4
+2025-04-28 13:33:10,437 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:10,478 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,535 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,541 - __main__ - DEBUG - Game 1, Step 166: Player 2 chose action 27
+2025-04-28 13:33:10,542 - __main__ - DEBUG - Step 166: Player 3 received reward -0.4
+2025-04-28 13:33:10,588 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:10,713 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,773 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,780 - __main__ - DEBUG - Game 1, Step 167: Player 3 chose action 57
+2025-04-28 13:33:10,781 - __main__ - DEBUG - Step 167: Player 0 received reward -0.4
+2025-04-28 13:33:10,837 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:10,899 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:10,965 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:10,972 - __main__ - DEBUG - Game 1, Step 168: Player 0 chose action 0
+2025-04-28 13:33:10,974 - __main__ - DEBUG - Step 168: Player 1 received reward -0.4
+2025-04-28 13:33:11,017 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:11,060 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:11,119 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:11,127 - __main__ - DEBUG - Game 1, Step 169: Player 1 chose action 13
+2025-04-28 13:33:11,129 - __main__ - DEBUG - Step 169: Player 2 received reward -0.4
+2025-04-28 13:33:11,178 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:11,242 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:11,311 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:11,319 - __main__ - DEBUG - Game 1, Step 170: Player 2 chose action 58
+2025-04-28 13:33:11,320 - __main__ - DEBUG - Step 170: Player 2 received reward -0.4
+2025-04-28 13:33:11,372 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:11,438 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:11,506 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:11,513 - __main__ - DEBUG - Game 1, Step 171: Player 2 chose action 59
+2025-04-28 13:33:11,516 - __main__ - DEBUG - Step 171: Player 3 received reward -0.4
+2025-04-28 13:33:11,576 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:11,645 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:11,720 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:11,727 - __main__ - DEBUG - Game 1, Step 172: Player 3 chose action 30
+2025-04-28 13:33:11,730 - __main__ - DEBUG - Step 172: Player 0 received reward 1
+2025-04-28 13:33:11,777 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:11,824 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:11,871 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:11,876 - __main__ - DEBUG - Game 1, Step 173: Player 0 chose action 2
+2025-04-28 13:33:11,878 - __main__ - DEBUG - Step 173: Player 1 received reward -0.4
+2025-04-28 13:33:11,954 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,030 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:12,099 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:12,107 - __main__ - DEBUG - Game 1, Step 174: Player 1 chose action 58
+2025-04-28 13:33:12,108 - __main__ - DEBUG - Step 174: Player 2 received reward -0.4
+2025-04-28 13:33:12,163 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,227 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:12,301 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:12,309 - __main__ - DEBUG - Game 1, Step 175: Player 2 chose action 7
+2025-04-28 13:33:12,311 - __main__ - DEBUG - Step 175: Player 3 received reward -0.4
+2025-04-28 13:33:12,372 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,439 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:12,504 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:12,511 - __main__ - DEBUG - Game 1, Step 176: Player 3 chose action 4
+2025-04-28 13:33:12,513 - __main__ - DEBUG - Step 176: Player 0 received reward -0.4
+2025-04-28 13:33:12,566 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,626 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:12,693 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:12,702 - __main__ - DEBUG - Game 1, Step 177: Player 0 chose action 1
+2025-04-28 13:33:12,704 - __main__ - DEBUG - Step 177: Player 1 received reward -0.4
+2025-04-28 13:33:12,746 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,798 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:12,862 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:12,869 - __main__ - DEBUG - Game 1, Step 178: Player 1 chose action 34
+2025-04-28 13:33:12,871 - __main__ - DEBUG - Step 178: Player 2 received reward 2
+2025-04-28 13:33:12,926 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:12,979 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,036 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,043 - __main__ - DEBUG - Game 1, Step 179: Player 2 chose action 57
+2025-04-28 13:33:13,044 - __main__ - DEBUG - Step 179: Player 2 received reward -0.4
+2025-04-28 13:33:13,097 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:13,158 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,218 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,225 - __main__ - DEBUG - Game 1, Step 180: Player 2 chose action 69
+2025-04-28 13:33:13,227 - __main__ - DEBUG - Step 180: Player 3 received reward -0.4
+2025-04-28 13:33:13,269 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:13,313 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,360 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,366 - __main__ - DEBUG - Game 1, Step 181: Player 3 chose action 12
+2025-04-28 13:33:13,368 - __main__ - DEBUG - Step 181: Player 0 received reward -0.4
+2025-04-28 13:33:13,419 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:13,470 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,520 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,528 - __main__ - DEBUG - Game 1, Step 182: Player 0 chose action 65
+2025-04-28 13:33:13,530 - __main__ - DEBUG - Step 182: Player 1 received reward -0.4
+2025-04-28 13:33:13,592 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:13,659 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,743 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,754 - __main__ - DEBUG - Game 1, Step 183: Player 1 chose action 1
+2025-04-28 13:33:13,756 - __main__ - DEBUG - Step 183: Player 2 received reward -0.4
+2025-04-28 13:33:13,810 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:13,865 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:13,933 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:13,942 - __main__ - DEBUG - Game 1, Step 184: Player 2 chose action 31
+2025-04-28 13:33:13,944 - __main__ - DEBUG - Step 184: Player 3 received reward 1
+2025-04-28 13:33:13,996 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,064 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:14,134 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:14,144 - __main__ - DEBUG - Game 1, Step 185: Player 3 chose action 19
+2025-04-28 13:33:14,146 - __main__ - DEBUG - Step 185: Player 0 received reward -0.4
+2025-04-28 13:33:14,206 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,259 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:14,312 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:14,318 - __main__ - DEBUG - Game 1, Step 186: Player 0 chose action 12
+2025-04-28 13:33:14,320 - __main__ - DEBUG - Step 186: Player 1 received reward -0.4
+2025-04-28 13:33:14,374 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,428 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:14,487 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:14,493 - __main__ - DEBUG - Game 1, Step 187: Player 1 chose action 1
+2025-04-28 13:33:14,495 - __main__ - DEBUG - Step 187: Player 2 received reward -0.4
+2025-04-28 13:33:14,538 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,654 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:14,701 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:14,706 - __main__ - DEBUG - Game 1, Step 188: Player 2 chose action 0
+2025-04-28 13:33:14,708 - __main__ - DEBUG - Step 188: Player 3 received reward -0.4
+2025-04-28 13:33:14,745 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,782 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:14,837 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:14,843 - __main__ - DEBUG - Game 1, Step 189: Player 3 chose action 81
+2025-04-28 13:33:14,844 - __main__ - DEBUG - Step 189: Player 0 received reward -0.4
+2025-04-28 13:33:14,894 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:14,946 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,017 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,025 - __main__ - DEBUG - Game 1, Step 190: Player 0 chose action 57
+2025-04-28 13:33:15,027 - __main__ - DEBUG - Step 190: Player 1 received reward -0.4
+2025-04-28 13:33:15,091 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:15,159 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,225 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,234 - __main__ - DEBUG - Game 1, Step 191: Player 1 chose action 0
+2025-04-28 13:33:15,236 - __main__ - DEBUG - Step 191: Player 2 received reward -0.4
+2025-04-28 13:33:15,286 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:15,340 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,392 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,399 - __main__ - DEBUG - Game 1, Step 192: Player 2 chose action 23
+2025-04-28 13:33:15,401 - __main__ - DEBUG - Step 192: Player 3 received reward -0.4
+2025-04-28 13:33:15,457 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:15,528 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,605 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,613 - __main__ - DEBUG - Game 1, Step 193: Player 3 chose action 4
+2025-04-28 13:33:15,616 - __main__ - DEBUG - Step 193: Player 0 received reward -0.4
+2025-04-28 13:33:15,665 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:15,730 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,796 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,803 - __main__ - DEBUG - Game 1, Step 194: Player 0 chose action 25
+2025-04-28 13:33:15,805 - __main__ - DEBUG - Step 194: Player 1 received reward -0.4
+2025-04-28 13:33:15,854 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:15,913 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:15,972 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:15,980 - __main__ - DEBUG - Game 1, Step 195: Player 1 chose action 2
+2025-04-28 13:33:15,982 - __main__ - DEBUG - Step 195: Player 2 received reward -0.4
+2025-04-28 13:33:16,025 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:16,073 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:16,138 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:16,146 - __main__ - DEBUG - Game 1, Step 196: Player 2 chose action 0
+2025-04-28 13:33:16,148 - __main__ - DEBUG - Step 196: Player 3 received reward -0.4
+2025-04-28 13:33:16,183 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:16,238 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:16,290 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:16,298 - __main__ - DEBUG - Game 1, Step 197: Player 3 chose action 57
+2025-04-28 13:33:16,300 - __main__ - DEBUG - Step 197: Player 0 received reward -0.4
+2025-04-28 13:33:16,358 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:16,415 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:16,478 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:16,487 - __main__ - DEBUG - Game 1, Step 198: Player 0 chose action 57
+2025-04-28 13:33:16,488 - __main__ - DEBUG - Step 198: Player 0 received reward -0.4
+2025-04-28 13:33:16,534 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:16,586 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:16,675 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:16,682 - __main__ - DEBUG - Game 1, Step 199: Player 0 chose action 60
+2025-04-28 13:33:16,684 - __main__ - DEBUG - Step 199: Player 1 received reward -0.4
+2025-04-28 13:33:16,751 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:16,820 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:16,897 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:16,908 - __main__ - DEBUG - Game 1, Step 200: Player 1 chose action 12
+2025-04-28 13:33:16,910 - __main__ - DEBUG - Step 200: Player 2 received reward -0.4
+2025-04-28 13:33:16,963 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,033 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,106 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,113 - __main__ - DEBUG - Game 1, Step 201: Player 2 chose action 8
+2025-04-28 13:33:17,115 - __main__ - DEBUG - Step 201: Player 3 received reward -0.4
+2025-04-28 13:33:17,170 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,228 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,288 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,296 - __main__ - DEBUG - Game 1, Step 202: Player 3 chose action 0
+2025-04-28 13:33:17,298 - __main__ - DEBUG - Step 202: Player 0 received reward -0.4
+2025-04-28 13:33:17,349 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,396 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,450 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,457 - __main__ - DEBUG - Game 1, Step 203: Player 0 chose action 2
+2025-04-28 13:33:17,458 - __main__ - DEBUG - Step 203: Player 1 received reward -0.4
+2025-04-28 13:33:17,498 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,539 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,586 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,592 - __main__ - DEBUG - Game 1, Step 204: Player 1 chose action 59
+2025-04-28 13:33:17,593 - __main__ - DEBUG - Step 204: Player 2 received reward -0.4
+2025-04-28 13:33:17,632 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,681 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,724 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,728 - __main__ - DEBUG - Game 1, Step 205: Player 2 chose action 57
+2025-04-28 13:33:17,729 - __main__ - DEBUG - Step 205: Player 2 received reward -0.4
+2025-04-28 13:33:17,765 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,805 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:17,841 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:17,846 - __main__ - DEBUG - Game 1, Step 206: Player 2 chose action 79
+2025-04-28 13:33:17,847 - __main__ - DEBUG - Step 206: Player 3 received reward -0.4
+2025-04-28 13:33:17,886 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:17,939 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:18,005 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:18,015 - __main__ - DEBUG - Game 1, Step 207: Player 3 chose action 57
+2025-04-28 13:33:18,017 - __main__ - DEBUG - Step 207: Player 0 received reward -0.4
+2025-04-28 13:33:18,063 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:18,112 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:18,183 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:18,192 - __main__ - DEBUG - Game 1, Step 208: Player 0 chose action 69
+2025-04-28 13:33:18,194 - __main__ - DEBUG - Step 208: Player 1 received reward -0.4
+2025-04-28 13:33:18,257 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:18,389 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:18,465 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:18,470 - __main__ - DEBUG - Game 1, Step 209: Player 1 chose action 1
+2025-04-28 13:33:18,472 - __main__ - DEBUG - Step 209: Player 2 received reward -0.4
+2025-04-28 13:33:18,529 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:18,589 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:18,656 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:18,664 - __main__ - DEBUG - Game 1, Step 210: Player 2 chose action 20
+2025-04-28 13:33:18,666 - __main__ - DEBUG - Step 210: Player 3 received reward -0.4
+2025-04-28 13:33:18,720 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:18,784 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:18,849 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:18,857 - __main__ - DEBUG - Game 1, Step 211: Player 3 chose action 0
+2025-04-28 13:33:18,859 - __main__ - DEBUG - Step 211: Player 0 received reward -0.4
+2025-04-28 13:33:18,910 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:18,970 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,029 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,036 - __main__ - DEBUG - Game 1, Step 212: Player 0 chose action 2
+2025-04-28 13:33:19,038 - __main__ - DEBUG - Step 212: Player 1 received reward -0.4
+2025-04-28 13:33:19,084 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,133 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,185 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,190 - __main__ - DEBUG - Game 1, Step 213: Player 1 chose action 80
+2025-04-28 13:33:19,191 - __main__ - DEBUG - Step 213: Player 2 received reward -0.4
+2025-04-28 13:33:19,224 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,265 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,301 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,305 - __main__ - DEBUG - Game 1, Step 214: Player 2 chose action 79
+2025-04-28 13:33:19,306 - __main__ - DEBUG - Step 214: Player 3 received reward -0.4
+2025-04-28 13:33:19,357 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,417 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,485 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,492 - __main__ - DEBUG - Game 1, Step 215: Player 3 chose action 57
+2025-04-28 13:33:19,494 - __main__ - DEBUG - Step 215: Player 0 received reward -0.4
+2025-04-28 13:33:19,548 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,602 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,653 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,659 - __main__ - DEBUG - Game 1, Step 216: Player 0 chose action 11
+2025-04-28 13:33:19,661 - __main__ - DEBUG - Step 216: Player 1 received reward -0.4
+2025-04-28 13:33:19,717 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,782 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:19,851 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:19,859 - __main__ - DEBUG - Game 1, Step 217: Player 1 chose action 1
+2025-04-28 13:33:19,861 - __main__ - DEBUG - Step 217: Player 2 received reward -0.4
+2025-04-28 13:33:19,909 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:19,965 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,026 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:20,036 - __main__ - DEBUG - Game 1, Step 218: Player 2 chose action 4
+2025-04-28 13:33:20,038 - __main__ - DEBUG - Step 218: Player 3 received reward -0.4
+2025-04-28 13:33:20,088 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:20,137 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,203 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:20,211 - __main__ - DEBUG - Game 1, Step 219: Player 3 chose action 12
+2025-04-28 13:33:20,212 - __main__ - DEBUG - Step 219: Player 0 received reward -0.4
+2025-04-28 13:33:20,255 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:20,313 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,368 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:20,375 - __main__ - DEBUG - Game 1, Step 220: Player 0 chose action 63
+2025-04-28 13:33:20,377 - __main__ - DEBUG - Step 220: Player 1 received reward -0.4
+2025-04-28 13:33:20,429 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:20,490 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,556 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:20,563 - __main__ - DEBUG - Game 1, Step 221: Player 1 chose action 0
+2025-04-28 13:33:20,565 - __main__ - DEBUG - Step 221: Player 2 received reward -0.4
+2025-04-28 13:33:20,614 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:20,676 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,766 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:20,779 - __main__ - DEBUG - Game 1, Step 222: Player 2 chose action 0
+2025-04-28 13:33:20,782 - __main__ - DEBUG - Step 222: Player 3 received reward -0.4
+2025-04-28 13:33:20,835 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:20,905 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:20,999 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:21,009 - __main__ - DEBUG - Game 1, Step 223: Player 3 chose action 60
+2025-04-28 13:33:21,011 - __main__ - DEBUG - Step 223: Player 3 received reward -0.4
+2025-04-28 13:33:21,058 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:21,120 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:21,195 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:21,205 - __main__ - DEBUG - Game 1, Step 224: Player 3 chose action 61
+2025-04-28 13:33:21,207 - __main__ - DEBUG - Step 224: Player 0 received reward -0.4
+2025-04-28 13:33:21,262 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:21,337 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:21,424 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:21,433 - __main__ - DEBUG - Game 1, Step 225: Player 0 chose action 12
+2025-04-28 13:33:21,435 - __main__ - DEBUG - Step 225: Player 1 received reward -0.4
+2025-04-28 13:33:21,493 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:21,564 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:21,634 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:21,642 - __main__ - DEBUG - Game 1, Step 226: Player 1 chose action 2
+2025-04-28 13:33:21,644 - __main__ - DEBUG - Step 226: Player 2 received reward -0.4
+2025-04-28 13:33:21,700 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:21,760 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:21,824 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:21,832 - __main__ - DEBUG - Game 1, Step 227: Player 2 chose action 4
+2025-04-28 13:33:21,834 - __main__ - DEBUG - Step 227: Player 3 received reward -0.4
+2025-04-28 13:33:21,881 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:21,936 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,005 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,015 - __main__ - DEBUG - Game 1, Step 228: Player 3 chose action 2
+2025-04-28 13:33:22,018 - __main__ - DEBUG - Step 228: Player 0 received reward -0.4
+2025-04-28 13:33:22,065 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:22,118 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,174 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,180 - __main__ - DEBUG - Game 1, Step 229: Player 0 chose action 80
+2025-04-28 13:33:22,182 - __main__ - DEBUG - Step 229: Player 1 received reward -0.4
+2025-04-28 13:33:22,230 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:22,282 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,414 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,420 - __main__ - DEBUG - Game 1, Step 230: Player 1 chose action 57
+2025-04-28 13:33:22,421 - __main__ - DEBUG - Step 230: Player 2 received reward -0.4
+2025-04-28 13:33:22,463 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:22,514 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,558 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,564 - __main__ - DEBUG - Game 1, Step 231: Player 2 chose action 64
+2025-04-28 13:33:22,565 - __main__ - DEBUG - Step 231: Player 3 received reward -0.4
+2025-04-28 13:33:22,621 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:22,687 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,756 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,764 - __main__ - DEBUG - Game 1, Step 232: Player 3 chose action 61
+2025-04-28 13:33:22,766 - __main__ - DEBUG - Step 232: Player 0 received reward -0.4
+2025-04-28 13:33:22,822 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:22,882 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:22,953 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:22,962 - __main__ - DEBUG - Game 1, Step 233: Player 0 chose action 4
+2025-04-28 13:33:22,964 - __main__ - DEBUG - Step 233: Player 1 received reward -0.4
+2025-04-28 13:33:23,012 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,075 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,150 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,158 - __main__ - DEBUG - Game 1, Step 234: Player 1 chose action 7
+2025-04-28 13:33:23,160 - __main__ - DEBUG - Step 234: Player 2 received reward -0.4
+2025-04-28 13:33:23,213 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,270 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,346 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,353 - __main__ - DEBUG - Game 1, Step 235: Player 2 chose action 11
+2025-04-28 13:33:23,355 - __main__ - DEBUG - Step 235: Player 3 received reward -0.4
+2025-04-28 13:33:23,409 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,466 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,529 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,537 - __main__ - DEBUG - Game 1, Step 236: Player 3 chose action 3
+2025-04-28 13:33:23,539 - __main__ - DEBUG - Step 236: Player 0 received reward -0.4
+2025-04-28 13:33:23,586 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,632 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,680 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,687 - __main__ - DEBUG - Game 1, Step 237: Player 0 chose action 0
+2025-04-28 13:33:23,689 - __main__ - DEBUG - Step 237: Player 1 received reward -0.4
+2025-04-28 13:33:23,728 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,762 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,800 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,805 - __main__ - DEBUG - Game 1, Step 238: Player 1 chose action 71
+2025-04-28 13:33:23,807 - __main__ - DEBUG - Step 238: Player 2 received reward -0.4
+2025-04-28 13:33:23,841 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:23,879 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:23,917 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:23,924 - __main__ - DEBUG - Game 1, Step 239: Player 2 chose action 59
+2025-04-28 13:33:23,926 - __main__ - DEBUG - Step 239: Player 3 received reward -0.4
+2025-04-28 13:33:23,976 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:24,082 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:24,174 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:24,186 - __main__ - DEBUG - Game 1, Step 240: Player 3 chose action 61
+2025-04-28 13:33:24,187 - __main__ - DEBUG - Step 240: Player 0 received reward -0.4
+2025-04-28 13:33:24,244 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:24,302 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:24,373 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:24,382 - __main__ - DEBUG - Game 1, Step 241: Player 0 chose action 84
+2025-04-28 13:33:24,384 - __main__ - DEBUG - Step 241: Player 1 received reward -0.4
+2025-04-28 13:33:24,438 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:24,506 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:24,596 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:24,606 - __main__ - DEBUG - Game 1, Step 242: Player 1 chose action 4
+2025-04-28 13:33:24,608 - __main__ - DEBUG - Step 242: Player 2 received reward -0.4
+2025-04-28 13:33:24,674 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:24,751 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:24,828 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:24,838 - __main__ - DEBUG - Game 1, Step 243: Player 2 chose action 4
+2025-04-28 13:33:24,840 - __main__ - DEBUG - Step 243: Player 3 received reward -0.4
+2025-04-28 13:33:24,896 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:24,955 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,014 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,021 - __main__ - DEBUG - Game 1, Step 244: Player 3 chose action 12
+2025-04-28 13:33:25,023 - __main__ - DEBUG - Step 244: Player 0 received reward -0.4
+2025-04-28 13:33:25,066 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:25,123 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,171 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,177 - __main__ - DEBUG - Game 1, Step 245: Player 0 chose action 2
+2025-04-28 13:33:25,178 - __main__ - DEBUG - Step 245: Player 1 received reward -0.4
+2025-04-28 13:33:25,235 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:25,275 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,309 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,314 - __main__ - DEBUG - Game 1, Step 246: Player 1 chose action 75
+2025-04-28 13:33:25,315 - __main__ - DEBUG - Step 246: Player 2 received reward -0.4
+2025-04-28 13:33:25,350 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:25,388 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,459 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,467 - __main__ - DEBUG - Game 1, Step 247: Player 2 chose action 58
+2025-04-28 13:33:25,469 - __main__ - DEBUG - Step 247: Player 3 received reward -0.4
+2025-04-28 13:33:25,527 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:25,605 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,687 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,696 - __main__ - DEBUG - Game 1, Step 248: Player 3 chose action 86
+2025-04-28 13:33:25,697 - __main__ - DEBUG - Step 248: Player 0 received reward -0.4
+2025-04-28 13:33:25,786 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:25,862 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:25,934 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:25,942 - __main__ - DEBUG - Game 1, Step 249: Player 0 chose action 15
+2025-04-28 13:33:25,944 - __main__ - DEBUG - Step 249: Player 1 received reward -0.4
+2025-04-28 13:33:26,015 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:26,105 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:26,201 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:26,212 - __main__ - DEBUG - Game 1, Step 250: Player 1 chose action 12
+2025-04-28 13:33:26,214 - __main__ - DEBUG - Step 250: Player 2 received reward -0.4
+2025-04-28 13:33:26,300 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:26,391 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:26,484 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:26,494 - __main__ - DEBUG - Game 1, Step 251: Player 2 chose action 4
+2025-04-28 13:33:26,497 - __main__ - DEBUG - Step 251: Player 3 received reward -0.4
+2025-04-28 13:33:26,554 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:26,626 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:26,792 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:26,798 - __main__ - DEBUG - Game 1, Step 252: Player 3 chose action 4
+2025-04-28 13:33:26,800 - __main__ - DEBUG - Step 252: Player 0 received reward -0.4
+2025-04-28 13:33:26,852 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:26,908 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:26,973 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:26,981 - __main__ - DEBUG - Game 1, Step 253: Player 0 chose action 61
+2025-04-28 13:33:26,983 - __main__ - DEBUG - Step 253: Player 0 received reward -0.4
+2025-04-28 13:33:27,036 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:27,105 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:27,190 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:27,199 - __main__ - DEBUG - Game 1, Step 254: Player 0 chose action 57
+2025-04-28 13:33:27,201 - __main__ - DEBUG - Step 254: Player 0 received reward -0.4
+2025-04-28 13:33:27,267 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:27,337 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:27,407 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:27,415 - __main__ - DEBUG - Game 1, Step 255: Player 0 chose action 57
+2025-04-28 13:33:27,416 - __main__ - DEBUG - Step 255: Player 1 received reward -0.4
+2025-04-28 13:33:27,478 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:27,547 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:27,627 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:27,636 - __main__ - DEBUG - Game 1, Step 256: Player 1 chose action 0
+2025-04-28 13:33:27,638 - __main__ - DEBUG - Step 256: Player 2 received reward -0.4
+2025-04-28 13:33:27,678 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:27,729 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:27,788 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:27,795 - __main__ - DEBUG - Game 1, Step 257: Player 2 chose action 61
+2025-04-28 13:33:27,796 - __main__ - DEBUG - Step 257: Player 3 received reward -0.4
+2025-04-28 13:33:27,849 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:27,910 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:27,961 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:27,970 - __main__ - DEBUG - Game 1, Step 258: Player 3 chose action 69
+2025-04-28 13:33:27,973 - __main__ - DEBUG - Step 258: Player 0 received reward -0.4
+2025-04-28 13:33:28,033 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,082 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:28,139 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:28,146 - __main__ - DEBUG - Game 1, Step 259: Player 0 chose action 14
+2025-04-28 13:33:28,147 - __main__ - DEBUG - Step 259: Player 1 received reward -0.4
+2025-04-28 13:33:28,194 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,262 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:28,316 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:28,324 - __main__ - DEBUG - Game 1, Step 260: Player 1 chose action 60
+2025-04-28 13:33:28,326 - __main__ - DEBUG - Step 260: Player 2 received reward -0.4
+2025-04-28 13:33:28,376 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,437 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:28,499 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:28,510 - __main__ - DEBUG - Game 1, Step 261: Player 2 chose action 6
+2025-04-28 13:33:28,512 - __main__ - DEBUG - Step 261: Player 3 received reward -0.4
+2025-04-28 13:33:28,562 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,628 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:28,686 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:28,692 - __main__ - DEBUG - Game 1, Step 262: Player 3 chose action 4
+2025-04-28 13:33:28,694 - __main__ - DEBUG - Step 262: Player 0 received reward -0.4
+2025-04-28 13:33:28,740 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,791 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:28,850 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:28,858 - __main__ - DEBUG - Game 1, Step 263: Player 0 chose action 61
+2025-04-28 13:33:28,859 - __main__ - DEBUG - Step 263: Player 0 received reward -0.4
+2025-04-28 13:33:28,904 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:28,955 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,015 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,027 - __main__ - DEBUG - Game 1, Step 264: Player 0 chose action 63
+2025-04-28 13:33:29,029 - __main__ - DEBUG - Step 264: Player 1 received reward -0.4
+2025-04-28 13:33:29,080 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:29,132 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,202 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,209 - __main__ - DEBUG - Game 1, Step 265: Player 1 chose action 6
+2025-04-28 13:33:29,213 - __main__ - DEBUG - Step 265: Player 2 received reward -0.4
+2025-04-28 13:33:29,290 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:29,353 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,421 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,428 - __main__ - DEBUG - Game 1, Step 266: Player 2 chose action 68
+2025-04-28 13:33:29,430 - __main__ - DEBUG - Step 266: Player 3 received reward -0.4
+2025-04-28 13:33:29,506 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:29,565 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,627 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,635 - __main__ - DEBUG - Game 1, Step 267: Player 3 chose action 4
+2025-04-28 13:33:29,637 - __main__ - DEBUG - Step 267: Player 0 received reward -0.4
+2025-04-28 13:33:29,679 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:29,732 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,790 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,797 - __main__ - DEBUG - Game 1, Step 268: Player 0 chose action 1
+2025-04-28 13:33:29,799 - __main__ - DEBUG - Step 268: Player 1 received reward -0.4
+2025-04-28 13:33:29,838 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:29,889 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:29,945 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:29,951 - __main__ - DEBUG - Game 1, Step 269: Player 1 chose action 57
+2025-04-28 13:33:29,953 - __main__ - DEBUG - Step 269: Player 1 received reward -0.4
+2025-04-28 13:33:30,002 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:30,053 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:30,104 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:30,109 - __main__ - DEBUG - Game 1, Step 270: Player 1 chose action 57
+2025-04-28 13:33:30,111 - __main__ - DEBUG - Step 270: Player 2 received reward -0.4
+2025-04-28 13:33:30,150 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:30,208 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:30,309 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:30,319 - __main__ - DEBUG - Game 1, Step 271: Player 2 chose action 0
+2025-04-28 13:33:30,321 - __main__ - DEBUG - Step 271: Player 3 received reward -0.4
+2025-04-28 13:33:30,374 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:30,438 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:30,515 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:30,524 - __main__ - DEBUG - Game 1, Step 272: Player 3 chose action 61
+2025-04-28 13:33:30,525 - __main__ - DEBUG - Step 272: Player 0 received reward -0.4
+2025-04-28 13:33:30,574 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:30,632 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:30,702 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:30,708 - __main__ - DEBUG - Game 1, Step 273: Player 0 chose action 0
+2025-04-28 13:33:30,710 - __main__ - DEBUG - Step 273: Player 1 received reward -0.4
+2025-04-28 13:33:30,768 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:30,898 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:30,964 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:30,972 - __main__ - DEBUG - Game 1, Step 274: Player 1 chose action 4
+2025-04-28 13:33:30,974 - __main__ - DEBUG - Step 274: Player 2 received reward -0.4
+2025-04-28 13:33:31,026 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,088 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,156 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:31,164 - __main__ - DEBUG - Game 1, Step 275: Player 2 chose action 75
+2025-04-28 13:33:31,166 - __main__ - DEBUG - Step 275: Player 3 received reward -0.4
+2025-04-28 13:33:31,215 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,275 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,330 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:31,338 - __main__ - DEBUG - Game 1, Step 276: Player 3 chose action 28
+2025-04-28 13:33:31,340 - __main__ - DEBUG - Step 276: Player 0 received reward -0.4
+2025-04-28 13:33:31,384 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,429 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,486 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:31,493 - __main__ - DEBUG - Game 1, Step 277: Player 0 chose action 62
+2025-04-28 13:33:31,495 - __main__ - DEBUG - Step 277: Player 1 received reward -0.4
+2025-04-28 13:33:31,542 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,613 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,664 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:31,671 - __main__ - DEBUG - Game 1, Step 278: Player 1 chose action 60
+2025-04-28 13:33:31,673 - __main__ - DEBUG - Step 278: Player 2 received reward -0.4
+2025-04-28 13:33:31,716 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,755 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,800 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:31,807 - __main__ - DEBUG - Game 1, Step 279: Player 2 chose action 13
+2025-04-28 13:33:31,809 - __main__ - DEBUG - Step 279: Player 3 received reward -0.4
+2025-04-28 13:33:31,859 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:31,923 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:31,996 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,005 - __main__ - DEBUG - Game 1, Step 280: Player 3 chose action 69
+2025-04-28 13:33:32,007 - __main__ - DEBUG - Step 280: Player 0 received reward -0.4
+2025-04-28 13:33:32,060 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,115 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:32,182 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,189 - __main__ - DEBUG - Game 1, Step 281: Player 0 chose action 12
+2025-04-28 13:33:32,191 - __main__ - DEBUG - Step 281: Player 1 received reward -0.4
+2025-04-28 13:33:32,246 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,321 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:32,399 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,409 - __main__ - DEBUG - Game 1, Step 282: Player 1 chose action 5
+2025-04-28 13:33:32,412 - __main__ - DEBUG - Step 282: Player 2 received reward -0.4
+2025-04-28 13:33:32,473 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,535 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:32,600 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,607 - __main__ - DEBUG - Game 1, Step 283: Player 2 chose action 7
+2025-04-28 13:33:32,608 - __main__ - DEBUG - Step 283: Player 3 received reward -0.4
+2025-04-28 13:33:32,662 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,716 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:32,773 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,779 - __main__ - DEBUG - Game 1, Step 284: Player 3 chose action 32
+2025-04-28 13:33:32,781 - __main__ - DEBUG - Step 284: Player 0 received reward 1
+2025-04-28 13:33:32,818 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,863 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:32,908 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:32,913 - __main__ - DEBUG - Game 1, Step 285: Player 0 chose action 57
+2025-04-28 13:33:32,914 - __main__ - DEBUG - Step 285: Player 1 received reward -0.4
+2025-04-28 13:33:32,950 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:32,984 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:33,027 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:33,031 - __main__ - DEBUG - Game 1, Step 286: Player 1 chose action 82
+2025-04-28 13:33:33,032 - __main__ - DEBUG - Step 286: Player 2 received reward -0.4
+2025-04-28 13:33:33,077 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:33,136 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:33,205 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:33,213 - __main__ - DEBUG - Game 1, Step 287: Player 2 chose action 57
+2025-04-28 13:33:33,215 - __main__ - DEBUG - Step 287: Player 2 received reward -0.4
+2025-04-28 13:33:33,274 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:33,344 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:33,431 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:33,441 - __main__ - DEBUG - Game 1, Step 288: Player 2 chose action 81
+2025-04-28 13:33:33,443 - __main__ - DEBUG - Step 288: Player 3 received reward -0.4
+2025-04-28 13:33:33,513 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:33,603 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:33,686 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:33,697 - __main__ - DEBUG - Game 1, Step 289: Player 3 chose action 0
+2025-04-28 13:33:33,699 - __main__ - DEBUG - Step 289: Player 0 received reward -0.4
+2025-04-28 13:33:33,781 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:33,853 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:33,931 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:33,938 - __main__ - DEBUG - Game 1, Step 290: Player 0 chose action 7
+2025-04-28 13:33:33,940 - __main__ - DEBUG - Step 290: Player 1 received reward -0.4
+2025-04-28 13:33:34,002 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:34,059 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:34,118 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:34,126 - __main__ - DEBUG - Game 1, Step 291: Player 1 chose action 9
+2025-04-28 13:33:34,128 - __main__ - DEBUG - Step 291: Player 2 received reward -0.4
+2025-04-28 13:33:34,185 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:34,265 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:34,347 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:34,356 - __main__ - DEBUG - Game 1, Step 292: Player 2 chose action 7
+2025-04-28 13:33:34,358 - __main__ - DEBUG - Step 292: Player 3 received reward -0.4
+2025-04-28 13:33:34,406 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:34,455 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:34,510 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:34,521 - __main__ - DEBUG - Game 1, Step 293: Player 3 chose action 0
+2025-04-28 13:33:34,524 - __main__ - DEBUG - Step 293: Player 0 received reward -0.4
+2025-04-28 13:33:34,567 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:34,619 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:34,672 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:34,677 - __main__ - DEBUG - Game 1, Step 294: Player 0 chose action 58
+2025-04-28 13:33:34,678 - __main__ - DEBUG - Step 294: Player 0 received reward -0.4
+2025-04-28 13:33:34,725 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:34,767 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:34,829 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:34,837 - __main__ - DEBUG - Game 1, Step 295: Player 0 chose action 57
+2025-04-28 13:33:34,838 - __main__ - DEBUG - Step 295: Player 1 received reward -0.4
+2025-04-28 13:33:34,948 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,010 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:35,072 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:35,080 - __main__ - DEBUG - Game 1, Step 296: Player 1 chose action 83
+2025-04-28 13:33:35,081 - __main__ - DEBUG - Step 296: Player 2 received reward -0.4
+2025-04-28 13:33:35,131 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,184 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:35,256 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:35,265 - __main__ - DEBUG - Game 1, Step 297: Player 2 chose action 17
+2025-04-28 13:33:35,267 - __main__ - DEBUG - Step 297: Player 3 received reward -0.4
+2025-04-28 13:33:35,334 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,409 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:35,484 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:35,494 - __main__ - DEBUG - Game 1, Step 298: Player 3 chose action 4
+2025-04-28 13:33:35,496 - __main__ - DEBUG - Step 298: Player 0 received reward -0.4
+2025-04-28 13:33:35,554 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,616 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:35,686 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:35,695 - __main__ - DEBUG - Game 1, Step 299: Player 0 chose action 1
+2025-04-28 13:33:35,697 - __main__ - DEBUG - Step 299: Player 1 received reward -0.4
+2025-04-28 13:33:35,744 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,799 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:35,862 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:35,870 - __main__ - DEBUG - Game 1, Step 300: Player 1 chose action 1
+2025-04-28 13:33:35,872 - __main__ - DEBUG - Step 300: Player 2 received reward -0.4
+2025-04-28 13:33:35,912 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:35,964 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,024 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,032 - __main__ - DEBUG - Game 1, Step 301: Player 2 chose action 57
+2025-04-28 13:33:36,033 - __main__ - DEBUG - Step 301: Player 2 received reward -0.4
+2025-04-28 13:33:36,079 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:36,130 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,191 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,196 - __main__ - DEBUG - Game 1, Step 302: Player 2 chose action 57
+2025-04-28 13:33:36,198 - __main__ - DEBUG - Step 302: Player 2 received reward -0.4
+2025-04-28 13:33:36,247 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:36,293 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,352 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,361 - __main__ - DEBUG - Game 1, Step 303: Player 2 chose action 65
+2025-04-28 13:33:36,363 - __main__ - DEBUG - Step 303: Player 3 received reward -0.4
+2025-04-28 13:33:36,419 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:36,477 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,538 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,545 - __main__ - DEBUG - Game 1, Step 304: Player 3 chose action 4
+2025-04-28 13:33:36,546 - __main__ - DEBUG - Step 304: Player 0 received reward -0.4
+2025-04-28 13:33:36,581 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:36,638 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,711 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,716 - __main__ - DEBUG - Game 1, Step 305: Player 0 chose action 69
+2025-04-28 13:33:36,718 - __main__ - DEBUG - Step 305: Player 1 received reward -0.4
+2025-04-28 13:33:36,771 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:36,834 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:36,912 - AlphaZero.MCTS - INFO - Running simulation 30/30
+2025-04-28 13:33:36,923 - __main__ - DEBUG - Game 1, Step 306: Player 1 chose action 58
+2025-04-28 13:33:36,925 - __main__ - DEBUG - Step 306: Player 2 received reward -0.4
+2025-04-28 13:33:36,979 - AlphaZero.MCTS - INFO - Running simulation 10/30
+2025-04-28 13:33:37,043 - AlphaZero.MCTS - INFO - Running simulation 20/30
+2025-04-28 13:33:37,121 - AlphaZero.MCTS - INFO - Running simulation 30/30

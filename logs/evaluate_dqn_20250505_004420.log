@@ -1,0 +1,67 @@
+2025-05-05 00:44:20,687 - INFO - Using device: cuda
+2025-05-05 00:44:23,506 - INFO - Loaded DQN model weights from ../splendor/models/dqn_model_final.pth
+2025-05-05 00:44:23,700 - INFO - Loaded Dueling DQN model weights from ../splendor/models/dueling_model_final.pth
+2025-05-05 00:44:23,700 - INFO - 
+=== Starting Model Comparison ===
+2025-05-05 00:44:23,701 - INFO - Starting evaluation of trained DQN model
+2025-05-05 00:44:27,702 - INFO - Episode 1 (DQN): Rewards [29.400000000000006, -2.200000000000003, -2.000000000000002, 27.600000000000016] - Winner Steps: 45 - Winner: 1
+2025-05-05 00:44:31,133 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-05-05 00:44:31,800 - INFO - Episode 2 (DQN): Rewards [46.6, 3.399999999999996, -9.200000000000005, 3.3999999999999977] - Winner Steps: 36 - Winner: 1
+2025-05-05 00:44:32,763 - INFO - Episode 3 (DQN): Rewards [10.399999999999999, 24.600000000000005, 5.1999999999999975, 12.399999999999999] - Winner Steps: 49 - Winner: 2
+2025-05-05 00:44:33,485 - INFO - Episode 4 (DQN): Rewards [8.799999999999999, 35.2, -16.60000000000001, 1.9999999999999964] - Winner Steps: 42 - Winner: 2
+2025-05-05 00:44:34,481 - INFO - Episode 5 (DQN): Rewards [14.400000000000041, -4.000000000000005, 36.20000000000002, -16.800000000000015] - Winner Steps: 73 - Winner: 3
+2025-05-05 00:44:34,970 - INFO - Episode 6 (DQN): Rewards [-1.5999999999999988, 41.0, 4.6, -7.400000000000004] - Winner Steps: 28 - Winner: 2
+2025-05-05 00:44:35,869 - INFO - Episode 7 (DQN): Rewards [-3.800000000000004, 9.599999999999993, 17.399999999999995, -13.000000000000005] - Winner Steps: 62 - Winner: 3
+2025-05-05 00:44:38,235 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-05-05 00:44:39,240 - INFO - Episode 8 (DQN): Rewards [35.0, -1.999999999999996, 4.600000000000035, 25.800000000000008] - Winner Steps: 94 - Winner: 0
+2025-05-05 00:44:39,879 - INFO - Episode 9 (DQN): Rewards [49.00000000000004, -23.99999999999998, -19.799999999999997, -12.800000000000006] - Winner Steps: 60 - Winner: 1
+2025-05-05 00:44:40,573 - INFO - Episode 10 (DQN): Rewards [35.39999999999999, -17.600000000000005, 12.799999999999988, 1.7999999999999865] - Winner Steps: 64 - Winner: 1
+2025-05-05 00:44:40,573 - INFO - DQN Evaluation completed: Avg Rewards: [22.360000000000007, 6.400000000000001, 3.3200000000000025, 2.2999999999999976], Avg Winner Steps: 55.30, Wins: [1, 4, 3, 2]
+2025-05-05 00:44:40,574 - INFO - Starting evaluation of trained Dueling DQN model
+2025-05-05 00:44:41,211 - INFO - Episode 1 (Dueling DQN): Rewards [-0.8000000000000062, 65.80000000000001, -9.400000000000007, 0.20000000000000018] - Winner Steps: 40 - Winner: 2
+2025-05-05 00:44:41,893 - INFO - Episode 2 (Dueling DQN): Rewards [5.999999999999998, -5.600000000000001, -1.0000000000000004, 66.80000000000001] - Winner Steps: 48 - Winner: 0
+2025-05-05 00:44:42,767 - INFO - Episode 3 (Dueling DQN): Rewards [-8.200000000000006, 5.599999999999996, 5.399999999999997, 41.8] - Winner Steps: 54 - Winner: 0
+2025-05-05 00:44:43,715 - INFO - Episode 4 (Dueling DQN): Rewards [36.00000000000001, -1.1999999999999995, -6.000000000000002, -15.000000000000009] - Winner Steps: 53 - Winner: 1
+2025-05-05 00:44:44,742 - INFO - Episode 5 (Dueling DQN): Rewards [43.00000000000004, -26.99999999999997, 95.8, -2.5999999999999988] - Winner Steps: 63 - Winner: 3
+2025-05-05 00:44:45,466 - INFO - Episode 6 (Dueling DQN): Rewards [35.400000000000006, 5.599999999999996, -16.40000000000001, 9.999999999999993] - Winner Steps: 52 - Winner: 1
+2025-05-05 00:44:46,202 - INFO - Episode 7 (Dueling DQN): Rewards [6.19999999999999, 30.400000000000006, -0.39999999999999813, 24.599999999999994] - Winner Steps: 60 - Winner: 2
+2025-05-05 00:44:47,331 - INFO - Episode 8 (Dueling DQN): Rewards [3.799999999999987, 2.3999999999999857, 58.40000000000001, -12.200000000000014] - Winner Steps: 82 - Winner: 3
+2025-05-05 00:44:48,506 - INFO - Episode 9 (Dueling DQN): Rewards [5.200000000000001, 37.60000000000002, 7.6, -0.40000000000000213] - Winner Steps: 70 - Winner: 2
+2025-05-05 00:44:49,268 - INFO - Episode 10 (Dueling DQN): Rewards [-7.000000000000005, -2.55351295663786e-15, -0.4, 65.4] - Winner Steps: 44 - Winner: 0
+2025-05-05 00:44:49,269 - INFO - Dueling DQN Evaluation completed: Avg Rewards: [11.96, 11.360000000000005, 13.36, 17.86], Avg Winner Steps: 56.60, Wins: [3, 2, 3, 2]
+2025-05-05 00:44:49,270 - INFO - 
+=== Starting Head-to-Head Evaluation ===
+2025-05-05 00:44:49,286 - INFO - Starting evaluation of DQN vs Dueling DQN
+2025-05-05 00:44:50,217 - INFO - Episode 1 (DQN vs Dueling DQN): Rewards [16.599999999999987, 43.80000000000005] - Winner Steps: 67 - Winner: 1
+2025-05-05 00:44:52,393 - INFO - Episode 2 (DQN vs Dueling DQN): Rewards [53.600000000000016, 1.7999999999999794] - Winner Steps: 57 - Winner: 1
+2025-05-05 00:44:52,610 - INFO - Episode 3 (DQN vs Dueling DQN): Rewards [44.800000000000004, -16.00000000000001] - Winner Steps: 17 - Winner: 1
+2025-05-05 00:44:53,243 - INFO - Episode 4 (DQN vs Dueling DQN): Rewards [0.19999999999999452, 99.80000000000001] - Winner Steps: 45 - Winner: 0
+2025-05-05 00:44:56,070 - INFO - Episode reached 1000 steps (max limit), discarding and re-evaluating.
+2025-05-05 00:44:57,503 - INFO - Episode 5 (DQN vs Dueling DQN): Rewards [83.20000000000002, -27.399999999999984] - Winner Steps: 41 - Winner: 1
+2025-05-05 00:44:59,163 - INFO - Episode 6 (DQN vs Dueling DQN): Rewards [-31.199999999999953, 13.400000000000073] - Winner Steps: 85 - Winner: 0
+2025-05-05 00:44:59,947 - INFO - Episode 7 (DQN vs Dueling DQN): Rewards [54.19999999999999, -65.79999999999984] - Winner Steps: 68 - Winner: 1
+2025-05-05 00:45:00,265 - INFO - Episode 8 (DQN vs Dueling DQN): Rewards [37.0, 4.999999999999982] - Winner Steps: 26 - Winner: 1
+2025-05-05 00:45:01,284 - INFO - Episode 9 (DQN vs Dueling DQN): Rewards [-5.4000000000000155, 58.2000000000001] - Winner Steps: 79 - Winner: 0
+2025-05-05 00:45:02,246 - INFO - Episode 10 (DQN vs Dueling DQN): Rewards [13.999999999999991, 23.19999999999997] - Winner Steps: 71 - Winner: 0
+2025-05-05 00:45:02,247 - INFO - DQN vs Dueling DQN Evaluation completed: Avg Rewards: [26.7, 13.600000000000033], Avg Winner Steps: 55.60, Wins: [4, 6]
+2025-05-05 00:45:02,248 - INFO - 
+=== Model Comparison Results ===
+2025-05-05 00:45:02,248 - INFO - DQN Model:
+2025-05-05 00:45:02,248 - INFO - - Average Winner Steps: 55.30
+2025-05-05 00:45:02,249 - INFO - - Win Distribution: [1, 4, 3, 2]
+2025-05-05 00:45:02,249 - INFO - - Average Rewards: [22.360000000000007, 6.400000000000001, 3.3200000000000025, 2.2999999999999976]
+2025-05-05 00:45:02,249 - INFO - 
+Dueling DQN Model:
+2025-05-05 00:45:02,250 - INFO - - Average Winner Steps: 56.60
+2025-05-05 00:45:02,250 - INFO - - Win Distribution: [3, 2, 3, 2]
+2025-05-05 00:45:02,250 - INFO - - Average Rewards: [11.96, 11.360000000000005, 13.36, 17.86]
+2025-05-05 00:45:02,250 - INFO - 
+Head-to-Head Results (DQN vs Dueling DQN):
+2025-05-05 00:45:02,251 - INFO - - Average Winner Steps: 55.60
+2025-05-05 00:45:02,251 - INFO - - Win Distribution: [4, 6]
+2025-05-05 00:45:02,251 - INFO - - Average Rewards: [26.7, 13.600000000000033]
+2025-05-05 00:45:02,251 - INFO - 
+Performance Comparison:
+2025-05-05 00:45:02,252 - INFO - - Steps Difference: 1.30 (Positive means Dueling DQN takes more steps)
+2025-05-05 00:45:02,252 - INFO - - Win Rate Difference: [2, -2, 0, 0]
+2025-05-05 00:45:02,252 - INFO - - Head-to-Head Win Rate: DQN: 4, Dueling DQN: 6

@@ -1,0 +1,171 @@
+2025-04-27 17:52:15,786 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-27 17:52:15,786 - __main__ - INFO - Debug mode: False
+2025-04-27 17:52:15,796 - __main__ - INFO - ==================================================
+2025-04-27 17:52:15,796 - __main__ - INFO - OBSERVATION SIZE ANALYSIS
+2025-04-27 17:52:15,797 - __main__ - INFO - ==================================================
+2025-04-27 17:52:15,807 - __main__ - INFO - Observation is a dictionary with 3 keys
+2025-04-27 17:52:15,807 - __main__ - INFO - 
+--- Component: observation ---
+2025-04-27 17:52:15,807 - __main__ - INFO - Type: <class 'dict'>
+2025-04-27 17:52:15,808 - __main__ - INFO - Value: {'tier1': array([[1, 0, 5, 0, 2, 0, 0, 2],
+       [1, 0, 1, 0, 1, 1, 1, 1],
+       [1, 0, 4, 1, 1, 1, 0, 1],
+       [1, 1, 3, 0, 0, 0, 0, 4]], dtype=int32), 'tier2': array([[2, 2, 4, 4, 0, 1, 0, 2],
+       [2, 2, 2, 0, 0, 0, 2, 4],
+       [2, 1, 3, 3, 0, 2, 3, 0],
+       [2, 1, 1, 2, 3, 0, 0, 3]], dtype=int32), 'tier3': array([[3, 4, 2, 0, 3, 0, 6, 3],
+       [3, 3, 4, 5, 3, 3, 0, 3],
+       [3, 5, 3, 0, 7, 3, 0, 0],
+       [3, 4, 4, 0, 0, 0, 0, 7]], dtype=int32), 'tokens': array([7, 7, 7, 7, 7, 5], dtype=int32), 'current_player': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32), 'nobles': array([3, 3, 3, 0, 0, 0, 4, 0, 4, 0, 4, 0, 4, 0, 0, 0, 3, 0, 3, 3, 0, 3,
+       3, 3, 0], dtype=int32), 'action_mask': array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      dtype=int8), 'to_play': 0}
+2025-04-27 17:52:15,810 - __main__ - INFO - Memory: 360 bytes
+2025-04-27 17:52:15,810 - __main__ - INFO - 
+--- Component: action_mask ---
+2025-04-27 17:52:15,810 - __main__ - INFO - Shape: (88,)
+2025-04-27 17:52:15,811 - __main__ - INFO - Data type: int8 (1 bytes per element)
+2025-04-27 17:52:15,811 - __main__ - INFO - Elements: 88
+2025-04-27 17:52:15,811 - __main__ - INFO - Memory: 88 bytes (0.09 KB)
+2025-04-27 17:52:15,812 - __main__ - INFO - 
+--- Component: to_play ---
+2025-04-27 17:52:15,812 - __main__ - INFO - Type: <class 'int'>
+2025-04-27 17:52:15,812 - __main__ - INFO - Value: 0
+2025-04-27 17:52:15,812 - __main__ - INFO - Memory: 24 bytes
+2025-04-27 17:52:15,812 - __main__ - INFO - 
+=== OBSERVATION SIZE SUMMARY ===
+2025-04-27 17:52:15,813 - __main__ - INFO - Total elements: 88
+2025-04-27 17:52:15,813 - __main__ - INFO - Total memory: 472 bytes (0.46 KB)
+2025-04-27 17:52:15,813 - __main__ - INFO - Expected flattened vector size: 92 elements
+2025-04-27 17:52:15,813 - __main__ - INFO - Expected state dimension from formula: (4×3×8) + 6 + (6+5+8×3) + (5×5) = 162
+2025-04-27 17:52:15,813 - __main__ - WARNING - Mismatch between calculated flattened size (92) and formula (162)
+2025-04-27 17:52:15,813 - __main__ - INFO - Reverse calculation of card_feature_dim: (92 - 42) ÷ 15 = 3.3333333333333335
+2025-04-27 17:52:15,814 - __main__ - INFO - ==================================================
+2025-04-27 17:52:15,814 - __main__ - INFO - ==================================================
+2025-04-27 17:52:15,814 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-27 17:52:15,814 - __main__ - INFO - ==================================================
+2025-04-27 17:52:15,814 - __main__ - INFO - Card feature dimension: 8
+2025-04-27 17:52:15,814 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-27 17:52:15,815 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-27 17:52:15,815 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-27 17:52:15,815 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-27 17:52:15,815 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-27 17:52:15,815 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-27 17:52:15,815 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-27 17:52:15,816 - __main__ - INFO - Action dimension: 88
+2025-04-27 17:52:15,816 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-27 17:52:15,816 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-27 17:52:15,816 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-27 17:52:15,816 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-27 17:52:16,116 - __main__ - INFO - Using device: cuda
+2025-04-27 17:52:17,522 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-27 17:52:17,523 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=10
+2025-04-27 17:52:17,523 - __main__ - INFO - ==================================================
+2025-04-27 17:52:17,525 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 1 iterations
+2025-04-27 17:52:17,526 - __main__ - INFO - Starting iteration 1/1
+2025-04-27 17:52:17,526 - __main__ - INFO - Starting self-play phase
+2025-04-27 17:52:17,554 - __main__ - INFO - Starting game 1/3
+2025-04-27 17:53:04,326 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-27 17:53:04,328 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [13, 14, 13, 13], Winners: [1]
+2025-04-27 17:53:04,346 - __main__ - INFO - Starting game 2/3
+2025-04-27 17:53:44,914 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-27 17:53:44,916 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [14, 14, 14, 14], Winners: [0 1 2 3]
+2025-04-27 17:53:44,930 - __main__ - INFO - Starting game 3/3
+2025-04-27 17:54:24,958 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-27 17:54:24,959 - __main__ - INFO - Game 3 completed in 1000 steps. Scores: [13, 3, 14, 14], Winners: [2 3]
+2025-04-27 17:54:24,962 - __main__ - INFO - Self-play phase completed. Average steps: 1000.00, Average rewards: [13.33333333 10.33333333 13.66666667 13.66666667]
+2025-04-27 17:54:24,963 - __main__ - INFO - Starting training phase
+2025-04-27 17:54:24,964 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-27 17:54:24,964 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-27 17:54:24,970 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:24,971 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:24,971 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:24,971 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:24,972 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:24,972 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:24,972 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:24,973 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:24,977 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:24,978 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:24,978 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:24,978 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:24,978 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:24,979 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:24,979 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:24,979 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:24,984 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:24,984 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:24,984 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:24,985 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:24,985 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:24,985 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:24,985 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:24,985 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:24,991 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:24,991 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:24,991 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:24,992 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:24,992 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:24,992 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:24,992 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:24,993 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:24,997 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:24,998 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:24,998 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:24,998 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:24,998 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:24,999 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:24,999 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:24,999 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,004 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:25,004 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:25,004 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:25,005 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:25,005 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:25,005 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:25,005 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:25,006 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,008 - __main__ - WARNING - Inconsistent dimensions in batch: found 92, expected 254
+2025-04-27 17:54:25,011 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:25,011 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:25,012 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:25,012 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:25,012 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:25,012 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:25,012 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:25,013 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,015 - __main__ - WARNING - Inconsistent dimensions in batch: found 92, expected 254
+2025-04-27 17:54:25,018 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:25,018 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:25,018 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:25,019 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:25,019 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:25,019 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:25,019 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:25,019 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,025 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:25,025 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:25,025 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:25,025 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:25,026 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:25,026 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:25,026 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:25,026 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,030 - __main__ - ERROR - DIMENSION MISMATCH: Input features (254) ≠ Network input dim (162)
+2025-04-27 17:54:25,030 - __main__ - ERROR - This means your saved model expects 162 features but your current environment produces 254 features
+2025-04-27 17:54:25,031 - __main__ - ERROR - Current environment seems to have card_feature_dim ≈ (254 - 42) ÷ 15 = 14.133333333333333
+2025-04-27 17:54:25,031 - __main__ - ERROR - Saved model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8.0
+2025-04-27 17:54:25,031 - __main__ - ERROR - You need to either:
+2025-04-27 17:54:25,031 - __main__ - ERROR - 1. Adapt your network to the new input size
+2025-04-27 17:54:25,031 - __main__ - ERROR - 2. Ensure environment produces the same features as when model was trained
+2025-04-27 17:54:25,031 - __main__ - ERROR - Error in training: Input feature dimension mismatch: 254 vs 162
+2025-04-27 17:54:25,032 - __main__ - INFO - Training completed. Average Policy Loss: 0.0000, Average Value Loss: 0.0000, Average Total Loss: 0.0000
+2025-04-27 17:54:25,280 - __main__ - INFO - Model and training state saved at models/alphazero_final.pth
+2025-04-27 17:54:25,557 - __main__ - INFO - Loss history plots saved to plots/alphazero_final_loss_history_20250427_175425.png
+2025-04-27 17:54:25,558 - __main__ - INFO - AlphaZero training completed. Final model saved at models/alphazero_final.pth

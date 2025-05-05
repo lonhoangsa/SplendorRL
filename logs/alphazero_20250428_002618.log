@@ -1,0 +1,549 @@
+2025-04-28 00:26:18,522 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-28 00:26:18,522 - __main__ - INFO - Debug mode: False
+2025-04-28 00:26:18,542 - __main__ - INFO - ==================================================
+2025-04-28 00:26:18,542 - __main__ - INFO - OBSERVATION SIZE ANALYSIS
+2025-04-28 00:26:18,542 - __main__ - INFO - ==================================================
+2025-04-28 00:26:18,553 - __main__ - INFO - Observation is a dictionary with 3 keys
+2025-04-28 00:26:18,553 - __main__ - INFO - 
+--- Component: observation ---
+2025-04-28 00:26:18,554 - __main__ - INFO - Type: <class 'dict'>
+2025-04-28 00:26:18,555 - __main__ - INFO - Value: {'tier1': array([[1, 0, 4, 2, 0, 0, 0, 1],
+       [1, 0, 2, 0, 0, 3, 0, 0],
+       [1, 0, 3, 2, 0, 0, 2, 0],
+       [1, 0, 4, 2, 2, 0, 0, 0]], dtype=int32), 'tier2': array([[2, 2, 4, 4, 0, 1, 0, 2],
+       [2, 2, 5, 2, 1, 4, 0, 0],
+       [2, 1, 2, 3, 0, 0, 2, 2],
+       [2, 2, 2, 0, 0, 0, 3, 5]], dtype=int32), 'tier3': array([[3, 3, 1, 0, 5, 3, 3, 3],
+       [3, 5, 3, 0, 7, 3, 0, 0],
+       [3, 4, 5, 7, 0, 0, 0, 0],
+       [3, 4, 2, 0, 3, 0, 6, 3]], dtype=int32), 'tokens': array([7, 7, 7, 7, 7, 5], dtype=int32), 'current_player': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32), 'nobles': array([0, 4, 0, 4, 0, 4, 0, 4, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 4, 4, 3, 0,
+       3, 0, 3], dtype=int32), 'action_mask': array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      dtype=int8), 'to_play': 0}
+2025-04-28 00:26:18,555 - __main__ - INFO - Memory: 360 bytes
+2025-04-28 00:26:18,555 - __main__ - INFO - 
+--- Component: action_mask ---
+2025-04-28 00:26:18,555 - __main__ - INFO - Shape: (88,)
+2025-04-28 00:26:18,556 - __main__ - INFO - Data type: int8 (1 bytes per element)
+2025-04-28 00:26:18,556 - __main__ - INFO - Elements: 88
+2025-04-28 00:26:18,556 - __main__ - INFO - Memory: 88 bytes (0.09 KB)
+2025-04-28 00:26:18,556 - __main__ - INFO - 
+--- Component: to_play ---
+2025-04-28 00:26:18,556 - __main__ - INFO - Type: <class 'int'>
+2025-04-28 00:26:18,556 - __main__ - INFO - Value: 0
+2025-04-28 00:26:18,557 - __main__ - INFO - Memory: 24 bytes
+2025-04-28 00:26:18,557 - __main__ - INFO - 
+=== OBSERVATION SIZE SUMMARY ===
+2025-04-28 00:26:18,557 - __main__ - INFO - Total elements: 88
+2025-04-28 00:26:18,557 - __main__ - INFO - Total memory: 472 bytes (0.46 KB)
+2025-04-28 00:26:18,557 - __main__ - INFO - Expected flattened vector size: 92 elements
+2025-04-28 00:26:18,557 - __main__ - INFO - Expected state dimension from formula: (4×3×8) + 6 + (6+5+8×3) + (5×5) = 162
+2025-04-28 00:26:18,558 - __main__ - WARNING - Mismatch between calculated flattened size (92) and formula (162)
+2025-04-28 00:26:18,558 - __main__ - INFO - Reverse calculation of card_feature_dim: (92 - 42) ÷ 15 = 3.3333333333333335
+2025-04-28 00:26:18,558 - __main__ - INFO - ==================================================
+2025-04-28 00:26:18,559 - __main__ - INFO - ==================================================
+2025-04-28 00:26:18,559 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-28 00:26:18,559 - __main__ - INFO - ==================================================
+2025-04-28 00:26:18,559 - __main__ - INFO - Card feature dimension: 8
+2025-04-28 00:26:18,560 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-28 00:26:18,560 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-28 00:26:18,560 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-28 00:26:18,560 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-28 00:26:18,560 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-28 00:26:18,561 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-28 00:26:18,561 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-28 00:26:18,561 - __main__ - INFO - Action dimension: 88
+2025-04-28 00:26:18,562 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-28 00:26:18,562 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-28 00:26:18,562 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-28 00:26:18,562 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-28 00:26:18,926 - __main__ - INFO - Using device: cuda
+2025-04-28 00:26:21,063 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-28 00:26:21,063 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=50
+2025-04-28 00:26:21,064 - __main__ - INFO - ==================================================
+2025-04-28 00:26:21,065 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 50 iterations
+2025-04-28 00:26:21,065 - __main__ - INFO - Starting iteration 1/50
+2025-04-28 00:26:21,065 - __main__ - INFO - Starting self-play phase
+2025-04-28 00:26:21,076 - __main__ - INFO - Starting game 1/50
+2025-04-28 00:30:05,776 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:30:05,778 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [14, 14, 14, 13], Winners: [0 1 2]
+2025-04-28 00:30:05,792 - __main__ - INFO - Starting game 2/50
+2025-04-28 00:34:07,144 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:34:07,146 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [13, 14, 14, 12], Winners: [1 2]
+2025-04-28 00:34:07,161 - __main__ - INFO - Starting game 3/50
+2025-04-28 00:38:21,311 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:38:21,313 - __main__ - INFO - Game 3 completed in 1000 steps. Scores: [4, 3, 2, 14], Winners: [3]
+2025-04-28 00:38:21,329 - __main__ - INFO - Starting game 4/50
+2025-04-28 00:41:46,090 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:41:46,092 - __main__ - INFO - Game 4 completed in 1000 steps. Scores: [11, 13, 14, 14], Winners: [2 3]
+2025-04-28 00:41:46,109 - __main__ - INFO - Starting game 5/50
+2025-04-28 00:45:09,608 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:45:09,610 - __main__ - INFO - Game 5 completed in 1000 steps. Scores: [12, 14, 14, 13], Winners: [1 2]
+2025-04-28 00:45:09,624 - __main__ - INFO - Starting game 6/50
+2025-04-28 00:48:41,821 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:48:41,823 - __main__ - INFO - Game 6 completed in 1000 steps. Scores: [11, 12, 13, 14], Winners: [3]
+2025-04-28 00:48:41,840 - __main__ - INFO - Starting game 7/50
+2025-04-28 00:52:03,487 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:52:03,489 - __main__ - INFO - Game 7 completed in 1000 steps. Scores: [14, 13, 15, 14], Winners: [2]
+2025-04-28 00:52:03,504 - __main__ - INFO - Starting game 8/50
+2025-04-28 00:55:27,120 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:55:27,122 - __main__ - INFO - Game 8 completed in 1000 steps. Scores: [14, 14, 14, 3], Winners: [0 1 2]
+2025-04-28 00:55:27,136 - __main__ - INFO - Starting game 9/50
+2025-04-28 00:58:53,797 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 00:58:53,798 - __main__ - INFO - Game 9 completed in 1000 steps. Scores: [14, 4, 14, 14], Winners: [0 2 3]
+2025-04-28 00:58:53,814 - __main__ - INFO - Starting game 10/50
+2025-04-28 01:02:08,091 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:02:08,093 - __main__ - INFO - Game 10 completed in 1000 steps. Scores: [14, 13, 13, 14], Winners: [0 3]
+2025-04-28 01:02:08,110 - __main__ - INFO - Starting game 11/50
+2025-04-28 01:05:29,375 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:05:29,377 - __main__ - INFO - Game 11 completed in 1000 steps. Scores: [11, 14, 14, 14], Winners: [1 2 3]
+2025-04-28 01:05:29,392 - __main__ - INFO - Starting game 12/50
+2025-04-28 01:09:00,450 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:09:00,452 - __main__ - INFO - Game 12 completed in 1000 steps. Scores: [14, 3, 14, 13], Winners: [0 2]
+2025-04-28 01:09:00,465 - __main__ - INFO - Starting game 13/50
+2025-04-28 01:12:30,327 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:12:30,329 - __main__ - INFO - Game 13 completed in 1000 steps. Scores: [14, 16, 14, 14], Winners: [1]
+2025-04-28 01:12:30,341 - __main__ - INFO - Starting game 14/50
+2025-04-28 01:15:59,250 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:15:59,251 - __main__ - INFO - Game 14 completed in 1000 steps. Scores: [12, 6, 14, 14], Winners: [2 3]
+2025-04-28 01:15:59,266 - __main__ - INFO - Starting game 15/50
+2025-04-28 01:19:14,125 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:19:14,127 - __main__ - INFO - Game 15 completed in 1000 steps. Scores: [14, 13, 14, 14], Winners: [0 2 3]
+2025-04-28 01:19:14,143 - __main__ - INFO - Starting game 16/50
+2025-04-28 01:20:39,413 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:20:39,415 - __main__ - INFO - Game 16 completed in 352 steps. Scores: [5, 16, 3, 7], Winners: [1]
+2025-04-28 01:20:39,427 - __main__ - INFO - Starting game 17/50
+2025-04-28 01:24:08,829 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:24:08,831 - __main__ - INFO - Game 17 completed in 1000 steps. Scores: [14, 14, 12, 11], Winners: [0 1]
+2025-04-28 01:24:08,843 - __main__ - INFO - Starting game 18/50
+2025-04-28 01:27:38,014 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:27:38,016 - __main__ - INFO - Game 18 completed in 1000 steps. Scores: [13, 14, 14, 13], Winners: [1 2]
+2025-04-28 01:27:38,030 - __main__ - INFO - Starting game 19/50
+2025-04-28 01:31:16,936 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:31:16,937 - __main__ - INFO - Game 19 completed in 1000 steps. Scores: [13, 13, 14, 14], Winners: [2 3]
+2025-04-28 01:31:16,953 - __main__ - INFO - Starting game 20/50
+2025-04-28 01:34:35,624 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:34:35,625 - __main__ - INFO - Game 20 completed in 1000 steps. Scores: [13, 9, 14, 14], Winners: [2 3]
+2025-04-28 01:34:35,641 - __main__ - INFO - Starting game 21/50
+2025-04-28 01:37:53,708 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:37:53,710 - __main__ - INFO - Game 21 completed in 1000 steps. Scores: [14, 14, 13, 14], Winners: [0 1 3]
+2025-04-28 01:37:53,727 - __main__ - INFO - Starting game 22/50
+2025-04-28 01:41:11,374 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:41:11,376 - __main__ - INFO - Game 22 completed in 1000 steps. Scores: [6, 13, 14, 14], Winners: [2 3]
+2025-04-28 01:41:11,393 - __main__ - INFO - Starting game 23/50
+2025-04-28 01:44:37,556 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:44:37,558 - __main__ - INFO - Game 23 completed in 1000 steps. Scores: [14, 13, 13, 8], Winners: [0]
+2025-04-28 01:44:37,574 - __main__ - INFO - Starting game 24/50
+2025-04-28 01:47:55,797 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:47:55,798 - __main__ - INFO - Game 24 completed in 1000 steps. Scores: [13, 14, 14, 6], Winners: [1 2]
+2025-04-28 01:47:55,816 - __main__ - INFO - Starting game 25/50
+2025-04-28 01:51:22,076 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:51:22,078 - __main__ - INFO - Game 25 completed in 1000 steps. Scores: [12, 13, 14, 14], Winners: [2 3]
+2025-04-28 01:51:22,094 - __main__ - INFO - Starting game 26/50
+2025-04-28 01:54:46,694 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:54:46,697 - __main__ - INFO - Game 26 completed in 1000 steps. Scores: [14, 14, 13, 14], Winners: [0 1 3]
+2025-04-28 01:54:46,714 - __main__ - INFO - Starting game 27/50
+2025-04-28 01:58:13,784 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 01:58:13,786 - __main__ - INFO - Game 27 completed in 1000 steps. Scores: [14, 13, 13, 9], Winners: [0]
+2025-04-28 01:58:13,803 - __main__ - INFO - Starting game 28/50
+2025-04-28 02:01:51,024 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:01:51,027 - __main__ - INFO - Game 28 completed in 1000 steps. Scores: [5, 1, 12, 17], Winners: [3]
+2025-04-28 02:01:51,042 - __main__ - INFO - Starting game 29/50
+2025-04-28 02:05:17,525 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:05:17,527 - __main__ - INFO - Game 29 completed in 1000 steps. Scores: [13, 14, 14, 7], Winners: [1 2]
+2025-04-28 02:05:17,542 - __main__ - INFO - Starting game 30/50
+2025-04-28 02:08:43,465 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:08:43,467 - __main__ - INFO - Game 30 completed in 1000 steps. Scores: [14, 14, 13, 14], Winners: [0 1 3]
+2025-04-28 02:08:43,486 - __main__ - INFO - Starting game 31/50
+2025-04-28 02:12:03,115 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:12:03,117 - __main__ - INFO - Game 31 completed in 1000 steps. Scores: [13, 14, 14, 11], Winners: [1 2]
+2025-04-28 02:12:03,131 - __main__ - INFO - Starting game 32/50
+2025-04-28 02:15:34,534 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:15:34,536 - __main__ - INFO - Game 32 completed in 1000 steps. Scores: [14, 14, 14, 7], Winners: [0 1 2]
+2025-04-28 02:15:34,553 - __main__ - INFO - Starting game 33/50
+2025-04-28 02:19:02,672 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:19:02,674 - __main__ - INFO - Game 33 completed in 1000 steps. Scores: [14, 13, 14, 14], Winners: [0 2 3]
+2025-04-28 02:19:02,690 - __main__ - INFO - Starting game 34/50
+2025-04-28 02:22:15,901 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:22:15,903 - __main__ - INFO - Game 34 completed in 1000 steps. Scores: [4, 14, 14, 14], Winners: [1 2 3]
+2025-04-28 02:22:15,918 - __main__ - INFO - Starting game 35/50
+2025-04-28 02:25:31,381 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:25:31,383 - __main__ - INFO - Game 35 completed in 1000 steps. Scores: [13, 13, 14, 11], Winners: [2]
+2025-04-28 02:25:31,401 - __main__ - INFO - Starting game 36/50
+2025-04-28 02:29:00,341 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:29:00,343 - __main__ - INFO - Game 36 completed in 1000 steps. Scores: [6, 14, 14, 14], Winners: [1 2 3]
+2025-04-28 02:29:00,359 - __main__ - INFO - Starting game 37/50
+2025-04-28 02:32:28,563 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:32:28,565 - __main__ - INFO - Game 37 completed in 1000 steps. Scores: [14, 13, 14, 14], Winners: [0 2 3]
+2025-04-28 02:32:28,583 - __main__ - INFO - Starting game 38/50
+2025-04-28 02:35:48,847 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:35:48,849 - __main__ - INFO - Game 38 completed in 1000 steps. Scores: [14, 14, 14, 14], Winners: [0 1 2 3]
+2025-04-28 02:35:48,865 - __main__ - INFO - Starting game 39/50
+2025-04-28 02:39:14,772 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:39:14,774 - __main__ - INFO - Game 39 completed in 1000 steps. Scores: [14, 13, 13, 8], Winners: [0]
+2025-04-28 02:39:14,788 - __main__ - INFO - Starting game 40/50
+2025-04-28 02:42:44,499 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:42:44,501 - __main__ - INFO - Game 40 completed in 1000 steps. Scores: [7, 8, 14, 14], Winners: [2 3]
+2025-04-28 02:42:44,515 - __main__ - INFO - Starting game 41/50
+2025-04-28 02:46:17,696 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:46:17,698 - __main__ - INFO - Game 41 completed in 1000 steps. Scores: [6, 13, 14, 10], Winners: [2]
+2025-04-28 02:46:17,714 - __main__ - INFO - Starting game 42/50
+2025-04-28 02:49:49,028 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:49:49,030 - __main__ - INFO - Game 42 completed in 1000 steps. Scores: [14, 10, 14, 14], Winners: [0 2 3]
+2025-04-28 02:49:49,048 - __main__ - INFO - Starting game 43/50
+2025-04-28 02:53:07,957 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:53:07,958 - __main__ - INFO - Game 43 completed in 1000 steps. Scores: [14, 14, 14, 13], Winners: [0 1 2]
+2025-04-28 02:53:07,973 - __main__ - INFO - Starting game 44/50
+2025-04-28 02:56:46,808 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 02:56:46,809 - __main__ - INFO - Game 44 completed in 1000 steps. Scores: [14, 4, 14, 14], Winners: [0 2 3]
+2025-04-28 02:56:46,824 - __main__ - INFO - Starting game 45/50
+2025-04-28 03:00:08,618 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:00:08,621 - __main__ - INFO - Game 45 completed in 1000 steps. Scores: [20, 14, 3, 14], Winners: [0]
+2025-04-28 03:00:08,638 - __main__ - INFO - Starting game 46/50
+2025-04-28 03:03:30,039 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:03:30,040 - __main__ - INFO - Game 46 completed in 1000 steps. Scores: [14, 14, 14, 5], Winners: [0 1 2]
+2025-04-28 03:03:30,056 - __main__ - INFO - Starting game 47/50
+2025-04-28 03:07:03,265 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:07:03,267 - __main__ - INFO - Game 47 completed in 1000 steps. Scores: [14, 14, 10, 5], Winners: [0 1]
+2025-04-28 03:07:03,283 - __main__ - INFO - Starting game 48/50
+2025-04-28 03:10:20,774 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:10:20,775 - __main__ - INFO - Game 48 completed in 1000 steps. Scores: [14, 13, 14, 14], Winners: [0 2 3]
+2025-04-28 03:10:20,790 - __main__ - INFO - Starting game 49/50
+2025-04-28 03:13:38,136 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:13:38,138 - __main__ - INFO - Game 49 completed in 1000 steps. Scores: [13, 12, 14, 13], Winners: [2]
+2025-04-28 03:13:38,153 - __main__ - INFO - Starting game 50/50
+2025-04-28 03:16:56,740 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:16:56,742 - __main__ - INFO - Game 50 completed in 1000 steps. Scores: [14, 2, 13, 14], Winners: [0 3]
+2025-04-28 03:16:56,746 - __main__ - INFO - Self-play phase completed. Average steps: 987.04, Average rewards: [12.26 11.9  13.   12.14]
+2025-04-28 03:16:56,747 - __main__ - INFO - Starting training phase
+2025-04-28 03:16:56,747 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 03:16:56,748 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 03:16:56,894 - __main__ - INFO - Epoch 10/10, Policy Loss: 4.0790, Value Loss: 0.3018, Total Loss: 4.3809
+2025-04-28 03:16:56,894 - __main__ - INFO - Training completed. Average Policy Loss: 4.2528, Average Value Loss: 0.5112, Average Total Loss: 4.7640
+2025-04-28 03:16:56,895 - __main__ - INFO - Starting iteration 2/50
+2025-04-28 03:16:56,895 - __main__ - INFO - Starting self-play phase
+2025-04-28 03:16:56,904 - __main__ - INFO - Starting game 1/50
+2025-04-28 03:20:37,597 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:20:37,599 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [14, 3, 8, 4], Winners: [0]
+2025-04-28 03:20:37,614 - __main__ - INFO - Starting game 2/50
+2025-04-28 03:24:33,315 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:24:33,317 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [12, 0, 11, 14], Winners: [3]
+2025-04-28 03:24:33,337 - __main__ - INFO - Starting game 3/50
+2025-04-28 03:28:16,852 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:28:16,854 - __main__ - INFO - Game 3 completed in 1000 steps. Scores: [14, 11, 13, 14], Winners: [0 3]
+2025-04-28 03:28:16,871 - __main__ - INFO - Starting game 4/50
+2025-04-28 03:32:09,339 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:32:09,342 - __main__ - INFO - Game 4 completed in 1000 steps. Scores: [7, 11, 9, 10], Winners: [1]
+2025-04-28 03:32:09,357 - __main__ - INFO - Starting game 5/50
+2025-04-28 03:36:01,112 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:36:01,114 - __main__ - INFO - Game 5 completed in 1000 steps. Scores: [7, 14, 8, 9], Winners: [1]
+2025-04-28 03:36:01,129 - __main__ - INFO - Starting game 6/50
+2025-04-28 03:39:45,926 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:39:45,927 - __main__ - INFO - Game 6 completed in 1000 steps. Scores: [14, 11, 3, 0], Winners: [0]
+2025-04-28 03:39:45,941 - __main__ - INFO - Starting game 7/50
+2025-04-28 03:43:38,567 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:43:38,569 - __main__ - INFO - Game 7 completed in 1000 steps. Scores: [4, 14, 14, 8], Winners: [1 2]
+2025-04-28 03:43:38,587 - __main__ - INFO - Starting game 8/50
+2025-04-28 03:45:55,514 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:45:55,517 - __main__ - INFO - Game 8 completed in 568 steps. Scores: [18, 3, 11, 6], Winners: [0]
+2025-04-28 03:45:55,532 - __main__ - INFO - Starting game 9/50
+2025-04-28 03:49:10,454 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:49:10,457 - __main__ - INFO - Game 9 completed in 845 steps. Scores: [18, 11, 12, 9], Winners: [0]
+2025-04-28 03:49:10,474 - __main__ - INFO - Starting game 10/50
+2025-04-28 03:50:29,924 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:50:29,926 - __main__ - INFO - Game 10 completed in 316 steps. Scores: [2, 5, 12, 15], Winners: [3]
+2025-04-28 03:50:29,942 - __main__ - INFO - Starting game 11/50
+2025-04-28 03:54:18,397 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:54:18,399 - __main__ - INFO - Game 11 completed in 1000 steps. Scores: [3, 14, 13, 14], Winners: [1 3]
+2025-04-28 03:54:18,415 - __main__ - INFO - Starting game 12/50
+2025-04-28 03:58:13,574 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:58:13,576 - __main__ - INFO - Game 12 completed in 1000 steps. Scores: [14, 3, 13, 11], Winners: [0]
+2025-04-28 03:58:13,594 - __main__ - INFO - Starting game 13/50
+2025-04-28 03:59:37,603 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 03:59:37,605 - __main__ - INFO - Game 13 completed in 325 steps. Scores: [4, 15, 6, 1], Winners: [1]
+2025-04-28 03:59:37,617 - __main__ - INFO - Starting game 14/50
+2025-04-28 04:03:19,854 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:03:19,856 - __main__ - INFO - Game 14 completed in 1000 steps. Scores: [13, 14, 12, 14], Winners: [1 3]
+2025-04-28 04:03:19,873 - __main__ - INFO - Starting game 15/50
+2025-04-28 04:07:07,134 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:07:07,136 - __main__ - INFO - Game 15 completed in 1000 steps. Scores: [13, 11, 14, 9], Winners: [2]
+2025-04-28 04:07:07,154 - __main__ - INFO - Starting game 16/50
+2025-04-28 04:11:00,070 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:11:00,072 - __main__ - INFO - Game 16 completed in 1000 steps. Scores: [14, 4, 2, 13], Winners: [0]
+2025-04-28 04:11:00,087 - __main__ - INFO - Starting game 17/50
+2025-04-28 04:13:29,647 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:13:29,650 - __main__ - INFO - Game 17 completed in 610 steps. Scores: [3, 18, 5, 3], Winners: [1]
+2025-04-28 04:13:29,664 - __main__ - INFO - Starting game 18/50
+2025-04-28 04:17:11,480 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:17:11,482 - __main__ - INFO - Game 18 completed in 1000 steps. Scores: [13, 10, 13, 14], Winners: [3]
+2025-04-28 04:17:11,497 - __main__ - INFO - Starting game 19/50
+2025-04-28 04:21:04,916 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:21:04,918 - __main__ - INFO - Game 19 completed in 1000 steps. Scores: [11, 11, 8, 10], Winners: [0 1]
+2025-04-28 04:21:04,934 - __main__ - INFO - Starting game 20/50
+2025-04-28 04:24:50,357 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:24:50,360 - __main__ - INFO - Game 20 completed in 1000 steps. Scores: [4, 4, 17, 13], Winners: [2]
+2025-04-28 04:24:50,375 - __main__ - INFO - Starting game 21/50
+2025-04-28 04:28:32,566 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:28:32,568 - __main__ - INFO - Game 21 completed in 1000 steps. Scores: [12, 3, 17, 14], Winners: [2]
+2025-04-28 04:28:32,588 - __main__ - INFO - Starting game 22/50
+2025-04-28 04:32:11,194 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:32:11,196 - __main__ - INFO - Game 22 completed in 1000 steps. Scores: [7, 14, 5, 14], Winners: [1 3]
+2025-04-28 04:32:11,214 - __main__ - INFO - Starting game 23/50
+2025-04-28 04:35:57,166 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:35:57,167 - __main__ - INFO - Game 23 completed in 1000 steps. Scores: [13, 13, 10, 14], Winners: [3]
+2025-04-28 04:35:57,182 - __main__ - INFO - Starting game 24/50
+2025-04-28 04:40:04,538 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:40:04,540 - __main__ - INFO - Game 24 completed in 1000 steps. Scores: [3, 1, 12, 7], Winners: [2]
+2025-04-28 04:40:04,556 - __main__ - INFO - Starting game 25/50
+2025-04-28 04:43:43,151 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:43:43,152 - __main__ - INFO - Game 25 completed in 1000 steps. Scores: [14, 13, 14, 14], Winners: [0 2 3]
+2025-04-28 04:43:43,170 - __main__ - INFO - Starting game 26/50
+2025-04-28 04:47:33,746 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:47:33,747 - __main__ - INFO - Game 26 completed in 1000 steps. Scores: [13, 10, 13, 14], Winners: [3]
+2025-04-28 04:47:33,764 - __main__ - INFO - Starting game 27/50
+2025-04-28 04:51:21,243 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:51:21,244 - __main__ - INFO - Game 27 completed in 1000 steps. Scores: [13, 13, 7, 10], Winners: [0 1]
+2025-04-28 04:51:21,260 - __main__ - INFO - Starting game 28/50
+2025-04-28 04:55:10,526 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:55:10,528 - __main__ - INFO - Game 28 completed in 1000 steps. Scores: [13, 5, 12, 6], Winners: [0]
+2025-04-28 04:55:10,545 - __main__ - INFO - Starting game 29/50
+2025-04-28 04:59:01,331 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 04:59:01,333 - __main__ - INFO - Game 29 completed in 1000 steps. Scores: [14, 7, 5, 15], Winners: [3]
+2025-04-28 04:59:01,350 - __main__ - INFO - Starting game 30/50
+2025-04-28 05:03:03,515 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:03:03,516 - __main__ - INFO - Game 30 completed in 1000 steps. Scores: [5, 9, 13, 6], Winners: [2]
+2025-04-28 05:03:03,530 - __main__ - INFO - Starting game 31/50
+2025-04-28 05:04:42,511 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:04:42,513 - __main__ - INFO - Game 31 completed in 385 steps. Scores: [18, 2, 4, 1], Winners: [0]
+2025-04-28 05:04:42,528 - __main__ - INFO - Starting game 32/50
+2025-04-28 05:08:25,002 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:08:25,003 - __main__ - INFO - Game 32 completed in 1000 steps. Scores: [8, 14, 5, 1], Winners: [1]
+2025-04-28 05:08:25,018 - __main__ - INFO - Starting game 33/50
+2025-04-28 05:12:15,840 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:12:15,841 - __main__ - INFO - Game 33 completed in 1000 steps. Scores: [14, 14, 14, 9], Winners: [0 1 2]
+2025-04-28 05:12:15,858 - __main__ - INFO - Starting game 34/50
+2025-04-28 05:15:59,217 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:15:59,219 - __main__ - INFO - Game 34 completed in 1000 steps. Scores: [13, 2, 14, 1], Winners: [2]
+2025-04-28 05:15:59,236 - __main__ - INFO - Starting game 35/50
+2025-04-28 05:19:33,409 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:19:33,411 - __main__ - INFO - Game 35 completed in 1000 steps. Scores: [14, 14, 14, 1], Winners: [0 1 2]
+2025-04-28 05:19:33,428 - __main__ - INFO - Starting game 36/50
+2025-04-28 05:23:17,915 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:23:17,916 - __main__ - INFO - Game 36 completed in 1000 steps. Scores: [14, 13, 13, 14], Winners: [0 3]
+2025-04-28 05:23:17,934 - __main__ - INFO - Starting game 37/50
+2025-04-28 05:27:07,668 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:27:07,670 - __main__ - INFO - Game 37 completed in 1000 steps. Scores: [12, 14, 13, 13], Winners: [1]
+2025-04-28 05:27:07,685 - __main__ - INFO - Starting game 38/50
+2025-04-28 05:30:58,157 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:30:58,159 - __main__ - INFO - Game 38 completed in 1000 steps. Scores: [13, 4, 12, 12], Winners: [0]
+2025-04-28 05:30:58,177 - __main__ - INFO - Starting game 39/50
+2025-04-28 05:34:43,793 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:34:43,795 - __main__ - INFO - Game 39 completed in 1000 steps. Scores: [14, 7, 13, 7], Winners: [0]
+2025-04-28 05:34:43,809 - __main__ - INFO - Starting game 40/50
+2025-04-28 05:38:49,827 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:38:49,829 - __main__ - INFO - Game 40 completed in 1000 steps. Scores: [14, 14, 9, 8], Winners: [0 1]
+2025-04-28 05:38:49,872 - __main__ - INFO - Starting game 41/50
+2025-04-28 05:42:44,478 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:42:44,480 - __main__ - INFO - Game 41 completed in 1000 steps. Scores: [14, 4, 9, 6], Winners: [0]
+2025-04-28 05:42:44,496 - __main__ - INFO - Starting game 42/50
+2025-04-28 05:46:29,857 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:46:29,860 - __main__ - INFO - Game 42 completed in 1000 steps. Scores: [13, 14, 9, 14], Winners: [1 3]
+2025-04-28 05:46:29,876 - __main__ - INFO - Starting game 43/50
+2025-04-28 05:49:52,892 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:49:52,894 - __main__ - INFO - Game 43 completed in 1000 steps. Scores: [14, 3, 14, 6], Winners: [0 2]
+2025-04-28 05:49:52,910 - __main__ - INFO - Starting game 44/50
+2025-04-28 05:53:32,306 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:53:32,308 - __main__ - INFO - Game 44 completed in 1000 steps. Scores: [2, 14, 14, 14], Winners: [1 2 3]
+2025-04-28 05:53:32,321 - __main__ - INFO - Starting game 45/50
+2025-04-28 05:57:19,251 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:57:19,253 - __main__ - INFO - Game 45 completed in 1000 steps. Scores: [11, 9, 14, 14], Winners: [2 3]
+2025-04-28 05:57:19,267 - __main__ - INFO - Starting game 46/50
+2025-04-28 05:58:41,674 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:58:53,961 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 05:58:53,963 - __main__ - INFO - Game 46 completed in 368 steps. Scores: [15, 10, 13, 0], Winners: [0]
+2025-04-28 05:58:53,979 - __main__ - INFO - Starting game 47/50
+2025-04-28 06:02:36,556 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:02:36,558 - __main__ - INFO - Game 47 completed in 1000 steps. Scores: [8, 14, 12, 14], Winners: [1 3]
+2025-04-28 06:02:36,572 - __main__ - INFO - Starting game 48/50
+2025-04-28 06:06:23,608 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:06:23,609 - __main__ - INFO - Game 48 completed in 1000 steps. Scores: [13, 14, 11, 3], Winners: [1]
+2025-04-28 06:06:23,626 - __main__ - INFO - Starting game 49/50
+2025-04-28 06:10:11,380 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:10:11,382 - __main__ - INFO - Game 49 completed in 1000 steps. Scores: [14, 14, 5, 13], Winners: [0 1]
+2025-04-28 06:10:11,397 - __main__ - INFO - Starting game 50/50
+2025-04-28 06:13:49,024 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:13:49,026 - __main__ - INFO - Game 50 completed in 1000 steps. Scores: [14, 0, 14, 0], Winners: [0 2]
+2025-04-28 06:13:49,030 - __main__ - INFO - Self-play phase completed. Average steps: 928.34, Average rewards: [11.22  9.38 10.76  9.12]
+2025-04-28 06:13:49,030 - __main__ - INFO - Starting training phase
+2025-04-28 06:13:49,031 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 06:13:49,031 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 06:13:49,103 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.9425, Value Loss: 0.5166, Total Loss: 4.4590
+2025-04-28 06:13:49,103 - __main__ - INFO - Training completed. Average Policy Loss: 3.9692, Average Value Loss: 0.6882, Average Total Loss: 4.6574
+2025-04-28 06:13:49,104 - __main__ - INFO - Starting iteration 3/50
+2025-04-28 06:13:49,104 - __main__ - INFO - Starting self-play phase
+2025-04-28 06:13:49,115 - __main__ - INFO - Starting game 1/50
+2025-04-28 06:17:48,271 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:17:48,272 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [13, 1, 11, 5], Winners: [0]
+2025-04-28 06:17:48,288 - __main__ - INFO - Starting game 2/50
+2025-04-28 06:21:54,826 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:21:54,828 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [2, 4, 13, 9], Winners: [2]
+2025-04-28 06:21:54,843 - __main__ - INFO - Starting game 3/50
+2025-04-28 06:24:10,705 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:24:10,707 - __main__ - INFO - Game 3 completed in 492 steps. Scores: [7, 16, 13, 2], Winners: [1]
+2025-04-28 06:24:10,722 - __main__ - INFO - Starting game 4/50
+2025-04-28 06:28:17,819 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:28:17,821 - __main__ - INFO - Game 4 completed in 1000 steps. Scores: [4, 13, 11, 10], Winners: [1]
+2025-04-28 06:28:17,836 - __main__ - INFO - Starting game 5/50
+2025-04-28 06:32:09,154 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:32:09,155 - __main__ - INFO - Game 5 completed in 1000 steps. Scores: [14, 10, 14, 6], Winners: [0 2]
+2025-04-28 06:32:09,172 - __main__ - INFO - Starting game 6/50
+2025-04-28 06:36:08,636 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:36:08,638 - __main__ - INFO - Game 6 completed in 1000 steps. Scores: [0, 14, 1, 5], Winners: [1]
+2025-04-28 06:36:08,654 - __main__ - INFO - Starting game 7/50
+2025-04-28 06:39:00,892 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:39:00,894 - __main__ - INFO - Game 7 completed in 627 steps. Scores: [1, 19, 13, 5], Winners: [1]
+2025-04-28 06:39:00,911 - __main__ - INFO - Starting game 8/50
+2025-04-28 06:43:09,913 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:43:09,915 - __main__ - INFO - Game 8 completed in 1000 steps. Scores: [7, 3, 5, 13], Winners: [3]
+2025-04-28 06:43:09,930 - __main__ - INFO - Starting game 9/50
+2025-04-28 06:47:11,498 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:47:11,500 - __main__ - INFO - Game 9 completed in 1000 steps. Scores: [14, 10, 4, 3], Winners: [0]
+2025-04-28 06:47:11,518 - __main__ - INFO - Starting game 10/50
+2025-04-28 06:51:06,863 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:51:06,864 - __main__ - INFO - Game 10 completed in 1000 steps. Scores: [13, 14, 14, 2], Winners: [1 2]
+2025-04-28 06:51:06,880 - __main__ - INFO - Starting game 11/50
+2025-04-28 06:55:06,925 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:55:06,927 - __main__ - INFO - Game 11 completed in 1000 steps. Scores: [10, 7, 3, 14], Winners: [3]
+2025-04-28 06:55:06,943 - __main__ - INFO - Starting game 12/50
+2025-04-28 06:59:10,174 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 06:59:10,176 - __main__ - INFO - Game 12 completed in 1000 steps. Scores: [7, 13, 2, 4], Winners: [1]
+2025-04-28 06:59:10,193 - __main__ - INFO - Starting game 13/50
+2025-04-28 07:03:03,641 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:03:03,642 - __main__ - INFO - Game 13 completed in 1000 steps. Scores: [11, 14, 13, 8], Winners: [1]
+2025-04-28 07:03:03,661 - __main__ - INFO - Starting game 14/50
+2025-04-28 07:06:54,467 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:06:54,468 - __main__ - INFO - Game 14 completed in 1000 steps. Scores: [14, 1, 3, 4], Winners: [0]
+2025-04-28 07:06:54,484 - __main__ - INFO - Starting game 15/50
+2025-04-28 07:09:44,290 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:09:44,292 - __main__ - INFO - Game 15 completed in 667 steps. Scores: [17, 2, 4, 10], Winners: [0]
+2025-04-28 07:09:44,309 - __main__ - INFO - Starting game 16/50
+2025-04-28 07:13:46,230 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:13:46,232 - __main__ - INFO - Game 16 completed in 1000 steps. Scores: [7, 11, 3, 14], Winners: [3]
+2025-04-28 07:13:46,250 - __main__ - INFO - Starting game 17/50
+2025-04-28 07:17:45,263 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:17:45,265 - __main__ - INFO - Game 17 completed in 1000 steps. Scores: [11, 1, 12, 2], Winners: [2]
+2025-04-28 07:17:45,281 - __main__ - INFO - Starting game 18/50
+2025-04-28 07:22:03,760 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:22:03,762 - __main__ - INFO - Game 18 completed in 1000 steps. Scores: [7, 3, 12, 11], Winners: [2]
+2025-04-28 07:22:03,779 - __main__ - INFO - Starting game 19/50
+2025-04-28 07:26:08,220 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:26:08,222 - __main__ - INFO - Game 19 completed in 1000 steps. Scores: [7, 7, 4, 6], Winners: [0 1]
+2025-04-28 07:26:08,238 - __main__ - INFO - Starting game 20/50
+2025-04-28 07:30:16,586 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:30:16,587 - __main__ - INFO - Game 20 completed in 1000 steps. Scores: [2, 11, 5, 0], Winners: [1]
+2025-04-28 07:30:16,603 - __main__ - INFO - Starting game 21/50
+2025-04-28 07:34:19,939 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:34:19,941 - __main__ - INFO - Game 21 completed in 1000 steps. Scores: [14, 13, 14, 7], Winners: [0 2]
+2025-04-28 07:34:19,957 - __main__ - INFO - Starting game 22/50
+2025-04-28 07:37:14,789 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:37:14,791 - __main__ - INFO - Game 22 completed in 646 steps. Scores: [2, 5, 1, 16], Winners: [3]
+2025-04-28 07:37:14,809 - __main__ - INFO - Starting game 23/50
+2025-04-28 07:41:14,469 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:41:14,471 - __main__ - INFO - Game 23 completed in 1000 steps. Scores: [2, 13, 2, 14], Winners: [3]
+2025-04-28 07:41:14,488 - __main__ - INFO - Starting game 24/50
+2025-04-28 07:45:19,076 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:45:19,078 - __main__ - INFO - Game 24 completed in 1000 steps. Scores: [5, 1, 11, 13], Winners: [3]
+2025-04-28 07:45:19,096 - __main__ - INFO - Starting game 25/50
+2025-04-28 07:49:20,310 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:49:20,312 - __main__ - INFO - Game 25 completed in 1000 steps. Scores: [6, 14, 4, 5], Winners: [1]
+2025-04-28 07:49:20,331 - __main__ - INFO - Starting game 26/50
+2025-04-28 07:53:25,791 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:53:25,792 - __main__ - INFO - Game 26 completed in 1000 steps. Scores: [13, 3, 6, 1], Winners: [0]
+2025-04-28 07:53:25,808 - __main__ - INFO - Starting game 27/50
+2025-04-28 07:57:20,145 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 07:57:20,147 - __main__ - INFO - Game 27 completed in 1000 steps. Scores: [2, 13, 3, 12], Winners: [1]
+2025-04-28 07:57:20,162 - __main__ - INFO - Starting game 28/50
+2025-04-28 08:00:23,942 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:00:23,944 - __main__ - INFO - Game 28 completed in 689 steps. Scores: [18, 10, 12, 12], Winners: [0]
+2025-04-28 08:00:23,959 - __main__ - INFO - Starting game 29/50
+2025-04-28 08:04:36,036 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:04:36,038 - __main__ - INFO - Game 29 completed in 1000 steps. Scores: [1, 11, 4, 9], Winners: [1]
+2025-04-28 08:04:36,056 - __main__ - INFO - Starting game 30/50
+2025-04-28 08:08:37,900 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:08:37,902 - __main__ - INFO - Game 30 completed in 1000 steps. Scores: [11, 12, 14, 2], Winners: [2]
+2025-04-28 08:08:37,916 - __main__ - INFO - Starting game 31/50
+2025-04-28 08:12:44,027 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:12:44,028 - __main__ - INFO - Game 31 completed in 1000 steps. Scores: [1, 14, 6, 13], Winners: [1]
+2025-04-28 08:12:44,046 - __main__ - INFO - Starting game 32/50
+2025-04-28 08:15:42,511 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:15:42,513 - __main__ - INFO - Game 32 completed in 685 steps. Scores: [14, 16, 0, 3], Winners: [1]
+2025-04-28 08:15:42,529 - __main__ - INFO - Starting game 33/50
+2025-04-28 08:19:51,131 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:19:51,133 - __main__ - INFO - Game 33 completed in 1000 steps. Scores: [15, 8, 14, 8], Winners: [0]
+2025-04-28 08:19:51,151 - __main__ - INFO - Starting game 34/50
+2025-04-28 08:23:50,973 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:23:50,976 - __main__ - INFO - Game 34 completed in 1000 steps. Scores: [2, 14, 3, 5], Winners: [1]
+2025-04-28 08:23:50,989 - __main__ - INFO - Starting game 35/50
+2025-04-28 08:27:56,690 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:27:56,691 - __main__ - INFO - Game 35 completed in 1000 steps. Scores: [14, 10, 9, 0], Winners: [0]
+2025-04-28 08:27:56,707 - __main__ - INFO - Starting game 36/50
+2025-04-28 08:30:05,834 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:30:05,836 - __main__ - INFO - Game 36 completed in 536 steps. Scores: [16, 14, 14, 2], Winners: [0]
+2025-04-28 08:30:05,853 - __main__ - INFO - Starting game 37/50
+2025-04-28 08:34:09,428 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:34:09,430 - __main__ - INFO - Game 37 completed in 1000 steps. Scores: [8, 13, 14, 7], Winners: [2]
+2025-04-28 08:34:09,444 - __main__ - INFO - Starting game 38/50
+2025-04-28 08:37:56,487 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:37:56,489 - __main__ - INFO - Game 38 completed in 1000 steps. Scores: [1, 14, 6, 14], Winners: [1 3]
+2025-04-28 08:37:56,507 - __main__ - INFO - Starting game 39/50
+2025-04-28 08:41:50,422 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:41:50,424 - __main__ - INFO - Game 39 completed in 1000 steps. Scores: [13, 2, 14, 5], Winners: [2]
+2025-04-28 08:41:50,443 - __main__ - INFO - Starting game 40/50
+2025-04-28 08:43:15,493 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:43:15,495 - __main__ - INFO - Game 40 completed in 311 steps. Scores: [15, 0, 2, 0], Winners: [0]
+2025-04-28 08:43:15,513 - __main__ - INFO - Starting game 41/50
+2025-04-28 08:47:19,214 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:47:19,216 - __main__ - INFO - Game 41 completed in 1000 steps. Scores: [6, 4, 8, 6], Winners: [2]
+2025-04-28 08:47:19,229 - __main__ - INFO - Starting game 42/50
+2025-04-28 08:51:29,783 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:51:29,785 - __main__ - INFO - Game 42 completed in 1000 steps. Scores: [13, 11, 12, 3], Winners: [0]
+2025-04-28 08:51:29,801 - __main__ - INFO - Starting game 43/50
+2025-04-28 08:55:38,600 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:55:38,602 - __main__ - INFO - Game 43 completed in 1000 steps. Scores: [7, 9, 1, 14], Winners: [3]
+2025-04-28 08:55:38,617 - __main__ - INFO - Starting game 44/50
+2025-04-28 08:59:38,456 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 08:59:38,457 - __main__ - INFO - Game 44 completed in 1000 steps. Scores: [4, 14, 2, 12], Winners: [1]
+2025-04-28 08:59:38,473 - __main__ - INFO - Starting game 45/50
+2025-04-28 09:03:29,708 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:03:29,710 - __main__ - INFO - Game 45 completed in 1000 steps. Scores: [13, 4, 14, 2], Winners: [2]
+2025-04-28 09:03:29,726 - __main__ - INFO - Starting game 46/50
+2025-04-28 09:05:34,323 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:05:35,964 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:05:35,966 - __main__ - INFO - Game 46 completed in 486 steps. Scores: [2, 16, 2, 12], Winners: [1]
+2025-04-28 09:05:35,981 - __main__ - INFO - Starting game 47/50
+2025-04-28 09:09:37,234 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:09:37,236 - __main__ - INFO - Game 47 completed in 1000 steps. Scores: [2, 14, 3, 13], Winners: [1]
+2025-04-28 09:09:37,250 - __main__ - INFO - Starting game 48/50
+2025-04-28 09:12:58,215 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:12:58,217 - __main__ - INFO - Game 48 completed in 802 steps. Scores: [10, 7, 15, 11], Winners: [2]
+2025-04-28 09:12:58,232 - __main__ - INFO - Starting game 49/50
+2025-04-28 09:17:36,766 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:17:36,768 - __main__ - INFO - Game 49 completed in 1000 steps. Scores: [4, 3, 13, 14], Winners: [3]
+2025-04-28 09:17:36,784 - __main__ - INFO - Starting game 50/50
+2025-04-28 09:22:13,943 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 09:22:13,945 - __main__ - INFO - Game 50 completed in 1000 steps. Scores: [10, 14, 0, 13], Winners: [1]
+2025-04-28 09:22:13,950 - __main__ - INFO - Self-play phase completed. Average steps: 918.82, Average rewards: [8.24 9.4  7.66 7.62]
+2025-04-28 09:22:13,951 - __main__ - INFO - Starting training phase
+2025-04-28 09:22:13,951 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 09:22:13,952 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 09:22:14,067 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.5019, Value Loss: 0.4249, Total Loss: 3.9268
+2025-04-28 09:22:14,068 - __main__ - INFO - Training completed. Average Policy Loss: 3.5640, Average Value Loss: 0.6348, Average Total Loss: 4.1988
+2025-04-28 09:22:14,069 - __main__ - INFO - Starting iteration 4/50
+2025-04-28 09:22:14,070 - __main__ - INFO - Starting self-play phase
+2025-04-28 09:22:14,083 - __main__ - INFO - Starting game 1/50

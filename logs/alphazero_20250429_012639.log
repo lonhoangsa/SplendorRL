@@ -1,0 +1,309 @@
+2025-04-29 01:26:39,202 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-29 01:26:39,202 - __main__ - INFO - Debug mode: True
+2025-04-29 01:26:39,214 - __main__ - INFO - ==================================================
+2025-04-29 01:26:39,214 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-29 01:26:39,214 - __main__ - INFO - ==================================================
+2025-04-29 01:26:39,215 - __main__ - INFO - Card feature dimension: 8
+2025-04-29 01:26:39,215 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-29 01:26:39,215 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-29 01:26:39,215 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-29 01:26:39,217 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-29 01:26:39,217 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-29 01:26:39,217 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-29 01:26:39,217 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-29 01:26:39,217 - __main__ - INFO - Action dimension: 88
+2025-04-29 01:26:39,218 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-29 01:26:39,218 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-29 01:26:39,219 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-29 01:26:39,219 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-29 01:26:39,491 - __main__ - INFO - Using device: cuda
+2025-04-29 01:26:40,827 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-29 01:26:40,827 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=100
+2025-04-29 01:26:40,828 - __main__ - INFO - ==================================================
+2025-04-29 01:26:40,908 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-29 01:26:40,911 - __main__ - INFO - Loaded model from iteration 6
+2025-04-29 01:26:40,913 - __main__ - INFO - Starting AlphaZero training from iteration 7 for 1 iterations
+2025-04-29 01:26:40,913 - __main__ - INFO - Starting iteration 7/7
+2025-04-29 01:26:40,914 - __main__ - INFO - Starting self-play phase
+2025-04-29 01:26:40,914 - __main__ - INFO - Current curriculum stage: {'max_tokens': 4, 'min_score': 5}
+2025-04-29 01:26:40,931 - __main__ - INFO - Starting game 1/20
+2025-04-29 01:26:42,723 - __main__ - DEBUG - Game 1, Step 1: Player 0 chose action 3
+2025-04-29 01:26:43,349 - __main__ - DEBUG - Game 1, Step 2: Player 1 chose action 4
+2025-04-29 01:26:43,792 - __main__ - DEBUG - Game 1, Step 3: Player 2 chose action 0
+2025-04-29 01:26:44,240 - __main__ - DEBUG - Game 1, Step 4: Player 3 chose action 12
+2025-04-29 01:26:44,670 - __main__ - DEBUG - Game 1, Step 5: Player 0 chose action 0
+2025-04-29 01:26:45,168 - __main__ - DEBUG - Game 1, Step 6: Player 1 chose action 0
+2025-04-29 01:26:45,596 - __main__ - DEBUG - Game 1, Step 7: Player 2 chose action 0
+2025-04-29 01:26:46,031 - __main__ - DEBUG - Game 1, Step 8: Player 3 chose action 4
+2025-04-29 01:26:46,488 - __main__ - DEBUG - Game 1, Step 9: Player 0 chose action 0
+2025-04-29 01:26:46,932 - __main__ - DEBUG - Game 1, Step 10: Player 1 chose action 1
+2025-04-29 01:26:47,384 - __main__ - DEBUG - Game 1, Step 11: Player 2 chose action 12
+2025-04-29 01:26:47,847 - __main__ - DEBUG - Game 1, Step 12: Player 3 chose action 4
+2025-04-29 01:26:48,324 - __main__ - DEBUG - Game 1, Step 13: Player 0 chose action 4
+2025-04-29 01:26:48,791 - __main__ - DEBUG - Game 1, Step 14: Player 1 chose action 4
+2025-04-29 01:26:49,257 - __main__ - DEBUG - Game 1, Step 15: Player 2 chose action 5
+2025-04-29 01:26:49,731 - __main__ - DEBUG - Game 1, Step 16: Player 3 chose action 5
+2025-04-29 01:26:50,294 - __main__ - DEBUG - Game 1, Step 17: Player 0 chose action 11
+2025-04-29 01:26:50,779 - __main__ - DEBUG - Game 1, Step 18: Player 1 chose action 3
+2025-04-29 01:26:51,260 - __main__ - DEBUG - Game 1, Step 19: Player 2 chose action 52
+2025-04-29 01:26:51,761 - __main__ - DEBUG - Game 1, Step 20: Player 3 chose action 3
+2025-04-29 01:26:52,346 - __main__ - DEBUG - Game 1, Step 21: Player 0 chose action 4
+2025-04-29 01:26:52,963 - __main__ - DEBUG - Game 1, Step 22: Player 1 chose action 1
+2025-04-29 01:26:53,580 - __main__ - DEBUG - Game 1, Step 23: Player 2 chose action 3
+2025-04-29 01:26:54,204 - __main__ - DEBUG - Game 1, Step 24: Player 3 chose action 53
+2025-04-29 01:26:54,833 - __main__ - DEBUG - Game 1, Step 25: Player 0 chose action 2
+2025-04-29 01:26:55,449 - __main__ - DEBUG - Game 1, Step 26: Player 1 chose action 26
+2025-04-29 01:26:56,085 - __main__ - DEBUG - Game 1, Step 27: Player 2 chose action 3
+2025-04-29 01:26:56,826 - __main__ - DEBUG - Game 1, Step 28: Player 3 chose action 2
+2025-04-29 01:26:57,624 - __main__ - DEBUG - Game 1, Step 29: Player 0 chose action 2
+2025-04-29 01:26:58,308 - __main__ - DEBUG - Game 1, Step 30: Player 1 chose action 47
+2025-04-29 01:26:59,015 - __main__ - DEBUG - Game 1, Step 31: Player 2 chose action 2
+2025-04-29 01:26:59,795 - __main__ - DEBUG - Game 1, Step 32: Player 3 chose action 53
+2025-04-29 01:27:00,541 - __main__ - DEBUG - Game 1, Step 33: Player 0 chose action 49
+2025-04-29 01:27:01,228 - __main__ - DEBUG - Game 1, Step 34: Player 1 chose action 53
+2025-04-29 01:27:01,955 - __main__ - DEBUG - Game 1, Step 35: Player 2 chose action 49
+2025-04-29 01:27:02,760 - __main__ - DEBUG - Game 1, Step 36: Player 3 chose action 2
+2025-04-29 01:27:03,487 - __main__ - DEBUG - Game 1, Step 37: Player 0 chose action 53
+2025-04-29 01:27:04,155 - __main__ - DEBUG - Game 1, Step 38: Player 1 chose action 53
+2025-04-29 01:27:04,826 - __main__ - DEBUG - Game 1, Step 39: Player 2 chose action 32
+2025-04-29 01:27:05,563 - __main__ - DEBUG - Game 1, Step 40: Player 3 chose action 57
+2025-04-29 01:27:06,380 - __main__ - DEBUG - Game 1, Step 41: Player 0 chose action 3
+2025-04-29 01:27:07,167 - __main__ - DEBUG - Game 1, Step 42: Player 1 chose action 0
+2025-04-29 01:27:07,904 - __main__ - DEBUG - Game 1, Step 43: Player 2 chose action 43
+2025-04-29 01:27:08,944 - __main__ - DEBUG - Game 1, Step 44: Player 3 chose action 0
+2025-04-29 01:27:09,705 - __main__ - DEBUG - Game 1, Step 45: Player 0 chose action 57
+2025-04-29 01:27:10,585 - __main__ - DEBUG - Game 1, Step 46: Player 1 chose action 0
+2025-04-29 01:27:11,304 - __main__ - DEBUG - Game 1, Step 47: Player 2 chose action 0
+2025-04-29 01:27:11,997 - __main__ - DEBUG - Game 1, Step 48: Player 3 chose action 72
+2025-04-29 01:27:12,604 - __main__ - DEBUG - Game 1, Step 49: Player 0 chose action 51
+2025-04-29 01:27:13,323 - __main__ - DEBUG - Game 1, Step 50: Player 1 chose action 57
+2025-04-29 01:27:14,074 - __main__ - DEBUG - Game 1, Step 51: Player 2 chose action 2
+2025-04-29 01:27:14,904 - __main__ - DEBUG - Game 1, Step 52: Player 3 chose action 0
+2025-04-29 01:27:15,787 - __main__ - DEBUG - Game 1, Step 53: Player 0 chose action 1
+2025-04-29 01:27:16,646 - __main__ - DEBUG - Game 1, Step 54: Player 1 chose action 3
+2025-04-29 01:27:17,427 - __main__ - DEBUG - Game 1, Step 55: Player 2 chose action 0
+2025-04-29 01:27:18,044 - __main__ - DEBUG - Game 1, Step 56: Player 3 chose action 53
+2025-04-29 01:27:18,646 - __main__ - DEBUG - Game 1, Step 57: Player 0 chose action 61
+2025-04-29 01:27:19,522 - __main__ - DEBUG - Game 1, Step 58: Player 1 chose action 57
+2025-04-29 01:27:20,676 - __main__ - DEBUG - Game 1, Step 59: Player 2 chose action 4
+2025-04-29 01:27:21,893 - __main__ - DEBUG - Game 1, Step 60: Player 3 chose action 0
+2025-04-29 01:27:22,888 - __main__ - DEBUG - Game 1, Step 61: Player 0 chose action 30
+2025-04-29 01:27:23,839 - __main__ - DEBUG - Game 1, Step 62: Player 1 chose action 1
+2025-04-29 01:27:24,706 - __main__ - DEBUG - Game 1, Step 63: Player 2 chose action 26
+2025-04-29 01:27:25,439 - __main__ - DEBUG - Game 1, Step 64: Player 3 chose action 30
+2025-04-29 01:27:26,035 - __main__ - DEBUG - Game 1, Step 65: Player 0 chose action 1
+2025-04-29 01:27:26,655 - __main__ - DEBUG - Game 1, Step 66: Player 1 chose action 57
+2025-04-29 01:27:27,269 - __main__ - DEBUG - Game 1, Step 67: Player 2 chose action 57
+2025-04-29 01:27:28,019 - __main__ - DEBUG - Game 1, Step 68: Player 2 chose action 57
+2025-04-29 01:27:28,848 - __main__ - DEBUG - Game 1, Step 69: Player 3 chose action 0
+2025-04-29 01:27:29,694 - __main__ - DEBUG - Game 1, Step 70: Player 0 chose action 4
+2025-04-29 01:27:30,555 - __main__ - DEBUG - Game 1, Step 71: Player 1 chose action 0
+2025-04-29 01:27:31,443 - __main__ - DEBUG - Game 1, Step 72: Player 2 chose action 4
+2025-04-29 01:27:32,208 - __main__ - DEBUG - Game 1, Step 73: Player 3 chose action 0
+2025-04-29 01:27:33,038 - __main__ - DEBUG - Game 1, Step 74: Player 0 chose action 1
+2025-04-29 01:27:33,767 - __main__ - DEBUG - Game 1, Step 75: Player 1 chose action 60
+2025-04-29 01:27:34,717 - __main__ - DEBUG - Game 1, Step 76: Player 2 chose action 59
+2025-04-29 01:27:35,663 - __main__ - DEBUG - Game 1, Step 77: Player 3 chose action 3
+2025-04-29 01:27:36,508 - __main__ - DEBUG - Game 1, Step 78: Player 0 chose action 2
+2025-04-29 01:27:37,352 - __main__ - DEBUG - Game 1, Step 79: Player 1 chose action 33
+2025-04-29 01:27:38,111 - __main__ - DEBUG - Game 1, Step 80: Player 2 chose action 0
+2025-04-29 01:27:39,049 - __main__ - DEBUG - Game 1, Step 81: Player 3 chose action 0
+2025-04-29 01:27:39,754 - __main__ - DEBUG - Game 1, Step 82: Player 0 chose action 62
+2025-04-29 01:27:40,600 - __main__ - DEBUG - Game 1, Step 83: Player 1 chose action 0
+2025-04-29 01:27:41,527 - __main__ - DEBUG - Game 1, Step 84: Player 2 chose action 57
+2025-04-29 01:27:42,645 - __main__ - DEBUG - Game 1, Step 85: Player 3 chose action 0
+2025-04-29 01:27:43,762 - __main__ - DEBUG - Game 1, Step 86: Player 0 chose action 1
+2025-04-29 01:27:44,814 - __main__ - DEBUG - Game 1, Step 87: Player 1 chose action 1
+2025-04-29 01:27:45,882 - __main__ - DEBUG - Game 1, Step 88: Player 2 chose action 1
+2025-04-29 01:27:46,867 - __main__ - DEBUG - Game 1, Step 89: Player 3 chose action 84
+2025-04-29 01:27:47,880 - __main__ - DEBUG - Game 1, Step 90: Player 0 chose action 2
+2025-04-29 01:27:48,752 - __main__ - DEBUG - Game 1, Step 91: Player 1 chose action 2
+2025-04-29 01:27:49,587 - __main__ - DEBUG - Game 1, Step 92: Player 2 chose action 57
+2025-04-29 01:27:50,588 - __main__ - DEBUG - Game 1, Step 93: Player 3 chose action 0
+2025-04-29 01:27:51,492 - __main__ - DEBUG - Game 1, Step 94: Player 0 chose action 60
+2025-04-29 01:27:52,726 - __main__ - DEBUG - Game 1, Step 95: Player 1 chose action 3
+2025-04-29 01:27:53,833 - __main__ - DEBUG - Game 1, Step 96: Player 2 chose action 30
+2025-04-29 01:27:54,790 - __main__ - DEBUG - Game 1, Step 97: Player 3 chose action 0
+2025-04-29 01:27:55,657 - __main__ - DEBUG - Game 1, Step 98: Player 0 chose action 2
+2025-04-29 01:27:56,416 - __main__ - DEBUG - Game 1, Step 99: Player 1 chose action 31
+2025-04-29 01:27:57,342 - __main__ - DEBUG - Game 1, Step 100: Player 2 chose action 0
+2025-04-29 01:27:58,040 - __main__ - DEBUG - Game 1, Step 101: Player 3 chose action 57
+2025-04-29 01:27:58,748 - __main__ - DEBUG - Game 1, Step 102: Player 0 chose action 83
+2025-04-29 01:27:59,709 - __main__ - DEBUG - Game 1, Step 103: Player 1 chose action 0
+2025-04-29 01:28:00,914 - __main__ - DEBUG - Game 1, Step 104: Player 2 chose action 1
+2025-04-29 01:28:01,957 - __main__ - DEBUG - Game 1, Step 105: Player 3 chose action 26
+2025-04-29 01:28:02,959 - __main__ - DEBUG - Game 1, Step 106: Player 0 chose action 4
+2025-04-29 01:28:03,849 - __main__ - DEBUG - Game 1, Step 107: Player 1 chose action 33
+2025-04-29 01:28:04,726 - __main__ - DEBUG - Game 1, Step 108: Player 2 chose action 1
+2025-04-29 01:28:05,590 - __main__ - DEBUG - Game 1, Step 109: Player 3 chose action 57
+2025-04-29 01:28:06,515 - __main__ - DEBUG - Game 1, Step 110: Player 3 chose action 83
+2025-04-29 01:28:07,301 - __main__ - DEBUG - Game 1, Step 111: Player 0 chose action 0
+2025-04-29 01:28:08,202 - __main__ - DEBUG - Game 1, Step 112: Player 1 chose action 1
+2025-04-29 01:28:09,012 - __main__ - DEBUG - Game 1, Step 113: Player 2 chose action 57
+2025-04-29 01:28:09,930 - __main__ - DEBUG - Game 1, Step 114: Player 3 chose action 1
+2025-04-29 01:28:10,835 - __main__ - DEBUG - Game 1, Step 115: Player 0 chose action 61
+2025-04-29 01:28:11,813 - __main__ - DEBUG - Game 1, Step 116: Player 1 chose action 0
+2025-04-29 01:28:12,828 - __main__ - DEBUG - Game 1, Step 117: Player 2 chose action 1
+2025-04-29 01:28:13,720 - __main__ - DEBUG - Game 1, Step 118: Player 3 chose action 30
+2025-04-29 01:28:14,533 - __main__ - DEBUG - Game 1, Step 119: Player 0 chose action 0
+2025-04-29 01:28:15,241 - __main__ - DEBUG - Game 1, Step 120: Player 1 chose action 4
+2025-04-29 01:28:15,884 - __main__ - DEBUG - Game 1, Step 121: Player 2 chose action 58
+2025-04-29 01:28:16,726 - __main__ - DEBUG - Game 1, Step 122: Player 3 chose action 1
+2025-04-29 01:28:17,703 - __main__ - DEBUG - Game 1, Step 123: Player 0 chose action 57
+2025-04-29 01:28:18,849 - __main__ - DEBUG - Game 1, Step 124: Player 1 chose action 0
+2025-04-29 01:28:19,855 - __main__ - DEBUG - Game 1, Step 125: Player 2 chose action 0
+2025-04-29 01:28:20,748 - __main__ - DEBUG - Game 1, Step 126: Player 3 chose action 0
+2025-04-29 01:28:21,520 - __main__ - DEBUG - Game 1, Step 127: Player 0 chose action 30
+2025-04-29 01:28:22,199 - __main__ - DEBUG - Game 1, Step 128: Player 1 chose action 4
+2025-04-29 01:28:22,954 - __main__ - DEBUG - Game 1, Step 129: Player 2 chose action 57
+2025-04-29 01:28:23,704 - __main__ - DEBUG - Game 1, Step 130: Player 3 chose action 0
+2025-04-29 01:28:24,495 - __main__ - DEBUG - Game 1, Step 131: Player 0 chose action 0
+2025-04-29 01:28:25,380 - __main__ - DEBUG - Game 1, Step 132: Player 1 chose action 74
+2025-04-29 01:28:26,083 - __main__ - DEBUG - Game 1, Step 133: Player 2 chose action 0
+2025-04-29 01:28:26,708 - __main__ - DEBUG - Game 1, Step 134: Player 3 chose action 1
+2025-04-29 01:28:27,366 - __main__ - DEBUG - Game 1, Step 135: Player 0 chose action 4
+2025-04-29 01:28:28,046 - __main__ - DEBUG - Game 1, Step 136: Player 1 chose action 4
+2025-04-29 01:28:28,824 - __main__ - DEBUG - Game 1, Step 137: Player 2 chose action 57
+2025-04-29 01:28:29,883 - __main__ - DEBUG - Game 1, Step 138: Player 3 chose action 57
+2025-04-29 01:28:31,063 - __main__ - DEBUG - Game 1, Step 139: Player 0 chose action 0
+2025-04-29 01:28:32,130 - __main__ - DEBUG - Game 1, Step 140: Player 1 chose action 32
+2025-04-29 01:28:33,073 - __main__ - DEBUG - Game 1, Step 141: Player 2 chose action 34
+2025-04-29 01:28:33,943 - __main__ - DEBUG - Game 1, Step 142: Player 3 chose action 5
+2025-04-29 01:28:34,760 - __main__ - DEBUG - Game 1, Step 143: Player 0 chose action 1
+2025-04-29 01:28:35,552 - __main__ - DEBUG - Game 1, Step 144: Player 1 chose action 1
+2025-04-29 01:28:36,524 - __main__ - DEBUG - Game 1, Step 145: Player 2 chose action 3
+2025-04-29 01:28:37,629 - __main__ - DEBUG - Game 1, Step 146: Player 3 chose action 57
+2025-04-29 01:28:38,697 - __main__ - DEBUG - Game 1, Step 147: Player 3 chose action 57
+2025-04-29 01:28:39,642 - __main__ - DEBUG - Game 1, Step 148: Player 0 chose action 1
+2025-04-29 01:28:40,695 - __main__ - DEBUG - Game 1, Step 149: Player 1 chose action 0
+2025-04-29 01:28:41,669 - __main__ - DEBUG - Game 1, Step 150: Player 2 chose action 0
+2025-04-29 01:28:42,586 - __main__ - DEBUG - Game 1, Step 151: Player 3 chose action 1
+2025-04-29 01:28:43,560 - __main__ - DEBUG - Game 1, Step 152: Player 0 chose action 61
+2025-04-29 01:28:44,454 - __main__ - DEBUG - Game 1, Step 153: Player 1 chose action 3
+2025-04-29 01:28:45,390 - __main__ - DEBUG - Game 1, Step 154: Player 2 chose action 4
+2025-04-29 01:28:46,427 - __main__ - DEBUG - Game 1, Step 155: Player 3 chose action 57
+2025-04-29 01:28:47,558 - __main__ - DEBUG - Game 1, Step 156: Player 0 chose action 1
+2025-04-29 01:28:48,772 - __main__ - DEBUG - Game 1, Step 157: Player 1 chose action 0
+2025-04-29 01:28:49,715 - __main__ - DEBUG - Game 1, Step 158: Player 2 chose action 3
+2025-04-29 01:28:50,770 - __main__ - DEBUG - Game 1, Step 159: Player 3 chose action 87
+2025-04-29 01:28:51,817 - __main__ - DEBUG - Game 1, Step 160: Player 0 chose action 57
+2025-04-29 01:28:52,852 - __main__ - DEBUG - Game 1, Step 161: Player 1 chose action 57
+2025-04-29 01:28:54,305 - __main__ - DEBUG - Game 1, Step 162: Player 2 chose action 0
+2025-04-29 01:28:55,641 - __main__ - DEBUG - Game 1, Step 163: Player 3 chose action 0
+2025-04-29 01:28:56,886 - __main__ - DEBUG - Game 1, Step 164: Player 0 chose action 30
+2025-04-29 01:28:57,988 - __main__ - DEBUG - Game 1, Step 165: Player 1 chose action 2
+2025-04-29 01:28:59,078 - __main__ - DEBUG - Game 1, Step 166: Player 2 chose action 0
+2025-04-29 01:29:00,111 - __main__ - DEBUG - Game 1, Step 167: Player 3 chose action 57
+2025-04-29 01:29:01,165 - __main__ - DEBUG - Game 1, Step 168: Player 0 chose action 0
+2025-04-29 01:29:02,116 - __main__ - DEBUG - Game 1, Step 169: Player 1 chose action 77
+2025-04-29 01:29:02,952 - __main__ - DEBUG - Game 1, Step 170: Player 2 chose action 0
+2025-04-29 01:29:03,703 - __main__ - DEBUG - Game 1, Step 171: Player 3 chose action 3
+2025-04-29 01:29:04,482 - __main__ - DEBUG - Game 1, Step 172: Player 0 chose action 4
+2025-04-29 01:29:05,169 - __main__ - DEBUG - Game 1, Step 173: Player 1 chose action 35
+2025-04-29 01:29:05,883 - __main__ - DEBUG - Game 1, Step 174: Player 2 chose action 57
+2025-04-29 01:29:06,812 - __main__ - DEBUG - Game 1, Step 175: Player 3 chose action 57
+2025-04-29 01:29:07,645 - __main__ - DEBUG - Game 1, Step 176: Player 0 chose action 2
+2025-04-29 01:29:08,441 - __main__ - DEBUG - Game 1, Step 177: Player 1 chose action 2
+2025-04-29 01:29:09,274 - __main__ - DEBUG - Game 1, Step 178: Player 2 chose action 0
+2025-04-29 01:29:10,079 - __main__ - DEBUG - Game 1, Step 179: Player 3 chose action 0
+2025-04-29 01:29:10,811 - __main__ - DEBUG - Game 1, Step 180: Player 0 chose action 62
+2025-04-29 01:29:11,676 - __main__ - DEBUG - Game 1, Step 181: Player 1 chose action 0
+2025-04-29 01:29:12,656 - __main__ - DEBUG - Game 1, Step 182: Player 2 chose action 57
+2025-04-29 01:29:13,753 - __main__ - DEBUG - Game 1, Step 183: Player 3 chose action 57
+2025-04-29 01:29:14,790 - __main__ - DEBUG - Game 1, Step 184: Player 0 chose action 0
+2025-04-29 01:29:15,818 - __main__ - DEBUG - Game 1, Step 185: Player 1 chose action 0
+2025-04-29 01:29:16,909 - __main__ - DEBUG - Game 1, Step 186: Player 2 chose action 0
+2025-04-29 01:29:17,895 - __main__ - DEBUG - Game 1, Step 187: Player 3 chose action 26
+2025-04-29 01:29:18,933 - __main__ - DEBUG - Game 1, Step 188: Player 0 chose action 87
+2025-04-29 01:29:19,891 - __main__ - DEBUG - Game 1, Step 189: Player 1 chose action 30
+2025-04-29 01:29:20,718 - __main__ - DEBUG - Game 1, Step 190: Player 2 chose action 76
+2025-04-29 01:29:21,609 - __main__ - DEBUG - Game 1, Step 191: Player 3 chose action 57
+2025-04-29 01:29:22,315 - __main__ - DEBUG - Game 1, Step 192: Player 3 chose action 58
+2025-04-29 01:29:23,035 - __main__ - DEBUG - Game 1, Step 193: Player 0 chose action 9
+2025-04-29 01:29:23,949 - __main__ - DEBUG - Game 1, Step 194: Player 1 chose action 0
+2025-04-29 01:29:24,839 - __main__ - DEBUG - Game 1, Step 195: Player 2 chose action 0
+2025-04-29 01:29:25,613 - __main__ - DEBUG - Game 1, Step 196: Player 3 chose action 0
+2025-04-29 01:29:26,449 - __main__ - DEBUG - Game 1, Step 197: Player 0 chose action 58
+2025-04-29 01:29:27,164 - __main__ - DEBUG - Game 1, Step 198: Player 0 chose action 74
+2025-04-29 01:29:27,838 - __main__ - DEBUG - Game 1, Step 199: Player 1 chose action 4
+2025-04-29 01:29:28,609 - __main__ - DEBUG - Game 1, Step 200: Player 2 chose action 0
+2025-04-29 01:29:29,475 - __main__ - DEBUG - Game 1, Step 201: Player 3 chose action 57
+2025-04-29 01:29:30,330 - __main__ - DEBUG - Game 1, Step 202: Player 0 chose action 1
+2025-04-29 01:29:31,187 - __main__ - DEBUG - Game 1, Step 203: Player 1 chose action 4
+2025-04-29 01:29:32,216 - __main__ - DEBUG - Game 1, Step 204: Player 2 chose action 0
+2025-04-29 01:29:33,381 - __main__ - DEBUG - Game 1, Step 205: Player 3 chose action 0
+2025-04-29 01:29:34,484 - __main__ - DEBUG - Game 1, Step 206: Player 0 chose action 0
+2025-04-29 01:29:35,819 - __main__ - DEBUG - Game 1, Step 207: Player 1 chose action 1
+2025-04-29 01:29:37,077 - __main__ - DEBUG - Game 1, Step 208: Player 2 chose action 57
+2025-04-29 01:29:38,444 - __main__ - DEBUG - Game 1, Step 209: Player 3 chose action 57
+2025-04-29 01:29:39,722 - __main__ - DEBUG - Game 1, Step 210: Player 0 chose action 0
+2025-04-29 01:29:40,967 - __main__ - DEBUG - Game 1, Step 211: Player 1 chose action 0
+2025-04-29 01:29:42,170 - __main__ - DEBUG - Game 1, Step 212: Player 2 chose action 30
+2025-04-29 01:29:43,160 - __main__ - DEBUG - Game 1, Step 213: Player 3 chose action 3
+2025-04-29 01:29:44,150 - __main__ - DEBUG - Game 1, Step 214: Player 0 chose action 82
+2025-04-29 01:29:45,287 - __main__ - DEBUG - Game 1, Step 215: Player 1 chose action 0
+2025-04-29 01:29:46,316 - __main__ - DEBUG - Game 1, Step 216: Player 2 chose action 0
+2025-04-29 01:29:47,354 - __main__ - DEBUG - Game 1, Step 217: Player 3 chose action 58
+2025-04-29 01:29:48,523 - __main__ - DEBUG - Game 1, Step 218: Player 0 chose action 1
+2025-04-29 01:29:49,721 - __main__ - DEBUG - Game 1, Step 219: Player 1 chose action 3
+2025-04-29 01:29:50,790 - __main__ - DEBUG - Game 1, Step 220: Player 2 chose action 56
+2025-04-29 01:29:51,727 - __main__ - DEBUG - Game 1, Step 221: Player 3 chose action 0
+2025-04-29 01:29:52,450 - __main__ - DEBUG - Game 1, Step 222: Player 0 chose action 32
+2025-04-29 01:29:53,111 - __main__ - DEBUG - Game 1, Step 223: Player 1 chose action 75
+2025-04-29 01:29:53,759 - __main__ - DEBUG - Game 1, Step 224: Player 2 chose action 0
+2025-04-29 01:29:54,601 - __main__ - DEBUG - Game 1, Step 225: Player 3 chose action 57
+2025-04-29 01:29:55,546 - __main__ - DEBUG - Game 1, Step 226: Player 0 chose action 1
+2025-04-29 01:29:56,317 - __main__ - DEBUG - Game 1, Step 227: Player 1 chose action 2
+2025-04-29 01:29:57,084 - __main__ - DEBUG - Game 1, Step 228: Player 2 chose action 49
+2025-04-29 01:29:58,037 - __main__ - DEBUG - Game 1, Step 229: Player 3 chose action 0
+2025-04-29 01:29:58,895 - __main__ - DEBUG - Game 1, Step 230: Player 0 chose action 1
+2025-04-29 01:29:59,822 - __main__ - DEBUG - Game 1, Step 231: Player 1 chose action 12
+2025-04-29 01:30:00,879 - __main__ - DEBUG - Game 1, Step 232: Player 2 chose action 33
+2025-04-29 01:30:01,818 - __main__ - DEBUG - Game 1, Step 233: Player 3 chose action 57
+2025-04-29 01:30:02,783 - __main__ - DEBUG - Game 1, Step 234: Player 0 chose action 0
+2025-04-29 01:30:03,556 - __main__ - DEBUG - Game 1, Step 235: Player 1 chose action 57
+2025-04-29 01:30:04,759 - __main__ - DEBUG - Game 1, Step 236: Player 2 chose action 0
+2025-04-29 01:30:06,043 - __main__ - DEBUG - Game 1, Step 237: Player 3 chose action 0
+2025-04-29 01:30:07,140 - __main__ - DEBUG - Game 1, Step 238: Player 0 chose action 0
+2025-04-29 01:30:08,439 - __main__ - DEBUG - Game 1, Step 239: Player 1 chose action 31
+2025-04-29 01:30:09,568 - __main__ - DEBUG - Game 1, Step 240: Player 2 chose action 2
+2025-04-29 01:30:10,798 - __main__ - DEBUG - Game 1, Step 241: Player 3 chose action 57
+2025-04-29 01:30:12,074 - __main__ - DEBUG - Game 1, Step 242: Player 0 chose action 57
+2025-04-29 01:30:13,304 - __main__ - DEBUG - Game 1, Step 243: Player 1 chose action 0
+2025-04-29 01:30:14,473 - __main__ - DEBUG - Game 1, Step 244: Player 2 chose action 0
+2025-04-29 01:30:15,613 - __main__ - DEBUG - Game 1, Step 245: Player 3 chose action 30
+2025-04-29 01:30:16,606 - __main__ - DEBUG - Game 1, Step 246: Player 0 chose action 3
+2025-04-29 01:30:17,523 - __main__ - DEBUG - Game 1, Step 247: Player 1 chose action 3
+2025-04-29 01:30:18,693 - __main__ - DEBUG - Game 1, Step 248: Player 2 chose action 57
+2025-04-29 01:30:19,796 - __main__ - DEBUG - Game 1, Step 249: Player 3 chose action 0
+2025-04-29 01:30:20,594 - __main__ - DEBUG - Game 1, Step 250: Player 0 chose action 57
+2025-04-29 01:30:21,351 - __main__ - DEBUG - Game 1, Step 251: Player 1 chose action 75
+2025-04-29 01:30:22,340 - __main__ - DEBUG - Game 1, Step 252: Player 2 chose action 0
+2025-04-29 01:30:23,254 - __main__ - DEBUG - Game 1, Step 253: Player 3 chose action 0
+2025-04-29 01:30:24,034 - __main__ - DEBUG - Game 1, Step 254: Player 0 chose action 2
+2025-04-29 01:30:24,901 - __main__ - DEBUG - Game 1, Step 255: Player 1 chose action 3
+2025-04-29 01:30:25,865 - __main__ - DEBUG - Game 1, Step 256: Player 2 chose action 57
+2025-04-29 01:30:26,823 - __main__ - DEBUG - Game 1, Step 257: Player 3 chose action 0
+2025-04-29 01:30:27,632 - __main__ - DEBUG - Game 1, Step 258: Player 0 chose action 83
+2025-04-29 01:30:28,711 - __main__ - DEBUG - Game 1, Step 259: Player 1 chose action 1
+2025-04-29 01:30:29,764 - __main__ - DEBUG - Game 1, Step 260: Player 2 chose action 1
+2025-04-29 01:30:30,695 - __main__ - DEBUG - Game 1, Step 261: Player 3 chose action 3
+2025-04-29 01:30:31,559 - __main__ - DEBUG - Game 1, Step 262: Player 0 chose action 30
+2025-04-29 01:30:32,201 - __main__ - DEBUG - Game 1, Step 263: Player 1 chose action 33
+2025-04-29 01:30:32,978 - __main__ - DEBUG - Game 1, Step 264: Player 2 chose action 57
+2025-04-29 01:30:33,808 - __main__ - DEBUG - Game 1, Step 265: Player 3 chose action 57
+2025-04-29 01:30:34,620 - __main__ - DEBUG - Game 1, Step 266: Player 0 chose action 0
+2025-04-29 01:30:35,461 - __main__ - DEBUG - Game 1, Step 267: Player 1 chose action 0
+2025-04-29 01:30:36,354 - __main__ - DEBUG - Game 1, Step 268: Player 2 chose action 2
+2025-04-29 01:30:37,279 - __main__ - DEBUG - Game 1, Step 269: Player 3 chose action 2
+2025-04-29 01:30:38,106 - __main__ - DEBUG - Game 1, Step 270: Player 0 chose action 30
+2025-04-29 01:30:38,771 - __main__ - DEBUG - Game 1, Step 271: Player 1 chose action 0
+2025-04-29 01:30:39,502 - __main__ - DEBUG - Game 1, Step 272: Player 2 chose action 71
+2025-04-29 01:30:40,293 - __main__ - DEBUG - Game 1, Step 273: Player 3 chose action 78
+2025-04-29 01:30:41,068 - __main__ - DEBUG - Game 1, Step 274: Player 0 chose action 4
+2025-04-29 01:30:41,799 - __main__ - DEBUG - Game 1, Step 275: Player 1 chose action 57
+2025-04-29 01:30:42,570 - __main__ - DEBUG - Game 1, Step 276: Player 2 chose action 3
+2025-04-29 01:30:43,287 - __main__ - DEBUG - Game 1, Step 277: Player 3 chose action 22

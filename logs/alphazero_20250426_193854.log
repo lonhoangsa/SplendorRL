@@ -1,0 +1,19 @@
+2025-04-26 19:38:54,222 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-26 19:38:54,223 - __main__ - INFO - Debug mode: False
+2025-04-26 19:38:55,438 - __main__ - INFO - Using device: cuda
+2025-04-26 19:39:00,439 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-26 19:39:00,441 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=20000, num_simulations=50
+2025-04-26 19:39:00,446 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 1 iterations
+2025-04-26 19:39:00,447 - __main__ - INFO - Starting iteration 1/1
+2025-04-26 19:39:00,448 - __main__ - INFO - Starting self-play phase
+2025-04-26 19:39:00,483 - __main__ - INFO - Starting game 1/2
+2025-04-26 19:43:48,979 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 19:43:48,980 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [12, 13, 12, 14], Winners: [3]
+2025-04-26 19:43:48,998 - __main__ - INFO - Starting game 2/2
+2025-04-26 19:47:01,927 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 19:47:01,928 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [14, 0, 14, 14], Winners: [0 2 3]
+2025-04-26 19:47:01,931 - __main__ - INFO - Self-play phase completed. Average steps: 1000.00, Average rewards: [13.   6.5 13.  14. ]
+2025-04-26 19:47:01,932 - __main__ - INFO - Starting training phase
+2025-04-26 19:47:01,932 - __main__ - WARNING - Buffer size (2000) less than batch size (2048). Skipping training.
+2025-04-26 19:47:02,108 - __main__ - INFO - Model and training state saved at models/alphazero_final.pth
+2025-04-26 19:47:02,108 - __main__ - INFO - AlphaZero training completed. Final model saved at models/alphazero_final.pth

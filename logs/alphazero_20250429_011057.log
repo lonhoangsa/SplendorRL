@@ -1,0 +1,910 @@
+2025-04-29 01:10:57,027 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-29 01:10:57,027 - __main__ - INFO - Debug mode: True
+2025-04-29 01:10:57,037 - __main__ - INFO - ==================================================
+2025-04-29 01:10:57,037 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-29 01:10:57,037 - __main__ - INFO - ==================================================
+2025-04-29 01:10:57,038 - __main__ - INFO - Card feature dimension: 8
+2025-04-29 01:10:57,038 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-29 01:10:57,038 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-29 01:10:57,038 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-29 01:10:57,039 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-29 01:10:57,039 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-29 01:10:57,039 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-29 01:10:57,040 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-29 01:10:57,040 - __main__ - INFO - Action dimension: 88
+2025-04-29 01:10:57,040 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-29 01:10:57,040 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-29 01:10:57,041 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-29 01:10:57,041 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-29 01:10:57,201 - __main__ - INFO - Using device: cuda
+2025-04-29 01:10:58,215 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-29 01:10:58,216 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=100
+2025-04-29 01:10:58,216 - __main__ - INFO - ==================================================
+2025-04-29 01:10:58,287 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-29 01:10:58,290 - __main__ - INFO - Loaded model from iteration 6
+2025-04-29 01:10:58,292 - __main__ - INFO - Starting AlphaZero training from iteration 7 for 1 iterations
+2025-04-29 01:10:58,292 - __main__ - INFO - Starting iteration 7/7
+2025-04-29 01:10:58,292 - __main__ - INFO - Starting self-play phase
+2025-04-29 01:10:58,293 - __main__ - INFO - Current curriculum stage: {'max_tokens': 4, 'min_score': 5}
+2025-04-29 01:10:58,303 - __main__ - INFO - Starting game 1/20
+2025-04-29 01:10:59,492 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:10:59,552 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:10:59,615 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:10:59,679 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:10:59,747 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:10:59,821 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:10:59,881 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:10:59,938 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:00,024 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:00,084 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:00,094 - __main__ - DEBUG - Game 1, Step 1: Player 0 chose action 0
+2025-04-29 01:11:00,136 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:00,187 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:00,248 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:00,319 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:00,387 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:00,461 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:00,526 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:00,598 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:00,655 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:00,707 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:00,714 - __main__ - DEBUG - Game 1, Step 2: Player 1 chose action 0
+2025-04-29 01:11:00,753 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:00,790 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:00,839 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:00,892 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:00,941 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:00,990 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:01,047 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:01,105 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:01,160 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:01,230 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:01,237 - __main__ - DEBUG - Game 1, Step 3: Player 2 chose action 0
+2025-04-29 01:11:01,275 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:01,313 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:01,359 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:01,409 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:01,462 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:01,507 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:01,563 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:01,620 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:01,674 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:01,721 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:01,726 - __main__ - DEBUG - Game 1, Step 4: Player 3 chose action 1
+2025-04-29 01:11:01,763 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:01,801 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:01,847 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:01,899 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:01,954 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:02,002 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:02,060 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:02,118 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:02,170 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:02,220 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:02,225 - __main__ - DEBUG - Game 1, Step 5: Player 0 chose action 4
+2025-04-29 01:11:02,265 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:02,302 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:02,352 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:02,402 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:02,528 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:02,578 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:02,631 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:02,692 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:02,751 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:02,805 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:02,811 - __main__ - DEBUG - Game 1, Step 6: Player 1 chose action 6
+2025-04-29 01:11:02,849 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:02,886 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:02,931 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:02,980 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:03,042 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:03,093 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:03,144 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:03,207 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:03,261 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:03,310 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:03,317 - __main__ - DEBUG - Game 1, Step 7: Player 2 chose action 4
+2025-04-29 01:11:03,352 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:03,391 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:03,442 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:03,488 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:03,541 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:03,600 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:03,649 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:03,698 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:03,755 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:03,808 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:03,814 - __main__ - DEBUG - Game 1, Step 8: Player 3 chose action 4
+2025-04-29 01:11:03,852 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:03,890 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:03,937 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:03,988 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:04,040 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:04,092 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:04,149 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:04,202 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:04,250 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:04,301 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:04,307 - __main__ - DEBUG - Game 1, Step 9: Player 0 chose action 4
+2025-04-29 01:11:04,348 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:04,392 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:04,430 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:04,475 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:04,530 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:04,587 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:04,655 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:04,726 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:04,786 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:04,842 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:04,848 - __main__ - DEBUG - Game 1, Step 10: Player 1 chose action 0
+2025-04-29 01:11:04,897 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:04,942 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:04,986 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:05,046 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:05,109 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:05,167 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:05,223 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:05,284 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:05,347 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:05,410 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:05,418 - __main__ - DEBUG - Game 1, Step 11: Player 2 chose action 4
+2025-04-29 01:11:05,470 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:05,521 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:05,571 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:05,622 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:05,677 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:05,736 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:05,803 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:05,867 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:05,934 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:05,991 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:05,997 - __main__ - DEBUG - Game 1, Step 12: Player 3 chose action 15
+2025-04-29 01:11:06,045 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:06,093 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:06,140 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:06,201 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:06,260 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:06,319 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:06,387 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:06,456 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:06,512 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:06,573 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:06,582 - __main__ - DEBUG - Game 1, Step 13: Player 0 chose action 29
+2025-04-29 01:11:06,631 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:06,684 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:06,744 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:06,799 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:06,863 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:06,948 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:07,015 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:07,089 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:07,150 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:07,197 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:07,203 - __main__ - DEBUG - Game 1, Step 14: Player 1 chose action 1
+2025-04-29 01:11:07,254 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:07,299 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:07,354 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:07,419 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:07,478 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:07,546 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:07,608 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:07,666 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:07,735 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:07,837 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:07,846 - __main__ - DEBUG - Game 1, Step 15: Player 2 chose action 47
+2025-04-29 01:11:07,897 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:07,951 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:07,999 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:08,056 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:08,116 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:08,177 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:08,262 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:08,331 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:08,391 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:08,455 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:08,464 - __main__ - DEBUG - Game 1, Step 16: Player 3 chose action 1
+2025-04-29 01:11:08,514 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:08,567 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:08,623 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:08,682 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:08,741 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:08,819 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:08,881 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:08,944 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:09,012 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:09,164 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:09,173 - __main__ - DEBUG - Game 1, Step 17: Player 0 chose action 0
+2025-04-29 01:11:09,223 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:09,274 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:09,332 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:09,400 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:09,467 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:09,534 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:09,602 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:09,661 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:09,727 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:09,794 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:09,802 - __main__ - DEBUG - Game 1, Step 18: Player 1 chose action 3
+2025-04-29 01:11:09,860 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:09,920 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:09,985 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:10,069 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:10,141 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:10,213 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:10,292 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:10,361 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:10,422 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:10,482 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:10,489 - __main__ - DEBUG - Game 1, Step 19: Player 2 chose action 1
+2025-04-29 01:11:10,539 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:10,584 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:10,635 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:10,698 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:10,759 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:10,836 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:10,896 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:10,965 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:11,043 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:11,108 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:11,115 - __main__ - DEBUG - Game 1, Step 20: Player 3 chose action 1
+2025-04-29 01:11:11,166 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:11,215 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:11,279 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:11,339 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:11,404 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:11,465 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:11,533 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:11,602 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:11,673 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:11,732 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:11,739 - __main__ - DEBUG - Game 1, Step 21: Player 0 chose action 12
+2025-04-29 01:11:11,785 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:11,836 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:11,893 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:11,954 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:12,031 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:12,096 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:12,160 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:12,232 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:12,295 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:12,357 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:12,364 - __main__ - DEBUG - Game 1, Step 22: Player 1 chose action 1
+2025-04-29 01:11:12,442 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:12,499 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:12,557 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:12,618 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:12,687 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:12,749 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:12,806 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:12,872 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:12,939 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:12,997 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:13,004 - __main__ - DEBUG - Game 1, Step 23: Player 2 chose action 52
+2025-04-29 01:11:13,062 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:13,121 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:13,197 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:13,266 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:13,342 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:13,398 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:13,460 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:13,527 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:13,600 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:13,689 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:13,698 - __main__ - DEBUG - Game 1, Step 24: Player 3 chose action 12
+2025-04-29 01:11:13,750 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:13,800 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:13,860 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:13,925 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:13,989 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:14,054 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:14,117 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:14,192 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:14,269 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:14,336 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:14,344 - __main__ - DEBUG - Game 1, Step 25: Player 0 chose action 3
+2025-04-29 01:11:14,391 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:14,442 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:14,501 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:14,567 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:14,636 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:14,705 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:14,780 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:14,852 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:14,919 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:14,978 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:14,985 - __main__ - DEBUG - Game 1, Step 26: Player 1 chose action 12
+2025-04-29 01:11:15,040 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:15,105 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:15,177 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:15,242 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:15,312 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:15,376 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:15,448 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:15,532 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:15,610 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:15,692 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:15,702 - __main__ - DEBUG - Game 1, Step 27: Player 2 chose action 2
+2025-04-29 01:11:15,750 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:15,802 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:15,862 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:15,929 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:16,012 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:16,095 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:16,181 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:16,254 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:16,317 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:16,399 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:16,406 - __main__ - DEBUG - Game 1, Step 28: Player 3 chose action 51
+2025-04-29 01:11:16,459 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:16,508 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:16,569 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:16,637 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:16,715 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:16,806 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:16,897 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:16,991 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:17,055 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:17,126 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:17,135 - __main__ - DEBUG - Game 1, Step 29: Player 0 chose action 12
+2025-04-29 01:11:17,196 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:17,267 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:17,345 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:17,409 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:17,477 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:17,553 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:17,638 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:17,729 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:17,811 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:17,905 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:17,916 - __main__ - DEBUG - Game 1, Step 30: Player 1 chose action 3
+2025-04-29 01:11:17,974 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:18,028 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:18,091 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:18,166 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:18,262 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:18,342 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:18,417 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:18,477 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:18,550 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:18,626 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:18,635 - __main__ - DEBUG - Game 1, Step 31: Player 2 chose action 53
+2025-04-29 01:11:18,687 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:18,740 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:18,806 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:18,874 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:18,941 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:19,008 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:19,093 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:19,182 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:19,263 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:19,354 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:19,362 - __main__ - DEBUG - Game 1, Step 32: Player 3 chose action 53
+2025-04-29 01:11:19,411 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:19,481 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:19,536 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:19,612 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:19,687 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:19,775 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:19,858 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:19,925 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:20,002 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:20,081 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:20,090 - __main__ - DEBUG - Game 1, Step 33: Player 0 chose action 69
+2025-04-29 01:11:20,150 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:20,219 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:20,302 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:20,368 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:20,429 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:20,515 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:20,587 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:20,672 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:20,761 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:20,840 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:20,847 - __main__ - DEBUG - Game 1, Step 34: Player 1 chose action 3
+2025-04-29 01:11:20,895 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:20,954 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:21,020 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:21,079 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:21,142 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:21,231 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:21,310 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:21,400 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:21,501 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:21,592 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:21,601 - __main__ - DEBUG - Game 1, Step 35: Player 2 chose action 2
+2025-04-29 01:11:21,659 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:21,726 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:21,791 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:21,867 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:21,948 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:22,069 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:22,191 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:22,273 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:22,361 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:22,459 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:22,470 - __main__ - DEBUG - Game 1, Step 36: Player 3 chose action 58
+2025-04-29 01:11:22,519 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:22,572 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:22,632 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:22,710 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:22,776 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:22,855 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:22,996 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:23,078 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:23,155 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:23,247 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:23,256 - __main__ - DEBUG - Game 1, Step 37: Player 0 chose action 1
+2025-04-29 01:11:23,320 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:23,385 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:23,442 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:23,518 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:23,576 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:23,640 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:23,706 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:23,782 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:23,853 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:23,928 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:23,936 - __main__ - DEBUG - Game 1, Step 38: Player 1 chose action 69
+2025-04-29 01:11:23,993 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:24,062 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:24,144 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:24,208 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:24,276 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:24,352 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:24,438 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:24,508 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:24,596 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:24,684 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:24,692 - __main__ - DEBUG - Game 1, Step 39: Player 2 chose action 3
+2025-04-29 01:11:24,748 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:24,819 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:24,899 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:24,996 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:25,099 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:25,187 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:25,257 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:25,328 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:25,408 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:25,493 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:25,501 - __main__ - DEBUG - Game 1, Step 40: Player 3 chose action 30
+2025-04-29 01:11:25,558 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:25,617 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:25,682 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:25,756 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:25,827 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:25,910 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:25,990 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:26,074 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:26,142 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:26,215 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:26,224 - __main__ - DEBUG - Game 1, Step 41: Player 0 chose action 1
+2025-04-29 01:11:26,281 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:26,340 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:26,406 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:26,472 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:26,540 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:26,608 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:26,676 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:26,745 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:26,828 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:26,915 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:26,925 - __main__ - DEBUG - Game 1, Step 42: Player 1 chose action 30
+2025-04-29 01:11:26,977 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:27,033 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:27,087 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:27,152 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:27,217 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:27,286 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:27,356 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:27,413 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:27,479 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:27,545 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:27,553 - __main__ - DEBUG - Game 1, Step 43: Player 2 chose action 0
+2025-04-29 01:11:27,600 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:27,653 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:27,708 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:27,767 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:27,823 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:27,880 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:27,950 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:28,004 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:28,069 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:28,130 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:28,139 - __main__ - DEBUG - Game 1, Step 44: Player 3 chose action 0
+2025-04-29 01:11:28,185 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:28,235 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:28,289 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:28,334 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:28,383 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:28,435 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:28,512 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:28,564 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:28,622 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:28,678 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:28,685 - __main__ - DEBUG - Game 1, Step 45: Player 0 chose action 58
+2025-04-29 01:11:28,730 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:28,783 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:28,839 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:28,896 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:28,973 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:29,057 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:29,144 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:29,209 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:29,270 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:29,325 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:29,332 - __main__ - DEBUG - Game 1, Step 46: Player 1 chose action 1
+2025-04-29 01:11:29,379 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:29,422 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:29,466 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:29,527 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:29,602 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:29,673 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:29,733 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:29,796 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:29,868 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:29,942 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:29,952 - __main__ - DEBUG - Game 1, Step 47: Player 2 chose action 57
+2025-04-29 01:11:30,005 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:30,061 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:30,123 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:30,190 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:30,256 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:30,319 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:30,382 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:30,448 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:30,528 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:30,607 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:30,616 - __main__ - DEBUG - Game 1, Step 48: Player 3 chose action 1
+2025-04-29 01:11:30,670 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:30,728 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:30,783 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:30,846 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:30,914 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:30,982 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:31,053 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:31,122 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:31,186 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:31,256 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:31,264 - __main__ - DEBUG - Game 1, Step 49: Player 0 chose action 1
+2025-04-29 01:11:31,318 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:31,382 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:31,446 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:31,503 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:31,570 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:31,633 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:31,698 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:31,833 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:31,900 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:31,996 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:32,007 - __main__ - DEBUG - Game 1, Step 50: Player 1 chose action 53
+2025-04-29 01:11:32,089 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:32,146 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:32,203 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:32,260 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:32,331 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:32,405 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:32,483 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:32,563 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:32,644 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:32,715 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:32,723 - __main__ - DEBUG - Game 1, Step 51: Player 2 chose action 0
+2025-04-29 01:11:32,766 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:32,809 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:32,867 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:32,930 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:32,994 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:33,069 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:33,147 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:33,245 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:33,324 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:33,402 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:33,409 - __main__ - DEBUG - Game 1, Step 52: Player 3 chose action 2
+2025-04-29 01:11:33,470 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:33,534 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:33,613 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:33,691 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:33,761 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:33,823 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:33,887 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:33,942 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:34,010 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:34,072 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:34,078 - __main__ - DEBUG - Game 1, Step 53: Player 0 chose action 69
+2025-04-29 01:11:34,123 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:34,184 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:34,245 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:34,308 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:34,395 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:34,469 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:34,530 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:34,596 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:34,663 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:34,724 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:34,732 - __main__ - DEBUG - Game 1, Step 54: Player 1 chose action 2
+2025-04-29 01:11:34,784 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:34,838 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:34,894 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:34,960 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:35,031 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:35,090 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:35,157 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:35,229 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:35,314 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:35,406 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:35,416 - __main__ - DEBUG - Game 1, Step 55: Player 2 chose action 57
+2025-04-29 01:11:35,472 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:35,532 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:35,601 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:35,684 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:35,768 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:35,850 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:35,935 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:36,019 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:36,104 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:36,199 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:36,208 - __main__ - DEBUG - Game 1, Step 56: Player 3 chose action 0
+2025-04-29 01:11:36,260 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:36,318 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:36,389 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:36,460 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:36,534 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:36,605 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:36,692 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:36,768 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:36,870 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:36,956 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:36,966 - __main__ - DEBUG - Game 1, Step 57: Player 0 chose action 32
+2025-04-29 01:11:37,028 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:37,104 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:37,187 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:37,285 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:37,380 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:37,469 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:37,542 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:37,626 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:37,714 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:37,808 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:37,819 - __main__ - DEBUG - Game 1, Step 58: Player 1 chose action 4
+2025-04-29 01:11:37,866 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:37,924 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:38,001 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:38,077 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:38,164 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:38,244 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:38,315 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:38,394 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:38,487 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:38,565 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:38,574 - __main__ - DEBUG - Game 1, Step 59: Player 2 chose action 32
+2025-04-29 01:11:38,632 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:38,696 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:38,764 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:38,843 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:38,931 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:39,008 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:39,090 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:39,169 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:39,258 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:39,353 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:39,364 - __main__ - DEBUG - Game 1, Step 60: Player 3 chose action 0
+2025-04-29 01:11:39,420 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:39,479 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:39,537 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:39,602 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:39,679 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:39,745 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:39,824 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:39,898 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:39,990 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:40,081 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:40,090 - __main__ - DEBUG - Game 1, Step 61: Player 0 chose action 0
+2025-04-29 01:11:40,144 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:40,204 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:40,270 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:40,345 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:40,440 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:40,541 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:40,630 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:40,719 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:40,813 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:40,927 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:40,937 - __main__ - DEBUG - Game 1, Step 62: Player 1 chose action 0
+2025-04-29 01:11:40,990 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:41,048 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:41,123 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:41,195 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:41,275 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:41,430 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:41,516 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:41,590 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:41,673 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:41,767 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:41,776 - __main__ - DEBUG - Game 1, Step 63: Player 2 chose action 0
+2025-04-29 01:11:41,839 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:41,915 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:41,999 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:42,078 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:42,140 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:42,213 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:42,287 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:42,368 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:42,448 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:42,548 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:42,559 - __main__ - DEBUG - Game 1, Step 64: Player 3 chose action 0
+2025-04-29 01:11:42,617 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:42,685 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:42,758 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:42,830 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:42,915 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:43,001 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:43,085 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:43,173 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:43,279 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:43,375 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:43,384 - __main__ - DEBUG - Game 1, Step 65: Player 0 chose action 4
+2025-04-29 01:11:43,442 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:43,500 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:43,558 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:43,639 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:43,719 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:43,806 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:43,895 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:43,975 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:44,058 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:44,146 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:44,157 - __main__ - DEBUG - Game 1, Step 66: Player 1 chose action 3
+2025-04-29 01:11:44,206 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:44,280 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:44,347 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:44,424 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:44,498 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:44,570 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:44,645 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:44,718 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:44,787 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:44,864 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:44,871 - __main__ - DEBUG - Game 1, Step 67: Player 2 chose action 2
+2025-04-29 01:11:44,934 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:45,008 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:45,087 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:45,166 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:45,249 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:45,360 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:45,465 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:45,567 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:45,691 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:45,813 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:45,823 - __main__ - DEBUG - Game 1, Step 68: Player 3 chose action 57
+2025-04-29 01:11:45,883 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:45,938 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:46,006 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:46,118 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:46,218 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:46,322 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:46,428 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:46,578 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:46,723 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:46,818 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:46,828 - __main__ - DEBUG - Game 1, Step 69: Player 0 chose action 0
+2025-04-29 01:11:46,918 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:46,986 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:47,088 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:47,186 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:47,303 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:47,422 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:47,541 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:47,673 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:47,759 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:47,881 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:47,895 - __main__ - DEBUG - Game 1, Step 70: Player 1 chose action 12
+2025-04-29 01:11:47,969 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:48,055 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:48,155 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:48,239 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:48,326 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:48,458 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:48,560 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:48,656 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:48,745 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:48,837 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:48,848 - __main__ - DEBUG - Game 1, Step 71: Player 2 chose action 3
+2025-04-29 01:11:48,908 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:48,968 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:49,030 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:49,101 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:49,183 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:49,237 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:49,321 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:49,388 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:49,471 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:49,550 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:49,559 - __main__ - DEBUG - Game 1, Step 72: Player 3 chose action 3
+2025-04-29 01:11:49,599 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:49,647 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:49,712 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:49,778 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:49,861 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:49,948 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:50,027 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:50,145 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:50,216 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:50,273 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:50,279 - __main__ - DEBUG - Game 1, Step 73: Player 0 chose action 53
+2025-04-29 01:11:50,318 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:50,366 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:50,423 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:50,492 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:50,571 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:50,640 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:50,745 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:50,816 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:50,906 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:51,000 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:51,010 - __main__ - DEBUG - Game 1, Step 74: Player 1 chose action 69
+2025-04-29 01:11:51,067 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:51,145 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:51,233 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:51,330 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:51,411 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:51,488 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:51,589 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:51,670 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:51,755 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:51,849 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:51,862 - __main__ - DEBUG - Game 1, Step 75: Player 2 chose action 2
+2025-04-29 01:11:51,932 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:52,016 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:52,093 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:52,188 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:52,287 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:52,366 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:52,456 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:52,558 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:52,698 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:52,912 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:52,930 - __main__ - DEBUG - Game 1, Step 76: Player 3 chose action 57
+2025-04-29 01:11:53,010 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:53,100 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:53,213 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:53,332 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:53,401 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:53,477 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:53,565 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:53,660 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:53,791 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:53,901 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:53,914 - __main__ - DEBUG - Game 1, Step 77: Player 0 chose action 0
+2025-04-29 01:11:53,984 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:54,056 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:54,136 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:54,220 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:54,297 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:54,389 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:54,483 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:54,569 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:54,648 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:54,721 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:54,729 - __main__ - DEBUG - Game 1, Step 78: Player 1 chose action 53
+2025-04-29 01:11:54,784 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:54,848 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:54,920 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:54,992 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:55,066 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:55,138 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:55,224 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:55,294 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:55,361 - AlphaZero.MCTS - INFO - Running simulation 90/100
+2025-04-29 01:11:55,438 - AlphaZero.MCTS - INFO - Running simulation 100/100
+2025-04-29 01:11:55,446 - __main__ - DEBUG - Game 1, Step 79: Player 2 chose action 30
+2025-04-29 01:11:55,495 - AlphaZero.MCTS - INFO - Running simulation 10/100
+2025-04-29 01:11:55,555 - AlphaZero.MCTS - INFO - Running simulation 20/100
+2025-04-29 01:11:55,625 - AlphaZero.MCTS - INFO - Running simulation 30/100
+2025-04-29 01:11:55,725 - AlphaZero.MCTS - INFO - Running simulation 40/100
+2025-04-29 01:11:55,840 - AlphaZero.MCTS - INFO - Running simulation 50/100
+2025-04-29 01:11:55,926 - AlphaZero.MCTS - INFO - Running simulation 60/100
+2025-04-29 01:11:56,074 - AlphaZero.MCTS - INFO - Running simulation 70/100
+2025-04-29 01:11:56,183 - AlphaZero.MCTS - INFO - Running simulation 80/100
+2025-04-29 01:11:56,298 - AlphaZero.MCTS - INFO - Running simulation 90/100

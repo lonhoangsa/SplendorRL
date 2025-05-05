@@ -1,0 +1,148 @@
+2025-04-28 12:46:15,418 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-28 12:46:15,418 - __main__ - INFO - Debug mode: False
+2025-04-28 12:46:15,430 - __main__ - INFO - ==================================================
+2025-04-28 12:46:15,430 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-28 12:46:15,431 - __main__ - INFO - ==================================================
+2025-04-28 12:46:15,431 - __main__ - INFO - Card feature dimension: 8
+2025-04-28 12:46:15,431 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-28 12:46:15,431 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-28 12:46:15,432 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-28 12:46:15,433 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-28 12:46:15,433 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-28 12:46:15,434 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-28 12:46:15,434 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-28 12:46:15,434 - __main__ - INFO - Action dimension: 88
+2025-04-28 12:46:15,434 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-28 12:46:15,434 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-28 12:46:15,434 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-28 12:46:15,435 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-28 12:46:15,627 - __main__ - INFO - Using device: cuda
+2025-04-28 12:46:16,771 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-28 12:46:16,771 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=30
+2025-04-28 12:46:16,771 - __main__ - INFO - ==================================================
+2025-04-28 12:46:16,866 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-28 12:46:16,870 - __main__ - INFO - Loaded model from iteration 4
+2025-04-28 12:46:16,874 - __main__ - INFO - Starting AlphaZero training from iteration 5 for 5 iterations
+2025-04-28 12:46:16,875 - __main__ - INFO - Starting iteration 5/9
+2025-04-28 12:46:16,875 - __main__ - INFO - Starting self-play phase
+2025-04-28 12:46:16,886 - __main__ - INFO - Starting game 1/5
+2025-04-28 12:48:35,202 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:48:35,204 - __main__ - INFO - Game 1 completed in 1000 steps.
+2025-04-28 12:48:35,204 - __main__ - INFO - Scores: [14, 1, 14, 4], Total Env Rewards: [-89.00000000000033, -44.399999999999785, -99.00000000000033, -35.99999999999988], Winners: [0 2]
+2025-04-28 12:48:35,222 - __main__ - INFO - Starting game 2/5
+2025-04-28 12:50:57,172 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:50:57,174 - __main__ - INFO - Game 2 completed in 1000 steps.
+2025-04-28 12:50:57,174 - __main__ - INFO - Scores: [14, 14, 3, 8], Total Env Rewards: [-66.59999999999992, -45.39999999999993, -38.59999999999974, -91.80000000000024], Winners: [0 1]
+2025-04-28 12:50:57,189 - __main__ - INFO - Starting game 3/5
+2025-04-28 12:53:29,739 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:53:29,741 - __main__ - INFO - Game 3 completed in 1000 steps.
+2025-04-28 12:53:29,741 - __main__ - INFO - Scores: [2, 14, 5, 8], Total Env Rewards: [-65.59999999999985, -94.20000000000033, -35.19999999999976, -81.60000000000024], Winners: [1]
+2025-04-28 12:53:29,756 - __main__ - INFO - Starting game 4/5
+2025-04-28 12:55:45,123 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:55:45,124 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-04-28 12:55:45,125 - __main__ - INFO - Scores: [11, 5, 14, 3], Total Env Rewards: [-83.20000000000012, -61.79999999999976, -88.60000000000016, -31.59999999999994], Winners: [2]
+2025-04-28 12:55:45,141 - __main__ - INFO - Starting game 5/5
+2025-04-28 12:57:59,587 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:57:59,597 - __main__ - INFO - Game 5 completed in 1000 steps.
+2025-04-28 12:57:59,598 - __main__ - INFO - Scores: [12, 6, 0, 17], Total Env Rewards: [-30.19999999999989, -57.59999999999975, -76.00000000000011, -101.80000000000037], Winners: [3]
+2025-04-28 12:57:59,601 - __main__ - INFO - Self-play phase completed. Average steps: 1000.00
+2025-04-28 12:57:59,602 - __main__ - INFO - Average scores: [10.6  8.   7.2  8. ], Average total rewards: [-66.92 -60.68 -67.48 -68.56]
+2025-04-28 12:57:59,602 - __main__ - INFO - Starting training phase
+2025-04-28 12:57:59,603 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 12:57:59,603 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 12:57:59,693 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.4221, Value Loss: 0.1583, Total Loss: 3.5804
+2025-04-28 12:57:59,693 - __main__ - INFO - Training completed. Average Policy Loss: 3.5412, Average Value Loss: 0.3986, Average Total Loss: 3.9397
+2025-04-28 12:57:59,694 - __main__ - INFO - Starting iteration 6/9
+2025-04-28 12:57:59,694 - __main__ - INFO - Starting self-play phase
+2025-04-28 12:57:59,707 - __main__ - INFO - Starting game 1/5
+2025-04-28 12:59:50,351 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 12:59:50,352 - __main__ - INFO - Game 1 completed in 731 steps.
+2025-04-28 12:59:50,353 - __main__ - INFO - Scores: [14, 12, 16, 14], Total Env Rewards: [-13.000000000000027, -18.199999999999918, -29.399999999999842, -14.200000000000014], Winners: [2]
+2025-04-28 12:59:50,382 - __main__ - INFO - Starting game 2/5
+2025-04-28 13:02:12,108 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:02:12,109 - __main__ - INFO - Game 2 completed in 1000 steps.
+2025-04-28 13:02:12,110 - __main__ - INFO - Scores: [14, 5, 13, 1], Total Env Rewards: [-101.00000000000037, -45.19999999999978, -86.20000000000023, -25.199999999999896], Winners: [0]
+2025-04-28 13:02:12,127 - __main__ - INFO - Starting game 3/5
+2025-04-28 13:03:14,352 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:03:18,776 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:03:18,778 - __main__ - INFO - Game 3 completed in 415 steps.
+2025-04-28 13:03:18,779 - __main__ - INFO - Scores: [16, 0, 3, 0], Total Env Rewards: [-35.59999999999994, 25.000000000000036, -39.19999999999992, -21.799999999999972], Winners: [0]
+2025-04-28 13:03:18,793 - __main__ - INFO - Starting game 4/5
+2025-04-28 13:05:45,991 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:05:45,993 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-04-28 13:05:45,994 - __main__ - INFO - Scores: [13, 0, 14, 2], Total Env Rewards: [-98.80000000000041, -56.79999999999989, -101.40000000000038, -39.799999999999784], Winners: [2]
+2025-04-28 13:05:46,011 - __main__ - INFO - Starting game 5/5
+2025-04-28 13:08:09,731 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:08:09,733 - __main__ - INFO - Game 5 completed in 1000 steps.
+2025-04-28 13:08:09,733 - __main__ - INFO - Scores: [6, 11, 5, 13], Total Env Rewards: [-47.39999999999976, -78.19999999999997, -56.19999999999986, -85.00000000000026], Winners: [3]
+2025-04-28 13:08:09,736 - __main__ - INFO - Self-play phase completed. Average steps: 829.20
+2025-04-28 13:08:09,737 - __main__ - INFO - Average scores: [12.6  5.6 10.2  6. ], Average total rewards: [-59.16 -34.68 -62.48 -37.2 ]
+2025-04-28 13:08:09,737 - __main__ - INFO - Starting training phase
+2025-04-28 13:08:09,738 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 13:08:09,739 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 13:08:09,823 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.2767, Value Loss: 0.2495, Total Loss: 3.5262
+2025-04-28 13:08:09,823 - __main__ - INFO - Training completed. Average Policy Loss: 3.2496, Average Value Loss: 0.3074, Average Total Loss: 3.5569
+2025-04-28 13:08:09,824 - __main__ - INFO - Starting iteration 7/9
+2025-04-28 13:08:09,824 - __main__ - INFO - Starting self-play phase
+2025-04-28 13:08:09,837 - __main__ - INFO - Starting game 1/5
+2025-04-28 13:10:35,608 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:10:35,609 - __main__ - INFO - Game 1 completed in 1000 steps.
+2025-04-28 13:10:35,610 - __main__ - INFO - Scores: [14, 14, 9, 5], Total Env Rewards: [-82.40000000000008, -58.399999999999736, -38.99999999999995, -57.999999999999744], Winners: [0 1]
+2025-04-28 13:10:35,624 - __main__ - INFO - Starting game 2/5
+2025-04-28 13:11:59,849 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:11:59,852 - __main__ - INFO - Game 2 completed in 423 steps.
+2025-04-28 13:11:59,853 - __main__ - INFO - Scores: [7, 18, 3, 11], Total Env Rewards: [5.600000000000021, -23.199999999999978, 55.59999999999997, -27.599999999999934], Winners: [1]
+2025-04-28 13:11:59,867 - __main__ - INFO - Starting game 3/5
+2025-04-28 13:13:17,677 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:13:17,680 - __main__ - INFO - Game 3 completed in 427 steps.
+2025-04-28 13:13:17,680 - __main__ - INFO - Scores: [0, 1, 18, 0], Total Env Rewards: [-39.39999999999993, -35.99999999999994, -41.199999999999925, 60.00000000000005], Winners: [2]
+2025-04-28 13:13:17,694 - __main__ - INFO - Starting game 4/5
+2025-04-28 13:16:26,522 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:16:26,525 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-04-28 13:16:26,526 - __main__ - INFO - Scores: [0, 14, 5, 14], Total Env Rewards: [-39.199999999999775, -96.40000000000029, -44.79999999999977, -84.2000000000001], Winners: [1 3]
+2025-04-28 13:16:26,545 - __main__ - INFO - Starting game 5/5
+2025-04-28 13:19:19,326 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:19:19,328 - __main__ - INFO - Game 5 completed in 1000 steps.
+2025-04-28 13:19:19,329 - __main__ - INFO - Scores: [13, 2, 14, 2], Total Env Rewards: [-90.6000000000002, -44.99999999999992, -99.4000000000004, -34.99999999999992], Winners: [2]
+2025-04-28 13:19:19,332 - __main__ - INFO - Self-play phase completed. Average steps: 770.00
+2025-04-28 13:19:19,332 - __main__ - INFO - Average scores: [6.8 9.8 9.8 6.4], Average total rewards: [-49.2  -51.8  -33.76 -28.96]
+2025-04-28 13:19:19,333 - __main__ - INFO - Starting training phase
+2025-04-28 13:19:19,333 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 13:19:19,334 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 13:19:19,429 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.1240, Value Loss: 0.1793, Total Loss: 3.3033
+2025-04-28 13:19:19,429 - __main__ - INFO - Training completed. Average Policy Loss: 3.1435, Average Value Loss: 0.3061, Average Total Loss: 3.4496
+2025-04-28 13:19:19,429 - __main__ - INFO - Starting iteration 8/9
+2025-04-28 13:19:19,430 - __main__ - INFO - Starting self-play phase
+2025-04-28 13:19:19,442 - __main__ - INFO - Starting game 1/5
+2025-04-28 13:21:58,397 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:21:58,402 - __main__ - INFO - Game 1 completed in 1000 steps.
+2025-04-28 13:21:58,403 - __main__ - INFO - Scores: [19, 0, 9, 2], Total Env Rewards: [-93.60000000000025, -23.199999999999903, -99.60000000000034, -57.799999999999805], Winners: [0]
+2025-04-28 13:21:58,424 - __main__ - INFO - Starting game 2/5
+2025-04-28 13:24:31,788 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:24:31,789 - __main__ - INFO - Game 2 completed in 1000 steps.
+2025-04-28 13:24:31,790 - __main__ - INFO - Scores: [14, 0, 6, 7], Total Env Rewards: [-81.20000000000009, -44.79999999999993, -94.80000000000028, -67.19999999999979], Winners: [0]
+2025-04-28 13:24:31,807 - __main__ - INFO - Starting game 3/5
+2025-04-28 13:27:13,448 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:27:13,449 - __main__ - INFO - Game 3 completed in 1000 steps.
+2025-04-28 13:27:13,450 - __main__ - INFO - Scores: [1, 0, 2, 10], Total Env Rewards: [-48.79999999999981, -90.80000000000022, -97.20000000000032, -83.20000000000014], Winners: [3]
+2025-04-28 13:27:13,467 - __main__ - INFO - Starting game 4/5
+2025-04-28 13:29:46,995 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:29:46,997 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-04-28 13:29:46,997 - __main__ - INFO - Scores: [6, 14, 3, 13], Total Env Rewards: [-47.79999999999979, -83.60000000000011, -41.3999999999999, -87.80000000000014], Winners: [1]
+2025-04-28 13:29:47,013 - __main__ - INFO - Starting game 5/5
+2025-04-28 13:32:13,404 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 13:32:13,406 - __main__ - INFO - Game 5 completed in 1000 steps.
+2025-04-28 13:32:13,407 - __main__ - INFO - Scores: [14, 0, 14, 0], Total Env Rewards: [-100.40000000000035, -40.19999999999987, -103.0000000000004, -29.599999999999977], Winners: [0 2]
+2025-04-28 13:32:13,409 - __main__ - INFO - Self-play phase completed. Average steps: 1000.00
+2025-04-28 13:32:13,410 - __main__ - INFO - Average scores: [10.8  2.8  6.8  6.4], Average total rewards: [-74.36 -56.52 -87.2  -65.12]
+2025-04-28 13:32:13,411 - __main__ - INFO - Starting training phase
+2025-04-28 13:32:13,411 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 13:32:13,412 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 13:32:13,500 - __main__ - INFO - Epoch 10/10, Policy Loss: 2.9281, Value Loss: 0.2091, Total Loss: 3.1373
+2025-04-28 13:32:13,501 - __main__ - INFO - Training completed. Average Policy Loss: 3.0226, Average Value Loss: 0.2585, Average Total Loss: 3.2810
+2025-04-28 13:32:13,501 - __main__ - INFO - Starting iteration 9/9
+2025-04-28 13:32:13,501 - __main__ - INFO - Starting self-play phase
+2025-04-28 13:32:13,513 - __main__ - INFO - Starting game 1/5

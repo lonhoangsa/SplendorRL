@@ -1,0 +1,11 @@
+2025-05-04 21:19:44,407 - INFO - Using device: cuda
+2025-05-04 21:19:46,890 - INFO - Loaded AlphaZero model weights from ../splendor/models/alphazero_final.pth
+2025-05-04 21:19:46,978 - INFO - Loaded DQN1 model weights from ../splendor/models/dqn_model_final.pth
+2025-05-04 21:19:47,027 - INFO - Loaded DQN2 model weights from ../splendor/models/dqn_model_final.pth
+2025-05-04 21:19:47,152 - INFO - Loaded DuelingDQN model weights from ../splendor/models/dueling_model_final.pth
+2025-05-04 21:19:47,152 - INFO - 
+=== Starting Model Comparison ===
+2025-05-04 21:19:47,152 - INFO - Player order: 1. AlphaZero, 2. DQN1, 3. DQN2, 4. DuelingDQN
+2025-05-04 21:19:47,152 - INFO - Starting evaluation of AlphaZero, DQN1, DQN2, DuelingDQN
+2025-05-04 21:19:47,156 - INFO - 
+=== Starting Game 1 ===

@@ -1,0 +1,282 @@
+2025-05-02 02:43:06,516 - __main__ - INFO - Initializing AlphaZero trainer
+2025-05-02 02:43:06,516 - __main__ - INFO - Debug mode: False
+2025-05-02 02:43:08,044 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-05-02 02:43:08,045 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=40
+2025-05-02 02:43:08,045 - __main__ - INFO - ==================================================
+2025-05-02 02:43:08,252 - __main__ - INFO - Loaded model from iteration 1
+2025-05-02 02:43:08,258 - __main__ - INFO - Starting AlphaZero training from iteration 2 for 10 iterations
+2025-05-02 02:43:08,259 - __main__ - INFO - Starting iteration 2/11
+2025-05-02 02:43:08,259 - __main__ - INFO - Starting self-play phase
+2025-05-02 02:43:08,276 - __main__ - INFO - Starting game 1/30
+2025-05-02 02:46:12,386 - __main__ - INFO - Player performance summary:
+2025-05-02 02:46:12,386 - __main__ - INFO - Player 0: Score=0, Total Reward=136.56363636363588, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 02:46:12,387 - __main__ - INFO - Player 1: Score=7, Total Reward=152.1833333333326, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 02:46:12,387 - __main__ - INFO - Player 2: Score=16, Total Reward=169.35660034410037, Nobles=0, Sets=0, Efficiency=0.4375
+2025-05-02 02:46:12,387 - __main__ - INFO - Player 3: Score=5, Total Reward=148.86666666666608, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 02:46:12,388 - __main__ - INFO - Game 1 completed in 880 steps.
+2025-05-02 02:46:12,388 - __main__ - INFO - Scores: [0, 7, 16, 5], Total Env Rewards: [136.56363636363588, 152.1833333333326, 169.35660034410037, 148.86666666666608], Winners: [2]
+2025-05-02 02:46:12,404 - __main__ - INFO - Starting game 2/30
+2025-05-02 02:53:01,482 - __main__ - INFO - Game 2 completed in 1000 steps.
+2025-05-02 02:53:01,483 - __main__ - INFO - Scores: [7, 4, 6, 11], Total Env Rewards: [175.25126262626182, 162.5416666666659, 173.37727272727201, 182.58749583749508], Winners: [3]
+2025-05-02 02:53:01,498 - __main__ - INFO - Starting game 3/30
+2025-05-02 03:00:50,008 - __main__ - INFO - Game 3 completed in 1000 steps.
+2025-05-02 03:00:50,008 - __main__ - INFO - Scores: [5, 4, 6, 3], Total Env Rewards: [171.5666666666658, 165.19999999999925, 174.6638888888879, 170.9999999999992], Winners: [2]
+2025-05-02 03:00:50,026 - __main__ - INFO - Starting game 4/30
+2025-05-02 03:03:02,934 - __main__ - INFO - Game 4 completed in 533 steps.
+2025-05-02 03:03:02,935 - __main__ - INFO - Scores: [10, 22, 2, 14], Total Env Rewards: [128.71439393939372, 201.81909291688697, 84.19999999999992, 143.02284659784658], Winners: [1]
+2025-05-02 03:03:02,949 - __main__ - INFO - Starting game 5/30
+2025-05-02 03:04:40,492 - __main__ - INFO - Game 5 completed in 427 steps.
+2025-05-02 03:04:40,493 - __main__ - INFO - Scores: [4, 0, 3, 17], Total Env Rewards: [80.3321428571428, 65.20000000000009, 80.1999999999999, 129.04226337388104], Winners: [3]
+2025-05-02 03:04:40,508 - __main__ - INFO - Starting game 6/30
+2025-05-02 03:05:49,303 - __main__ - INFO - Game 6 completed in 299 steps.
+2025-05-02 03:05:49,304 - __main__ - INFO - Scores: [16, 1, 5, 8], Total Env Rewards: [127.68152248078715, 52.20000000000006, 63.42500000000006, 71.78078865578868], Winners: [0]
+2025-05-02 03:05:49,320 - __main__ - INFO - Starting game 7/30
+2025-05-02 03:07:49,402 - __main__ - INFO - Game 7 completed in 520 steps.
+2025-05-02 03:07:49,403 - __main__ - INFO - Scores: [15, 12, 3, 3], Total Env Rewards: [146.29827949827956, 124.65787545787538, 92.67499999999986, 94.56388888888874], Winners: [0]
+2025-05-02 03:07:49,419 - __main__ - INFO - Starting game 8/30
+2025-05-02 03:09:54,672 - __main__ - INFO - Game 8 completed in 561 steps.
+2025-05-02 03:09:54,673 - __main__ - INFO - Scores: [0, 0, 15, 2], Total Env Rewards: [87.59999999999987, 92.48888888888871, 157.18505661005645, 97.29047619047596], Winners: [2]
+2025-05-02 03:09:54,686 - __main__ - INFO - Starting game 9/30
+2025-05-02 03:11:39,118 - __main__ - INFO - Game 9 completed in 470 steps.
+2025-05-02 03:11:39,119 - __main__ - INFO - Scores: [12, 9, 15, 1], Total Env Rewards: [122.20245865245872, 102.90277777777771, 125.3107142857143, 75.59999999999998], Winners: [2]
+2025-05-02 03:11:39,136 - __main__ - INFO - Starting game 10/30
+2025-05-02 03:12:49,799 - __main__ - INFO - Game 10 completed in 316 steps.
+2025-05-02 03:12:49,800 - __main__ - INFO - Scores: [2, 4, 15, 12], Total Env Rewards: [57.60000000000007, 60.147619047619116, 104.88172383172382, 108.30219502719507], Winners: [2]
+2025-05-02 03:12:49,815 - __main__ - INFO - Starting game 11/30
+2025-05-02 03:14:31,411 - __main__ - INFO - Game 11 completed in 451 steps.
+2025-05-02 03:14:31,412 - __main__ - INFO - Scores: [16, 3, 0, 8], Total Env Rewards: [135.23774558774556, 77.23333333333328, 70.40000000000003, 96.65858585858571], Winners: [0]
+2025-05-02 03:14:31,426 - __main__ - INFO - Starting game 12/30
+2025-05-02 03:16:05,646 - __main__ - INFO - Game 12 completed in 426 steps.
+2025-05-02 03:16:05,646 - __main__ - INFO - Scores: [16, 6, 6, 0], Total Env Rewards: [128.48464035964037, 89.16060606060606, 87.93744588744583, 65.80000000000008], Winners: [0]
+2025-05-02 03:16:05,660 - __main__ - INFO - Starting game 13/30
+2025-05-02 03:17:23,426 - __main__ - INFO - Game 13 completed in 273 steps.
+2025-05-02 03:17:23,427 - __main__ - INFO - Scores: [5, 1, 15, 4], Total Env Rewards: [61.20335497835501, 51.40000000000006, 94.18575207472266, 57.20000000000006], Winners: [2]
+2025-05-02 03:17:23,440 - __main__ - INFO - Starting game 14/30
+2025-05-02 03:25:41,593 - __main__ - INFO - Game 14 completed in 1000 steps.
+2025-05-02 03:25:41,593 - __main__ - INFO - Scores: [9, 9, 7, 4], Total Env Rewards: [181.54087024086968, 157.91292041291982, 168.38939393939387, 166.25714285714204], Winners: [0 1]
+2025-05-02 03:25:41,608 - __main__ - INFO - Starting game 15/30
+2025-05-02 03:27:14,667 - __main__ - INFO - Game 15 completed in 440 steps.
+2025-05-02 03:27:14,668 - __main__ - INFO - Scores: [2, 15, 2, 13], Total Env Rewards: [79.19999999999995, 124.64115320094413, 76.40000000000005, 118.148951048951], Winners: [1]
+2025-05-02 03:27:14,683 - __main__ - INFO - Starting game 16/30
+2025-05-02 03:34:28,870 - __main__ - INFO - Game 16 completed in 1000 steps.
+2025-05-02 03:34:28,871 - __main__ - INFO - Scores: [4, 5, 4, 5], Total Env Rewards: [166.963888888888, 168.79999999999907, 162.857142857142, 138.9413558663556], Winners: [1 3]
+2025-05-02 03:34:28,887 - __main__ - INFO - Starting game 17/30
+2025-05-02 03:35:47,643 - __main__ - INFO - Game 17 completed in 375 steps.
+2025-05-02 03:35:47,644 - __main__ - INFO - Scores: [6, 1, 1, 16], Total Env Rewards: [88.38961038961037, 67.90000000000003, 62.00000000000009, 114.65931013431018], Winners: [3]
+2025-05-02 03:35:47,659 - __main__ - INFO - Starting game 18/30
+2025-05-02 03:41:54,451 - __main__ - INFO - Game 18 completed in 1000 steps.
+2025-05-02 03:41:54,451 - __main__ - INFO - Scores: [3, 6, 4, 5], Total Env Rewards: [179.599999999999, 150.4322843822847, 137.54413919413895, 159.59999999999923], Winners: [1]
+2025-05-02 03:41:54,466 - __main__ - INFO - Starting game 19/30
+2025-05-02 03:45:06,678 - __main__ - INFO - Game 19 completed in 890 steps.
+2025-05-02 03:45:06,679 - __main__ - INFO - Scores: [8, 19, 1, 4], Total Env Rewards: [158.9499999999994, 167.00371312124403, 142.59999999999934, 146.73333333333278], Winners: [1]
+2025-05-02 03:45:06,693 - __main__ - INFO - Starting game 20/30
+2025-05-02 03:46:38,630 - __main__ - INFO - Game 20 completed in 448 steps.
+2025-05-02 03:46:38,631 - __main__ - INFO - Scores: [0, 15, 5, 6], Total Env Rewards: [73.63333333333333, 116.67849927849927, 89.82103174603168, 88.74603174603159], Winners: [1]
+2025-05-02 03:46:38,648 - __main__ - INFO - Starting game 21/30
+2025-05-02 03:47:59,244 - __main__ - INFO - Game 21 completed in 346 steps.
+2025-05-02 03:47:59,245 - __main__ - INFO - Scores: [2, 16, 8, 8], Total Env Rewards: [58.40000000000008, 112.31578314616243, 77.4527777777778, 82.11893939393933], Winners: [1]
+2025-05-02 03:47:59,258 - __main__ - INFO - Starting game 22/30
+2025-05-02 03:49:43,814 - __main__ - INFO - Game 22 completed in 523 steps.
+2025-05-02 03:49:43,815 - __main__ - INFO - Scores: [0, 15, 3, 2], Total Env Rewards: [79.59999999999995, 115.15758408258414, 90.39999999999993, 87.7441558441559], Winners: [1]
+2025-05-02 03:49:43,830 - __main__ - INFO - Starting game 23/30
+2025-05-02 03:51:03,588 - __main__ - INFO - Game 23 completed in 376 steps.
+2025-05-02 03:51:03,589 - __main__ - INFO - Scores: [15, 6, 1, 12], Total Env Rewards: [98.77969530469531, 77.62500000000001, 62.40000000000009, 87.05859140859145], Winners: [0]
+2025-05-02 03:51:03,602 - __main__ - INFO - Starting game 24/30
+2025-05-02 03:59:54,818 - __main__ - INFO - Game 24 completed in 1000 steps.
+2025-05-02 03:59:54,819 - __main__ - INFO - Scores: [9, 9, 6, 5], Total Env Rewards: [147.3210705960702, 160.69137529137546, 181.49999999999892, 172.588888888888], Winners: [0 1]
+2025-05-02 03:59:54,836 - __main__ - INFO - Starting game 25/30
+2025-05-02 04:01:38,007 - __main__ - INFO - Game 25 completed in 487 steps.
+2025-05-02 04:01:38,008 - __main__ - INFO - Scores: [15, 8, 5, 1], Total Env Rewards: [119.8336149144971, 102.8971028971029, 91.44999999999982, 75.19999999999999], Winners: [0]
+2025-05-02 04:01:38,025 - __main__ - INFO - Starting game 26/30
+2025-05-02 04:02:46,786 - __main__ - INFO - Game 26 completed in 322 steps.
+2025-05-02 04:02:46,787 - __main__ - INFO - Scores: [15, 3, 0, 4], Total Env Rewards: [102.50831545905079, 60.05714285714292, 50.60000000000007, 68.49347319347322], Winners: [0]
+2025-05-02 04:02:46,800 - __main__ - INFO - Starting game 27/30
+2025-05-02 04:10:10,914 - __main__ - INFO - Game 27 completed in 1000 steps.
+2025-05-02 04:10:10,915 - __main__ - INFO - Scores: [5, 5, 4, 4], Total Env Rewards: [157.73263403263408, 162.40476190476113, 171.04999999999905, 168.08888888888796], Winners: [0 1]
+2025-05-02 04:10:10,932 - __main__ - INFO - Starting game 28/30
+2025-05-02 04:11:38,253 - __main__ - INFO - Game 28 completed in 410 steps.
+2025-05-02 04:11:38,253 - __main__ - INFO - Scores: [15, 9, 0, 2], Total Env Rewards: [101.1456820956821, 97.47992840492833, 66.00000000000009, 75.17777777777782], Winners: [0]
+2025-05-02 04:11:38,266 - __main__ - INFO - Starting game 29/30
+2025-05-02 04:13:36,851 - __main__ - INFO - Game 29 completed in 557 steps.
+2025-05-02 04:13:36,852 - __main__ - INFO - Scores: [8, 15, 2, 6], Total Env Rewards: [110.67759740259714, 136.06240426240433, 95.23333333333312, 103.47499999999985], Winners: [1]
+2025-05-02 04:13:36,867 - __main__ - INFO - Starting game 30/30
+2025-05-02 04:16:13,118 - __main__ - INFO - Game 30 completed in 723 steps.
+2025-05-02 04:16:13,119 - __main__ - INFO - Scores: [6, 20, 2, 13], Total Env Rewards: [128.28888888888844, 183.36491727226974, 112.39999999999962, 126.67118992119009], Winners: [1]
+2025-05-02 04:16:13,121 - __main__ - INFO - Self-play phase completed. Average steps: 601.77
+2025-05-02 04:16:13,124 - __main__ - INFO - Average scores: [7.66666667 8.3        5.4        6.6       ], Average total rewards: [119.71004352 118.6186588  110.52987578 114.04727458]
+2025-05-02 04:16:13,124 - __main__ - INFO - Starting training phase
+2025-05-02 04:16:13,471 - __main__ - INFO - Epoch 10/100, Policy Loss: 2.2737, Value Loss: 0.0934, Total Loss: 2.3671
+2025-05-02 04:16:13,563 - __main__ - INFO - Epoch 20/100, Policy Loss: 2.1087, Value Loss: 0.0379, Total Loss: 2.1466
+2025-05-02 04:16:13,648 - __main__ - INFO - Epoch 30/100, Policy Loss: 1.9827, Value Loss: 0.0210, Total Loss: 2.0037
+2025-05-02 04:16:13,737 - __main__ - INFO - Epoch 40/100, Policy Loss: 1.9687, Value Loss: 0.0216, Total Loss: 1.9902
+2025-05-02 04:16:13,833 - __main__ - INFO - Epoch 50/100, Policy Loss: 1.9034, Value Loss: 0.0182, Total Loss: 1.9216
+2025-05-02 04:16:13,923 - __main__ - INFO - Epoch 60/100, Policy Loss: 1.8330, Value Loss: 0.0136, Total Loss: 1.8466
+2025-05-02 04:16:14,016 - __main__ - INFO - Epoch 70/100, Policy Loss: 1.8441, Value Loss: 0.0161, Total Loss: 1.8602
+2025-05-02 04:16:14,106 - __main__ - INFO - Epoch 80/100, Policy Loss: 1.8256, Value Loss: 0.0106, Total Loss: 1.8361
+2025-05-02 04:16:14,198 - __main__ - INFO - Epoch 90/100, Policy Loss: 1.8263, Value Loss: 0.0121, Total Loss: 1.8384
+2025-05-02 04:16:14,286 - __main__ - INFO - Epoch 100/100, Policy Loss: 1.8071, Value Loss: 0.0145, Total Loss: 1.8215
+2025-05-02 04:16:14,286 - __main__ - INFO - Training completed. Average Policy Loss: 1.9625, Average Value Loss: 0.0494, Average Total Loss: 2.0119
+2025-05-02 04:16:14,287 - __main__ - INFO - Starting iteration 3/11
+2025-05-02 04:16:14,287 - __main__ - INFO - Starting self-play phase
+2025-05-02 04:16:14,298 - __main__ - INFO - Starting game 1/30
+2025-05-02 04:18:53,048 - __main__ - INFO - Player performance summary:
+2025-05-02 04:18:53,048 - __main__ - INFO - Player 0: Score=2, Total Reward=122.19999999999956, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 04:18:53,049 - __main__ - INFO - Player 1: Score=2, Total Reward=122.47499999999951, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 04:18:53,049 - __main__ - INFO - Player 2: Score=8, Total Reward=138.08777056277037, Nobles=0, Sets=0, Efficiency=0.9166666666666666
+2025-05-02 04:18:53,050 - __main__ - INFO - Player 3: Score=16, Total Reward=191.31200466200443, Nobles=0, Sets=0, Efficiency=0.6923076923076923
+2025-05-02 04:18:53,050 - __main__ - INFO - Game 1 completed in 752 steps.
+2025-05-02 04:18:53,051 - __main__ - INFO - Scores: [2, 2, 8, 16], Total Env Rewards: [122.19999999999956, 122.47499999999951, 138.08777056277037, 191.31200466200443], Winners: [3]
+2025-05-02 04:18:53,065 - __main__ - INFO - Starting game 2/30
+2025-05-02 04:20:46,859 - __main__ - INFO - Game 2 completed in 538 steps.
+2025-05-02 04:20:46,860 - __main__ - INFO - Scores: [15, 2, 0, 5], Total Env Rewards: [111.69199486014502, 91.87499999999987, 88.99999999999984, 96.93214285714264], Winners: [0]
+2025-05-02 04:20:46,872 - __main__ - INFO - Starting game 3/30
+2025-05-02 04:22:10,197 - __main__ - INFO - Game 3 completed in 379 steps.
+2025-05-02 04:22:10,198 - __main__ - INFO - Scores: [15, 6, 4, 0], Total Env Rewards: [115.39559190809197, 88.86010101010105, 72.90555555555562, 56.60000000000009], Winners: [0]
+2025-05-02 04:22:10,212 - __main__ - INFO - Starting game 4/30
+2025-05-02 04:31:20,206 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-05-02 04:31:20,206 - __main__ - INFO - Scores: [7, 7, 6, 6], Total Env Rewards: [150.59384365634412, 176.9349206349197, 169.07272727272726, 169.79999999999913], Winners: [0 1]
+2025-05-02 04:31:20,225 - __main__ - INFO - Starting game 5/30
+2025-05-02 04:32:29,116 - __main__ - INFO - Game 5 completed in 272 steps.
+2025-05-02 04:32:29,116 - __main__ - INFO - Scores: [5, 0, 6, 15], Total Env Rewards: [60.51818181818187, 46.40000000000006, 59.62500000000006, 98.80195360195366], Winners: [3]
+2025-05-02 04:32:29,130 - __main__ - INFO - Starting game 6/30
+2025-05-02 04:33:40,799 - __main__ - INFO - Game 6 completed in 333 steps.
+2025-05-02 04:33:40,800 - __main__ - INFO - Scores: [13, 0, 2, 16], Total Env Rewards: [95.8529656446065, 51.200000000000074, 56.00000000000008, 110.49265734265737], Winners: [3]
+2025-05-02 04:33:40,815 - __main__ - INFO - Starting game 7/30
+2025-05-02 04:39:36,809 - __main__ - INFO - Game 7 completed in 1000 steps.
+2025-05-02 04:39:36,810 - __main__ - INFO - Scores: [7, 3, 6, 3], Total Env Rewards: [178.553496503496, 161.59999999999917, 167.42408702408667, 157.79999999999922], Winners: [0]
+2025-05-02 04:39:36,824 - __main__ - INFO - Starting game 8/30
+2025-05-02 04:48:04,667 - __main__ - INFO - Game 8 completed in 1000 steps.
+2025-05-02 04:48:04,668 - __main__ - INFO - Scores: [2, 3, 3, 3], Total Env Rewards: [159.63333333333253, 160.20252525252513, 169.5818181818173, 159.45714285714203], Winners: [1 2 3]
+2025-05-02 04:48:04,683 - __main__ - INFO - Starting game 9/30
+2025-05-02 04:49:22,835 - __main__ - INFO - Game 9 completed in 356 steps.
+2025-05-02 04:49:22,836 - __main__ - INFO - Scores: [3, 6, 0, 15], Total Env Rewards: [68.00000000000004, 75.275, 53.60000000000008, 105.82141502288566], Winners: [3]
+2025-05-02 04:49:22,849 - __main__ - INFO - Starting game 10/30
+2025-05-02 04:53:49,037 - __main__ - INFO - Game 10 completed in 960 steps.
+2025-05-02 04:53:49,038 - __main__ - INFO - Scores: [2, 5, 7, 15], Total Env Rewards: [154.67499999999922, 160.22857142857072, 141.78833666333645, 194.9255966255959], Winners: [3]
+2025-05-02 04:53:49,055 - __main__ - INFO - Starting game 11/30
+2025-05-02 04:55:31,311 - __main__ - INFO - Game 11 completed in 476 steps.
+2025-05-02 04:55:31,312 - __main__ - INFO - Scores: [2, 7, 0, 16], Total Env Rewards: [85.07499999999995, 103.31515151515138, 75.59999999999998, 136.59088689088694], Winners: [3]
+2025-05-02 04:55:31,325 - __main__ - INFO - Starting game 12/30
+2025-05-02 04:56:44,156 - __main__ - INFO - Game 12 completed in 316 steps.
+2025-05-02 04:56:44,156 - __main__ - INFO - Scores: [1, 1, 7, 15], Total Env Rewards: [50.600000000000065, 61.48888888888895, 77.5636363636364, 112.5533966033966], Winners: [3]
+2025-05-02 04:56:44,171 - __main__ - INFO - Starting game 13/30
+2025-05-02 04:59:17,469 - __main__ - INFO - Game 13 completed in 738 steps.
+2025-05-02 04:59:17,470 - __main__ - INFO - Scores: [1, 0, 3, 18], Total Env Rewards: [119.4333333333329, 111.99999999999964, 118.79999999999961, 178.0669968103792], Winners: [3]
+2025-05-02 04:59:17,486 - __main__ - INFO - Starting game 14/30
+2025-05-02 05:07:51,988 - __main__ - INFO - Game 14 completed in 1000 steps.
+2025-05-02 05:07:51,989 - __main__ - INFO - Scores: [8, 6, 8, 10], Total Env Rewards: [130.14355228105165, 169.68492063491973, 160.51590909090896, 177.8361111111103], Winners: [3]
+2025-05-02 05:07:52,007 - __main__ - INFO - Starting game 15/30
+2025-05-02 05:09:17,693 - __main__ - INFO - Game 15 completed in 396 steps.
+2025-05-02 05:09:17,694 - __main__ - INFO - Scores: [15, 1, 1, 9], Total Env Rewards: [115.9853923853924, 69.20000000000005, 65.40000000000008, 95.81439393939384], Winners: [0]
+2025-05-02 05:09:17,707 - __main__ - INFO - Starting game 16/30
+2025-05-02 05:12:50,375 - __main__ - INFO - Game 16 completed in 1000 steps.
+2025-05-02 05:12:50,375 - __main__ - INFO - Scores: [14, 0, 5, 7], Total Env Rewards: [184.21418997668945, 154.79999999999924, 161.2380952380945, 181.4060606060597], Winners: [0]
+2025-05-02 05:12:50,391 - __main__ - INFO - Starting game 17/30
+2025-05-02 05:17:54,481 - __main__ - INFO - Game 17 completed in 1000 steps.
+2025-05-02 05:17:54,482 - __main__ - INFO - Scores: [3, 2, 2, 3], Total Env Rewards: [164.14343434343357, 164.14166666666588, 160.5999999999992, 165.91388888888807], Winners: [0 3]
+2025-05-02 05:17:54,499 - __main__ - INFO - Starting game 18/30
+2025-05-02 05:19:51,828 - __main__ - INFO - Game 18 completed in 551 steps.
+2025-05-02 05:19:51,829 - __main__ - INFO - Scores: [15, 7, 1, 2], Total Env Rewards: [120.53149399619993, 108.91021756021748, 90.59999999999985, 92.07499999999982], Winners: [0]
+2025-05-02 05:19:51,845 - __main__ - INFO - Starting game 19/30
+2025-05-02 05:24:27,082 - __main__ - INFO - Game 19 completed in 1000 steps.
+2025-05-02 05:24:27,082 - __main__ - INFO - Scores: [1, 1, 1, 1], Total Env Rewards: [170.79999999999907, 152.51666666666654, 162.59999999999923, 149.79999999999927], Winners: [0 1 2 3]
+2025-05-02 05:24:27,098 - __main__ - INFO - Starting game 20/30
+2025-05-02 05:26:43,462 - __main__ - INFO - Game 20 completed in 598 steps.
+2025-05-02 05:26:43,463 - __main__ - INFO - Scores: [2, 1, 15, 5], Total Env Rewards: [98.99999999999979, 96.79999999999977, 135.24726596932473, 107.58797868797859], Winners: [2]
+2025-05-02 05:26:43,480 - __main__ - INFO - Starting game 21/30
+2025-05-02 05:28:46,301 - __main__ - INFO - Game 21 completed in 601 steps.
+2025-05-02 05:28:46,302 - __main__ - INFO - Scores: [0, 0, 0, 15], Total Env Rewards: [94.19999999999982, 101.09090909090901, 90.99999999999984, 131.3780343839169], Winners: [3]
+2025-05-02 05:28:46,316 - __main__ - INFO - Starting game 22/30
+2025-05-02 05:30:06,338 - __main__ - INFO - Game 22 completed in 363 steps.
+2025-05-02 05:30:06,339 - __main__ - INFO - Scores: [0, 2, 18, 0], Total Env Rewards: [63.60000000000008, 70.279797979798, 120.58045614516205, 58.80000000000009], Winners: [2]
+2025-05-02 05:30:06,355 - __main__ - INFO - Starting game 23/30
+2025-05-02 05:31:28,942 - __main__ - INFO - Game 23 completed in 350 steps.
+2025-05-02 05:31:28,943 - __main__ - INFO - Scores: [6, 16, 7, 0], Total Env Rewards: [71.95404040404043, 111.16176601176606, 75.68838383838384, 59.63333333333341], Winners: [1]
+2025-05-02 05:31:28,957 - __main__ - INFO - Starting game 24/30
+2025-05-02 05:35:21,485 - __main__ - INFO - Game 24 completed in 1000 steps.
+2025-05-02 05:35:21,485 - __main__ - INFO - Scores: [1, 3, 2, 2], Total Env Rewards: [151.59999999999926, 163.95555555555478, 169.48181818181746, 158.88888888888812], Winners: [1]
+2025-05-02 05:35:21,500 - __main__ - INFO - Starting game 25/30
+2025-05-02 05:37:41,771 - __main__ - INFO - Game 25 completed in 610 steps.
+2025-05-02 05:37:41,771 - __main__ - INFO - Scores: [0, 0, 16, 12], Total Env Rewards: [97.39999999999978, 96.19999999999979, 160.86473526473503, 120.31634419502068], Winners: [2]
+2025-05-02 05:37:41,786 - __main__ - INFO - Starting game 26/30
+2025-05-02 05:39:21,143 - __main__ - INFO - Game 26 completed in 454 steps.
+2025-05-02 05:39:21,144 - __main__ - INFO - Scores: [16, 2, 0, 5], Total Env Rewards: [121.64281404869644, 77.19999999999999, 72.20000000000002, 84.30864135864144], Winners: [0]
+2025-05-02 05:39:21,157 - __main__ - INFO - Starting game 27/30
+2025-05-02 05:41:30,961 - __main__ - INFO - Game 27 completed in 566 steps.
+2025-05-02 05:41:30,961 - __main__ - INFO - Scores: [9, 11, 5, 16], Total Env Rewards: [122.60833333333314, 131.02640137640137, 106.41818181818168, 124.20200902039133], Winners: [3]
+2025-05-02 05:41:30,974 - __main__ - INFO - Starting game 28/30
+2025-05-02 05:48:19,165 - __main__ - INFO - Game 28 completed in 1000 steps.
+2025-05-02 05:48:19,166 - __main__ - INFO - Scores: [6, 5, 3, 7], Total Env Rewards: [171.19999999999916, 140.50396270396243, 162.79999999999916, 157.47890442890463], Winners: [3]
+2025-05-02 05:48:19,183 - __main__ - INFO - Starting game 29/30
+2025-05-02 05:54:24,519 - __main__ - INFO - Game 29 completed in 1000 steps.
+2025-05-02 05:54:24,520 - __main__ - INFO - Scores: [3, 4, 3, 4], Total Env Rewards: [165.14166666666577, 167.99318181818106, 165.5999999999992, 169.46666666666582], Winners: [1 3]
+2025-05-02 05:54:24,537 - __main__ - INFO - Starting game 30/30
+2025-05-02 05:59:40,728 - __main__ - INFO - Game 30 completed in 872 steps.
+2025-05-02 05:59:40,729 - __main__ - INFO - Scores: [17, 5, 10, 4], Total Env Rewards: [197.08566017316042, 147.86122766122733, 158.42222222222162, 148.4888888888882], Winners: [0]
+2025-05-02 05:59:40,732 - __main__ - INFO - Self-play phase completed. Average steps: 682.70
+2025-05-02 05:59:40,733 - __main__ - INFO - Average scores: [6.36666667 3.6        4.96666667 8.16666667], Average total rewards: [123.78244396 117.83938108 120.27686665 131.75164459]
+2025-05-02 05:59:40,734 - __main__ - INFO - Starting training phase
+2025-05-02 05:59:40,999 - __main__ - INFO - Epoch 10/100, Policy Loss: 1.9220, Value Loss: 0.2046, Total Loss: 2.1265
+2025-05-02 05:59:41,093 - __main__ - INFO - Epoch 20/100, Policy Loss: 1.7978, Value Loss: 0.0863, Total Loss: 1.8841
+2025-05-02 05:59:41,185 - __main__ - INFO - Epoch 30/100, Policy Loss: 1.7074, Value Loss: 0.0328, Total Loss: 1.7402
+2025-05-02 05:59:41,271 - __main__ - INFO - Epoch 40/100, Policy Loss: 1.7339, Value Loss: 0.0207, Total Loss: 1.7546
+2025-05-02 05:59:41,361 - __main__ - INFO - Epoch 50/100, Policy Loss: 1.6409, Value Loss: 0.0162, Total Loss: 1.6571
+2025-05-02 05:59:41,450 - __main__ - INFO - Epoch 60/100, Policy Loss: 1.5808, Value Loss: 0.0170, Total Loss: 1.5978
+2025-05-02 05:59:41,552 - __main__ - INFO - Epoch 70/100, Policy Loss: 1.6190, Value Loss: 0.0104, Total Loss: 1.6294
+2025-05-02 05:59:41,642 - __main__ - INFO - Epoch 80/100, Policy Loss: 1.5631, Value Loss: 0.0099, Total Loss: 1.5730
+2025-05-02 05:59:41,732 - __main__ - INFO - Epoch 90/100, Policy Loss: 1.5442, Value Loss: 0.0095, Total Loss: 1.5537
+2025-05-02 05:59:41,818 - __main__ - INFO - Epoch 100/100, Policy Loss: 1.5442, Value Loss: 0.0110, Total Loss: 1.5552
+2025-05-02 05:59:41,819 - __main__ - INFO - Training completed. Average Policy Loss: 1.6925, Average Value Loss: 0.0778, Average Total Loss: 1.7703
+2025-05-02 05:59:41,819 - __main__ - INFO - Starting iteration 4/11
+2025-05-02 05:59:41,819 - __main__ - INFO - Starting self-play phase
+2025-05-02 05:59:41,830 - __main__ - INFO - Starting game 1/30
+2025-05-02 06:01:00,925 - __main__ - INFO - Player performance summary:
+2025-05-02 06:01:00,925 - __main__ - INFO - Player 0: Score=0, Total Reward=46.000000000000064, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 06:01:00,926 - __main__ - INFO - Player 1: Score=3, Total Reward=57.63333333333339, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 06:01:00,926 - __main__ - INFO - Player 2: Score=15, Total Reward=118.77347097347099, Nobles=0, Sets=0, Efficiency=0.6
+2025-05-02 06:01:00,926 - __main__ - INFO - Player 3: Score=2, Total Reward=51.60000000000005, Nobles=0, Sets=0, Efficiency=1.0
+2025-05-02 06:01:00,927 - __main__ - INFO - Game 1 completed in 289 steps.
+2025-05-02 06:01:00,927 - __main__ - INFO - Scores: [0, 3, 15, 2], Total Env Rewards: [46.000000000000064, 57.63333333333339, 118.77347097347099, 51.60000000000005], Winners: [2]
+2025-05-02 06:01:00,942 - __main__ - INFO - Starting game 2/30
+2025-05-02 06:02:15,319 - __main__ - INFO - Game 2 completed in 316 steps.
+2025-05-02 06:02:15,319 - __main__ - INFO - Scores: [15, 5, 0, 1], Total Env Rewards: [120.42681534152122, 74.997163947164, 46.20000000000007, 51.20000000000007], Winners: [0]
+2025-05-02 06:02:15,333 - __main__ - INFO - Starting game 3/30
+2025-05-02 06:12:02,308 - __main__ - INFO - Game 3 completed in 1000 steps.
+2025-05-02 06:12:02,308 - __main__ - INFO - Scores: [1, 1, 3, 1], Total Env Rewards: [158.1999999999992, 167.0868686868678, 161.84393939393934, 153.19999999999928], Winners: [2]
+2025-05-02 06:12:02,322 - __main__ - INFO - Starting game 4/30
+2025-05-02 06:17:13,252 - __main__ - INFO - Game 4 completed in 1000 steps.
+2025-05-02 06:17:13,253 - __main__ - INFO - Scores: [1, 3, 4, 2], Total Env Rewards: [155.19999999999922, 146.68418248418237, 169.45454545454461, 163.89999999999918], Winners: [2]
+2025-05-02 06:17:13,268 - __main__ - INFO - Starting game 5/30
+2025-05-02 06:23:34,282 - __main__ - INFO - Game 5 completed in 1000 steps.
+2025-05-02 06:23:34,283 - __main__ - INFO - Scores: [7, 4, 5, 5], Total Env Rewards: [175.63207070706983, 165.19999999999914, 166.657142857142, 172.26666666666577], Winners: [0]
+2025-05-02 06:23:34,298 - __main__ - INFO - Starting game 6/30
+2025-05-02 06:30:04,396 - __main__ - INFO - Game 6 completed in 1000 steps.
+2025-05-02 06:30:04,397 - __main__ - INFO - Scores: [2, 1, 2, 1], Total Env Rewards: [161.65714285714208, 163.39999999999915, 163.28888888888807, 160.7999999999992], Winners: [0 2]
+2025-05-02 06:30:04,411 - __main__ - INFO - Starting game 7/30
+2025-05-02 06:34:18,793 - __main__ - INFO - Game 7 completed in 1000 steps.
+2025-05-02 06:34:18,794 - __main__ - INFO - Scores: [0, 1, 1, 1], Total Env Rewards: [158.99999999999918, 164.69999999999928, 153.19999999999925, 163.19393939393862], Winners: [1 2 3]
+2025-05-02 06:34:18,808 - __main__ - INFO - Starting game 8/30
+2025-05-02 06:38:53,699 - __main__ - INFO - Game 8 completed in 1000 steps.
+2025-05-02 06:38:53,699 - __main__ - INFO - Scores: [2, 2, 2, 3], Total Env Rewards: [161.8999999999992, 166.50909090909022, 155.23333333333255, 166.37142857142769], Winners: [3]
+2025-05-02 06:38:53,714 - __main__ - INFO - Starting game 9/30
+2025-05-02 06:41:06,313 - __main__ - INFO - Game 9 completed in 608 steps.
+2025-05-02 06:41:06,314 - __main__ - INFO - Scores: [0, 4, 2, 19], Total Env Rewards: [96.99999999999983, 104.25714285714263, 99.39999999999975, 152.03307411113147], Winners: [3]
+2025-05-02 06:41:06,326 - __main__ - INFO - Starting game 10/30
+2025-05-02 06:42:15,748 - __main__ - INFO - Game 10 completed in 249 steps.
+2025-05-02 06:42:15,748 - __main__ - INFO - Scores: [17, 1, 0, 2], Total Env Rewards: [110.57265283735873, 46.60000000000005, 42.80000000000004, 46.80000000000004], Winners: [0]
+2025-05-02 06:42:15,763 - __main__ - INFO - Starting game 11/30
+2025-05-02 06:51:51,590 - __main__ - INFO - Game 11 completed in 1000 steps.
+2025-05-02 06:51:51,591 - __main__ - INFO - Scores: [3, 6, 4, 6], Total Env Rewards: [165.72380952380863, 176.0013986013985, 163.59999999999914, 140.86463536463506], Winners: [1 3]
+2025-05-02 06:51:51,606 - __main__ - INFO - Starting game 12/30
+2025-05-02 06:53:07,016 - __main__ - INFO - Game 12 completed in 322 steps.
+2025-05-02 06:53:07,016 - __main__ - INFO - Scores: [0, 8, 15, 1], Total Env Rewards: [51.600000000000065, 90.48636363636372, 123.6800728768995, 53.200000000000074], Winners: [2]
+2025-05-02 06:53:07,031 - __main__ - INFO - Starting game 13/30
+2025-05-02 06:55:30,345 - __main__ - INFO - Game 13 completed in 672 steps.
+2025-05-02 06:55:30,345 - __main__ - INFO - Scores: [3, 2, 20, 6], Total Env Rewards: [114.59999999999962, 114.90707070707043, 181.82592962592966, 121.84166666666638], Winners: [2]
+2025-05-02 06:55:30,363 - __main__ - INFO - Starting game 14/30
+2025-05-02 06:58:00,209 - __main__ - INFO - Game 14 completed in 692 steps.
+2025-05-02 06:58:00,210 - __main__ - INFO - Scores: [18, 0, 4, 11], Total Env Rewards: [191.48994755244775, 112.39999999999965, 121.28888888888851, 144.12727272727258], Winners: [0]
+2025-05-02 06:58:00,226 - __main__ - INFO - Starting game 15/30
+2025-05-02 06:59:04,559 - __main__ - INFO - Game 15 completed in 273 steps.
+2025-05-02 06:59:04,559 - __main__ - INFO - Scores: [16, 2, 3, 1], Total Env Rewards: [129.15831505096207, 47.00000000000006, 54.20000000000006, 49.4571428571429], Winners: [0]
+2025-05-02 06:59:04,575 - __main__ - INFO - Starting game 16/30

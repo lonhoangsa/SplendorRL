@@ -6,7 +6,7 @@ import logging
 import matplotlib.pyplot as plt
 from datetime import datetime
 from env.splendor_lightzero_env import SplendorLightZeroEnv  # Import environment
-from train.DuelingDQN_Agent import DuelingDQNAgent  # Import the dueling agent
+from train.DuelingDQN.DuelingDQN_Agent import DuelingDQNAgent  # Import the dueling agent
 
 # Setup logging
 def setup_logging():

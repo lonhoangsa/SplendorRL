@@ -1,0 +1,119 @@
+2025-04-28 10:45:31,852 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-28 10:45:31,852 - __main__ - INFO - Debug mode: False
+2025-04-28 10:45:31,863 - __main__ - INFO - ==================================================
+2025-04-28 10:45:31,864 - __main__ - INFO - OBSERVATION SIZE ANALYSIS
+2025-04-28 10:45:31,864 - __main__ - INFO - ==================================================
+2025-04-28 10:45:31,876 - __main__ - INFO - Observation is a dictionary with 3 keys
+2025-04-28 10:45:31,876 - __main__ - INFO - 
+--- Component: observation ---
+2025-04-28 10:45:31,877 - __main__ - INFO - Type: <class 'dict'>
+2025-04-28 10:45:31,877 - __main__ - INFO - Value: {'tier1': array([[1, 0, 1, 0, 0, 2, 0, 2],
+       [1, 0, 1, 1, 1, 3, 0, 0],
+       [1, 0, 5, 0, 3, 0, 0, 0],
+       [1, 0, 5, 0, 2, 0, 0, 2]], dtype=int32), 'tier2': array([[2, 2, 3, 1, 2, 0, 4, 1],
+       [2, 2, 3, 0, 5, 3, 0, 0],
+       [2, 2, 5, 0, 3, 0, 5, 0],
+       [2, 3, 2, 0, 6, 0, 0, 0]], dtype=int32), 'tier3': array([[3, 4, 2, 0, 0, 0, 7, 0],
+       [3, 5, 5, 7, 0, 0, 0, 3],
+       [3, 4, 1, 3, 3, 6, 0, 0],
+       [3, 4, 3, 0, 6, 3, 3, 0]], dtype=int32), 'tokens': array([7, 7, 7, 7, 7, 5], dtype=int32), 'current_player': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32), 'nobles': array([3, 3, 3, 0, 0, 0, 0, 0, 4, 4, 0, 4, 0, 4, 0, 3, 0, 0, 3, 3, 0, 3,
+       0, 3, 3], dtype=int32), 'action_mask': array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      dtype=int8), 'to_play': 0}
+2025-04-28 10:45:31,878 - __main__ - INFO - Memory: 360 bytes
+2025-04-28 10:45:31,878 - __main__ - INFO - 
+--- Component: action_mask ---
+2025-04-28 10:45:31,878 - __main__ - INFO - Shape: (88,)
+2025-04-28 10:45:31,879 - __main__ - INFO - Data type: int8 (1 bytes per element)
+2025-04-28 10:45:31,879 - __main__ - INFO - Elements: 88
+2025-04-28 10:45:31,879 - __main__ - INFO - Memory: 88 bytes (0.09 KB)
+2025-04-28 10:45:31,880 - __main__ - INFO - 
+--- Component: to_play ---
+2025-04-28 10:45:31,880 - __main__ - INFO - Type: <class 'int'>
+2025-04-28 10:45:31,881 - __main__ - INFO - Value: 0
+2025-04-28 10:45:31,881 - __main__ - INFO - Memory: 24 bytes
+2025-04-28 10:45:31,881 - __main__ - INFO - 
+=== OBSERVATION SIZE SUMMARY ===
+2025-04-28 10:45:31,881 - __main__ - INFO - Total elements: 88
+2025-04-28 10:45:31,882 - __main__ - INFO - Total memory: 472 bytes (0.46 KB)
+2025-04-28 10:45:31,882 - __main__ - INFO - Expected flattened vector size: 92 elements
+2025-04-28 10:45:31,882 - __main__ - INFO - Expected state dimension from formula: (4×3×8) + 6 + (6+5+8×3) + (5×5) = 162
+2025-04-28 10:45:31,883 - __main__ - WARNING - Mismatch between calculated flattened size (92) and formula (162)
+2025-04-28 10:45:31,883 - __main__ - INFO - Reverse calculation of card_feature_dim: (92 - 42) ÷ 15 = 3.3333333333333335
+2025-04-28 10:45:31,883 - __main__ - INFO - ==================================================
+2025-04-28 10:45:31,883 - __main__ - INFO - ==================================================
+2025-04-28 10:45:31,884 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-28 10:45:31,884 - __main__ - INFO - ==================================================
+2025-04-28 10:45:31,884 - __main__ - INFO - Card feature dimension: 8
+2025-04-28 10:45:31,884 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-28 10:45:31,885 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-28 10:45:31,885 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-28 10:45:31,885 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-28 10:45:31,885 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-28 10:45:31,885 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-28 10:45:31,885 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-28 10:45:31,886 - __main__ - INFO - Action dimension: 88
+2025-04-28 10:45:31,886 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-28 10:45:31,886 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-28 10:45:31,886 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-28 10:45:31,886 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-28 10:45:32,249 - __main__ - INFO - Using device: cuda
+2025-04-28 10:45:33,683 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-28 10:45:33,684 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=10
+2025-04-28 10:45:33,684 - __main__ - INFO - ==================================================
+2025-04-28 10:45:33,685 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 2 iterations
+2025-04-28 10:45:33,685 - __main__ - INFO - Starting iteration 1/2
+2025-04-28 10:45:33,685 - __main__ - INFO - Starting self-play phase
+2025-04-28 10:45:33,694 - __main__ - INFO - Starting game 1/5
+2025-04-28 10:46:27,363 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:46:27,365 - __main__ - INFO - Game 1 completed in 1000 steps. Player scores: [14, 14, 14, 12], Raw env reward: -0.4, Rounded: -0.4, Winners: [0 1 2]
+2025-04-28 10:46:27,382 - __main__ - INFO - Starting game 2/5
+2025-04-28 10:47:20,438 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:47:20,441 - __main__ - INFO - Game 2 completed in 1000 steps. Player scores: [14, 14, 13, 14], Raw env reward: -0.4, Rounded: -0.4, Winners: [0 1 3]
+2025-04-28 10:47:20,455 - __main__ - INFO - Starting game 3/5
+2025-04-28 10:47:32,593 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:47:32,595 - __main__ - INFO - Game 3 completed in 206 steps. Player scores: [8, 15, 4, 2], Raw env reward: 5, Rounded: 5, Winners: [1]
+2025-04-28 10:47:32,605 - __main__ - INFO - Starting game 4/5
+2025-04-28 10:48:17,436 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:48:17,437 - __main__ - INFO - Game 4 completed in 1000 steps. Player scores: [14, 14, 14, 14], Raw env reward: -0.4, Rounded: -0.4, Winners: [0 1 2 3]
+2025-04-28 10:48:17,454 - __main__ - INFO - Starting game 5/5
+2025-04-28 10:48:34,908 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:48:34,910 - __main__ - INFO - Game 5 completed in 308 steps. Player scores: [13, 12, 15, 4], Raw env reward: 10, Rounded: 10, Winners: [2]
+2025-04-28 10:48:34,913 - __main__ - INFO - Self-play phase completed. Average steps: 702.80, Average rewards: [12.6 13.8 12.   9.2]
+2025-04-28 10:48:34,914 - __main__ - INFO - Starting training phase
+2025-04-28 10:48:34,914 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 10:48:34,915 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 10:48:35,027 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.7975, Value Loss: 0.2276, Total Loss: 4.0252
+2025-04-28 10:48:35,028 - __main__ - INFO - Training completed. Average Policy Loss: 4.0900, Average Value Loss: 0.4607, Average Total Loss: 4.5507
+2025-04-28 10:48:35,028 - __main__ - INFO - Starting iteration 2/2
+2025-04-28 10:48:35,029 - __main__ - INFO - Starting self-play phase
+2025-04-28 10:48:35,043 - __main__ - INFO - Starting game 1/5
+2025-04-28 10:49:23,535 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:49:23,537 - __main__ - INFO - Game 1 completed in 1000 steps. Player scores: [10, 13, 14, 14], Raw env reward: -0.4, Rounded: -0.4, Winners: [2 3]
+2025-04-28 10:49:23,552 - __main__ - INFO - Starting game 2/5
+2025-04-28 10:50:10,779 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:50:10,780 - __main__ - INFO - Game 2 completed in 1000 steps. Player scores: [14, 3, 14, 4], Raw env reward: -0.4, Rounded: -0.4, Winners: [0 2]
+2025-04-28 10:50:10,796 - __main__ - INFO - Starting game 3/5
+2025-04-28 10:51:01,642 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:51:01,644 - __main__ - INFO - Game 3 completed in 1000 steps. Player scores: [14, 0, 14, 11], Raw env reward: -0.4, Rounded: -0.4, Winners: [0 2]
+2025-04-28 10:51:01,666 - __main__ - INFO - Starting game 4/5
+2025-04-28 10:51:33,164 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:51:33,166 - __main__ - INFO - Game 4 completed in 580 steps. Player scores: [12, 14, 1, 15], Raw env reward: 17, Rounded: 17, Winners: [3]
+2025-04-28 10:51:33,182 - __main__ - INFO - Starting game 5/5
+2025-04-28 10:52:19,385 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-28 10:52:19,387 - __main__ - INFO - Game 5 completed in 1000 steps. Player scores: [10, 14, 14, 0], Raw env reward: -0.4, Rounded: -0.4, Winners: [1 2]
+2025-04-28 10:52:19,390 - __main__ - INFO - Self-play phase completed. Average steps: 916.00, Average rewards: [12.   8.8 11.4  8.8]
+2025-04-28 10:52:19,390 - __main__ - INFO - Starting training phase
+2025-04-28 10:52:19,390 - __main__ - INFO - Model's input dimension (from first layer): 162
+2025-04-28 10:52:19,390 - __main__ - INFO - Model was trained with card_feature_dim ≈ (162 - 42) ÷ 15 = 8
+2025-04-28 10:52:19,444 - __main__ - INFO - Epoch 10/10, Policy Loss: 3.7366, Value Loss: 0.2551, Total Loss: 3.9917
+2025-04-28 10:52:19,445 - __main__ - INFO - Training completed. Average Policy Loss: 3.7697, Average Value Loss: 0.4465, Average Total Loss: 4.2161
+2025-04-28 10:52:19,701 - __main__ - INFO - Model and training state saved at models/alphazero_final.pth
+2025-04-28 10:52:20,034 - __main__ - INFO - Loss history plots saved to plots/alphazero_final_loss_history_20250428_105219.png
+2025-04-28 10:52:20,035 - __main__ - INFO - AlphaZero training completed. Final model saved at models/alphazero_final.pth

@@ -1,0 +1,23 @@
+2025-04-30 10:37:35,526 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 10:37:35,837 - __main__ - INFO - Using device: cuda
+2025-04-30 10:37:35,855 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 10:37:35,856 - __main__ - INFO - Loading candidate model from models/alphazero_final.pth
+2025-04-30 10:37:38,587 - __main__ - INFO - Successfully loaded candidate model
+2025-04-30 10:37:38,593 - __main__ - INFO - Starting evaluation: 50 games against bot baseline
+2025-04-30 10:41:55,520 - __main__ - INFO - Progress: 10/50, Win rate: 0.0000
+2025-04-30 10:46:31,229 - __main__ - INFO - Progress: 20/50, Win rate: 0.0000
+2025-04-30 10:50:58,950 - __main__ - INFO - Progress: 30/50, Win rate: 0.0000
+2025-04-30 10:55:54,900 - __main__ - INFO - Progress: 40/50, Win rate: 0.0000
+2025-04-30 11:00:37,004 - __main__ - INFO - Progress: 50/50, Win rate: 0.0000
+2025-04-30 11:00:37,005 - __main__ - INFO - ==================================================
+2025-04-30 11:00:37,005 - __main__ - INFO - EVALUATION RESULTS
+2025-04-30 11:00:37,005 - __main__ - INFO - ==================================================
+2025-04-30 11:00:37,006 - __main__ - INFO - Games played: 50
+2025-04-30 11:00:37,006 - __main__ - INFO - Wins: 0 (0.0000)
+2025-04-30 11:00:37,006 - __main__ - INFO - Draws: 7 (0.1400)
+2025-04-30 11:00:37,006 - __main__ - INFO - Losses: 43 (0.8600)
+2025-04-30 11:00:37,006 - __main__ - INFO - Average model score: 0.12
+2025-04-30 11:00:37,007 - __main__ - INFO - Average opponent score: 6.50
+2025-04-30 11:00:37,007 - __main__ - INFO - Average game length: 245.28 steps
+2025-04-30 11:00:37,007 - __main__ - INFO - ==================================================
+2025-04-30 11:00:37,586 - __main__ - INFO - Results plot saved to plots/evaluation_20250430_110037.png

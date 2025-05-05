@@ -1,0 +1,10 @@
+2025-05-02 02:40:38,448 - __main__ - INFO - Initializing AlphaZero trainer
+2025-05-02 02:40:38,449 - __main__ - INFO - Debug mode: False
+2025-05-02 02:40:40,107 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-05-02 02:40:40,107 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=40
+2025-05-02 02:40:40,107 - __main__ - INFO - ==================================================
+2025-05-02 02:40:40,353 - __main__ - INFO - Loaded model from iteration 1
+2025-05-02 02:40:40,359 - __main__ - INFO - Starting AlphaZero training from iteration 2 for 10 iterations
+2025-05-02 02:40:40,359 - __main__ - INFO - Starting iteration 2/11
+2025-05-02 02:40:40,360 - __main__ - INFO - Starting self-play phase
+2025-05-02 02:40:40,375 - __main__ - INFO - Starting game 1/30

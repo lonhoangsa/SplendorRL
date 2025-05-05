@@ -1,0 +1,73 @@
+2025-04-28 09:23:43,538 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-28 09:23:43,539 - __main__ - INFO - Debug mode: False
+2025-04-28 09:23:43,551 - __main__ - INFO - ==================================================
+2025-04-28 09:23:43,551 - __main__ - INFO - OBSERVATION SIZE ANALYSIS
+2025-04-28 09:23:43,551 - __main__ - INFO - ==================================================
+2025-04-28 09:23:43,563 - __main__ - INFO - Observation is a dictionary with 3 keys
+2025-04-28 09:23:43,564 - __main__ - INFO - 
+--- Component: observation ---
+2025-04-28 09:23:43,564 - __main__ - INFO - Type: <class 'dict'>
+2025-04-28 09:23:43,565 - __main__ - INFO - Value: {'tier1': array([[1, 0, 1, 0, 0, 2, 0, 2],
+       [1, 0, 3, 0, 1, 0, 2, 0],
+       [1, 0, 5, 1, 0, 2, 0, 0],
+       [1, 0, 4, 1, 1, 1, 0, 1]], dtype=int32), 'tier2': array([[2, 2, 5, 0, 0, 0, 5, 0],
+       [2, 3, 3, 0, 0, 6, 0, 0],
+       [2, 2, 2, 0, 0, 0, 3, 5],
+       [2, 1, 5, 0, 2, 0, 3, 2]], dtype=int32), 'tier3': array([[3, 4, 1, 0, 0, 7, 0, 0],
+       [3, 3, 5, 3, 3, 5, 3, 0],
+       [3, 4, 3, 0, 7, 0, 0, 0],
+       [3, 3, 1, 0, 5, 3, 3, 3]], dtype=int32), 'tokens': array([7, 7, 7, 7, 7, 5], dtype=int32), 'current_player': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32), 'nobles': array([0, 0, 0, 4, 4, 3, 3, 3, 0, 0, 3, 0, 3, 0, 3, 4, 0, 0, 0, 4, 0, 3,
+       3, 3, 0], dtype=int32), 'action_mask': array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      dtype=int8), 'to_play': 0}
+2025-04-28 09:23:43,565 - __main__ - INFO - Memory: 360 bytes
+2025-04-28 09:23:43,566 - __main__ - INFO - 
+--- Component: action_mask ---
+2025-04-28 09:23:43,566 - __main__ - INFO - Shape: (88,)
+2025-04-28 09:23:43,566 - __main__ - INFO - Data type: int8 (1 bytes per element)
+2025-04-28 09:23:43,566 - __main__ - INFO - Elements: 88
+2025-04-28 09:23:43,567 - __main__ - INFO - Memory: 88 bytes (0.09 KB)
+2025-04-28 09:23:43,567 - __main__ - INFO - 
+--- Component: to_play ---
+2025-04-28 09:23:43,567 - __main__ - INFO - Type: <class 'int'>
+2025-04-28 09:23:43,567 - __main__ - INFO - Value: 0
+2025-04-28 09:23:43,567 - __main__ - INFO - Memory: 24 bytes
+2025-04-28 09:23:43,568 - __main__ - INFO - 
+=== OBSERVATION SIZE SUMMARY ===
+2025-04-28 09:23:43,568 - __main__ - INFO - Total elements: 88
+2025-04-28 09:23:43,568 - __main__ - INFO - Total memory: 472 bytes (0.46 KB)
+2025-04-28 09:23:43,568 - __main__ - INFO - Expected flattened vector size: 92 elements
+2025-04-28 09:23:43,568 - __main__ - INFO - Expected state dimension from formula: (4×3×8) + 6 + (6+5+8×3) + (5×5) = 162
+2025-04-28 09:23:43,568 - __main__ - WARNING - Mismatch between calculated flattened size (92) and formula (162)
+2025-04-28 09:23:43,568 - __main__ - INFO - Reverse calculation of card_feature_dim: (92 - 42) ÷ 15 = 3.3333333333333335
+2025-04-28 09:23:43,569 - __main__ - INFO - ==================================================
+2025-04-28 09:23:43,569 - __main__ - INFO - ==================================================
+2025-04-28 09:23:43,569 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-28 09:23:43,569 - __main__ - INFO - ==================================================
+2025-04-28 09:23:43,569 - __main__ - INFO - Card feature dimension: 8
+2025-04-28 09:23:43,570 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-28 09:23:43,570 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-28 09:23:43,570 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-28 09:23:43,570 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-28 09:23:43,570 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-28 09:23:43,571 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-28 09:23:43,571 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-28 09:23:43,572 - __main__ - INFO - Action dimension: 88
+2025-04-28 09:23:43,572 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-28 09:23:43,572 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-28 09:23:43,572 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-28 09:23:43,573 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-28 09:23:43,883 - __main__ - INFO - Using device: cuda
+2025-04-28 09:23:45,470 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-28 09:23:45,470 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000, num_simulations=50
+2025-04-28 09:23:45,471 - __main__ - INFO - ==================================================
+2025-04-28 09:23:45,472 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 50 iterations
+2025-04-28 09:23:45,472 - __main__ - INFO - Starting iteration 1/50
+2025-04-28 09:23:45,473 - __main__ - INFO - Starting self-play phase
+2025-04-28 09:23:45,486 - __main__ - INFO - Starting game 1/50

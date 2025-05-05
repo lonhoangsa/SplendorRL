@@ -1,0 +1,7 @@
+2025-04-30 18:35:10,717 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 18:35:10,902 - __main__ - INFO - Using device: cuda
+2025-04-30 18:35:10,918 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 18:35:10,919 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 18:35:12,835 - __main__ - ERROR - Error loading model: Error(s) in loading state_dict for AlphaZeroNet:
+	Missing key(s) in state_dict: "fc1.weight", "fc1.bias", "bn1.weight", "bn1.bias", "bn1.running_mean", "bn1.running_var", "fc2.weight", "fc2.bias", "bn2.weight", "bn2.bias", "bn2.running_mean", "bn2.running_var", "policy_head.weight", "policy_head.bias", "value_head.weight", "value_head.bias". 
+	Unexpected key(s) in state_dict: "network_state_dict", "optimizer_state_dict", "iteration", "policy_loss_history", "value_loss_history", "total_loss_history", "iteration_numbers", "buffer". 

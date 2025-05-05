@@ -1,0 +1,7 @@
+2025-04-30 20:34:14,927 - INFO - Using device: cuda
+2025-04-30 20:34:17,026 - INFO - Loaded DQN model weights from ../splendor/models/dqn_model_final.pth
+2025-04-30 20:34:17,098 - INFO - Loaded DuelingDQN model weights from ../splendor/models/dueling_model_final.pth
+2025-04-30 20:34:17,260 - INFO - Loaded AlphaZero model weights from ../splendor/models/alphazero_final.pth
+2025-04-30 20:34:17,261 - INFO - 
+=== Starting Model Comparison ===
+2025-04-30 20:34:17,261 - INFO - Starting evaluation of DQN, DuelingDQN, AlphaZero

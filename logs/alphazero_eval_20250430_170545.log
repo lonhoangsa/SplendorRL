@@ -1,0 +1,41 @@
+2025-04-30 17:05:45,561 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 17:05:45,810 - __main__ - INFO - Using device: cuda
+2025-04-30 17:05:45,828 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 17:05:45,828 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 17:05:47,972 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 17:05:47,977 - __main__ - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:05:47,991 - __main__ - DEBUG - Starting game with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:05:47,992 - __main__ - INFO - 
+==================================================
+2025-04-30 17:05:47,992 - __main__ - INFO - Step 1 - Player 0's turn (candidate)
+2025-04-30 17:05:47,992 - __main__ - INFO - ==================================================
+2025-04-30 17:05:47,993 - __main__ - INFO - 
+Available Tokens:
+2025-04-30 17:05:47,993 - __main__ - INFO - white: 7
+2025-04-30 17:05:47,993 - __main__ - INFO - blue: 7
+2025-04-30 17:05:47,993 - __main__ - INFO - green: 7
+2025-04-30 17:05:47,993 - __main__ - INFO - red: 7
+2025-04-30 17:05:47,994 - __main__ - INFO - black: 7
+2025-04-30 17:05:47,994 - __main__ - INFO - gold: 5
+2025-04-30 17:05:47,994 - __main__ - INFO - 
+Cards on Table:
+2025-04-30 17:05:47,994 - __main__ - INFO - 
+Tier 1 cards:
+2025-04-30 17:05:47,994 - __main__ - INFO - Card 0: Cost [0 4 1 1 1], Points 1, Color 0
+2025-04-30 17:05:47,995 - __main__ - INFO - Card 1: Cost [1 5 0 4 0], Points 1, Color 0
+2025-04-30 17:05:47,995 - __main__ - INFO - Card 2: Cost [0 4 1 1 2], Points 1, Color 0
+2025-04-30 17:05:47,995 - __main__ - INFO - Card 3: Cost [0 5 1 2 1], Points 1, Color 1
+2025-04-30 17:05:47,996 - __main__ - INFO - 
+Tier 2 cards:
+2025-04-30 17:05:47,996 - __main__ - INFO - Card 0: Cost [1 3 2 0 2], Points 2, Color 0
+2025-04-30 17:05:47,996 - __main__ - INFO - Card 1: Cost [3 1 6 0 0], Points 2, Color 0
+2025-04-30 17:05:47,997 - __main__ - INFO - Card 2: Cost [2 2 0 0 0], Points 2, Color 3
+2025-04-30 17:05:47,997 - __main__ - INFO - Card 3: Cost [3 3 0 0 6], Points 2, Color 0
+2025-04-30 17:05:47,998 - __main__ - INFO - 
+Tier 3 cards:
+2025-04-30 17:05:47,998 - __main__ - INFO - Card 0: Cost [4 1 3 3 6], Points 3, Color 0
+2025-04-30 17:05:47,998 - __main__ - INFO - Card 1: Cost [4 4 0 0 0], Points 3, Color 0
+2025-04-30 17:05:47,999 - __main__ - INFO - Card 2: Cost [5 2 0 3 0], Points 3, Color 7
+2025-04-30 17:05:47,999 - __main__ - INFO - Card 3: Cost [4 3 0 6 3], Points 3, Color 3
+2025-04-30 17:05:47,999 - __main__ - INFO - 
+Available Nobles:

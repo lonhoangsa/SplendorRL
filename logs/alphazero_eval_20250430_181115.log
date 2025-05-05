@@ -1,0 +1,118 @@
+2025-04-30 18:11:15,589 - INFO - Initializing AlphaZero evaluator
+2025-04-30 18:11:15,834 - INFO - Using device: cuda
+2025-04-30 18:11:15,852 - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 18:11:15,853 - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 18:11:17,940 - INFO - Successfully loaded model candidate
+2025-04-30 18:11:17,945 - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 18:11:17,962 - DEBUG - Starting game with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 18:11:17,962 - INFO - 
+==================================================
+2025-04-30 18:11:17,963 - INFO - Step 1 - Player -1's turn (random)
+2025-04-30 18:11:17,965 - INFO - ==================================================
+2025-04-30 18:11:17,966 - INFO - 
+Available Tokens:
+2025-04-30 18:11:17,966 - INFO - white: 7
+2025-04-30 18:11:17,966 - INFO - blue: 7
+2025-04-30 18:11:17,966 - INFO - green: 7
+2025-04-30 18:11:17,967 - INFO - red: 7
+2025-04-30 18:11:17,967 - INFO - black: 7
+2025-04-30 18:11:17,967 - INFO - gold: 5
+2025-04-30 18:11:17,967 - INFO - 
+Cards on Table:
+2025-04-30 18:11:17,967 - INFO - 
+Tier 1 cards:
+2025-04-30 18:11:17,968 - INFO - Card 0: Cost [0 1 0 1 1], Points 1, Color 2
+2025-04-30 18:11:17,968 - INFO - Card 1: Cost [0 3 1 1 0], Points 1, Color 1
+2025-04-30 18:11:17,968 - INFO - Card 2: Cost [1 2 4 0 0], Points 1, Color 0
+2025-04-30 18:11:17,968 - INFO - Card 3: Cost [0 5 1 1 1], Points 1, Color 1
+2025-04-30 18:11:17,969 - INFO - 
+Tier 2 cards:
+2025-04-30 18:11:17,969 - INFO - Card 0: Cost [2 4 0 5 0], Points 2, Color 0
+2025-04-30 18:11:17,969 - INFO - Card 1: Cost [1 3 2 0 2], Points 2, Color 0
+2025-04-30 18:11:17,970 - INFO - Card 2: Cost [2 2 0 0 0], Points 2, Color 0
+2025-04-30 18:11:17,970 - INFO - Card 3: Cost [2 3 0 0 5], Points 2, Color 0
+2025-04-30 18:11:17,970 - INFO - 
+Tier 3 cards:
+2025-04-30 18:11:17,971 - INFO - Card 0: Cost [4 1 3 3 6], Points 3, Color 0
+2025-04-30 18:11:17,972 - INFO - Card 1: Cost [3 3 3 3 0], Points 3, Color 5
+2025-04-30 18:11:17,972 - INFO - Card 2: Cost [5 1 3 0 7], Points 3, Color 0
+2025-04-30 18:11:17,973 - INFO - Card 3: Cost [3 2 3 0 3], Points 3, Color 3
+2025-04-30 18:11:17,973 - INFO - 
+Available Nobles:
+2025-04-30 18:11:17,974 - INFO - No nobles available
+2025-04-30 18:11:17,974 - INFO - 
+Players' States:
+2025-04-30 18:11:17,974 - INFO - 
+Player 0 (candidate):
+2025-04-30 18:11:17,974 - INFO - Score: 0
+2025-04-30 18:11:17,974 - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:11:17,975 - INFO - Cards:
+2025-04-30 18:11:17,975 - INFO - Nobles:
+2025-04-30 18:11:17,975 - INFO - No nobles
+2025-04-30 18:11:17,976 - INFO - 
+Player 1 (random):
+2025-04-30 18:11:17,976 - INFO - Score: 0
+2025-04-30 18:11:17,976 - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:11:17,977 - INFO - Cards:
+2025-04-30 18:11:17,977 - INFO - Nobles:
+2025-04-30 18:11:17,977 - INFO - No nobles
+2025-04-30 18:11:17,977 - INFO - 
+Player 2 (random):
+2025-04-30 18:11:17,977 - INFO - Score: 0
+2025-04-30 18:11:17,978 - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:11:17,978 - INFO - Cards:
+2025-04-30 18:11:17,978 - INFO - Nobles:
+2025-04-30 18:11:17,978 - INFO - No nobles
+2025-04-30 18:11:17,978 - INFO - 
+Player 3 (random):
+2025-04-30 18:11:17,979 - INFO - Score: 0
+2025-04-30 18:11:17,979 - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:11:17,979 - INFO - Cards:
+2025-04-30 18:11:17,979 - INFO - Nobles:
+2025-04-30 18:11:17,979 - INFO - No nobles
+2025-04-30 18:11:17,980 - INFO - 
+Valid Actions:
+2025-04-30 18:11:17,980 - INFO - Take tokens: 0
+2025-04-30 18:11:17,981 - INFO - Take tokens: 1
+2025-04-30 18:11:17,981 - INFO - Take tokens: 2
+2025-04-30 18:11:17,981 - INFO - Take tokens: 3
+2025-04-30 18:11:17,982 - INFO - Take tokens: 4
+2025-04-30 18:11:17,982 - INFO - Take tokens: 5
+2025-04-30 18:11:17,982 - INFO - Take tokens: 6
+2025-04-30 18:11:17,983 - INFO - Take tokens: 7
+2025-04-30 18:11:17,983 - INFO - Take tokens: 8
+2025-04-30 18:11:17,983 - INFO - Take tokens: 9
+2025-04-30 18:11:17,983 - INFO - Take tokens: 10
+2025-04-30 18:11:17,984 - INFO - Take tokens: 11
+2025-04-30 18:11:17,984 - INFO - Take tokens: 12
+2025-04-30 18:11:17,984 - INFO - Take tokens: 13
+2025-04-30 18:11:17,984 - INFO - Take tokens: 14
+2025-04-30 18:11:17,985 - INFO - Take tokens: 15
+2025-04-30 18:11:17,985 - INFO - Take tokens: 16
+2025-04-30 18:11:17,985 - INFO - Take tokens: 17
+2025-04-30 18:11:17,985 - INFO - Take tokens: 18
+2025-04-30 18:11:17,985 - INFO - Take tokens: 19
+2025-04-30 18:11:17,985 - INFO - Take tokens: 20
+2025-04-30 18:11:17,985 - INFO - Take tokens: 21
+2025-04-30 18:11:17,986 - INFO - Take tokens: 22
+2025-04-30 18:11:17,986 - INFO - Take tokens: 23
+2025-04-30 18:11:17,986 - INFO - Take tokens: 24
+2025-04-30 18:11:17,986 - INFO - Take tokens: 25
+2025-04-30 18:11:17,986 - INFO - Take tokens: 26
+2025-04-30 18:11:17,986 - INFO - Take tokens: 27
+2025-04-30 18:11:17,987 - INFO - Take tokens: 28
+2025-04-30 18:11:17,987 - INFO - Take tokens: 29
+2025-04-30 18:11:17,987 - INFO - Take tokens: 42
+2025-04-30 18:11:17,987 - INFO - Take tokens: 43
+2025-04-30 18:11:17,988 - INFO - Take tokens: 44
+2025-04-30 18:11:17,988 - INFO - Take tokens: 45
+2025-04-30 18:11:17,988 - INFO - Take tokens: 46
+2025-04-30 18:11:17,989 - INFO - Take tokens: 47
+2025-04-30 18:11:17,989 - INFO - Take tokens: 48
+2025-04-30 18:11:17,989 - INFO - Take tokens: 49
+2025-04-30 18:11:17,989 - INFO - Take tokens: 50
+2025-04-30 18:11:17,989 - INFO - Take tokens: 51
+2025-04-30 18:11:17,990 - INFO - Take tokens: 52
+2025-04-30 18:11:17,990 - INFO - Take tokens: 53
+2025-04-30 18:11:17,991 - INFO - 
+Random action chosen: 6

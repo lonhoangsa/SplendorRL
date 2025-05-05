@@ -1,0 +1,92 @@
+2025-04-29 01:07:31,356 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-29 01:07:31,356 - __main__ - INFO - Debug mode: True
+2025-04-29 01:07:31,370 - __main__ - INFO - ==================================================
+2025-04-29 01:07:31,371 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-29 01:07:31,371 - __main__ - INFO - ==================================================
+2025-04-29 01:07:31,371 - __main__ - INFO - Card feature dimension: 8
+2025-04-29 01:07:31,372 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-29 01:07:31,372 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-29 01:07:31,372 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-29 01:07:31,372 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-29 01:07:31,373 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-29 01:07:31,373 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-29 01:07:31,373 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-29 01:07:31,373 - __main__ - INFO - Action dimension: 88
+2025-04-29 01:07:31,373 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-29 01:07:31,374 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-29 01:07:31,374 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-29 01:07:31,374 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-29 01:07:31,681 - __main__ - INFO - Using device: cuda
+2025-04-29 01:07:34,519 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-29 01:07:34,520 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=800
+2025-04-29 01:07:34,520 - __main__ - INFO - ==================================================
+2025-04-29 01:07:34,799 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-29 01:07:34,804 - __main__ - INFO - Loaded model from iteration 6
+2025-04-29 01:07:34,807 - __main__ - INFO - Starting AlphaZero training from iteration 7 for 1 iterations
+2025-04-29 01:07:34,807 - __main__ - INFO - Starting iteration 7/7
+2025-04-29 01:07:34,808 - __main__ - INFO - Starting self-play phase
+2025-04-29 01:07:34,808 - __main__ - INFO - Current curriculum stage: {'max_tokens': 4, 'min_score': 5}
+2025-04-29 01:07:34,826 - __main__ - INFO - Starting game 1/20
+2025-04-29 01:07:37,309 - AlphaZero.MCTS - INFO - Running simulation 10/800
+2025-04-29 01:07:37,396 - AlphaZero.MCTS - INFO - Running simulation 20/800
+2025-04-29 01:07:37,521 - AlphaZero.MCTS - INFO - Running simulation 30/800
+2025-04-29 01:07:37,628 - AlphaZero.MCTS - INFO - Running simulation 40/800
+2025-04-29 01:07:37,739 - AlphaZero.MCTS - INFO - Running simulation 50/800
+2025-04-29 01:07:37,811 - AlphaZero.MCTS - INFO - Running simulation 60/800
+2025-04-29 01:07:37,877 - AlphaZero.MCTS - INFO - Running simulation 70/800
+2025-04-29 01:07:37,935 - AlphaZero.MCTS - INFO - Running simulation 80/800
+2025-04-29 01:07:38,016 - AlphaZero.MCTS - INFO - Running simulation 90/800
+2025-04-29 01:07:38,127 - AlphaZero.MCTS - INFO - Running simulation 100/800
+2025-04-29 01:07:38,240 - AlphaZero.MCTS - INFO - Running simulation 110/800
+2025-04-29 01:07:38,337 - AlphaZero.MCTS - INFO - Running simulation 120/800
+2025-04-29 01:07:38,437 - AlphaZero.MCTS - INFO - Running simulation 130/800
+2025-04-29 01:07:38,519 - AlphaZero.MCTS - INFO - Running simulation 140/800
+2025-04-29 01:07:38,625 - AlphaZero.MCTS - INFO - Running simulation 150/800
+2025-04-29 01:07:38,717 - AlphaZero.MCTS - INFO - Running simulation 160/800
+2025-04-29 01:07:38,787 - AlphaZero.MCTS - INFO - Running simulation 170/800
+2025-04-29 01:07:38,847 - AlphaZero.MCTS - INFO - Running simulation 180/800
+2025-04-29 01:07:38,922 - AlphaZero.MCTS - INFO - Running simulation 190/800
+2025-04-29 01:07:39,005 - AlphaZero.MCTS - INFO - Running simulation 200/800
+2025-04-29 01:07:39,076 - AlphaZero.MCTS - INFO - Running simulation 210/800
+2025-04-29 01:07:39,162 - AlphaZero.MCTS - INFO - Running simulation 220/800
+2025-04-29 01:07:39,266 - AlphaZero.MCTS - INFO - Running simulation 230/800
+2025-04-29 01:07:39,373 - AlphaZero.MCTS - INFO - Running simulation 240/800
+2025-04-29 01:07:39,457 - AlphaZero.MCTS - INFO - Running simulation 250/800
+2025-04-29 01:07:39,512 - AlphaZero.MCTS - INFO - Running simulation 260/800
+2025-04-29 01:07:39,569 - AlphaZero.MCTS - INFO - Running simulation 270/800
+2025-04-29 01:07:39,626 - AlphaZero.MCTS - INFO - Running simulation 280/800
+2025-04-29 01:07:39,699 - AlphaZero.MCTS - INFO - Running simulation 290/800
+2025-04-29 01:07:39,819 - AlphaZero.MCTS - INFO - Running simulation 300/800
+2025-04-29 01:07:39,919 - AlphaZero.MCTS - INFO - Running simulation 310/800
+2025-04-29 01:07:40,047 - AlphaZero.MCTS - INFO - Running simulation 320/800
+2025-04-29 01:07:40,146 - AlphaZero.MCTS - INFO - Running simulation 330/800
+2025-04-29 01:07:40,254 - AlphaZero.MCTS - INFO - Running simulation 340/800
+2025-04-29 01:07:40,369 - AlphaZero.MCTS - INFO - Running simulation 350/800
+2025-04-29 01:07:40,483 - AlphaZero.MCTS - INFO - Running simulation 360/800
+2025-04-29 01:07:40,567 - AlphaZero.MCTS - INFO - Running simulation 370/800
+2025-04-29 01:07:40,675 - AlphaZero.MCTS - INFO - Running simulation 380/800
+2025-04-29 01:07:40,788 - AlphaZero.MCTS - INFO - Running simulation 390/800
+2025-04-29 01:07:40,872 - AlphaZero.MCTS - INFO - Running simulation 400/800
+2025-04-29 01:07:40,952 - AlphaZero.MCTS - INFO - Running simulation 410/800
+2025-04-29 01:07:41,033 - AlphaZero.MCTS - INFO - Running simulation 420/800
+2025-04-29 01:07:41,586 - AlphaZero.MCTS - INFO - Running simulation 430/800
+2025-04-29 01:07:41,706 - AlphaZero.MCTS - INFO - Running simulation 440/800
+2025-04-29 01:07:41,814 - AlphaZero.MCTS - INFO - Running simulation 450/800
+2025-04-29 01:07:41,963 - AlphaZero.MCTS - INFO - Running simulation 460/800
+2025-04-29 01:07:42,087 - AlphaZero.MCTS - INFO - Running simulation 470/800
+2025-04-29 01:07:42,189 - AlphaZero.MCTS - INFO - Running simulation 480/800
+2025-04-29 01:07:42,269 - AlphaZero.MCTS - INFO - Running simulation 490/800
+2025-04-29 01:07:42,345 - AlphaZero.MCTS - INFO - Running simulation 500/800
+2025-04-29 01:07:42,444 - AlphaZero.MCTS - INFO - Running simulation 510/800
+2025-04-29 01:07:42,560 - AlphaZero.MCTS - INFO - Running simulation 520/800
+2025-04-29 01:07:42,655 - AlphaZero.MCTS - INFO - Running simulation 530/800
+2025-04-29 01:07:42,745 - AlphaZero.MCTS - INFO - Running simulation 540/800
+2025-04-29 01:07:42,851 - AlphaZero.MCTS - INFO - Running simulation 550/800
+2025-04-29 01:07:42,934 - AlphaZero.MCTS - INFO - Running simulation 560/800
+2025-04-29 01:07:43,039 - AlphaZero.MCTS - INFO - Running simulation 570/800
+2025-04-29 01:07:43,134 - AlphaZero.MCTS - INFO - Running simulation 580/800
+2025-04-29 01:07:43,233 - AlphaZero.MCTS - INFO - Running simulation 590/800
+2025-04-29 01:07:43,355 - AlphaZero.MCTS - INFO - Running simulation 600/800

@@ -1,0 +1,70 @@
+2025-04-29 09:33:36,925 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-29 09:33:36,925 - __main__ - INFO - Debug mode: True
+2025-04-29 09:33:36,936 - __main__ - INFO - ==================================================
+2025-04-29 09:33:36,937 - __main__ - INFO - DETAILED ENVIRONMENT DIMENSIONS ANALYSIS
+2025-04-29 09:33:36,937 - __main__ - INFO - ==================================================
+2025-04-29 09:33:36,937 - __main__ - INFO - Card feature dimension: 8
+2025-04-29 09:33:36,937 - __main__ - INFO - Primary cards shape: (90, 8)
+2025-04-29 09:33:36,938 - __main__ - INFO - 
+--- State Dimension Breakdown ---
+2025-04-29 09:33:36,938 - __main__ - INFO - 1. Card state: 4 levels × 3 cards × 8 features = 96
+2025-04-29 09:33:36,938 - __main__ - INFO - 2. Gems: 6 types = 6
+2025-04-29 09:33:36,939 - __main__ - INFO - 3. Player state: 6 (gems) + 5 (other) + 8 × 3 cards = 35
+2025-04-29 09:33:36,939 - __main__ - INFO - 4. Noble tiles: 5 nobles × 5 features = 25
+2025-04-29 09:33:36,939 - __main__ - INFO - 
+Total state dimension: 96 + 6 + 35 + 25 = 162
+2025-04-29 09:33:36,939 - __main__ - INFO - Action dimension: 88
+2025-04-29 09:33:36,940 - __main__ - INFO - 
+--- State Dimension Formula ---
+2025-04-29 09:33:36,940 - __main__ - INFO - state_dim = (4 × 3 × 8) + 6 + (6 + 5 + 8 × 3) + (5 × 5)
+2025-04-29 09:33:36,940 - __main__ - INFO - state_dim = 96 + 6 + 11 + 24 + 25
+2025-04-29 09:33:36,940 - __main__ - INFO - state_dim = 120 + 42 = 162
+2025-04-29 09:33:37,261 - __main__ - INFO - Using device: cuda
+2025-04-29 09:33:39,867 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-29 09:33:39,867 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=10000, num_simulations=100
+2025-04-29 09:33:39,868 - __main__ - INFO - ==================================================
+2025-04-29 09:33:40,131 - __main__ - INFO - Loading model from models/alphazero_final.pth
+2025-04-29 09:33:40,134 - __main__ - INFO - Loaded model from iteration 6
+2025-04-29 09:33:40,136 - __main__ - INFO - Starting AlphaZero training from iteration 7 for 20 iterations
+2025-04-29 09:33:40,137 - __main__ - INFO - Starting iteration 7/26
+2025-04-29 09:33:40,137 - __main__ - INFO - Starting self-play phase
+2025-04-29 09:33:40,137 - __main__ - INFO - Current curriculum stage: {'min_score': 5}
+2025-04-29 09:33:40,152 - __main__ - INFO - Starting game 1/20
+2025-04-29 09:33:43,143 - __main__ - DEBUG - Game 1, Step 1: Player 0 chose action 25
+2025-04-29 09:33:43,684 - __main__ - DEBUG - Game 1, Step 2: Player 1 chose action 20
+2025-04-29 09:33:44,229 - __main__ - DEBUG - Game 1, Step 3: Player 2 chose action 14
+2025-04-29 09:33:44,754 - __main__ - DEBUG - Game 1, Step 4: Player 3 chose action 0
+2025-04-29 09:33:45,358 - __main__ - DEBUG - Game 1, Step 5: Player 0 chose action 44
+2025-04-29 09:33:46,525 - __main__ - DEBUG - Game 1, Step 6: Player 1 chose action 1
+2025-04-29 09:33:47,134 - __main__ - DEBUG - Game 1, Step 7: Player 2 chose action 4
+2025-04-29 09:33:47,703 - __main__ - DEBUG - Game 1, Step 8: Player 3 chose action 3
+2025-04-29 09:33:48,370 - __main__ - DEBUG - Game 1, Step 9: Player 0 chose action 43
+2025-04-29 09:33:49,026 - __main__ - DEBUG - Game 1, Step 10: Player 1 chose action 3
+2025-04-29 09:33:49,593 - __main__ - DEBUG - Game 1, Step 11: Player 2 chose action 4
+2025-04-29 09:33:50,057 - __main__ - DEBUG - Game 1, Step 12: Player 3 chose action 0
+2025-04-29 09:33:50,510 - __main__ - DEBUG - Game 1, Step 13: Player 0 chose action 7
+2025-04-29 09:33:51,102 - __main__ - DEBUG - Game 1, Step 14: Player 1 chose action 21
+2025-04-29 09:33:51,651 - __main__ - DEBUG - Game 1, Step 15: Player 2 chose action 12
+2025-04-29 09:33:52,135 - __main__ - DEBUG - Game 1, Step 16: Player 3 chose action 1
+2025-04-29 09:33:52,678 - __main__ - DEBUG - Game 1, Step 17: Player 0 chose action 13
+2025-04-29 09:33:53,386 - __main__ - DEBUG - Game 1, Step 18: Player 1 chose action 53
+2025-04-29 09:33:53,981 - __main__ - DEBUG - Game 1, Step 19: Player 2 chose action 1
+2025-04-29 09:33:54,600 - __main__ - DEBUG - Game 1, Step 20: Player 3 chose action 2
+2025-04-29 09:33:55,298 - __main__ - DEBUG - Game 1, Step 21: Player 0 chose action 1
+2025-04-29 09:33:55,968 - __main__ - DEBUG - Game 1, Step 22: Player 1 chose action 0
+2025-04-29 09:33:56,597 - __main__ - DEBUG - Game 1, Step 23: Player 2 chose action 43
+2025-04-29 09:33:57,231 - __main__ - DEBUG - Game 1, Step 24: Player 3 chose action 13
+2025-04-29 09:33:57,865 - __main__ - DEBUG - Game 1, Step 25: Player 0 chose action 1
+2025-04-29 09:33:58,578 - __main__ - DEBUG - Game 1, Step 26: Player 1 chose action 33
+2025-04-29 09:33:59,241 - __main__ - DEBUG - Game 1, Step 27: Player 2 chose action 3
+2025-04-29 09:34:00,078 - __main__ - DEBUG - Game 1, Step 28: Player 3 chose action 53
+2025-04-29 09:34:00,772 - __main__ - DEBUG - Game 1, Step 29: Player 0 chose action 30
+2025-04-29 09:34:01,365 - __main__ - DEBUG - Game 1, Step 30: Player 1 chose action 2
+2025-04-29 09:34:01,992 - __main__ - DEBUG - Game 1, Step 31: Player 2 chose action 0
+2025-04-29 09:34:02,654 - __main__ - DEBUG - Game 1, Step 32: Player 3 chose action 45
+2025-04-29 09:34:03,308 - __main__ - DEBUG - Game 1, Step 33: Player 0 chose action 0
+2025-04-29 09:34:03,910 - __main__ - DEBUG - Game 1, Step 34: Player 1 chose action 1
+2025-04-29 09:34:04,561 - __main__ - DEBUG - Game 1, Step 35: Player 2 chose action 4
+2025-04-29 09:34:05,171 - __main__ - DEBUG - Game 1, Step 36: Player 3 chose action 47
+2025-04-29 09:34:05,818 - __main__ - DEBUG - Game 1, Step 37: Player 0 chose action 0
+2025-04-29 09:34:06,526 - __main__ - DEBUG - Game 1, Step 38: Player 1 chose action 11

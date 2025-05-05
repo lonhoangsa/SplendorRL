@@ -1,0 +1,1855 @@
+2025-04-22 12:46:54,105 - __main__ - INFO - Starting AlphaZero training for SplendorLightZeroEnv
+2025-04-22 12:46:54,119 - __main__ - INFO - AlphaZero configuration: {'batch_size': 512, 'replay_buffer_size': 100000, 'learning_rate': 0.001, 'weight_decay': 0.0001, 'num_simulations': 800, 'c_puct': 1.0, 'temperature_init': 1.0, 'temperature_final': 0.1, 'temperature_threshold': 30, 'num_self_play_games': 100, 'num_validation_games': 40}
+2025-04-22 12:46:55,228 - __main__ - INFO - Starting iteration 1/1000
+2025-04-22 12:46:55,231 - __main__ - INFO - Game 0 started
+2025-04-22 12:46:55,746 - __main__ - INFO - Game 0 ended: Total reward = -85.00000000000136, Steps = 555
+2025-04-22 12:46:55,749 - __main__ - INFO - Game 2 started
+2025-04-22 12:46:56,047 - __main__ - INFO - Game 2 ended: Total reward = 20.200000000000205, Steps = 274
+2025-04-22 12:46:56,050 - __main__ - INFO - Game 4 started
+2025-04-22 12:46:56,375 - __main__ - INFO - Game 4 ended: Total reward = 1.800000000000118, Steps = 314
+2025-04-22 12:46:56,378 - __main__ - INFO - Game 6 started
+2025-04-22 12:46:56,763 - __main__ - INFO - Game 6 ended: Total reward = -17.399999999999736, Steps = 381
+2025-04-22 12:46:56,766 - __main__ - INFO - Game 8 started
+2025-04-22 12:46:57,074 - __main__ - INFO - Game 8 ended: Total reward = 70.2000000000001, Steps = 281
+2025-04-22 12:46:57,077 - __main__ - INFO - Game 10 started
+2025-04-22 12:46:57,337 - __main__ - INFO - Game 10 ended: Total reward = 16.2, Steps = 240
+2025-04-22 12:46:57,341 - __main__ - INFO - Game 12 started
+2025-04-22 12:46:57,909 - __main__ - INFO - Game 12 ended: Total reward = -106.2000000000009, Steps = 626
+2025-04-22 12:46:57,913 - __main__ - INFO - Game 14 started
+2025-04-22 12:46:58,281 - __main__ - INFO - Game 14 ended: Total reward = -31.19999999999991, Steps = 362
+2025-04-22 12:46:58,284 - __main__ - INFO - Game 16 started
+2025-04-22 12:46:58,530 - __main__ - INFO - Game 16 ended: Total reward = 23.79999999999999, Steps = 202
+2025-04-22 12:46:58,532 - __main__ - INFO - Game 18 started
+2025-04-22 12:46:58,819 - __main__ - INFO - Game 18 ended: Total reward = 53.80000000000005, Steps = 269
+2025-04-22 12:46:58,822 - __main__ - INFO - Game 20 started
+2025-04-22 12:46:59,297 - __main__ - INFO - Game 20 ended: Total reward = -66.19999999999973, Steps = 509
+2025-04-22 12:46:59,300 - __main__ - INFO - Game 22 started
+2025-04-22 12:46:59,618 - __main__ - INFO - Game 22 ended: Total reward = 32.20000000000029, Steps = 302
+2025-04-22 12:46:59,620 - __main__ - INFO - Game 24 started
+2025-04-22 12:47:00,010 - __main__ - INFO - Game 24 ended: Total reward = -28.599999999999618, Steps = 394
+2025-04-22 12:47:00,013 - __main__ - INFO - Game 26 started
+2025-04-22 12:47:00,354 - __main__ - INFO - Game 26 ended: Total reward = 24.40000000000023, Steps = 318
+2025-04-22 12:47:00,357 - __main__ - INFO - Game 28 started
+2025-04-22 12:47:00,778 - __main__ - INFO - Game 28 ended: Total reward = -41.999999999999716, Steps = 415
+2025-04-22 12:47:00,782 - __main__ - INFO - Game 30 started
+2025-04-22 12:47:01,036 - __main__ - INFO - Game 30 ended: Total reward = 11.200000000000056, Steps = 228
+2025-04-22 12:47:01,039 - __main__ - INFO - Game 32 started
+2025-04-22 12:47:01,339 - __main__ - INFO - Game 32 ended: Total reward = -1.1999999999998856, Steps = 289
+2025-04-22 12:47:01,342 - __main__ - INFO - Game 34 started
+2025-04-22 12:47:01,650 - __main__ - INFO - Game 34 ended: Total reward = -4.999999999999773, Steps = 295
+2025-04-22 12:47:01,653 - __main__ - INFO - Game 36 started
+2025-04-22 12:47:01,859 - __main__ - INFO - Game 36 ended: Total reward = 29.599999999999973, Steps = 183
+2025-04-22 12:47:01,862 - __main__ - INFO - Game 38 started
+2025-04-22 12:47:02,135 - __main__ - INFO - Game 38 ended: Total reward = 74.60000000000018, Steps = 247
+2025-04-22 12:47:02,138 - __main__ - INFO - Game 40 started
+2025-04-22 12:47:02,468 - __main__ - INFO - Game 40 ended: Total reward = -31.19999999999977, Steps = 336
+2025-04-22 12:47:02,471 - __main__ - INFO - Game 42 started
+2025-04-22 12:47:02,801 - __main__ - INFO - Game 42 ended: Total reward = -11.199999999999712, Steps = 320
+2025-04-22 12:47:02,804 - __main__ - INFO - Game 44 started
+2025-04-22 12:47:03,134 - __main__ - INFO - Game 44 ended: Total reward = 31.40000000000022, Steps = 295
+2025-04-22 12:47:03,137 - __main__ - INFO - Game 46 started
+2025-04-22 12:47:03,363 - __main__ - INFO - Game 46 ended: Total reward = -13.1999999999999, Steps = 199
+2025-04-22 12:47:03,366 - __main__ - INFO - Game 48 started
+2025-04-22 12:47:03,758 - __main__ - INFO - Game 48 ended: Total reward = -28.39999999999973, Steps = 390
+2025-04-22 12:47:03,761 - __main__ - INFO - Game 50 started
+2025-04-22 12:47:04,113 - __main__ - INFO - Game 50 ended: Total reward = -30.79999999999967, Steps = 340
+2025-04-22 12:47:04,116 - __main__ - INFO - Game 52 started
+2025-04-22 12:47:04,415 - __main__ - INFO - Game 52 ended: Total reward = 51.99999999999997, Steps = 272
+2025-04-22 12:47:04,418 - __main__ - INFO - Game 54 started
+2025-04-22 12:47:04,878 - __main__ - INFO - Game 54 ended: Total reward = -41.79999999999955, Steps = 427
+2025-04-22 12:47:04,881 - __main__ - INFO - Game 56 started
+2025-04-22 12:47:05,284 - __main__ - INFO - Game 56 ended: Total reward = -27.599999999999604, Steps = 410
+2025-04-22 12:47:05,288 - __main__ - INFO - Game 58 started
+2025-04-22 12:47:05,503 - __main__ - INFO - Game 58 ended: Total reward = 9.399999999999967, Steps = 188
+2025-04-22 12:47:05,506 - __main__ - INFO - Game 60 started
+2025-04-22 12:47:06,108 - __main__ - INFO - Game 60 ended: Total reward = -104.40000000000151, Steps = 653
+2025-04-22 12:47:06,111 - __main__ - INFO - Game 62 started
+2025-04-22 12:47:06,458 - __main__ - INFO - Game 62 ended: Total reward = 22.600000000000204, Steps = 321
+2025-04-22 12:47:06,461 - __main__ - INFO - Game 64 started
+2025-04-22 12:47:06,723 - __main__ - INFO - Game 64 ended: Total reward = 1.0000000000000018, Steps = 232
+2025-04-22 12:47:06,727 - __main__ - INFO - Game 66 started
+2025-04-22 12:47:07,030 - __main__ - INFO - Game 66 ended: Total reward = -21.599999999999852, Steps = 285
+2025-04-22 12:47:07,033 - __main__ - INFO - Game 68 started
+2025-04-22 12:47:07,274 - __main__ - INFO - Game 68 ended: Total reward = 22.800000000000026, Steps = 208
+2025-04-22 12:47:07,276 - __main__ - INFO - Game 70 started
+2025-04-22 12:47:07,702 - __main__ - INFO - Game 70 ended: Total reward = -40.99999999999969, Steps = 415
+2025-04-22 12:47:07,705 - __main__ - INFO - Game 72 started
+2025-04-22 12:47:08,089 - __main__ - INFO - Game 72 ended: Total reward = -18.19999999999975, Steps = 333
+2025-04-22 12:47:08,092 - __main__ - INFO - Game 74 started
+2025-04-22 12:47:08,458 - __main__ - INFO - Game 74 ended: Total reward = 4.2000000000002, Steps = 341
+2025-04-22 12:47:08,461 - __main__ - INFO - Game 76 started
+2025-04-22 12:47:08,884 - __main__ - INFO - Game 76 ended: Total reward = -7.199999999999594, Steps = 405
+2025-04-22 12:47:08,888 - __main__ - INFO - Game 78 started
+2025-04-22 12:47:09,257 - __main__ - INFO - Game 78 ended: Total reward = 18.400000000000112, Steps = 279
+2025-04-22 12:47:09,261 - __main__ - INFO - Game 80 started
+2025-04-22 12:47:09,491 - __main__ - INFO - Game 80 ended: Total reward = 41.19999999999996, Steps = 195
+2025-04-22 12:47:09,495 - __main__ - INFO - Game 82 started
+2025-04-22 12:47:09,933 - __main__ - INFO - Game 82 ended: Total reward = -4.999999999999893, Steps = 449
+2025-04-22 12:47:09,936 - __main__ - INFO - Game 84 started
+2025-04-22 12:47:10,221 - __main__ - INFO - Game 84 ended: Total reward = 61.00000000000005, Steps = 249
+2025-04-22 12:47:10,224 - __main__ - INFO - Game 86 started
+2025-04-22 12:47:10,548 - __main__ - INFO - Game 86 ended: Total reward = 25.200000000000173, Steps = 304
+2025-04-22 12:47:10,551 - __main__ - INFO - Game 88 started
+2025-04-22 12:47:10,763 - __main__ - INFO - Game 88 ended: Total reward = 41.400000000000006, Steps = 188
+2025-04-22 12:47:10,766 - __main__ - INFO - Game 90 started
+2025-04-22 12:47:11,104 - __main__ - INFO - Game 90 ended: Total reward = 32.40000000000026, Steps = 337
+2025-04-22 12:47:11,108 - __main__ - INFO - Game 92 started
+2025-04-22 12:47:11,386 - __main__ - INFO - Game 92 ended: Total reward = -15.199999999999775, Steps = 254
+2025-04-22 12:47:11,390 - __main__ - INFO - Game 94 started
+2025-04-22 12:47:11,844 - __main__ - INFO - Game 94 ended: Total reward = -23.199999999999555, Steps = 443
+2025-04-22 12:47:11,848 - __main__ - INFO - Game 96 started
+2025-04-22 12:47:12,331 - __main__ - INFO - Game 96 ended: Total reward = -97.80000000000123, Steps = 531
+2025-04-22 12:47:12,335 - __main__ - INFO - Game 98 started
+2025-04-22 12:47:12,643 - __main__ - INFO - Game 98 ended: Total reward = 12.200000000000168, Steps = 292
+2025-04-22 12:47:12,646 - __main__ - INFO - Game 100 started
+2025-04-22 12:47:12,957 - __main__ - INFO - Game 100 ended: Total reward = 24.20000000000006, Steps = 301
+2025-04-22 12:47:12,960 - __main__ - INFO - Game 102 started
+2025-04-22 12:47:13,190 - __main__ - INFO - Game 102 ended: Total reward = -5.799999999999944, Steps = 208
+2025-04-22 12:47:13,193 - __main__ - INFO - Game 104 started
+2025-04-22 12:47:13,492 - __main__ - INFO - Game 104 ended: Total reward = 16.599999999999962, Steps = 303
+2025-04-22 12:47:13,496 - __main__ - INFO - Game 106 started
+2025-04-22 12:47:13,995 - __main__ - INFO - Game 106 ended: Total reward = -61.80000000000071, Steps = 524
+2025-04-22 12:47:13,999 - __main__ - INFO - Game 108 started
+2025-04-22 12:47:14,277 - __main__ - INFO - Game 108 ended: Total reward = 3.8000000000001792, Steps = 252
+2025-04-22 12:47:14,280 - __main__ - INFO - Game 110 started
+2025-04-22 12:47:14,535 - __main__ - INFO - Game 110 ended: Total reward = 63.80000000000007, Steps = 239
+2025-04-22 12:47:14,539 - __main__ - INFO - Game 112 started
+2025-04-22 12:47:14,879 - __main__ - INFO - Game 112 ended: Total reward = -18.99999999999975, Steps = 344
+2025-04-22 12:47:14,882 - __main__ - INFO - Game 114 started
+2025-04-22 12:47:15,335 - __main__ - INFO - Game 114 ended: Total reward = -66.39999999999992, Steps = 451
+2025-04-22 12:47:15,338 - __main__ - INFO - Game 116 started
+2025-04-22 12:47:15,646 - __main__ - INFO - Game 116 ended: Total reward = 1.7999999999999607, Steps = 268
+2025-04-22 12:47:15,649 - __main__ - INFO - Game 118 started
+2025-04-22 12:47:15,926 - __main__ - INFO - Game 118 ended: Total reward = 11.400000000000073, Steps = 222
+2025-04-22 12:47:15,929 - __main__ - INFO - Game 120 started
+2025-04-22 12:47:16,398 - __main__ - INFO - Game 120 ended: Total reward = -21.399999999999608, Steps = 407
+2025-04-22 12:47:16,401 - __main__ - INFO - Game 122 started
+2025-04-22 12:47:16,741 - __main__ - INFO - Game 122 ended: Total reward = 15.80000000000012, Steps = 303
+2025-04-22 12:47:16,744 - __main__ - INFO - Game 124 started
+2025-04-22 12:47:17,154 - __main__ - INFO - Game 124 ended: Total reward = -31.799999999999976, Steps = 407
+2025-04-22 12:47:17,157 - __main__ - INFO - Game 126 started
+2025-04-22 12:47:17,464 - __main__ - INFO - Game 126 ended: Total reward = 28.200000000000244, Steps = 287
+2025-04-22 12:47:17,467 - __main__ - INFO - Game 128 started
+2025-04-22 12:47:17,774 - __main__ - INFO - Game 128 ended: Total reward = 15.999999999999998, Steps = 285
+2025-04-22 12:47:17,778 - __main__ - INFO - Game 130 started
+2025-04-22 12:47:18,329 - __main__ - INFO - Game 130 ended: Total reward = -60.99999999999983, Steps = 579
+2025-04-22 12:47:18,332 - __main__ - INFO - Game 132 started
+2025-04-22 12:47:18,693 - __main__ - INFO - Game 132 ended: Total reward = -59.199999999999676, Steps = 359
+2025-04-22 12:47:18,696 - __main__ - INFO - Game 134 started
+2025-04-22 12:47:19,133 - __main__ - INFO - Game 134 ended: Total reward = -14.399999999999611, Steps = 424
+2025-04-22 12:47:19,136 - __main__ - INFO - Game 136 started
+2025-04-22 12:47:19,431 - __main__ - INFO - Game 136 ended: Total reward = 16.80000000000019, Steps = 261
+2025-04-22 12:47:19,433 - __main__ - INFO - Game 138 started
+2025-04-22 12:47:19,782 - __main__ - INFO - Game 138 ended: Total reward = -20.599999999999703, Steps = 341
+2025-04-22 12:47:19,786 - __main__ - INFO - Game 140 started
+2025-04-22 12:47:20,150 - __main__ - INFO - Game 140 ended: Total reward = -33.59999999999964, Steps = 351
+2025-04-22 12:47:20,153 - __main__ - INFO - Game 142 started
+2025-04-22 12:47:20,562 - __main__ - INFO - Game 142 ended: Total reward = -0.9999999999998126, Steps = 352
+2025-04-22 12:47:20,565 - __main__ - INFO - Game 144 started
+2025-04-22 12:47:21,026 - __main__ - INFO - Game 144 ended: Total reward = -51.40000000000066, Steps = 445
+2025-04-22 12:47:21,030 - __main__ - INFO - Game 146 started
+2025-04-22 12:47:21,390 - __main__ - INFO - Game 146 ended: Total reward = -14.999999999999687, Steps = 324
+2025-04-22 12:47:21,394 - __main__ - INFO - Game 148 started
+2025-04-22 12:47:21,775 - __main__ - INFO - Game 148 ended: Total reward = -21.799999999999695, Steps = 332
+2025-04-22 12:47:21,779 - __main__ - INFO - Game 150 started
+2025-04-22 12:47:22,080 - __main__ - INFO - Game 150 ended: Total reward = 12.400000000000084, Steps = 232
+2025-04-22 12:47:22,084 - __main__ - INFO - Game 152 started
+2025-04-22 12:47:22,385 - __main__ - INFO - Game 152 ended: Total reward = 89.60000000000001, Steps = 265
+2025-04-22 12:47:22,388 - __main__ - INFO - Game 154 started
+2025-04-22 12:47:22,804 - __main__ - INFO - Game 154 ended: Total reward = -28.7999999999996, Steps = 393
+2025-04-22 12:47:22,807 - __main__ - INFO - Game 156 started
+2025-04-22 12:47:23,103 - __main__ - INFO - Game 156 ended: Total reward = 19.20000000000001, Steps = 258
+2025-04-22 12:47:23,107 - __main__ - INFO - Game 158 started
+2025-04-22 12:47:23,557 - __main__ - INFO - Game 158 ended: Total reward = -22.79999999999987, Steps = 463
+2025-04-22 12:47:23,560 - __main__ - INFO - Game 160 started
+2025-04-22 12:47:23,854 - __main__ - INFO - Game 160 ended: Total reward = 3.400000000000219, Steps = 261
+2025-04-22 12:47:23,857 - __main__ - INFO - Game 162 started
+2025-04-22 12:47:24,149 - __main__ - INFO - Game 162 ended: Total reward = -0.19999999999982876, Steps = 265
+2025-04-22 12:47:24,152 - __main__ - INFO - Game 164 started
+2025-04-22 12:47:24,389 - __main__ - INFO - Game 164 ended: Total reward = -8.399999999999967, Steps = 203
+2025-04-22 12:47:24,392 - __main__ - INFO - Game 166 started
+2025-04-22 12:47:24,727 - __main__ - INFO - Game 166 ended: Total reward = 3.000000000000284, Steps = 314
+2025-04-22 12:47:24,730 - __main__ - INFO - Game 168 started
+2025-04-22 12:47:25,272 - __main__ - INFO - Game 168 ended: Total reward = -86.00000000000068, Steps = 553
+2025-04-22 12:47:25,275 - __main__ - INFO - Game 170 started
+2025-04-22 12:47:25,589 - __main__ - INFO - Game 170 ended: Total reward = 42.20000000000015, Steps = 299
+2025-04-22 12:47:25,592 - __main__ - INFO - Game 172 started
+2025-04-22 12:47:25,942 - __main__ - INFO - Game 172 ended: Total reward = -16.599999999999817, Steps = 337
+2025-04-22 12:47:25,946 - __main__ - INFO - Game 174 started
+2025-04-22 12:47:26,335 - __main__ - INFO - Game 174 ended: Total reward = -21.399999999999643, Steps = 345
+2025-04-22 12:47:26,339 - __main__ - INFO - Game 176 started
+2025-04-22 12:47:26,745 - __main__ - INFO - Game 176 ended: Total reward = 5.400000000000382, Steps = 391
+2025-04-22 12:47:26,749 - __main__ - INFO - Game 178 started
+2025-04-22 12:47:27,317 - __main__ - INFO - Game 178 ended: Total reward = -28.200000000000145, Steps = 550
+2025-04-22 12:47:27,321 - __main__ - INFO - Game 180 started
+2025-04-22 12:47:27,644 - __main__ - INFO - Game 180 ended: Total reward = 10.800000000000079, Steps = 290
+2025-04-22 12:47:27,648 - __main__ - INFO - Game 182 started
+2025-04-22 12:47:27,908 - __main__ - INFO - Game 182 ended: Total reward = 30.0000000000002, Steps = 224
+2025-04-22 12:47:27,911 - __main__ - INFO - Game 184 started
+2025-04-22 12:47:28,213 - __main__ - INFO - Game 184 ended: Total reward = 11.999999999999952, Steps = 258
+2025-04-22 12:47:28,217 - __main__ - INFO - Game 186 started
+2025-04-22 12:47:28,647 - __main__ - INFO - Game 186 ended: Total reward = 25.400000000000283, Steps = 366
+2025-04-22 12:47:28,650 - __main__ - INFO - Game 188 started
+2025-04-22 12:47:28,890 - __main__ - INFO - Game 188 ended: Total reward = 6.800000000000131, Steps = 199
+2025-04-22 12:47:28,895 - __main__ - INFO - Game 190 started
+2025-04-22 12:47:29,298 - __main__ - INFO - Game 190 ended: Total reward = -27.599999999999667, Steps = 342
+2025-04-22 12:47:29,302 - __main__ - INFO - Game 192 started
+2025-04-22 12:47:29,711 - __main__ - INFO - Game 192 ended: Total reward = -16.39999999999967, Steps = 371
+2025-04-22 12:47:29,714 - __main__ - INFO - Game 194 started
+2025-04-22 12:47:30,075 - __main__ - INFO - Game 194 ended: Total reward = 29.6000000000003, Steps = 315
+2025-04-22 12:47:30,078 - __main__ - INFO - Game 196 started
+2025-04-22 12:47:30,579 - __main__ - INFO - Game 196 ended: Total reward = 2.800000000000198, Steps = 365
+2025-04-22 12:47:30,583 - __main__ - INFO - Game 198 started
+2025-04-22 12:47:30,940 - __main__ - INFO - Game 198 ended: Total reward = 14.000000000000004, Steps = 288
+2025-04-22 12:47:30,941 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:47:30,942 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:47:30,942 - __main__ - INFO - Iteration 1 completed in 35.71 seconds
+2025-04-22 12:47:30,942 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:47:30,942 - __main__ - INFO - Starting iteration 2/1000
+2025-04-22 12:47:30,961 - __main__ - INFO - Game 100 started
+2025-04-22 12:47:31,321 - __main__ - INFO - Game 100 ended: Total reward = -2.000000000000014, Steps = 263
+2025-04-22 12:47:31,324 - __main__ - INFO - Game 102 started
+2025-04-22 12:47:31,815 - __main__ - INFO - Game 102 ended: Total reward = 13.800000000000416, Steps = 438
+2025-04-22 12:47:31,819 - __main__ - INFO - Game 104 started
+2025-04-22 12:47:32,213 - __main__ - INFO - Game 104 ended: Total reward = -15.199999999999683, Steps = 322
+2025-04-22 12:47:32,217 - __main__ - INFO - Game 106 started
+2025-04-22 12:47:32,725 - __main__ - INFO - Game 106 ended: Total reward = -49.40000000000022, Steps = 432
+2025-04-22 12:47:32,729 - __main__ - INFO - Game 108 started
+2025-04-22 12:47:33,203 - __main__ - INFO - Game 108 ended: Total reward = 3.00000000000027, Steps = 337
+2025-04-22 12:47:33,207 - __main__ - INFO - Game 110 started
+2025-04-22 12:47:33,662 - __main__ - INFO - Game 110 ended: Total reward = 0.6000000000002359, Steps = 283
+2025-04-22 12:47:33,666 - __main__ - INFO - Game 112 started
+2025-04-22 12:47:34,309 - __main__ - INFO - Game 112 ended: Total reward = -142.20000000000132, Steps = 573
+2025-04-22 12:47:34,313 - __main__ - INFO - Game 114 started
+2025-04-22 12:47:34,598 - __main__ - INFO - Game 114 ended: Total reward = 48.00000000000013, Steps = 234
+2025-04-22 12:47:34,602 - __main__ - INFO - Game 116 started
+2025-04-22 12:47:34,969 - __main__ - INFO - Game 116 ended: Total reward = -13.999999999999709, Steps = 295
+2025-04-22 12:47:34,972 - __main__ - INFO - Game 118 started
+2025-04-22 12:47:35,424 - __main__ - INFO - Game 118 ended: Total reward = -0.399999999999757, Steps = 382
+2025-04-22 12:47:35,427 - __main__ - INFO - Game 120 started
+2025-04-22 12:47:35,835 - __main__ - INFO - Game 120 ended: Total reward = 62.400000000000084, Steps = 311
+2025-04-22 12:47:35,838 - __main__ - INFO - Game 122 started
+2025-04-22 12:47:36,205 - __main__ - INFO - Game 122 ended: Total reward = -26.79999999999977, Steps = 292
+2025-04-22 12:47:36,208 - __main__ - INFO - Game 124 started
+2025-04-22 12:47:36,602 - __main__ - INFO - Game 124 ended: Total reward = 14.600000000000309, Steps = 308
+2025-04-22 12:47:36,606 - __main__ - INFO - Game 126 started
+2025-04-22 12:47:37,375 - __main__ - INFO - Game 126 ended: Total reward = -80.80000000000085, Steps = 689
+2025-04-22 12:47:37,379 - __main__ - INFO - Game 128 started
+2025-04-22 12:47:37,781 - __main__ - INFO - Game 128 ended: Total reward = 72.0, Steps = 303
+2025-04-22 12:47:37,784 - __main__ - INFO - Game 130 started
+2025-04-22 12:47:38,266 - __main__ - INFO - Game 130 ended: Total reward = -14.199999999999903, Steps = 385
+2025-04-22 12:47:38,269 - __main__ - INFO - Game 132 started
+2025-04-22 12:47:38,785 - __main__ - INFO - Game 132 ended: Total reward = -40.59999999999955, Steps = 453
+2025-04-22 12:47:38,788 - __main__ - INFO - Game 134 started
+2025-04-22 12:47:39,241 - __main__ - INFO - Game 134 ended: Total reward = -21.799999999999763, Steps = 364
+2025-04-22 12:47:39,245 - __main__ - INFO - Game 136 started
+2025-04-22 12:47:39,703 - __main__ - INFO - Game 136 ended: Total reward = -41.79999999999964, Steps = 400
+2025-04-22 12:47:39,706 - __main__ - INFO - Game 138 started
+2025-04-22 12:47:40,139 - __main__ - INFO - Game 138 ended: Total reward = -51.19999999999965, Steps = 362
+2025-04-22 12:47:40,143 - __main__ - INFO - Game 140 started
+2025-04-22 12:47:40,542 - __main__ - INFO - Game 140 ended: Total reward = -19.99999999999968, Steps = 326
+2025-04-22 12:47:40,546 - __main__ - INFO - Game 142 started
+2025-04-22 12:47:41,062 - __main__ - INFO - Game 142 ended: Total reward = 7.600000000000263, Steps = 423
+2025-04-22 12:47:41,067 - __main__ - INFO - Game 144 started
+2025-04-22 12:47:41,741 - __main__ - INFO - Game 144 ended: Total reward = -66.60000000000109, Steps = 594
+2025-04-22 12:47:41,744 - __main__ - INFO - Game 146 started
+2025-04-22 12:47:42,226 - __main__ - INFO - Game 146 ended: Total reward = -11.599999999999646, Steps = 377
+2025-04-22 12:47:42,231 - __main__ - INFO - Game 148 started
+2025-04-22 12:47:42,547 - __main__ - INFO - Game 148 ended: Total reward = 9.400000000000025, Steps = 243
+2025-04-22 12:47:42,552 - __main__ - INFO - Game 150 started
+2025-04-22 12:47:42,939 - __main__ - INFO - Game 150 ended: Total reward = 28.600000000000087, Steps = 244
+2025-04-22 12:47:42,942 - __main__ - INFO - Game 152 started
+2025-04-22 12:47:43,304 - __main__ - INFO - Game 152 ended: Total reward = -22.79999999999974, Steps = 275
+2025-04-22 12:47:43,307 - __main__ - INFO - Game 154 started
+2025-04-22 12:47:43,668 - __main__ - INFO - Game 154 ended: Total reward = 28.400000000000073, Steps = 285
+2025-04-22 12:47:43,671 - __main__ - INFO - Game 156 started
+2025-04-22 12:47:44,178 - __main__ - INFO - Game 156 ended: Total reward = 0.4000000000003112, Steps = 351
+2025-04-22 12:47:44,186 - __main__ - INFO - Game 158 started
+2025-04-22 12:47:44,795 - __main__ - INFO - Game 158 ended: Total reward = 11.600000000000275, Steps = 343
+2025-04-22 12:47:44,800 - __main__ - INFO - Game 160 started
+2025-04-22 12:47:45,708 - __main__ - INFO - Game 160 ended: Total reward = -32.59999999999959, Steps = 390
+2025-04-22 12:47:45,711 - __main__ - INFO - Game 162 started
+2025-04-22 12:47:46,074 - __main__ - INFO - Game 162 ended: Total reward = 19.200000000000077, Steps = 205
+2025-04-22 12:47:46,078 - __main__ - INFO - Game 164 started
+2025-04-22 12:47:46,867 - __main__ - INFO - Game 164 ended: Total reward = -15.19999999999962, Steps = 398
+2025-04-22 12:47:46,872 - __main__ - INFO - Game 166 started
+2025-04-22 12:47:47,576 - __main__ - INFO - Game 166 ended: Total reward = -21.39999999999968, Steps = 345
+2025-04-22 12:47:47,583 - __main__ - INFO - Game 168 started
+2025-04-22 12:47:48,468 - __main__ - INFO - Game 168 ended: Total reward = -41.40000000000095, Steps = 521
+2025-04-22 12:47:48,473 - __main__ - INFO - Game 170 started
+2025-04-22 12:47:48,819 - __main__ - INFO - Game 170 ended: Total reward = 26.200000000000166, Steps = 231
+2025-04-22 12:47:48,824 - __main__ - INFO - Game 172 started
+2025-04-22 12:47:49,201 - __main__ - INFO - Game 172 ended: Total reward = -12.999999999999751, Steps = 280
+2025-04-22 12:47:49,204 - __main__ - INFO - Game 174 started
+2025-04-22 12:47:49,558 - __main__ - INFO - Game 174 ended: Total reward = -9.599999999999792, Steps = 289
+2025-04-22 12:47:49,561 - __main__ - INFO - Game 176 started
+2025-04-22 12:47:49,894 - __main__ - INFO - Game 176 ended: Total reward = 4.800000000000196, Steps = 262
+2025-04-22 12:47:49,897 - __main__ - INFO - Game 178 started
+2025-04-22 12:47:50,261 - __main__ - INFO - Game 178 ended: Total reward = -13.99999999999968, Steps = 315
+2025-04-22 12:47:50,264 - __main__ - INFO - Game 180 started
+2025-04-22 12:47:51,079 - __main__ - INFO - Game 180 ended: Total reward = -181.0000000000027, Steps = 826
+2025-04-22 12:47:51,082 - __main__ - INFO - Game 182 started
+2025-04-22 12:47:51,658 - __main__ - INFO - Game 182 ended: Total reward = -41.599999999999525, Steps = 503
+2025-04-22 12:47:51,664 - __main__ - INFO - Game 184 started
+2025-04-22 12:47:52,108 - __main__ - INFO - Game 184 ended: Total reward = 36.400000000000254, Steps = 366
+2025-04-22 12:47:52,111 - __main__ - INFO - Game 186 started
+2025-04-22 12:47:52,549 - __main__ - INFO - Game 186 ended: Total reward = -23.799999999999937, Steps = 379
+2025-04-22 12:47:52,553 - __main__ - INFO - Game 188 started
+2025-04-22 12:47:52,943 - __main__ - INFO - Game 188 ended: Total reward = 4.600000000000185, Steps = 326
+2025-04-22 12:47:52,946 - __main__ - INFO - Game 190 started
+2025-04-22 12:47:53,403 - __main__ - INFO - Game 190 ended: Total reward = -52.79999999999982, Steps = 387
+2025-04-22 12:47:53,406 - __main__ - INFO - Game 192 started
+2025-04-22 12:47:53,801 - __main__ - INFO - Game 192 ended: Total reward = 15.400000000000272, Steps = 299
+2025-04-22 12:47:53,804 - __main__ - INFO - Game 194 started
+2025-04-22 12:47:54,127 - __main__ - INFO - Game 194 ended: Total reward = 29.200000000000202, Steps = 289
+2025-04-22 12:47:54,131 - __main__ - INFO - Game 196 started
+2025-04-22 12:47:54,445 - __main__ - INFO - Game 196 ended: Total reward = 13.800000000000251, Steps = 290
+2025-04-22 12:47:54,449 - __main__ - INFO - Game 198 started
+2025-04-22 12:47:54,856 - __main__ - INFO - Game 198 ended: Total reward = 9.000000000000068, Steps = 404
+2025-04-22 12:47:54,860 - __main__ - INFO - Game 200 started
+2025-04-22 12:47:55,303 - __main__ - INFO - Game 200 ended: Total reward = -44.399999999999594, Steps = 415
+2025-04-22 12:47:55,306 - __main__ - INFO - Game 202 started
+2025-04-22 12:47:55,691 - __main__ - INFO - Game 202 ended: Total reward = 6.039613253960852e-14, Steps = 342
+2025-04-22 12:47:55,695 - __main__ - INFO - Game 204 started
+2025-04-22 12:47:56,011 - __main__ - INFO - Game 204 ended: Total reward = 23.79999999999994, Steps = 278
+2025-04-22 12:47:56,014 - __main__ - INFO - Game 206 started
+2025-04-22 12:47:56,331 - __main__ - INFO - Game 206 ended: Total reward = 20.20000000000012, Steps = 251
+2025-04-22 12:47:56,334 - __main__ - INFO - Game 208 started
+2025-04-22 12:47:56,819 - __main__ - INFO - Game 208 ended: Total reward = -28.000000000000142, Steps = 438
+2025-04-22 12:47:56,824 - __main__ - INFO - Game 210 started
+2025-04-22 12:47:57,298 - __main__ - INFO - Game 210 ended: Total reward = -7.799999999999677, Steps = 401
+2025-04-22 12:47:57,302 - __main__ - INFO - Game 212 started
+2025-04-22 12:47:57,969 - __main__ - INFO - Game 212 ended: Total reward = -118.6000000000009, Steps = 553
+2025-04-22 12:47:57,973 - __main__ - INFO - Game 214 started
+2025-04-22 12:47:58,360 - __main__ - INFO - Game 214 ended: Total reward = 35.80000000000028, Steps = 335
+2025-04-22 12:47:58,363 - __main__ - INFO - Game 216 started
+2025-04-22 12:47:58,879 - __main__ - INFO - Game 216 ended: Total reward = -48.199999999999505, Steps = 468
+2025-04-22 12:47:58,882 - __main__ - INFO - Game 218 started
+2025-04-22 12:47:59,442 - __main__ - INFO - Game 218 ended: Total reward = -83.600000000001, Steps = 505
+2025-04-22 12:47:59,446 - __main__ - INFO - Game 220 started
+2025-04-22 12:48:00,067 - __main__ - INFO - Game 220 ended: Total reward = -79.40000000000013, Steps = 606
+2025-04-22 12:48:00,071 - __main__ - INFO - Game 222 started
+2025-04-22 12:48:00,482 - __main__ - INFO - Game 222 ended: Total reward = 14.400000000000016, Steps = 325
+2025-04-22 12:48:00,485 - __main__ - INFO - Game 224 started
+2025-04-22 12:48:00,907 - __main__ - INFO - Game 224 ended: Total reward = 27.400000000000304, Steps = 376
+2025-04-22 12:48:00,910 - __main__ - INFO - Game 226 started
+2025-04-22 12:48:01,334 - __main__ - INFO - Game 226 ended: Total reward = -16.399999999999697, Steps = 353
+2025-04-22 12:48:01,338 - __main__ - INFO - Game 228 started
+2025-04-22 12:48:01,664 - __main__ - INFO - Game 228 ended: Total reward = 51.60000000000011, Steps = 272
+2025-04-22 12:48:01,667 - __main__ - INFO - Game 230 started
+2025-04-22 12:48:02,394 - __main__ - INFO - Game 230 ended: Total reward = -97.00000000000185, Steps = 678
+2025-04-22 12:48:02,397 - __main__ - INFO - Game 232 started
+2025-04-22 12:48:02,993 - __main__ - INFO - Game 232 ended: Total reward = -103.00000000000134, Steps = 599
+2025-04-22 12:48:02,996 - __main__ - INFO - Game 234 started
+2025-04-22 12:48:03,526 - __main__ - INFO - Game 234 ended: Total reward = -83.00000000000048, Steps = 502
+2025-04-22 12:48:03,529 - __main__ - INFO - Game 236 started
+2025-04-22 12:48:03,934 - __main__ - INFO - Game 236 ended: Total reward = 13.000000000000124, Steps = 278
+2025-04-22 12:48:03,937 - __main__ - INFO - Game 238 started
+2025-04-22 12:48:04,486 - __main__ - INFO - Game 238 ended: Total reward = -80.40000000000022, Steps = 525
+2025-04-22 12:48:04,491 - __main__ - INFO - Game 240 started
+2025-04-22 12:48:04,841 - __main__ - INFO - Game 240 ended: Total reward = -3.7999999999998213, Steps = 289
+2025-04-22 12:48:04,844 - __main__ - INFO - Game 242 started
+2025-04-22 12:48:05,194 - __main__ - INFO - Game 242 ended: Total reward = 33.60000000000025, Steps = 295
+2025-04-22 12:48:05,198 - __main__ - INFO - Game 244 started
+2025-04-22 12:48:05,554 - __main__ - INFO - Game 244 ended: Total reward = 29.00000000000011, Steps = 311
+2025-04-22 12:48:05,558 - __main__ - INFO - Game 246 started
+2025-04-22 12:48:05,897 - __main__ - INFO - Game 246 ended: Total reward = 39.60000000000001, Steps = 301
+2025-04-22 12:48:05,900 - __main__ - INFO - Game 248 started
+2025-04-22 12:48:06,276 - __main__ - INFO - Game 248 ended: Total reward = 4.399999999999988, Steps = 333
+2025-04-22 12:48:06,281 - __main__ - INFO - Game 250 started
+2025-04-22 12:48:06,721 - __main__ - INFO - Game 250 ended: Total reward = -7.4000000000000625, Steps = 371
+2025-04-22 12:48:06,724 - __main__ - INFO - Game 252 started
+2025-04-22 12:48:07,058 - __main__ - INFO - Game 252 ended: Total reward = 7.000000000000167, Steps = 282
+2025-04-22 12:48:07,061 - __main__ - INFO - Game 254 started
+2025-04-22 12:48:07,545 - __main__ - INFO - Game 254 ended: Total reward = -32.39999999999963, Steps = 358
+2025-04-22 12:48:07,549 - __main__ - INFO - Game 256 started
+2025-04-22 12:48:07,872 - __main__ - INFO - Game 256 ended: Total reward = 21.600000000000236, Steps = 289
+2025-04-22 12:48:07,875 - __main__ - INFO - Game 258 started
+2025-04-22 12:48:08,331 - __main__ - INFO - Game 258 ended: Total reward = -50.79999999999984, Steps = 410
+2025-04-22 12:48:08,335 - __main__ - INFO - Game 260 started
+2025-04-22 12:48:08,831 - __main__ - INFO - Game 260 ended: Total reward = -11.399999999999903, Steps = 468
+2025-04-22 12:48:08,835 - __main__ - INFO - Game 262 started
+2025-04-22 12:48:09,394 - __main__ - INFO - Game 262 ended: Total reward = -27.199999999999662, Steps = 497
+2025-04-22 12:48:09,398 - __main__ - INFO - Game 264 started
+2025-04-22 12:48:10,017 - __main__ - INFO - Game 264 ended: Total reward = -101.00000000000153, Steps = 603
+2025-04-22 12:48:10,022 - __main__ - INFO - Game 266 started
+2025-04-22 12:48:10,295 - __main__ - INFO - Game 266 ended: Total reward = -15.599999999999802, Steps = 219
+2025-04-22 12:48:10,299 - __main__ - INFO - Game 268 started
+2025-04-22 12:48:10,571 - __main__ - INFO - Game 268 ended: Total reward = 30.000000000000114, Steps = 227
+2025-04-22 12:48:10,574 - __main__ - INFO - Game 270 started
+2025-04-22 12:48:10,983 - __main__ - INFO - Game 270 ended: Total reward = -1.3999999999998156, Steps = 344
+2025-04-22 12:48:10,987 - __main__ - INFO - Game 272 started
+2025-04-22 12:48:11,430 - __main__ - INFO - Game 272 ended: Total reward = -1.7999999999998764, Steps = 297
+2025-04-22 12:48:11,433 - __main__ - INFO - Game 274 started
+2025-04-22 12:48:11,810 - __main__ - INFO - Game 274 ended: Total reward = 8.00000000000015, Steps = 317
+2025-04-22 12:48:11,813 - __main__ - INFO - Game 276 started
+2025-04-22 12:48:12,129 - __main__ - INFO - Game 276 ended: Total reward = 5.200000000000168, Steps = 258
+2025-04-22 12:48:12,133 - __main__ - INFO - Game 278 started
+2025-04-22 12:48:12,532 - __main__ - INFO - Game 278 ended: Total reward = -20.599999999999714, Steps = 332
+2025-04-22 12:48:12,535 - __main__ - INFO - Game 280 started
+2025-04-22 12:48:12,949 - __main__ - INFO - Game 280 ended: Total reward = -28.199999999999633, Steps = 364
+2025-04-22 12:48:12,953 - __main__ - INFO - Game 282 started
+2025-04-22 12:48:13,359 - __main__ - INFO - Game 282 ended: Total reward = 0.800000000000213, Steps = 329
+2025-04-22 12:48:13,363 - __main__ - INFO - Game 284 started
+2025-04-22 12:48:13,974 - __main__ - INFO - Game 284 ended: Total reward = -82.00000000000027, Steps = 567
+2025-04-22 12:48:13,978 - __main__ - INFO - Game 286 started
+2025-04-22 12:48:14,497 - __main__ - INFO - Game 286 ended: Total reward = -44.39999999999941, Steps = 520
+2025-04-22 12:48:14,500 - __main__ - INFO - Game 288 started
+2025-04-22 12:48:14,819 - __main__ - INFO - Game 288 ended: Total reward = 35.40000000000024, Steps = 256
+2025-04-22 12:48:14,823 - __main__ - INFO - Game 290 started
+2025-04-22 12:48:15,240 - __main__ - INFO - Game 290 ended: Total reward = -34.99999999999975, Steps = 385
+2025-04-22 12:48:15,244 - __main__ - INFO - Game 292 started
+2025-04-22 12:48:15,660 - __main__ - INFO - Game 292 ended: Total reward = 6.799999999999963, Steps = 350
+2025-04-22 12:48:15,664 - __main__ - INFO - Game 294 started
+2025-04-22 12:48:16,027 - __main__ - INFO - Game 294 ended: Total reward = 7.599999999999927, Steps = 310
+2025-04-22 12:48:16,031 - __main__ - INFO - Game 296 started
+2025-04-22 12:48:16,431 - __main__ - INFO - Game 296 ended: Total reward = 26.400000000000297, Steps = 318
+2025-04-22 12:48:16,435 - __main__ - INFO - Game 298 started
+2025-04-22 12:48:16,839 - __main__ - INFO - Game 298 ended: Total reward = -35.80000000000009, Steps = 328
+2025-04-22 12:48:16,841 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:48:16,841 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:48:16,842 - __main__ - INFO - Iteration 2 completed in 45.90 seconds
+2025-04-22 12:48:16,842 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:48:16,842 - __main__ - INFO - Starting iteration 3/1000
+2025-04-22 12:48:16,867 - __main__ - INFO - Game 200 started
+2025-04-22 12:48:17,295 - __main__ - INFO - Game 200 ended: Total reward = -6.799999999999805, Steps = 384
+2025-04-22 12:48:17,298 - __main__ - INFO - Game 202 started
+2025-04-22 12:48:17,728 - __main__ - INFO - Game 202 ended: Total reward = 6.600000000000321, Steps = 335
+2025-04-22 12:48:17,733 - __main__ - INFO - Game 204 started
+2025-04-22 12:48:18,194 - __main__ - INFO - Game 204 ended: Total reward = -49.99999999999962, Steps = 393
+2025-04-22 12:48:18,197 - __main__ - INFO - Game 206 started
+2025-04-22 12:48:18,644 - __main__ - INFO - Game 206 ended: Total reward = 3.9999999999999236, Steps = 371
+2025-04-22 12:48:18,648 - __main__ - INFO - Game 208 started
+2025-04-22 12:48:19,111 - __main__ - INFO - Game 208 ended: Total reward = 28.200000000000053, Steps = 404
+2025-04-22 12:48:19,115 - __main__ - INFO - Game 210 started
+2025-04-22 12:48:19,555 - __main__ - INFO - Game 210 ended: Total reward = 29.800000000000207, Steps = 302
+2025-04-22 12:48:19,558 - __main__ - INFO - Game 212 started
+2025-04-22 12:48:19,873 - __main__ - INFO - Game 212 ended: Total reward = 17.80000000000015, Steps = 288
+2025-04-22 12:48:19,877 - __main__ - INFO - Game 214 started
+2025-04-22 12:48:20,302 - __main__ - INFO - Game 214 ended: Total reward = 26.400000000000183, Steps = 394
+2025-04-22 12:48:20,307 - __main__ - INFO - Game 216 started
+2025-04-22 12:48:20,692 - __main__ - INFO - Game 216 ended: Total reward = -6.799999999999677, Steps = 348
+2025-04-22 12:48:20,695 - __main__ - INFO - Game 218 started
+2025-04-22 12:48:21,112 - __main__ - INFO - Game 218 ended: Total reward = -42.40000000000035, Steps = 413
+2025-04-22 12:48:21,116 - __main__ - INFO - Game 220 started
+2025-04-22 12:48:21,538 - __main__ - INFO - Game 220 ended: Total reward = -71.4000000000001, Steps = 422
+2025-04-22 12:48:21,541 - __main__ - INFO - Game 222 started
+2025-04-22 12:48:21,840 - __main__ - INFO - Game 222 ended: Total reward = 3.000000000000159, Steps = 270
+2025-04-22 12:48:21,843 - __main__ - INFO - Game 224 started
+2025-04-22 12:48:22,224 - __main__ - INFO - Game 224 ended: Total reward = -32.79999999999962, Steps = 354
+2025-04-22 12:48:22,227 - __main__ - INFO - Game 226 started
+2025-04-22 12:48:22,449 - __main__ - INFO - Game 226 ended: Total reward = 13.400000000000142, Steps = 201
+2025-04-22 12:48:22,452 - __main__ - INFO - Game 228 started
+2025-04-22 12:48:22,772 - __main__ - INFO - Game 228 ended: Total reward = 28.800000000000058, Steps = 310
+2025-04-22 12:48:22,776 - __main__ - INFO - Game 230 started
+2025-04-22 12:48:23,030 - __main__ - INFO - Game 230 ended: Total reward = 13.000000000000208, Steps = 239
+2025-04-22 12:48:23,033 - __main__ - INFO - Game 232 started
+2025-04-22 12:48:23,355 - __main__ - INFO - Game 232 ended: Total reward = 7.0000000000002265, Steps = 308
+2025-04-22 12:48:23,358 - __main__ - INFO - Game 234 started
+2025-04-22 12:48:23,600 - __main__ - INFO - Game 234 ended: Total reward = 11.599999999999984, Steps = 222
+2025-04-22 12:48:23,604 - __main__ - INFO - Game 236 started
+2025-04-22 12:48:23,966 - __main__ - INFO - Game 236 ended: Total reward = -15.59999999999986, Steps = 364
+2025-04-22 12:48:23,970 - __main__ - INFO - Game 238 started
+2025-04-22 12:48:24,317 - __main__ - INFO - Game 238 ended: Total reward = -3.3999999999998956, Steps = 339
+2025-04-22 12:48:24,320 - __main__ - INFO - Game 240 started
+2025-04-22 12:48:24,714 - __main__ - INFO - Game 240 ended: Total reward = -9.19999999999976, Steps = 362
+2025-04-22 12:48:24,717 - __main__ - INFO - Game 242 started
+2025-04-22 12:48:25,018 - __main__ - INFO - Game 242 ended: Total reward = -15.599999999999731, Steps = 282
+2025-04-22 12:48:25,021 - __main__ - INFO - Game 244 started
+2025-04-22 12:48:25,374 - __main__ - INFO - Game 244 ended: Total reward = 25.200000000000337, Steps = 336
+2025-04-22 12:48:25,377 - __main__ - INFO - Game 246 started
+2025-04-22 12:48:25,843 - __main__ - INFO - Game 246 ended: Total reward = -66.8000000000001, Steps = 493
+2025-04-22 12:48:25,846 - __main__ - INFO - Game 248 started
+2025-04-22 12:48:26,322 - __main__ - INFO - Game 248 ended: Total reward = -69.5999999999998, Steps = 474
+2025-04-22 12:48:26,325 - __main__ - INFO - Game 250 started
+2025-04-22 12:48:26,616 - __main__ - INFO - Game 250 ended: Total reward = -3.200000000000049, Steps = 271
+2025-04-22 12:48:26,620 - __main__ - INFO - Game 252 started
+2025-04-22 12:48:26,908 - __main__ - INFO - Game 252 ended: Total reward = 26.200000000000067, Steps = 269
+2025-04-22 12:48:26,911 - __main__ - INFO - Game 254 started
+2025-04-22 12:48:27,222 - __main__ - INFO - Game 254 ended: Total reward = 20.400000000000187, Steps = 261
+2025-04-22 12:48:27,225 - __main__ - INFO - Game 256 started
+2025-04-22 12:48:27,681 - __main__ - INFO - Game 256 ended: Total reward = 8.000000000000199, Steps = 458
+2025-04-22 12:48:27,684 - __main__ - INFO - Game 258 started
+2025-04-22 12:48:27,944 - __main__ - INFO - Game 258 ended: Total reward = 5.200000000000119, Steps = 238
+2025-04-22 12:48:27,947 - __main__ - INFO - Game 260 started
+2025-04-22 12:48:28,382 - __main__ - INFO - Game 260 ended: Total reward = -65.99999999999977, Steps = 437
+2025-04-22 12:48:28,385 - __main__ - INFO - Game 262 started
+2025-04-22 12:48:28,846 - __main__ - INFO - Game 262 ended: Total reward = 3.4000000000002437, Steps = 377
+2025-04-22 12:48:28,850 - __main__ - INFO - Game 264 started
+2025-04-22 12:48:29,231 - __main__ - INFO - Game 264 ended: Total reward = -52.999999999999595, Steps = 374
+2025-04-22 12:48:29,234 - __main__ - INFO - Game 266 started
+2025-04-22 12:48:29,717 - __main__ - INFO - Game 266 ended: Total reward = -6.19999999999947, Steps = 483
+2025-04-22 12:48:29,721 - __main__ - INFO - Game 268 started
+2025-04-22 12:48:29,990 - __main__ - INFO - Game 268 ended: Total reward = 4.200000000000133, Steps = 244
+2025-04-22 12:48:29,992 - __main__ - INFO - Game 270 started
+2025-04-22 12:48:30,281 - __main__ - INFO - Game 270 ended: Total reward = 47.000000000000036, Steps = 249
+2025-04-22 12:48:30,285 - __main__ - INFO - Game 272 started
+2025-04-22 12:48:30,602 - __main__ - INFO - Game 272 ended: Total reward = -20.399999999999906, Steps = 302
+2025-04-22 12:48:30,606 - __main__ - INFO - Game 274 started
+2025-04-22 12:48:31,023 - __main__ - INFO - Game 274 ended: Total reward = -7.3999999999997, Steps = 410
+2025-04-22 12:48:31,026 - __main__ - INFO - Game 276 started
+2025-04-22 12:48:31,593 - __main__ - INFO - Game 276 ended: Total reward = -39.60000000000046, Steps = 592
+2025-04-22 12:48:31,596 - __main__ - INFO - Game 278 started
+2025-04-22 12:48:31,920 - __main__ - INFO - Game 278 ended: Total reward = 50.800000000000225, Steps = 297
+2025-04-22 12:48:31,923 - __main__ - INFO - Game 280 started
+2025-04-22 12:48:32,261 - __main__ - INFO - Game 280 ended: Total reward = -13.199999999999662, Steps = 324
+2025-04-22 12:48:32,265 - __main__ - INFO - Game 282 started
+2025-04-22 12:48:32,651 - __main__ - INFO - Game 282 ended: Total reward = -24.200000000000273, Steps = 381
+2025-04-22 12:48:32,654 - __main__ - INFO - Game 284 started
+2025-04-22 12:48:32,973 - __main__ - INFO - Game 284 ended: Total reward = 73.00000000000009, Steps = 300
+2025-04-22 12:48:32,976 - __main__ - INFO - Game 286 started
+2025-04-22 12:48:33,596 - __main__ - INFO - Game 286 ended: Total reward = -61.79999999999963, Steps = 627
+2025-04-22 12:48:33,600 - __main__ - INFO - Game 288 started
+2025-04-22 12:48:33,970 - __main__ - INFO - Game 288 ended: Total reward = -6.599999999999639, Steps = 364
+2025-04-22 12:48:33,974 - __main__ - INFO - Game 290 started
+2025-04-22 12:48:34,389 - __main__ - INFO - Game 290 ended: Total reward = -17.999999999999595, Steps = 395
+2025-04-22 12:48:34,392 - __main__ - INFO - Game 292 started
+2025-04-22 12:48:34,639 - __main__ - INFO - Game 292 ended: Total reward = 2.000000000000137, Steps = 196
+2025-04-22 12:48:34,642 - __main__ - INFO - Game 294 started
+2025-04-22 12:48:34,938 - __main__ - INFO - Game 294 ended: Total reward = -27.399999999999743, Steps = 266
+2025-04-22 12:48:34,941 - __main__ - INFO - Game 296 started
+2025-04-22 12:48:35,318 - __main__ - INFO - Game 296 ended: Total reward = 0.4000000000001984, Steps = 300
+2025-04-22 12:48:35,323 - __main__ - INFO - Game 298 started
+2025-04-22 12:48:35,669 - __main__ - INFO - Game 298 ended: Total reward = -9.799999999999727, Steps = 284
+2025-04-22 12:48:35,672 - __main__ - INFO - Game 300 started
+2025-04-22 12:48:36,071 - __main__ - INFO - Game 300 ended: Total reward = 13.800000000000102, Steps = 295
+2025-04-22 12:48:36,074 - __main__ - INFO - Game 302 started
+2025-04-22 12:48:36,521 - __main__ - INFO - Game 302 ended: Total reward = -51.20000000000002, Steps = 425
+2025-04-22 12:48:36,524 - __main__ - INFO - Game 304 started
+2025-04-22 12:48:36,938 - __main__ - INFO - Game 304 ended: Total reward = -26.599999999999657, Steps = 395
+2025-04-22 12:48:36,941 - __main__ - INFO - Game 306 started
+2025-04-22 12:48:37,301 - __main__ - INFO - Game 306 ended: Total reward = -46.19999999999969, Steps = 313
+2025-04-22 12:48:37,304 - __main__ - INFO - Game 308 started
+2025-04-22 12:48:37,663 - __main__ - INFO - Game 308 ended: Total reward = -28.999999999999687, Steps = 325
+2025-04-22 12:48:37,666 - __main__ - INFO - Game 310 started
+2025-04-22 12:48:38,176 - __main__ - INFO - Game 310 ended: Total reward = -25.599999999999888, Steps = 512
+2025-04-22 12:48:38,179 - __main__ - INFO - Game 312 started
+2025-04-22 12:48:38,471 - __main__ - INFO - Game 312 ended: Total reward = -17.19999999999977, Steps = 262
+2025-04-22 12:48:38,474 - __main__ - INFO - Game 314 started
+2025-04-22 12:48:38,879 - __main__ - INFO - Game 314 ended: Total reward = -44.199999999999626, Steps = 367
+2025-04-22 12:48:38,882 - __main__ - INFO - Game 316 started
+2025-04-22 12:48:39,171 - __main__ - INFO - Game 316 ended: Total reward = 71.60000000000014, Steps = 262
+2025-04-22 12:48:39,174 - __main__ - INFO - Game 318 started
+2025-04-22 12:48:39,561 - __main__ - INFO - Game 318 ended: Total reward = 32.000000000000355, Steps = 370
+2025-04-22 12:48:39,564 - __main__ - INFO - Game 320 started
+2025-04-22 12:48:39,962 - __main__ - INFO - Game 320 ended: Total reward = -2.3999999999996433, Steps = 373
+2025-04-22 12:48:39,966 - __main__ - INFO - Game 322 started
+2025-04-22 12:48:40,463 - __main__ - INFO - Game 322 ended: Total reward = -74.80000000000068, Steps = 494
+2025-04-22 12:48:40,466 - __main__ - INFO - Game 324 started
+2025-04-22 12:48:40,805 - __main__ - INFO - Game 324 ended: Total reward = -16.399999999999714, Steps = 332
+2025-04-22 12:48:40,808 - __main__ - INFO - Game 326 started
+2025-04-22 12:48:41,082 - __main__ - INFO - Game 326 ended: Total reward = 34.80000000000001, Steps = 253
+2025-04-22 12:48:41,085 - __main__ - INFO - Game 328 started
+2025-04-22 12:48:41,425 - __main__ - INFO - Game 328 ended: Total reward = -4.59999999999971, Steps = 319
+2025-04-22 12:48:41,428 - __main__ - INFO - Game 330 started
+2025-04-22 12:48:41,895 - __main__ - INFO - Game 330 ended: Total reward = -65.59999999999975, Steps = 481
+2025-04-22 12:48:41,898 - __main__ - INFO - Game 332 started
+2025-04-22 12:48:42,188 - __main__ - INFO - Game 332 ended: Total reward = 44.999999999999986, Steps = 245
+2025-04-22 12:48:42,190 - __main__ - INFO - Game 334 started
+2025-04-22 12:48:42,470 - __main__ - INFO - Game 334 ended: Total reward = 18.200000000000095, Steps = 258
+2025-04-22 12:48:42,473 - __main__ - INFO - Game 336 started
+2025-04-22 12:48:42,919 - __main__ - INFO - Game 336 ended: Total reward = -24.799999999999734, Steps = 426
+2025-04-22 12:48:42,923 - __main__ - INFO - Game 338 started
+2025-04-22 12:48:43,363 - __main__ - INFO - Game 338 ended: Total reward = -79.60000000000032, Steps = 461
+2025-04-22 12:48:43,366 - __main__ - INFO - Game 340 started
+2025-04-22 12:48:43,832 - __main__ - INFO - Game 340 ended: Total reward = -49.999999999999496, Steps = 481
+2025-04-22 12:48:43,835 - __main__ - INFO - Game 342 started
+2025-04-22 12:48:44,429 - __main__ - INFO - Game 342 ended: Total reward = -132.0000000000018, Steps = 649
+2025-04-22 12:48:44,432 - __main__ - INFO - Game 344 started
+2025-04-22 12:48:44,685 - __main__ - INFO - Game 344 ended: Total reward = 13.999999999999996, Steps = 231
+2025-04-22 12:48:44,688 - __main__ - INFO - Game 346 started
+2025-04-22 12:48:45,063 - __main__ - INFO - Game 346 ended: Total reward = -3.1999999999996547, Steps = 376
+2025-04-22 12:48:45,066 - __main__ - INFO - Game 348 started
+2025-04-22 12:48:45,480 - __main__ - INFO - Game 348 ended: Total reward = -11.199999999999669, Steps = 409
+2025-04-22 12:48:45,484 - __main__ - INFO - Game 350 started
+2025-04-22 12:48:45,815 - __main__ - INFO - Game 350 ended: Total reward = -19.199999999999683, Steps = 319
+2025-04-22 12:48:45,818 - __main__ - INFO - Game 352 started
+2025-04-22 12:48:46,227 - __main__ - INFO - Game 352 ended: Total reward = -19.999999999999638, Steps = 416
+2025-04-22 12:48:46,230 - __main__ - INFO - Game 354 started
+2025-04-22 12:48:46,759 - __main__ - INFO - Game 354 ended: Total reward = -58.40000000000093, Steps = 536
+2025-04-22 12:48:46,763 - __main__ - INFO - Game 356 started
+2025-04-22 12:48:47,119 - __main__ - INFO - Game 356 ended: Total reward = 19.199999999999996, Steps = 339
+2025-04-22 12:48:47,122 - __main__ - INFO - Game 358 started
+2025-04-22 12:48:47,552 - __main__ - INFO - Game 358 ended: Total reward = -91.20000000000046, Steps = 461
+2025-04-22 12:48:47,555 - __main__ - INFO - Game 360 started
+2025-04-22 12:48:47,883 - __main__ - INFO - Game 360 ended: Total reward = -22.399999999999686, Steps = 311
+2025-04-22 12:48:47,886 - __main__ - INFO - Game 362 started
+2025-04-22 12:48:48,206 - __main__ - INFO - Game 362 ended: Total reward = 23.200000000000113, Steps = 299
+2025-04-22 12:48:48,210 - __main__ - INFO - Game 364 started
+2025-04-22 12:48:48,548 - __main__ - INFO - Game 364 ended: Total reward = -1.19999999999974, Steps = 312
+2025-04-22 12:48:48,552 - __main__ - INFO - Game 366 started
+2025-04-22 12:48:48,831 - __main__ - INFO - Game 366 ended: Total reward = 13.200000000000138, Steps = 251
+2025-04-22 12:48:48,834 - __main__ - INFO - Game 368 started
+2025-04-22 12:48:49,328 - __main__ - INFO - Game 368 ended: Total reward = -73.60000000000078, Steps = 450
+2025-04-22 12:48:49,331 - __main__ - INFO - Game 370 started
+2025-04-22 12:48:49,550 - __main__ - INFO - Game 370 ended: Total reward = 25.800000000000132, Steps = 185
+2025-04-22 12:48:49,552 - __main__ - INFO - Game 372 started
+2025-04-22 12:48:49,939 - __main__ - INFO - Game 372 ended: Total reward = -33.999999999999616, Steps = 375
+2025-04-22 12:48:49,942 - __main__ - INFO - Game 374 started
+2025-04-22 12:48:50,366 - __main__ - INFO - Game 374 ended: Total reward = 10.400000000000198, Steps = 413
+2025-04-22 12:48:50,369 - __main__ - INFO - Game 376 started
+2025-04-22 12:48:50,768 - __main__ - INFO - Game 376 ended: Total reward = 54.20000000000031, Steps = 367
+2025-04-22 12:48:50,771 - __main__ - INFO - Game 378 started
+2025-04-22 12:48:51,305 - __main__ - INFO - Game 378 ended: Total reward = -79.00000000000007, Steps = 548
+2025-04-22 12:48:51,309 - __main__ - INFO - Game 380 started
+2025-04-22 12:48:51,675 - __main__ - INFO - Game 380 ended: Total reward = -46.79999999999971, Steps = 369
+2025-04-22 12:48:51,678 - __main__ - INFO - Game 382 started
+2025-04-22 12:48:52,067 - __main__ - INFO - Game 382 ended: Total reward = 8.200000000000347, Steps = 357
+2025-04-22 12:48:52,071 - __main__ - INFO - Game 384 started
+2025-04-22 12:48:52,436 - __main__ - INFO - Game 384 ended: Total reward = -2.3999999999997534, Steps = 343
+2025-04-22 12:48:52,440 - __main__ - INFO - Game 386 started
+2025-04-22 12:48:52,763 - __main__ - INFO - Game 386 ended: Total reward = -12.399999999999707, Steps = 289
+2025-04-22 12:48:52,767 - __main__ - INFO - Game 388 started
+2025-04-22 12:48:53,122 - __main__ - INFO - Game 388 ended: Total reward = -1.5999999999998593, Steps = 329
+2025-04-22 12:48:53,125 - __main__ - INFO - Game 390 started
+2025-04-22 12:48:53,471 - __main__ - INFO - Game 390 ended: Total reward = -25.799999999999685, Steps = 336
+2025-04-22 12:48:53,474 - __main__ - INFO - Game 392 started
+2025-04-22 12:48:53,983 - __main__ - INFO - Game 392 ended: Total reward = -39.39999999999957, Steps = 405
+2025-04-22 12:48:53,986 - __main__ - INFO - Game 394 started
+2025-04-22 12:48:54,293 - __main__ - INFO - Game 394 ended: Total reward = 7.200000000000216, Steps = 287
+2025-04-22 12:48:54,296 - __main__ - INFO - Game 396 started
+2025-04-22 12:48:54,753 - __main__ - INFO - Game 396 ended: Total reward = -33.79999999999949, Steps = 452
+2025-04-22 12:48:54,756 - __main__ - INFO - Game 398 started
+2025-04-22 12:48:55,094 - __main__ - INFO - Game 398 ended: Total reward = -45.799999999999756, Steps = 295
+2025-04-22 12:48:55,095 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:48:55,096 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:48:55,096 - __main__ - INFO - Iteration 3 completed in 38.25 seconds
+2025-04-22 12:48:55,096 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:48:55,096 - __main__ - INFO - Starting iteration 4/1000
+2025-04-22 12:48:55,119 - __main__ - INFO - Game 300 started
+2025-04-22 12:48:55,826 - __main__ - INFO - Game 300 ended: Total reward = -168.40000000000248, Steps = 749
+2025-04-22 12:48:55,830 - __main__ - INFO - Game 302 started
+2025-04-22 12:48:56,140 - __main__ - INFO - Game 302 ended: Total reward = -35.19999999999974, Steps = 289
+2025-04-22 12:48:56,143 - __main__ - INFO - Game 304 started
+2025-04-22 12:48:56,380 - __main__ - INFO - Game 304 ended: Total reward = 2.000000000000108, Steps = 207
+2025-04-22 12:48:56,383 - __main__ - INFO - Game 306 started
+2025-04-22 12:48:56,664 - __main__ - INFO - Game 306 ended: Total reward = 43.400000000000055, Steps = 264
+2025-04-22 12:48:56,667 - __main__ - INFO - Game 308 started
+2025-04-22 12:48:57,087 - __main__ - INFO - Game 308 ended: Total reward = -22.39999999999955, Steps = 409
+2025-04-22 12:48:57,090 - __main__ - INFO - Game 310 started
+2025-04-22 12:48:57,464 - __main__ - INFO - Game 310 ended: Total reward = -45.20000000000001, Steps = 368
+2025-04-22 12:48:57,467 - __main__ - INFO - Game 312 started
+2025-04-22 12:48:57,867 - __main__ - INFO - Game 312 ended: Total reward = 28.200000000000287, Steps = 368
+2025-04-22 12:48:57,871 - __main__ - INFO - Game 314 started
+2025-04-22 12:48:58,097 - __main__ - INFO - Game 314 ended: Total reward = 14.199999999999951, Steps = 203
+2025-04-22 12:48:58,099 - __main__ - INFO - Game 316 started
+2025-04-22 12:48:58,530 - __main__ - INFO - Game 316 ended: Total reward = -6.599999999999589, Steps = 409
+2025-04-22 12:48:58,533 - __main__ - INFO - Game 318 started
+2025-04-22 12:48:59,106 - __main__ - INFO - Game 318 ended: Total reward = -69.19999999999997, Steps = 602
+2025-04-22 12:48:59,109 - __main__ - INFO - Game 320 started
+2025-04-22 12:48:59,509 - __main__ - INFO - Game 320 ended: Total reward = -10.99999999999961, Steps = 374
+2025-04-22 12:48:59,512 - __main__ - INFO - Game 322 started
+2025-04-22 12:48:59,772 - __main__ - INFO - Game 322 ended: Total reward = 17.800000000000082, Steps = 227
+2025-04-22 12:48:59,775 - __main__ - INFO - Game 324 started
+2025-04-22 12:49:00,180 - __main__ - INFO - Game 324 ended: Total reward = -12.399999999999693, Steps = 401
+2025-04-22 12:49:00,183 - __main__ - INFO - Game 326 started
+2025-04-22 12:49:00,459 - __main__ - INFO - Game 326 ended: Total reward = 35.200000000000166, Steps = 250
+2025-04-22 12:49:00,462 - __main__ - INFO - Game 328 started
+2025-04-22 12:49:00,736 - __main__ - INFO - Game 328 ended: Total reward = 22.199999999999964, Steps = 265
+2025-04-22 12:49:00,739 - __main__ - INFO - Game 330 started
+2025-04-22 12:49:01,040 - __main__ - INFO - Game 330 ended: Total reward = -8.399999999999807, Steps = 267
+2025-04-22 12:49:01,043 - __main__ - INFO - Game 332 started
+2025-04-22 12:49:01,347 - __main__ - INFO - Game 332 ended: Total reward = -5.999999999999853, Steps = 288
+2025-04-22 12:49:01,351 - __main__ - INFO - Game 334 started
+2025-04-22 12:49:01,744 - __main__ - INFO - Game 334 ended: Total reward = -9.599999999999653, Steps = 360
+2025-04-22 12:49:01,748 - __main__ - INFO - Game 336 started
+2025-04-22 12:49:02,302 - __main__ - INFO - Game 336 ended: Total reward = -78.40000000000093, Steps = 567
+2025-04-22 12:49:02,305 - __main__ - INFO - Game 338 started
+2025-04-22 12:49:02,862 - __main__ - INFO - Game 338 ended: Total reward = -72.6000000000009, Steps = 591
+2025-04-22 12:49:02,865 - __main__ - INFO - Game 340 started
+2025-04-22 12:49:03,186 - __main__ - INFO - Game 340 ended: Total reward = -4.79999999999972, Steps = 298
+2025-04-22 12:49:03,189 - __main__ - INFO - Game 342 started
+2025-04-22 12:49:03,539 - __main__ - INFO - Game 342 ended: Total reward = -6.3999999999997215, Steps = 315
+2025-04-22 12:49:03,543 - __main__ - INFO - Game 344 started
+2025-04-22 12:49:03,797 - __main__ - INFO - Game 344 ended: Total reward = -7.199999999999914, Steps = 236
+2025-04-22 12:49:03,800 - __main__ - INFO - Game 346 started
+2025-04-22 12:49:04,204 - __main__ - INFO - Game 346 ended: Total reward = -35.599999999999554, Steps = 417
+2025-04-22 12:49:04,207 - __main__ - INFO - Game 348 started
+2025-04-22 12:49:04,493 - __main__ - INFO - Game 348 ended: Total reward = 47.00000000000023, Steps = 257
+2025-04-22 12:49:04,496 - __main__ - INFO - Game 350 started
+2025-04-22 12:49:04,794 - __main__ - INFO - Game 350 ended: Total reward = 42.60000000000006, Steps = 265
+2025-04-22 12:49:04,797 - __main__ - INFO - Game 352 started
+2025-04-22 12:49:05,096 - __main__ - INFO - Game 352 ended: Total reward = -10.199999999999783, Steps = 289
+2025-04-22 12:49:05,099 - __main__ - INFO - Game 354 started
+2025-04-22 12:49:05,420 - __main__ - INFO - Game 354 ended: Total reward = 48.999999999999964, Steps = 312
+2025-04-22 12:49:05,423 - __main__ - INFO - Game 356 started
+2025-04-22 12:49:05,811 - __main__ - INFO - Game 356 ended: Total reward = -10.59999999999959, Steps = 384
+2025-04-22 12:49:05,814 - __main__ - INFO - Game 358 started
+2025-04-22 12:49:06,087 - __main__ - INFO - Game 358 ended: Total reward = 18.20000000000014, Steps = 241
+2025-04-22 12:49:06,090 - __main__ - INFO - Game 360 started
+2025-04-22 12:49:06,328 - __main__ - INFO - Game 360 ended: Total reward = 24.800000000000125, Steps = 204
+2025-04-22 12:49:06,331 - __main__ - INFO - Game 362 started
+2025-04-22 12:49:06,767 - __main__ - INFO - Game 362 ended: Total reward = -45.79999999999965, Steps = 433
+2025-04-22 12:49:06,770 - __main__ - INFO - Game 364 started
+2025-04-22 12:49:07,136 - __main__ - INFO - Game 364 ended: Total reward = -23.79999999999977, Steps = 363
+2025-04-22 12:49:07,140 - __main__ - INFO - Game 366 started
+2025-04-22 12:49:07,428 - __main__ - INFO - Game 366 ended: Total reward = -12.799999999999947, Steps = 272
+2025-04-22 12:49:07,431 - __main__ - INFO - Game 368 started
+2025-04-22 12:49:07,902 - __main__ - INFO - Game 368 ended: Total reward = -42.799999999999784, Steps = 491
+2025-04-22 12:49:07,906 - __main__ - INFO - Game 370 started
+2025-04-22 12:49:08,451 - __main__ - INFO - Game 370 ended: Total reward = -73.00000000000044, Steps = 581
+2025-04-22 12:49:08,454 - __main__ - INFO - Game 372 started
+2025-04-22 12:49:08,791 - __main__ - INFO - Game 372 ended: Total reward = 29.800000000000068, Steps = 293
+2025-04-22 12:49:08,794 - __main__ - INFO - Game 374 started
+2025-04-22 12:49:09,117 - __main__ - INFO - Game 374 ended: Total reward = 1.399999999999979, Steps = 308
+2025-04-22 12:49:09,121 - __main__ - INFO - Game 376 started
+2025-04-22 12:49:09,468 - __main__ - INFO - Game 376 ended: Total reward = -18.199999999999704, Steps = 344
+2025-04-22 12:49:09,471 - __main__ - INFO - Game 378 started
+2025-04-22 12:49:09,860 - __main__ - INFO - Game 378 ended: Total reward = -26.999999999999595, Steps = 389
+2025-04-22 12:49:09,863 - __main__ - INFO - Game 380 started
+2025-04-22 12:49:10,343 - __main__ - INFO - Game 380 ended: Total reward = -63.60000000000055, Steps = 486
+2025-04-22 12:49:10,346 - __main__ - INFO - Game 382 started
+2025-04-22 12:49:10,628 - __main__ - INFO - Game 382 ended: Total reward = 38.000000000000114, Steps = 240
+2025-04-22 12:49:10,631 - __main__ - INFO - Game 384 started
+2025-04-22 12:49:10,960 - __main__ - INFO - Game 384 ended: Total reward = 53.00000000000012, Steps = 305
+2025-04-22 12:49:10,964 - __main__ - INFO - Game 386 started
+2025-04-22 12:49:11,247 - __main__ - INFO - Game 386 ended: Total reward = 38.40000000000015, Steps = 249
+2025-04-22 12:49:11,250 - __main__ - INFO - Game 388 started
+2025-04-22 12:49:11,726 - __main__ - INFO - Game 388 ended: Total reward = -58.600000000000236, Steps = 490
+2025-04-22 12:49:11,729 - __main__ - INFO - Game 390 started
+2025-04-22 12:49:12,046 - __main__ - INFO - Game 390 ended: Total reward = 51.40000000000023, Steps = 300
+2025-04-22 12:49:12,050 - __main__ - INFO - Game 392 started
+2025-04-22 12:49:12,322 - __main__ - INFO - Game 392 ended: Total reward = 62.00000000000001, Steps = 243
+2025-04-22 12:49:12,325 - __main__ - INFO - Game 394 started
+2025-04-22 12:49:12,836 - __main__ - INFO - Game 394 ended: Total reward = -46.7999999999998, Steps = 520
+2025-04-22 12:49:12,839 - __main__ - INFO - Game 396 started
+2025-04-22 12:49:13,157 - __main__ - INFO - Game 396 ended: Total reward = -19.799999999999727, Steps = 294
+2025-04-22 12:49:13,160 - __main__ - INFO - Game 398 started
+2025-04-22 12:49:13,420 - __main__ - INFO - Game 398 ended: Total reward = 27.799999999999997, Steps = 216
+2025-04-22 12:49:13,423 - __main__ - INFO - Game 400 started
+2025-04-22 12:49:13,909 - __main__ - INFO - Game 400 ended: Total reward = -17.399999999999586, Steps = 507
+2025-04-22 12:49:13,912 - __main__ - INFO - Game 402 started
+2025-04-22 12:49:14,254 - __main__ - INFO - Game 402 ended: Total reward = -3.399999999999803, Steps = 311
+2025-04-22 12:49:14,258 - __main__ - INFO - Game 404 started
+2025-04-22 12:49:14,718 - __main__ - INFO - Game 404 ended: Total reward = 31.60000000000047, Steps = 468
+2025-04-22 12:49:14,722 - __main__ - INFO - Game 406 started
+2025-04-22 12:49:15,186 - __main__ - INFO - Game 406 ended: Total reward = -92.00000000000084, Steps = 458
+2025-04-22 12:49:15,189 - __main__ - INFO - Game 408 started
+2025-04-22 12:49:15,478 - __main__ - INFO - Game 408 ended: Total reward = 59.800000000000196, Steps = 262
+2025-04-22 12:49:15,481 - __main__ - INFO - Game 410 started
+2025-04-22 12:49:15,851 - __main__ - INFO - Game 410 ended: Total reward = 36.59999999999997, Steps = 370
+2025-04-22 12:49:15,854 - __main__ - INFO - Game 412 started
+2025-04-22 12:49:16,151 - __main__ - INFO - Game 412 ended: Total reward = 62.99999999999994, Steps = 273
+2025-04-22 12:49:16,154 - __main__ - INFO - Game 414 started
+2025-04-22 12:49:16,529 - __main__ - INFO - Game 414 ended: Total reward = 6.600000000000155, Steps = 377
+2025-04-22 12:49:16,532 - __main__ - INFO - Game 416 started
+2025-04-22 12:49:16,815 - __main__ - INFO - Game 416 ended: Total reward = 28.20000000000015, Steps = 262
+2025-04-22 12:49:16,818 - __main__ - INFO - Game 418 started
+2025-04-22 12:49:17,300 - __main__ - INFO - Game 418 ended: Total reward = -61.200000000000585, Steps = 511
+2025-04-22 12:49:17,303 - __main__ - INFO - Game 420 started
+2025-04-22 12:49:17,826 - __main__ - INFO - Game 420 ended: Total reward = -4.399999999999977, Steps = 473
+2025-04-22 12:49:17,829 - __main__ - INFO - Game 422 started
+2025-04-22 12:49:18,103 - __main__ - INFO - Game 422 ended: Total reward = 13.200000000000111, Steps = 259
+2025-04-22 12:49:18,106 - __main__ - INFO - Game 424 started
+2025-04-22 12:49:18,376 - __main__ - INFO - Game 424 ended: Total reward = 33.20000000000003, Steps = 243
+2025-04-22 12:49:18,379 - __main__ - INFO - Game 426 started
+2025-04-22 12:49:18,630 - __main__ - INFO - Game 426 ended: Total reward = 36.200000000000024, Steps = 231
+2025-04-22 12:49:18,633 - __main__ - INFO - Game 428 started
+2025-04-22 12:49:18,909 - __main__ - INFO - Game 428 ended: Total reward = -28.99999999999978, Steps = 255
+2025-04-22 12:49:18,912 - __main__ - INFO - Game 430 started
+2025-04-22 12:49:19,201 - __main__ - INFO - Game 430 ended: Total reward = 6.000000000000165, Steps = 260
+2025-04-22 12:49:19,203 - __main__ - INFO - Game 432 started
+2025-04-22 12:49:19,570 - __main__ - INFO - Game 432 ended: Total reward = 20.600000000000293, Steps = 349
+2025-04-22 12:49:19,573 - __main__ - INFO - Game 434 started
+2025-04-22 12:49:20,033 - __main__ - INFO - Game 434 ended: Total reward = -75.60000000000025, Steps = 475
+2025-04-22 12:49:20,036 - __main__ - INFO - Game 436 started
+2025-04-22 12:49:20,330 - __main__ - INFO - Game 436 ended: Total reward = -13.59999999999976, Steps = 266
+2025-04-22 12:49:20,333 - __main__ - INFO - Game 438 started
+2025-04-22 12:49:20,577 - __main__ - INFO - Game 438 ended: Total reward = -3.7999999999998515, Steps = 216
+2025-04-22 12:49:20,580 - __main__ - INFO - Game 440 started
+2025-04-22 12:49:20,797 - __main__ - INFO - Game 440 ended: Total reward = -1.3999999999999204, Steps = 191
+2025-04-22 12:49:20,800 - __main__ - INFO - Game 442 started
+2025-04-22 12:49:21,150 - __main__ - INFO - Game 442 ended: Total reward = 28.79999999999997, Steps = 333
+2025-04-22 12:49:21,154 - __main__ - INFO - Game 444 started
+2025-04-22 12:49:21,474 - __main__ - INFO - Game 444 ended: Total reward = -24.200000000000014, Steps = 302
+2025-04-22 12:49:21,478 - __main__ - INFO - Game 446 started
+2025-04-22 12:49:21,832 - __main__ - INFO - Game 446 ended: Total reward = -3.2000000000000215, Steps = 344
+2025-04-22 12:49:21,835 - __main__ - INFO - Game 448 started
+2025-04-22 12:49:22,146 - __main__ - INFO - Game 448 ended: Total reward = 44.0000000000002, Steps = 298
+2025-04-22 12:49:22,149 - __main__ - INFO - Game 450 started
+2025-04-22 12:49:22,507 - __main__ - INFO - Game 450 ended: Total reward = 0.40000000000033253, Steps = 351
+2025-04-22 12:49:22,511 - __main__ - INFO - Game 452 started
+2025-04-22 12:49:22,818 - __main__ - INFO - Game 452 ended: Total reward = 13.800000000000116, Steps = 288
+2025-04-22 12:49:22,821 - __main__ - INFO - Game 454 started
+2025-04-22 12:49:23,084 - __main__ - INFO - Game 454 ended: Total reward = 0.8000000000001783, Steps = 231
+2025-04-22 12:49:23,087 - __main__ - INFO - Game 456 started
+2025-04-22 12:49:23,366 - __main__ - INFO - Game 456 ended: Total reward = 4.000000000000071, Steps = 255
+2025-04-22 12:49:23,369 - __main__ - INFO - Game 458 started
+2025-04-22 12:49:23,946 - __main__ - INFO - Game 458 ended: Total reward = -118.40000000000143, Steps = 588
+2025-04-22 12:49:23,949 - __main__ - INFO - Game 460 started
+2025-04-22 12:49:24,210 - __main__ - INFO - Game 460 ended: Total reward = 44.40000000000021, Steps = 230
+2025-04-22 12:49:24,213 - __main__ - INFO - Game 462 started
+2025-04-22 12:49:24,477 - __main__ - INFO - Game 462 ended: Total reward = -1.199999999999906, Steps = 243
+2025-04-22 12:49:24,480 - __main__ - INFO - Game 464 started
+2025-04-22 12:49:24,777 - __main__ - INFO - Game 464 ended: Total reward = 30.20000000000018, Steps = 277
+2025-04-22 12:49:24,780 - __main__ - INFO - Game 466 started
+2025-04-22 12:49:25,113 - __main__ - INFO - Game 466 ended: Total reward = 21.200000000000184, Steps = 316
+2025-04-22 12:49:25,116 - __main__ - INFO - Game 468 started
+2025-04-22 12:49:25,313 - __main__ - INFO - Game 468 ended: Total reward = 11.399999999999974, Steps = 158
+2025-04-22 12:49:25,316 - __main__ - INFO - Game 470 started
+2025-04-22 12:49:25,931 - __main__ - INFO - Game 470 ended: Total reward = -99.80000000000132, Steps = 662
+2025-04-22 12:49:25,935 - __main__ - INFO - Game 472 started
+2025-04-22 12:49:26,215 - __main__ - INFO - Game 472 ended: Total reward = 5.000000000000034, Steps = 260
+2025-04-22 12:49:26,218 - __main__ - INFO - Game 474 started
+2025-04-22 12:49:26,570 - __main__ - INFO - Game 474 ended: Total reward = -7.3999999999996575, Steps = 335
+2025-04-22 12:49:26,573 - __main__ - INFO - Game 476 started
+2025-04-22 12:49:27,012 - __main__ - INFO - Game 476 ended: Total reward = -82.40000000000016, Steps = 462
+2025-04-22 12:49:27,015 - __main__ - INFO - Game 478 started
+2025-04-22 12:49:27,435 - __main__ - INFO - Game 478 ended: Total reward = -46.99999999999977, Steps = 427
+2025-04-22 12:49:27,438 - __main__ - INFO - Game 480 started
+2025-04-22 12:49:27,900 - __main__ - INFO - Game 480 ended: Total reward = -47.400000000000276, Steps = 474
+2025-04-22 12:49:27,904 - __main__ - INFO - Game 482 started
+2025-04-22 12:49:28,275 - __main__ - INFO - Game 482 ended: Total reward = 54.200000000000124, Steps = 335
+2025-04-22 12:49:28,278 - __main__ - INFO - Game 484 started
+2025-04-22 12:49:28,684 - __main__ - INFO - Game 484 ended: Total reward = 4.400000000000031, Steps = 405
+2025-04-22 12:49:28,688 - __main__ - INFO - Game 486 started
+2025-04-22 12:49:29,038 - __main__ - INFO - Game 486 ended: Total reward = 63.200000000000244, Steps = 322
+2025-04-22 12:49:29,041 - __main__ - INFO - Game 488 started
+2025-04-22 12:49:29,315 - __main__ - INFO - Game 488 ended: Total reward = -3.599999999999925, Steps = 250
+2025-04-22 12:49:29,318 - __main__ - INFO - Game 490 started
+2025-04-22 12:49:29,617 - __main__ - INFO - Game 490 ended: Total reward = 17.20000000000015, Steps = 247
+2025-04-22 12:49:29,620 - __main__ - INFO - Game 492 started
+2025-04-22 12:49:30,152 - __main__ - INFO - Game 492 ended: Total reward = -69.60000000000097, Steps = 560
+2025-04-22 12:49:30,155 - __main__ - INFO - Game 494 started
+2025-04-22 12:49:30,386 - __main__ - INFO - Game 494 ended: Total reward = 29.00000000000016, Steps = 197
+2025-04-22 12:49:30,389 - __main__ - INFO - Game 496 started
+2025-04-22 12:49:30,843 - __main__ - INFO - Game 496 ended: Total reward = -38.4000000000006, Steps = 458
+2025-04-22 12:49:30,846 - __main__ - INFO - Game 498 started
+2025-04-22 12:49:31,224 - __main__ - INFO - Game 498 ended: Total reward = 41.000000000000334, Steps = 348
+2025-04-22 12:49:31,225 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:49:31,226 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:49:31,226 - __main__ - INFO - Iteration 4 completed in 36.13 seconds
+2025-04-22 12:49:31,227 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:49:31,227 - __main__ - INFO - Starting iteration 5/1000
+2025-04-22 12:49:31,250 - __main__ - INFO - Game 400 started
+2025-04-22 12:49:31,612 - __main__ - INFO - Game 400 ended: Total reward = -25.99999999999973, Steps = 356
+2025-04-22 12:49:31,616 - __main__ - INFO - Game 402 started
+2025-04-22 12:49:31,878 - __main__ - INFO - Game 402 ended: Total reward = 14.199999999999962, Steps = 239
+2025-04-22 12:49:31,881 - __main__ - INFO - Game 404 started
+2025-04-22 12:49:32,157 - __main__ - INFO - Game 404 ended: Total reward = 31.600000000000023, Steps = 241
+2025-04-22 12:49:32,160 - __main__ - INFO - Game 406 started
+2025-04-22 12:49:32,612 - __main__ - INFO - Game 406 ended: Total reward = -40.39999999999976, Steps = 446
+2025-04-22 12:49:32,615 - __main__ - INFO - Game 408 started
+2025-04-22 12:49:32,916 - __main__ - INFO - Game 408 ended: Total reward = -5.199999999999726, Steps = 282
+2025-04-22 12:49:32,919 - __main__ - INFO - Game 410 started
+2025-04-22 12:49:33,170 - __main__ - INFO - Game 410 ended: Total reward = -20.199999999999935, Steps = 246
+2025-04-22 12:49:33,173 - __main__ - INFO - Game 412 started
+2025-04-22 12:49:33,528 - __main__ - INFO - Game 412 ended: Total reward = 16.199999999999992, Steps = 327
+2025-04-22 12:49:33,531 - __main__ - INFO - Game 414 started
+2025-04-22 12:49:33,815 - __main__ - INFO - Game 414 ended: Total reward = 26.000000000000142, Steps = 260
+2025-04-22 12:49:33,818 - __main__ - INFO - Game 416 started
+2025-04-22 12:49:34,140 - __main__ - INFO - Game 416 ended: Total reward = -0.7999999999998257, Steps = 318
+2025-04-22 12:49:34,143 - __main__ - INFO - Game 418 started
+2025-04-22 12:49:34,419 - __main__ - INFO - Game 418 ended: Total reward = 30.400000000000084, Steps = 258
+2025-04-22 12:49:34,422 - __main__ - INFO - Game 420 started
+2025-04-22 12:49:34,698 - __main__ - INFO - Game 420 ended: Total reward = 7.200000000000166, Steps = 269
+2025-04-22 12:49:34,703 - __main__ - INFO - Game 422 started
+2025-04-22 12:49:35,105 - __main__ - INFO - Game 422 ended: Total reward = -15.99999999999958, Steps = 385
+2025-04-22 12:49:35,108 - __main__ - INFO - Game 424 started
+2025-04-22 12:49:35,556 - __main__ - INFO - Game 424 ended: Total reward = -39.39999999999954, Steps = 433
+2025-04-22 12:49:35,559 - __main__ - INFO - Game 426 started
+2025-04-22 12:49:35,999 - __main__ - INFO - Game 426 ended: Total reward = -58.19999999999996, Steps = 479
+2025-04-22 12:49:36,003 - __main__ - INFO - Game 428 started
+2025-04-22 12:49:36,302 - __main__ - INFO - Game 428 ended: Total reward = 8.80000000000012, Steps = 287
+2025-04-22 12:49:36,306 - __main__ - INFO - Game 430 started
+2025-04-22 12:49:36,681 - __main__ - INFO - Game 430 ended: Total reward = 35.00000000000006, Steps = 377
+2025-04-22 12:49:36,684 - __main__ - INFO - Game 432 started
+2025-04-22 12:49:37,071 - __main__ - INFO - Game 432 ended: Total reward = 18.00000000000032, Steps = 367
+2025-04-22 12:49:37,074 - __main__ - INFO - Game 434 started
+2025-04-22 12:49:37,413 - __main__ - INFO - Game 434 ended: Total reward = 26.400000000000283, Steps = 330
+2025-04-22 12:49:37,416 - __main__ - INFO - Game 436 started
+2025-04-22 12:49:37,681 - __main__ - INFO - Game 436 ended: Total reward = 36.60000000000001, Steps = 244
+2025-04-22 12:49:37,685 - __main__ - INFO - Game 438 started
+2025-04-22 12:49:38,037 - __main__ - INFO - Game 438 ended: Total reward = 42.600000000000065, Steps = 338
+2025-04-22 12:49:38,040 - __main__ - INFO - Game 440 started
+2025-04-22 12:49:38,347 - __main__ - INFO - Game 440 ended: Total reward = 10.400000000000265, Steps = 290
+2025-04-22 12:49:38,350 - __main__ - INFO - Game 442 started
+2025-04-22 12:49:38,644 - __main__ - INFO - Game 442 ended: Total reward = 2.8000000000000576, Steps = 266
+2025-04-22 12:49:38,647 - __main__ - INFO - Game 444 started
+2025-04-22 12:49:39,084 - __main__ - INFO - Game 444 ended: Total reward = -62.60000000000035, Steps = 449
+2025-04-22 12:49:39,087 - __main__ - INFO - Game 446 started
+2025-04-22 12:49:39,339 - __main__ - INFO - Game 446 ended: Total reward = 30.79999999999997, Steps = 214
+2025-04-22 12:49:39,342 - __main__ - INFO - Game 448 started
+2025-04-22 12:49:39,753 - __main__ - INFO - Game 448 ended: Total reward = -27.999999999999744, Steps = 408
+2025-04-22 12:49:39,757 - __main__ - INFO - Game 450 started
+2025-04-22 12:49:40,144 - __main__ - INFO - Game 450 ended: Total reward = 33.00000000000027, Steps = 360
+2025-04-22 12:49:40,148 - __main__ - INFO - Game 452 started
+2025-04-22 12:49:40,565 - __main__ - INFO - Game 452 ended: Total reward = 28.400000000000144, Steps = 386
+2025-04-22 12:49:40,568 - __main__ - INFO - Game 454 started
+2025-04-22 12:49:40,953 - __main__ - INFO - Game 454 ended: Total reward = 18.80000000000027, Steps = 349
+2025-04-22 12:49:40,956 - __main__ - INFO - Game 456 started
+2025-04-22 12:49:41,267 - __main__ - INFO - Game 456 ended: Total reward = -13.599999999999781, Steps = 278
+2025-04-22 12:49:41,271 - __main__ - INFO - Game 458 started
+2025-04-22 12:49:41,618 - __main__ - INFO - Game 458 ended: Total reward = -20.99999999999971, Steps = 295
+2025-04-22 12:49:41,621 - __main__ - INFO - Game 460 started
+2025-04-22 12:49:42,227 - __main__ - INFO - Game 460 ended: Total reward = 2.3999999999994444, Steps = 490
+2025-04-22 12:49:42,230 - __main__ - INFO - Game 462 started
+2025-04-22 12:49:42,672 - __main__ - INFO - Game 462 ended: Total reward = -1.1999999999998643, Steps = 400
+2025-04-22 12:49:42,676 - __main__ - INFO - Game 464 started
+2025-04-22 12:49:43,320 - __main__ - INFO - Game 464 ended: Total reward = -99.00000000000148, Steps = 600
+2025-04-22 12:49:43,325 - __main__ - INFO - Game 466 started
+2025-04-22 12:49:43,709 - __main__ - INFO - Game 466 ended: Total reward = -0.39999999999990443, Steps = 288
+2025-04-22 12:49:43,711 - __main__ - INFO - Game 468 started
+2025-04-22 12:49:44,049 - __main__ - INFO - Game 468 ended: Total reward = 16.400000000000002, Steps = 272
+2025-04-22 12:49:44,052 - __main__ - INFO - Game 470 started
+2025-04-22 12:49:44,386 - __main__ - INFO - Game 470 ended: Total reward = -7.599999999999843, Steps = 271
+2025-04-22 12:49:44,389 - __main__ - INFO - Game 472 started
+2025-04-22 12:49:44,851 - __main__ - INFO - Game 472 ended: Total reward = 30.000000000000092, Steps = 333
+2025-04-22 12:49:44,855 - __main__ - INFO - Game 474 started
+2025-04-22 12:49:45,325 - __main__ - INFO - Game 474 ended: Total reward = -13.799999999999798, Steps = 435
+2025-04-22 12:49:45,328 - __main__ - INFO - Game 476 started
+2025-04-22 12:49:45,708 - __main__ - INFO - Game 476 ended: Total reward = 7.000000000000222, Steps = 313
+2025-04-22 12:49:45,711 - __main__ - INFO - Game 478 started
+2025-04-22 12:49:46,146 - __main__ - INFO - Game 478 ended: Total reward = -28.799999999999585, Steps = 406
+2025-04-22 12:49:46,149 - __main__ - INFO - Game 480 started
+2025-04-22 12:49:46,464 - __main__ - INFO - Game 480 ended: Total reward = -6.999999999999744, Steps = 280
+2025-04-22 12:49:46,467 - __main__ - INFO - Game 482 started
+2025-04-22 12:49:46,836 - __main__ - INFO - Game 482 ended: Total reward = -19.200000000000028, Steps = 339
+2025-04-22 12:49:46,839 - __main__ - INFO - Game 484 started
+2025-04-22 12:49:47,208 - __main__ - INFO - Game 484 ended: Total reward = -41.79999999999969, Steps = 311
+2025-04-22 12:49:47,211 - __main__ - INFO - Game 486 started
+2025-04-22 12:49:47,506 - __main__ - INFO - Game 486 ended: Total reward = 7.800000000000196, Steps = 258
+2025-04-22 12:49:47,509 - __main__ - INFO - Game 488 started
+2025-04-22 12:49:47,932 - __main__ - INFO - Game 488 ended: Total reward = -26.3999999999996, Steps = 372
+2025-04-22 12:49:47,936 - __main__ - INFO - Game 490 started
+2025-04-22 12:49:48,565 - __main__ - INFO - Game 490 ended: Total reward = -116.60000000000156, Steps = 676
+2025-04-22 12:49:48,568 - __main__ - INFO - Game 492 started
+2025-04-22 12:49:48,907 - __main__ - INFO - Game 492 ended: Total reward = 11.200000000000154, Steps = 320
+2025-04-22 12:49:48,910 - __main__ - INFO - Game 494 started
+2025-04-22 12:49:49,247 - __main__ - INFO - Game 494 ended: Total reward = 27.6000000000003, Steps = 321
+2025-04-22 12:49:49,250 - __main__ - INFO - Game 496 started
+2025-04-22 12:49:49,717 - __main__ - INFO - Game 496 ended: Total reward = -57.599999999999525, Steps = 449
+2025-04-22 12:49:49,720 - __main__ - INFO - Game 498 started
+2025-04-22 12:49:49,941 - __main__ - INFO - Game 498 ended: Total reward = 41.20000000000013, Steps = 193
+2025-04-22 12:49:49,944 - __main__ - INFO - Game 500 started
+2025-04-22 12:49:50,344 - __main__ - INFO - Game 500 ended: Total reward = -54.39999999999985, Steps = 372
+2025-04-22 12:49:50,348 - __main__ - INFO - Game 502 started
+2025-04-22 12:49:50,724 - __main__ - INFO - Game 502 ended: Total reward = 32.40000000000012, Steps = 338
+2025-04-22 12:49:50,727 - __main__ - INFO - Game 504 started
+2025-04-22 12:49:51,036 - __main__ - INFO - Game 504 ended: Total reward = 40.000000000000156, Steps = 280
+2025-04-22 12:49:51,039 - __main__ - INFO - Game 506 started
+2025-04-22 12:49:51,440 - __main__ - INFO - Game 506 ended: Total reward = -45.19999999999958, Steps = 390
+2025-04-22 12:49:51,443 - __main__ - INFO - Game 508 started
+2025-04-22 12:49:51,699 - __main__ - INFO - Game 508 ended: Total reward = 20.200000000000173, Steps = 222
+2025-04-22 12:49:51,703 - __main__ - INFO - Game 510 started
+2025-04-22 12:49:51,949 - __main__ - INFO - Game 510 ended: Total reward = 40.99999999999994, Steps = 206
+2025-04-22 12:49:51,952 - __main__ - INFO - Game 512 started
+2025-04-22 12:49:52,320 - __main__ - INFO - Game 512 ended: Total reward = 1.6000000000003038, Steps = 341
+2025-04-22 12:49:52,323 - __main__ - INFO - Game 514 started
+2025-04-22 12:49:52,653 - __main__ - INFO - Game 514 ended: Total reward = 52.20000000000024, Steps = 305
+2025-04-22 12:49:52,656 - __main__ - INFO - Game 516 started
+2025-04-22 12:49:53,038 - __main__ - INFO - Game 516 ended: Total reward = 18.200000000000202, Steps = 364
+2025-04-22 12:49:53,042 - __main__ - INFO - Game 518 started
+2025-04-22 12:49:53,313 - __main__ - INFO - Game 518 ended: Total reward = -7.39999999999991, Steps = 244
+2025-04-22 12:49:53,316 - __main__ - INFO - Game 520 started
+2025-04-22 12:49:53,638 - __main__ - INFO - Game 520 ended: Total reward = 10.800000000000216, Steps = 302
+2025-04-22 12:49:53,641 - __main__ - INFO - Game 522 started
+2025-04-22 12:49:53,939 - __main__ - INFO - Game 522 ended: Total reward = -21.199999999999733, Steps = 273
+2025-04-22 12:49:53,942 - __main__ - INFO - Game 524 started
+2025-04-22 12:49:54,239 - __main__ - INFO - Game 524 ended: Total reward = -13.999999999999766, Steps = 266
+2025-04-22 12:49:54,242 - __main__ - INFO - Game 526 started
+2025-04-22 12:49:54,480 - __main__ - INFO - Game 526 ended: Total reward = -10.999999999999892, Steps = 208
+2025-04-22 12:49:54,483 - __main__ - INFO - Game 528 started
+2025-04-22 12:49:54,822 - __main__ - INFO - Game 528 ended: Total reward = 50.60000000000008, Steps = 300
+2025-04-22 12:49:54,825 - __main__ - INFO - Game 530 started
+2025-04-22 12:49:55,145 - __main__ - INFO - Game 530 ended: Total reward = -25.999999999999698, Steps = 308
+2025-04-22 12:49:55,148 - __main__ - INFO - Game 532 started
+2025-04-22 12:49:55,390 - __main__ - INFO - Game 532 ended: Total reward = 16.600000000000172, Steps = 216
+2025-04-22 12:49:55,393 - __main__ - INFO - Game 534 started
+2025-04-22 12:49:55,889 - __main__ - INFO - Game 534 ended: Total reward = -56.999999999999574, Steps = 492
+2025-04-22 12:49:55,892 - __main__ - INFO - Game 536 started
+2025-04-22 12:49:56,592 - __main__ - INFO - Game 536 ended: Total reward = -64.00000000000037, Steps = 583
+2025-04-22 12:49:56,595 - __main__ - INFO - Game 538 started
+2025-04-22 12:49:57,158 - __main__ - INFO - Game 538 ended: Total reward = -62.40000000000076, Steps = 540
+2025-04-22 12:49:57,161 - __main__ - INFO - Game 540 started
+2025-04-22 12:49:57,624 - __main__ - INFO - Game 540 ended: Total reward = -21.399999999999576, Steps = 447
+2025-04-22 12:49:57,627 - __main__ - INFO - Game 542 started
+2025-04-22 12:49:58,021 - __main__ - INFO - Game 542 ended: Total reward = 6.800000000000063, Steps = 355
+2025-04-22 12:49:58,025 - __main__ - INFO - Game 544 started
+2025-04-22 12:49:58,400 - __main__ - INFO - Game 544 ended: Total reward = 9.200000000000163, Steps = 343
+2025-04-22 12:49:58,403 - __main__ - INFO - Game 546 started
+2025-04-22 12:49:58,766 - __main__ - INFO - Game 546 ended: Total reward = 72.40000000000012, Steps = 274
+2025-04-22 12:49:58,769 - __main__ - INFO - Game 548 started
+2025-04-22 12:49:58,999 - __main__ - INFO - Game 548 ended: Total reward = 14.599999999999973, Steps = 156
+2025-04-22 12:49:59,002 - __main__ - INFO - Game 550 started
+2025-04-22 12:49:59,545 - __main__ - INFO - Game 550 ended: Total reward = -55.00000000000013, Steps = 561
+2025-04-22 12:49:59,549 - __main__ - INFO - Game 552 started
+2025-04-22 12:50:00,066 - __main__ - INFO - Game 552 ended: Total reward = 22.200000000000514, Steps = 467
+2025-04-22 12:50:00,070 - __main__ - INFO - Game 554 started
+2025-04-22 12:50:00,300 - __main__ - INFO - Game 554 ended: Total reward = 18.60000000000003, Steps = 194
+2025-04-22 12:50:00,303 - __main__ - INFO - Game 556 started
+2025-04-22 12:50:00,607 - __main__ - INFO - Game 556 ended: Total reward = 17.79999999999996, Steps = 267
+2025-04-22 12:50:00,610 - __main__ - INFO - Game 558 started
+2025-04-22 12:50:00,929 - __main__ - INFO - Game 558 ended: Total reward = 14.800000000000148, Steps = 284
+2025-04-22 12:50:00,932 - __main__ - INFO - Game 560 started
+2025-04-22 12:50:01,227 - __main__ - INFO - Game 560 ended: Total reward = 47.00000000000008, Steps = 258
+2025-04-22 12:50:01,231 - __main__ - INFO - Game 562 started
+2025-04-22 12:50:01,621 - __main__ - INFO - Game 562 ended: Total reward = 11.000000000000371, Steps = 365
+2025-04-22 12:50:01,624 - __main__ - INFO - Game 564 started
+2025-04-22 12:50:01,984 - __main__ - INFO - Game 564 ended: Total reward = -13.799999999999692, Steps = 316
+2025-04-22 12:50:01,987 - __main__ - INFO - Game 566 started
+2025-04-22 12:50:02,355 - __main__ - INFO - Game 566 ended: Total reward = -13.599999999999884, Steps = 368
+2025-04-22 12:50:02,360 - __main__ - INFO - Game 568 started
+2025-04-22 12:50:02,751 - __main__ - INFO - Game 568 ended: Total reward = -29.79999999999975, Steps = 386
+2025-04-22 12:50:02,755 - __main__ - INFO - Game 570 started
+2025-04-22 12:50:03,138 - __main__ - INFO - Game 570 ended: Total reward = -11.199999999999605, Steps = 373
+2025-04-22 12:50:03,141 - __main__ - INFO - Game 572 started
+2025-04-22 12:50:03,505 - __main__ - INFO - Game 572 ended: Total reward = 9.400000000000293, Steps = 341
+2025-04-22 12:50:03,507 - __main__ - INFO - Game 574 started
+2025-04-22 12:50:03,989 - __main__ - INFO - Game 574 ended: Total reward = -77.20000000000049, Steps = 518
+2025-04-22 12:50:03,992 - __main__ - INFO - Game 576 started
+2025-04-22 12:50:04,290 - __main__ - INFO - Game 576 ended: Total reward = 13.600000000000051, Steps = 215
+2025-04-22 12:50:04,294 - __main__ - INFO - Game 578 started
+2025-04-22 12:50:04,636 - __main__ - INFO - Game 578 ended: Total reward = -9.59999999999984, Steps = 297
+2025-04-22 12:50:04,639 - __main__ - INFO - Game 580 started
+2025-04-22 12:50:05,030 - __main__ - INFO - Game 580 ended: Total reward = -34.9999999999997, Steps = 352
+2025-04-22 12:50:05,033 - __main__ - INFO - Game 582 started
+2025-04-22 12:50:05,378 - __main__ - INFO - Game 582 ended: Total reward = 17.400000000000247, Steps = 323
+2025-04-22 12:50:05,381 - __main__ - INFO - Game 584 started
+2025-04-22 12:50:05,876 - __main__ - INFO - Game 584 ended: Total reward = -35.00000000000014, Steps = 484
+2025-04-22 12:50:05,879 - __main__ - INFO - Game 586 started
+2025-04-22 12:50:06,241 - __main__ - INFO - Game 586 ended: Total reward = 2.0000000000001723, Steps = 265
+2025-04-22 12:50:06,244 - __main__ - INFO - Game 588 started
+2025-04-22 12:50:06,616 - __main__ - INFO - Game 588 ended: Total reward = -13.800000000000033, Steps = 359
+2025-04-22 12:50:06,619 - __main__ - INFO - Game 590 started
+2025-04-22 12:50:06,999 - __main__ - INFO - Game 590 ended: Total reward = 14.000000000000282, Steps = 374
+2025-04-22 12:50:07,002 - __main__ - INFO - Game 592 started
+2025-04-22 12:50:07,418 - __main__ - INFO - Game 592 ended: Total reward = -20.20000000000013, Steps = 427
+2025-04-22 12:50:07,421 - __main__ - INFO - Game 594 started
+2025-04-22 12:50:07,702 - __main__ - INFO - Game 594 ended: Total reward = 55.6000000000001, Steps = 229
+2025-04-22 12:50:07,706 - __main__ - INFO - Game 596 started
+2025-04-22 12:50:08,004 - __main__ - INFO - Game 596 ended: Total reward = -8.399999999999899, Steps = 240
+2025-04-22 12:50:08,008 - __main__ - INFO - Game 598 started
+2025-04-22 12:50:08,484 - __main__ - INFO - Game 598 ended: Total reward = 0.3999999999999382, Steps = 468
+2025-04-22 12:50:08,486 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:50:08,486 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:50:08,487 - __main__ - INFO - Iteration 5 completed in 37.26 seconds
+2025-04-22 12:50:08,487 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:50:08,487 - __main__ - INFO - Starting iteration 6/1000
+2025-04-22 12:50:08,506 - __main__ - INFO - Game 500 started
+2025-04-22 12:50:08,926 - __main__ - INFO - Game 500 ended: Total reward = 13.400000000000253, Steps = 396
+2025-04-22 12:50:08,929 - __main__ - INFO - Game 502 started
+2025-04-22 12:50:09,322 - __main__ - INFO - Game 502 ended: Total reward = -51.99999999999956, Steps = 402
+2025-04-22 12:50:09,325 - __main__ - INFO - Game 504 started
+2025-04-22 12:50:09,567 - __main__ - INFO - Game 504 ended: Total reward = 29.40000000000004, Steps = 236
+2025-04-22 12:50:09,570 - __main__ - INFO - Game 506 started
+2025-04-22 12:50:09,863 - __main__ - INFO - Game 506 ended: Total reward = 11.20000000000012, Steps = 292
+2025-04-22 12:50:09,866 - __main__ - INFO - Game 508 started
+2025-04-22 12:50:10,131 - __main__ - INFO - Game 508 ended: Total reward = 18.400000000000073, Steps = 232
+2025-04-22 12:50:10,135 - __main__ - INFO - Game 510 started
+2025-04-22 12:50:10,461 - __main__ - INFO - Game 510 ended: Total reward = 19.600000000000268, Steps = 319
+2025-04-22 12:50:10,464 - __main__ - INFO - Game 512 started
+2025-04-22 12:50:10,791 - __main__ - INFO - Game 512 ended: Total reward = -2.199999999999875, Steps = 318
+2025-04-22 12:50:10,795 - __main__ - INFO - Game 514 started
+2025-04-22 12:50:11,128 - __main__ - INFO - Game 514 ended: Total reward = -36.599999999999675, Steps = 329
+2025-04-22 12:50:11,131 - __main__ - INFO - Game 516 started
+2025-04-22 12:50:11,786 - __main__ - INFO - Game 516 ended: Total reward = -35.999999999999346, Steps = 610
+2025-04-22 12:50:11,789 - __main__ - INFO - Game 518 started
+2025-04-22 12:50:12,140 - __main__ - INFO - Game 518 ended: Total reward = -6.999999999999652, Steps = 326
+2025-04-22 12:50:12,144 - __main__ - INFO - Game 520 started
+2025-04-22 12:50:12,507 - __main__ - INFO - Game 520 ended: Total reward = 71.00000000000004, Steps = 293
+2025-04-22 12:50:12,510 - __main__ - INFO - Game 522 started
+2025-04-22 12:50:12,843 - __main__ - INFO - Game 522 ended: Total reward = -17.799999999999827, Steps = 303
+2025-04-22 12:50:12,846 - __main__ - INFO - Game 524 started
+2025-04-22 12:50:13,287 - __main__ - INFO - Game 524 ended: Total reward = -57.799999999999855, Steps = 454
+2025-04-22 12:50:13,291 - __main__ - INFO - Game 526 started
+2025-04-22 12:50:13,711 - __main__ - INFO - Game 526 ended: Total reward = -45.39999999999953, Steps = 442
+2025-04-22 12:50:13,715 - __main__ - INFO - Game 528 started
+2025-04-22 12:50:14,184 - __main__ - INFO - Game 528 ended: Total reward = 22.200000000000387, Steps = 392
+2025-04-22 12:50:14,187 - __main__ - INFO - Game 530 started
+2025-04-22 12:50:14,679 - __main__ - INFO - Game 530 ended: Total reward = -35.600000000000634, Steps = 496
+2025-04-22 12:50:14,683 - __main__ - INFO - Game 532 started
+2025-04-22 12:50:15,135 - __main__ - INFO - Game 532 ended: Total reward = -49.99999999999968, Steps = 428
+2025-04-22 12:50:15,138 - __main__ - INFO - Game 534 started
+2025-04-22 12:50:15,396 - __main__ - INFO - Game 534 ended: Total reward = 7.000000000000117, Steps = 215
+2025-04-22 12:50:15,399 - __main__ - INFO - Game 536 started
+2025-04-22 12:50:15,625 - __main__ - INFO - Game 536 ended: Total reward = 55.80000000000001, Steps = 211
+2025-04-22 12:50:15,628 - __main__ - INFO - Game 538 started
+2025-04-22 12:50:15,920 - __main__ - INFO - Game 538 ended: Total reward = 31.000000000000163, Steps = 282
+2025-04-22 12:50:15,922 - __main__ - INFO - Game 540 started
+2025-04-22 12:50:16,407 - __main__ - INFO - Game 540 ended: Total reward = 31.400000000000297, Steps = 435
+2025-04-22 12:50:16,411 - __main__ - INFO - Game 542 started
+2025-04-22 12:50:16,792 - __main__ - INFO - Game 542 ended: Total reward = 58.200000000000244, Steps = 328
+2025-04-22 12:50:16,795 - __main__ - INFO - Game 544 started
+2025-04-22 12:50:17,222 - __main__ - INFO - Game 544 ended: Total reward = -31.99999999999971, Steps = 415
+2025-04-22 12:50:17,226 - __main__ - INFO - Game 546 started
+2025-04-22 12:50:17,956 - __main__ - INFO - Game 546 ended: Total reward = -82.80000000000217, Steps = 749
+2025-04-22 12:50:17,960 - __main__ - INFO - Game 548 started
+2025-04-22 12:50:18,274 - __main__ - INFO - Game 548 ended: Total reward = 12.000000000000234, Steps = 284
+2025-04-22 12:50:18,277 - __main__ - INFO - Game 550 started
+2025-04-22 12:50:18,736 - __main__ - INFO - Game 550 ended: Total reward = -20.99999999999953, Steps = 464
+2025-04-22 12:50:18,739 - __main__ - INFO - Game 552 started
+2025-04-22 12:50:19,139 - __main__ - INFO - Game 552 ended: Total reward = -3.999999999999817, Steps = 368
+2025-04-22 12:50:19,143 - __main__ - INFO - Game 554 started
+2025-04-22 12:50:19,565 - __main__ - INFO - Game 554 ended: Total reward = -6.799999999999741, Steps = 394
+2025-04-22 12:50:19,569 - __main__ - INFO - Game 556 started
+2025-04-22 12:50:19,828 - __main__ - INFO - Game 556 ended: Total reward = 6.0000000000001155, Steps = 222
+2025-04-22 12:50:19,831 - __main__ - INFO - Game 558 started
+2025-04-22 12:50:20,074 - __main__ - INFO - Game 558 ended: Total reward = 32.20000000000005, Steps = 221
+2025-04-22 12:50:20,076 - __main__ - INFO - Game 560 started
+2025-04-22 12:50:20,474 - __main__ - INFO - Game 560 ended: Total reward = -30.599999999999646, Steps = 366
+2025-04-22 12:50:20,477 - __main__ - INFO - Game 562 started
+2025-04-22 12:50:20,690 - __main__ - INFO - Game 562 ended: Total reward = 68.60000000000011, Steps = 186
+2025-04-22 12:50:20,693 - __main__ - INFO - Game 564 started
+2025-04-22 12:50:20,996 - __main__ - INFO - Game 564 ended: Total reward = -29.199999999999754, Steps = 278
+2025-04-22 12:50:20,999 - __main__ - INFO - Game 566 started
+2025-04-22 12:50:21,379 - __main__ - INFO - Game 566 ended: Total reward = 23.800000000000033, Steps = 346
+2025-04-22 12:50:21,383 - __main__ - INFO - Game 568 started
+2025-04-22 12:50:21,699 - __main__ - INFO - Game 568 ended: Total reward = 14.80000000000015, Steps = 277
+2025-04-22 12:50:21,702 - __main__ - INFO - Game 570 started
+2025-04-22 12:50:22,207 - __main__ - INFO - Game 570 ended: Total reward = -108.20000000000084, Steps = 464
+2025-04-22 12:50:22,210 - __main__ - INFO - Game 572 started
+2025-04-22 12:50:22,658 - __main__ - INFO - Game 572 ended: Total reward = -49.199999999999775, Steps = 397
+2025-04-22 12:50:22,662 - __main__ - INFO - Game 574 started
+2025-04-22 12:50:23,024 - __main__ - INFO - Game 574 ended: Total reward = 5.600000000000126, Steps = 335
+2025-04-22 12:50:23,027 - __main__ - INFO - Game 576 started
+2025-04-22 12:50:23,657 - __main__ - INFO - Game 576 ended: Total reward = -145.00000000000185, Steps = 675
+2025-04-22 12:50:23,660 - __main__ - INFO - Game 578 started
+2025-04-22 12:50:24,026 - __main__ - INFO - Game 578 ended: Total reward = -26.59999999999961, Steps = 384
+2025-04-22 12:50:24,030 - __main__ - INFO - Game 580 started
+2025-04-22 12:50:24,215 - __main__ - INFO - Game 580 ended: Total reward = 58.39999999999996, Steps = 160
+2025-04-22 12:50:24,218 - __main__ - INFO - Game 582 started
+2025-04-22 12:50:24,528 - __main__ - INFO - Game 582 ended: Total reward = 23.40000000000021, Steps = 309
+2025-04-22 12:50:24,531 - __main__ - INFO - Game 584 started
+2025-04-22 12:50:24,831 - __main__ - INFO - Game 584 ended: Total reward = 24.00000000000022, Steps = 289
+2025-04-22 12:50:24,834 - __main__ - INFO - Game 586 started
+2025-04-22 12:50:25,095 - __main__ - INFO - Game 586 ended: Total reward = 39.8, Steps = 247
+2025-04-22 12:50:25,098 - __main__ - INFO - Game 588 started
+2025-04-22 12:50:25,415 - __main__ - INFO - Game 588 ended: Total reward = 70.80000000000004, Steps = 292
+2025-04-22 12:50:25,418 - __main__ - INFO - Game 590 started
+2025-04-22 12:50:25,721 - __main__ - INFO - Game 590 ended: Total reward = 43.80000000000027, Steps = 316
+2025-04-22 12:50:25,724 - __main__ - INFO - Game 592 started
+2025-04-22 12:50:26,297 - __main__ - INFO - Game 592 ended: Total reward = -105.0000000000017, Steps = 615
+2025-04-22 12:50:26,300 - __main__ - INFO - Game 594 started
+2025-04-22 12:50:26,565 - __main__ - INFO - Game 594 ended: Total reward = 39.20000000000009, Steps = 234
+2025-04-22 12:50:26,568 - __main__ - INFO - Game 596 started
+2025-04-22 12:50:27,109 - __main__ - INFO - Game 596 ended: Total reward = -86.20000000000145, Steps = 565
+2025-04-22 12:50:27,112 - __main__ - INFO - Game 598 started
+2025-04-22 12:50:27,462 - __main__ - INFO - Game 598 ended: Total reward = -29.599999999999653, Steps = 345
+2025-04-22 12:50:27,465 - __main__ - INFO - Game 600 started
+2025-04-22 12:50:27,871 - __main__ - INFO - Game 600 ended: Total reward = -23.999999999999645, Steps = 422
+2025-04-22 12:50:27,875 - __main__ - INFO - Game 602 started
+2025-04-22 12:50:28,170 - __main__ - INFO - Game 602 ended: Total reward = 1.5999999999999521, Steps = 297
+2025-04-22 12:50:28,173 - __main__ - INFO - Game 604 started
+2025-04-22 12:50:28,471 - __main__ - INFO - Game 604 ended: Total reward = 40.20000000000012, Steps = 276
+2025-04-22 12:50:28,475 - __main__ - INFO - Game 606 started
+2025-04-22 12:50:28,767 - __main__ - INFO - Game 606 ended: Total reward = 47.40000000000005, Steps = 286
+2025-04-22 12:50:28,770 - __main__ - INFO - Game 608 started
+2025-04-22 12:50:29,042 - __main__ - INFO - Game 608 ended: Total reward = -4.39999999999982, Steps = 262
+2025-04-22 12:50:29,045 - __main__ - INFO - Game 610 started
+2025-04-22 12:50:29,436 - __main__ - INFO - Game 610 ended: Total reward = -8.199999999999637, Steps = 395
+2025-04-22 12:50:29,439 - __main__ - INFO - Game 612 started
+2025-04-22 12:50:29,661 - __main__ - INFO - Game 612 ended: Total reward = 16.400000000000066, Steps = 195
+2025-04-22 12:50:29,664 - __main__ - INFO - Game 614 started
+2025-04-22 12:50:29,950 - __main__ - INFO - Game 614 ended: Total reward = 19.400000000000137, Steps = 263
+2025-04-22 12:50:29,954 - __main__ - INFO - Game 616 started
+2025-04-22 12:50:30,278 - __main__ - INFO - Game 616 ended: Total reward = -41.99999999999976, Steps = 328
+2025-04-22 12:50:30,281 - __main__ - INFO - Game 618 started
+2025-04-22 12:50:30,914 - __main__ - INFO - Game 618 ended: Total reward = -136.60000000000164, Steps = 623
+2025-04-22 12:50:30,917 - __main__ - INFO - Game 620 started
+2025-04-22 12:50:31,160 - __main__ - INFO - Game 620 ended: Total reward = 8.000000000000098, Steps = 216
+2025-04-22 12:50:31,163 - __main__ - INFO - Game 622 started
+2025-04-22 12:50:31,524 - __main__ - INFO - Game 622 ended: Total reward = -40.59999999999959, Steps = 379
+2025-04-22 12:50:31,527 - __main__ - INFO - Game 624 started
+2025-04-22 12:50:31,814 - __main__ - INFO - Game 624 ended: Total reward = 35.400000000000034, Steps = 274
+2025-04-22 12:50:31,818 - __main__ - INFO - Game 626 started
+2025-04-22 12:50:32,154 - __main__ - INFO - Game 626 ended: Total reward = -30.999999999999687, Steps = 326
+2025-04-22 12:50:32,157 - __main__ - INFO - Game 628 started
+2025-04-22 12:50:32,460 - __main__ - INFO - Game 628 ended: Total reward = 13.200000000000037, Steps = 293
+2025-04-22 12:50:32,463 - __main__ - INFO - Game 630 started
+2025-04-22 12:50:32,855 - __main__ - INFO - Game 630 ended: Total reward = -41.599999999999575, Steps = 399
+2025-04-22 12:50:32,858 - __main__ - INFO - Game 632 started
+2025-04-22 12:50:33,160 - __main__ - INFO - Game 632 ended: Total reward = -22.79999999999972, Steps = 300
+2025-04-22 12:50:33,164 - __main__ - INFO - Game 634 started
+2025-04-22 12:50:33,430 - __main__ - INFO - Game 634 ended: Total reward = 20.600000000000104, Steps = 255
+2025-04-22 12:50:33,433 - __main__ - INFO - Game 636 started
+2025-04-22 12:50:33,726 - __main__ - INFO - Game 636 ended: Total reward = -10.399999999999787, Steps = 272
+2025-04-22 12:50:33,729 - __main__ - INFO - Game 638 started
+2025-04-22 12:50:34,127 - __main__ - INFO - Game 638 ended: Total reward = -24.799999999999585, Steps = 389
+2025-04-22 12:50:34,130 - __main__ - INFO - Game 640 started
+2025-04-22 12:50:34,516 - __main__ - INFO - Game 640 ended: Total reward = 2.8000000000002814, Steps = 386
+2025-04-22 12:50:34,519 - __main__ - INFO - Game 642 started
+2025-04-22 12:50:35,126 - __main__ - INFO - Game 642 ended: Total reward = -135.400000000002, Steps = 661
+2025-04-22 12:50:35,131 - __main__ - INFO - Game 644 started
+2025-04-22 12:50:35,408 - __main__ - INFO - Game 644 ended: Total reward = 48.20000000000013, Steps = 261
+2025-04-22 12:50:35,411 - __main__ - INFO - Game 646 started
+2025-04-22 12:50:35,800 - __main__ - INFO - Game 646 ended: Total reward = -35.79999999999956, Steps = 401
+2025-04-22 12:50:35,803 - __main__ - INFO - Game 648 started
+2025-04-22 12:50:36,223 - __main__ - INFO - Game 648 ended: Total reward = -3.999999999999531, Steps = 425
+2025-04-22 12:50:36,226 - __main__ - INFO - Game 650 started
+2025-04-22 12:50:36,574 - __main__ - INFO - Game 650 ended: Total reward = -29.599999999999717, Steps = 337
+2025-04-22 12:50:36,577 - __main__ - INFO - Game 652 started
+2025-04-22 12:50:36,866 - __main__ - INFO - Game 652 ended: Total reward = 62.60000000000013, Steps = 279
+2025-04-22 12:50:36,868 - __main__ - INFO - Game 654 started
+2025-04-22 12:50:37,209 - __main__ - INFO - Game 654 ended: Total reward = 30.00000000000024, Steps = 360
+2025-04-22 12:50:37,213 - __main__ - INFO - Game 656 started
+2025-04-22 12:50:37,512 - __main__ - INFO - Game 656 ended: Total reward = 36.800000000000225, Steps = 290
+2025-04-22 12:50:37,515 - __main__ - INFO - Game 658 started
+2025-04-22 12:50:37,801 - __main__ - INFO - Game 658 ended: Total reward = 55.00000000000018, Steps = 268
+2025-04-22 12:50:37,805 - __main__ - INFO - Game 660 started
+2025-04-22 12:50:38,240 - __main__ - INFO - Game 660 ended: Total reward = -41.79999999999982, Steps = 457
+2025-04-22 12:50:38,243 - __main__ - INFO - Game 662 started
+2025-04-22 12:50:38,580 - __main__ - INFO - Game 662 ended: Total reward = -41.999999999999666, Steps = 329
+2025-04-22 12:50:38,584 - __main__ - INFO - Game 664 started
+2025-04-22 12:50:38,956 - __main__ - INFO - Game 664 ended: Total reward = 1.4000000000002775, Steps = 367
+2025-04-22 12:50:38,959 - __main__ - INFO - Game 666 started
+2025-04-22 12:50:39,273 - __main__ - INFO - Game 666 ended: Total reward = -11.999999999999826, Steps = 307
+2025-04-22 12:50:39,276 - __main__ - INFO - Game 668 started
+2025-04-22 12:50:39,840 - __main__ - INFO - Game 668 ended: Total reward = -85.60000000000112, Steps = 618
+2025-04-22 12:50:39,843 - __main__ - INFO - Game 670 started
+2025-04-22 12:50:40,190 - __main__ - INFO - Game 670 ended: Total reward = -37.199999999999676, Steps = 345
+2025-04-22 12:50:40,194 - __main__ - INFO - Game 672 started
+2025-04-22 12:50:40,660 - __main__ - INFO - Game 672 ended: Total reward = -52.39999999999971, Steps = 496
+2025-04-22 12:50:40,664 - __main__ - INFO - Game 674 started
+2025-04-22 12:50:40,968 - __main__ - INFO - Game 674 ended: Total reward = 25.00000000000002, Steps = 275
+2025-04-22 12:50:40,971 - __main__ - INFO - Game 676 started
+2025-04-22 12:50:41,242 - __main__ - INFO - Game 676 ended: Total reward = 31.600000000000136, Steps = 248
+2025-04-22 12:50:41,245 - __main__ - INFO - Game 678 started
+2025-04-22 12:50:41,496 - __main__ - INFO - Game 678 ended: Total reward = -12.19999999999979, Steps = 233
+2025-04-22 12:50:41,500 - __main__ - INFO - Game 680 started
+2025-04-22 12:50:41,844 - __main__ - INFO - Game 680 ended: Total reward = 8.00000000000026, Steps = 342
+2025-04-22 12:50:41,847 - __main__ - INFO - Game 682 started
+2025-04-22 12:50:42,190 - __main__ - INFO - Game 682 ended: Total reward = -6.799999999999876, Steps = 331
+2025-04-22 12:50:42,193 - __main__ - INFO - Game 684 started
+2025-04-22 12:50:42,617 - __main__ - INFO - Game 684 ended: Total reward = -39.39999999999962, Steps = 439
+2025-04-22 12:50:42,620 - __main__ - INFO - Game 686 started
+2025-04-22 12:50:43,023 - __main__ - INFO - Game 686 ended: Total reward = 11.600000000000435, Steps = 420
+2025-04-22 12:50:43,027 - __main__ - INFO - Game 688 started
+2025-04-22 12:50:43,355 - __main__ - INFO - Game 688 ended: Total reward = -48.799999999999685, Steps = 330
+2025-04-22 12:50:43,359 - __main__ - INFO - Game 690 started
+2025-04-22 12:50:43,798 - __main__ - INFO - Game 690 ended: Total reward = -55.00000000000021, Steps = 481
+2025-04-22 12:50:43,801 - __main__ - INFO - Game 692 started
+2025-04-22 12:50:44,020 - __main__ - INFO - Game 692 ended: Total reward = 14.400000000000013, Steps = 194
+2025-04-22 12:50:44,023 - __main__ - INFO - Game 694 started
+2025-04-22 12:50:44,422 - __main__ - INFO - Game 694 ended: Total reward = 6.200000000000039, Steps = 402
+2025-04-22 12:50:44,426 - __main__ - INFO - Game 696 started
+2025-04-22 12:50:44,733 - __main__ - INFO - Game 696 ended: Total reward = -15.399999999999679, Steps = 303
+2025-04-22 12:50:44,736 - __main__ - INFO - Game 698 started
+2025-04-22 12:50:45,143 - __main__ - INFO - Game 698 ended: Total reward = -80.4, Steps = 412
+2025-04-22 12:50:45,144 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:50:45,145 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:50:45,146 - __main__ - INFO - Iteration 6 completed in 36.66 seconds
+2025-04-22 12:50:45,146 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:50:45,146 - __main__ - INFO - Starting iteration 7/1000
+2025-04-22 12:50:45,167 - __main__ - INFO - Game 600 started
+2025-04-22 12:50:45,463 - __main__ - INFO - Game 600 ended: Total reward = 28.00000000000023, Steps = 286
+2025-04-22 12:50:45,466 - __main__ - INFO - Game 602 started
+2025-04-22 12:50:45,849 - __main__ - INFO - Game 602 ended: Total reward = 6.000000000000384, Steps = 386
+2025-04-22 12:50:45,852 - __main__ - INFO - Game 604 started
+2025-04-22 12:50:46,173 - __main__ - INFO - Game 604 ended: Total reward = 2.7999999999999625, Steps = 314
+2025-04-22 12:50:46,176 - __main__ - INFO - Game 606 started
+2025-04-22 12:50:46,372 - __main__ - INFO - Game 606 ended: Total reward = 40.40000000000001, Steps = 163
+2025-04-22 12:50:46,374 - __main__ - INFO - Game 608 started
+2025-04-22 12:50:46,766 - __main__ - INFO - Game 608 ended: Total reward = -25.19999999999972, Steps = 409
+2025-04-22 12:50:46,769 - __main__ - INFO - Game 610 started
+2025-04-22 12:50:47,059 - __main__ - INFO - Game 610 ended: Total reward = 20.000000000000263, Steps = 277
+2025-04-22 12:50:47,062 - __main__ - INFO - Game 612 started
+2025-04-22 12:50:47,337 - __main__ - INFO - Game 612 ended: Total reward = 0.8000000000000993, Steps = 241
+2025-04-22 12:50:47,340 - __main__ - INFO - Game 614 started
+2025-04-22 12:50:47,731 - __main__ - INFO - Game 614 ended: Total reward = -18.799999999999624, Steps = 375
+2025-04-22 12:50:47,734 - __main__ - INFO - Game 616 started
+2025-04-22 12:50:48,110 - __main__ - INFO - Game 616 ended: Total reward = -47.59999999999966, Steps = 365
+2025-04-22 12:50:48,113 - __main__ - INFO - Game 618 started
+2025-04-22 12:50:48,301 - __main__ - INFO - Game 618 ended: Total reward = 19.0000000000001, Steps = 170
+2025-04-22 12:50:48,304 - __main__ - INFO - Game 620 started
+2025-04-22 12:50:48,739 - __main__ - INFO - Game 620 ended: Total reward = -45.79999999999975, Steps = 471
+2025-04-22 12:50:48,743 - __main__ - INFO - Game 622 started
+2025-04-22 12:50:49,041 - __main__ - INFO - Game 622 ended: Total reward = 8.000000000000023, Steps = 292
+2025-04-22 12:50:49,045 - __main__ - INFO - Game 624 started
+2025-04-22 12:50:49,427 - __main__ - INFO - Game 624 ended: Total reward = -15.999999999999602, Steps = 371
+2025-04-22 12:50:49,430 - __main__ - INFO - Game 626 started
+2025-04-22 12:50:49,720 - __main__ - INFO - Game 626 ended: Total reward = 15.199999999999967, Steps = 269
+2025-04-22 12:50:49,723 - __main__ - INFO - Game 628 started
+2025-04-22 12:50:50,031 - __main__ - INFO - Game 628 ended: Total reward = -43.79999999999974, Steps = 294
+2025-04-22 12:50:50,034 - __main__ - INFO - Game 630 started
+2025-04-22 12:50:50,490 - __main__ - INFO - Game 630 ended: Total reward = -27.399999999999572, Steps = 441
+2025-04-22 12:50:50,494 - __main__ - INFO - Game 632 started
+2025-04-22 12:50:51,100 - __main__ - INFO - Game 632 ended: Total reward = -85.0000000000004, Steps = 644
+2025-04-22 12:50:51,104 - __main__ - INFO - Game 634 started
+2025-04-22 12:50:51,451 - __main__ - INFO - Game 634 ended: Total reward = 24.600000000000364, Steps = 348
+2025-04-22 12:50:51,454 - __main__ - INFO - Game 636 started
+2025-04-22 12:50:51,710 - __main__ - INFO - Game 636 ended: Total reward = 49.200000000000166, Steps = 225
+2025-04-22 12:50:51,713 - __main__ - INFO - Game 638 started
+2025-04-22 12:50:52,063 - __main__ - INFO - Game 638 ended: Total reward = 1.6000000000003283, Steps = 344
+2025-04-22 12:50:52,066 - __main__ - INFO - Game 640 started
+2025-04-22 12:50:52,343 - __main__ - INFO - Game 640 ended: Total reward = -1.7999999999998875, Steps = 258
+2025-04-22 12:50:52,346 - __main__ - INFO - Game 642 started
+2025-04-22 12:50:52,689 - __main__ - INFO - Game 642 ended: Total reward = 28.800000000000253, Steps = 341
+2025-04-22 12:50:52,693 - __main__ - INFO - Game 644 started
+2025-04-22 12:50:52,938 - __main__ - INFO - Game 644 ended: Total reward = 59.20000000000001, Steps = 225
+2025-04-22 12:50:52,941 - __main__ - INFO - Game 646 started
+2025-04-22 12:50:53,236 - __main__ - INFO - Game 646 ended: Total reward = 5.600000000000142, Steps = 306
+2025-04-22 12:50:53,239 - __main__ - INFO - Game 648 started
+2025-04-22 12:50:53,550 - __main__ - INFO - Game 648 ended: Total reward = 0.6000000000002457, Steps = 313
+2025-04-22 12:50:53,553 - __main__ - INFO - Game 650 started
+2025-04-22 12:50:53,933 - __main__ - INFO - Game 650 ended: Total reward = -2.1999999999997826, Steps = 386
+2025-04-22 12:50:53,936 - __main__ - INFO - Game 652 started
+2025-04-22 12:50:54,273 - __main__ - INFO - Game 652 ended: Total reward = 6.800000000000162, Steps = 259
+2025-04-22 12:50:54,276 - __main__ - INFO - Game 654 started
+2025-04-22 12:50:54,578 - __main__ - INFO - Game 654 ended: Total reward = 3.2000000000001307, Steps = 301
+2025-04-22 12:50:54,581 - __main__ - INFO - Game 656 started
+2025-04-22 12:50:54,789 - __main__ - INFO - Game 656 ended: Total reward = 18.000000000000043, Steps = 186
+2025-04-22 12:50:54,792 - __main__ - INFO - Game 658 started
+2025-04-22 12:50:55,104 - __main__ - INFO - Game 658 ended: Total reward = 18.599999999999927, Steps = 299
+2025-04-22 12:50:55,107 - __main__ - INFO - Game 660 started
+2025-04-22 12:50:55,291 - __main__ - INFO - Game 660 ended: Total reward = 36.800000000000054, Steps = 167
+2025-04-22 12:50:55,294 - __main__ - INFO - Game 662 started
+2025-04-22 12:50:55,717 - __main__ - INFO - Game 662 ended: Total reward = -20.59999999999959, Steps = 398
+2025-04-22 12:50:55,721 - __main__ - INFO - Game 664 started
+2025-04-22 12:50:55,990 - __main__ - INFO - Game 664 ended: Total reward = -11.999999999999865, Steps = 248
+2025-04-22 12:50:55,993 - __main__ - INFO - Game 666 started
+2025-04-22 12:50:56,261 - __main__ - INFO - Game 666 ended: Total reward = 43.40000000000015, Steps = 244
+2025-04-22 12:50:56,264 - __main__ - INFO - Game 668 started
+2025-04-22 12:50:56,634 - __main__ - INFO - Game 668 ended: Total reward = -29.799999999999663, Steps = 382
+2025-04-22 12:50:56,637 - __main__ - INFO - Game 670 started
+2025-04-22 12:50:56,930 - __main__ - INFO - Game 670 ended: Total reward = 26.40000000000005, Steps = 282
+2025-04-22 12:50:56,932 - __main__ - INFO - Game 672 started
+2025-04-22 12:50:57,162 - __main__ - INFO - Game 672 ended: Total reward = 20.600000000000144, Steps = 213
+2025-04-22 12:50:57,165 - __main__ - INFO - Game 674 started
+2025-04-22 12:50:57,448 - __main__ - INFO - Game 674 ended: Total reward = 3.400000000000105, Steps = 277
+2025-04-22 12:50:57,451 - __main__ - INFO - Game 676 started
+2025-04-22 12:50:57,705 - __main__ - INFO - Game 676 ended: Total reward = -2.9999999999997975, Steps = 243
+2025-04-22 12:50:57,708 - __main__ - INFO - Game 678 started
+2025-04-22 12:50:57,941 - __main__ - INFO - Game 678 ended: Total reward = 24.199999999999992, Steps = 218
+2025-04-22 12:50:57,945 - __main__ - INFO - Game 680 started
+2025-04-22 12:50:58,249 - __main__ - INFO - Game 680 ended: Total reward = -29.59999999999973, Steps = 302
+2025-04-22 12:50:58,252 - __main__ - INFO - Game 682 started
+2025-04-22 12:50:58,580 - __main__ - INFO - Game 682 ended: Total reward = 23.600000000000083, Steps = 314
+2025-04-22 12:50:58,583 - __main__ - INFO - Game 684 started
+2025-04-22 12:50:58,962 - __main__ - INFO - Game 684 ended: Total reward = 42.80000000000026, Steps = 371
+2025-04-22 12:50:58,966 - __main__ - INFO - Game 686 started
+2025-04-22 12:50:59,271 - __main__ - INFO - Game 686 ended: Total reward = -2.399999999999771, Steps = 297
+2025-04-22 12:50:59,274 - __main__ - INFO - Game 688 started
+2025-04-22 12:50:59,587 - __main__ - INFO - Game 688 ended: Total reward = -21.199999999999847, Steps = 320
+2025-04-22 12:50:59,590 - __main__ - INFO - Game 690 started
+2025-04-22 12:51:00,015 - __main__ - INFO - Game 690 ended: Total reward = -56.600000000000605, Steps = 456
+2025-04-22 12:51:00,018 - __main__ - INFO - Game 692 started
+2025-04-22 12:51:00,357 - __main__ - INFO - Game 692 ended: Total reward = 15.400000000000073, Steps = 331
+2025-04-22 12:51:00,360 - __main__ - INFO - Game 694 started
+2025-04-22 12:51:00,646 - __main__ - INFO - Game 694 ended: Total reward = 45.400000000000105, Steps = 265
+2025-04-22 12:51:00,650 - __main__ - INFO - Game 696 started
+2025-04-22 12:51:00,959 - __main__ - INFO - Game 696 ended: Total reward = 78.60000000000002, Steps = 289
+2025-04-22 12:51:00,962 - __main__ - INFO - Game 698 started
+2025-04-22 12:51:01,262 - __main__ - INFO - Game 698 ended: Total reward = -2.40000000000005, Steps = 282
+2025-04-22 12:51:01,265 - __main__ - INFO - Game 700 started
+2025-04-22 12:51:01,570 - __main__ - INFO - Game 700 ended: Total reward = -3.1999999999997897, Steps = 294
+2025-04-22 12:51:01,574 - __main__ - INFO - Game 702 started
+2025-04-22 12:51:01,861 - __main__ - INFO - Game 702 ended: Total reward = 39.000000000000156, Steps = 281
+2025-04-22 12:51:01,865 - __main__ - INFO - Game 704 started
+2025-04-22 12:51:02,188 - __main__ - INFO - Game 704 ended: Total reward = -8.599999999999767, Steps = 321
+2025-04-22 12:51:02,191 - __main__ - INFO - Game 706 started
+2025-04-22 12:51:02,456 - __main__ - INFO - Game 706 ended: Total reward = 16.00000000000016, Steps = 249
+2025-04-22 12:51:02,460 - __main__ - INFO - Game 708 started
+2025-04-22 12:51:02,676 - __main__ - INFO - Game 708 ended: Total reward = 26.99999999999999, Steps = 192
+2025-04-22 12:51:02,679 - __main__ - INFO - Game 710 started
+2025-04-22 12:51:02,991 - __main__ - INFO - Game 710 ended: Total reward = 24.60000000000014, Steps = 306
+2025-04-22 12:51:02,994 - __main__ - INFO - Game 712 started
+2025-04-22 12:51:03,363 - __main__ - INFO - Game 712 ended: Total reward = 29.400000000000162, Steps = 374
+2025-04-22 12:51:03,367 - __main__ - INFO - Game 714 started
+2025-04-22 12:51:03,676 - __main__ - INFO - Game 714 ended: Total reward = -17.799999999999734, Steps = 306
+2025-04-22 12:51:03,679 - __main__ - INFO - Game 716 started
+2025-04-22 12:51:04,014 - __main__ - INFO - Game 716 ended: Total reward = -3.1999999999997186, Steps = 324
+2025-04-22 12:51:04,017 - __main__ - INFO - Game 718 started
+2025-04-22 12:51:04,351 - __main__ - INFO - Game 718 ended: Total reward = 8.800000000000274, Steps = 312
+2025-04-22 12:51:04,354 - __main__ - INFO - Game 720 started
+2025-04-22 12:51:04,732 - __main__ - INFO - Game 720 ended: Total reward = 25.4000000000003, Steps = 366
+2025-04-22 12:51:04,735 - __main__ - INFO - Game 722 started
+2025-04-22 12:51:05,057 - __main__ - INFO - Game 722 ended: Total reward = 30.599999999999945, Steps = 302
+2025-04-22 12:51:05,060 - __main__ - INFO - Game 724 started
+2025-04-22 12:51:05,438 - __main__ - INFO - Game 724 ended: Total reward = -14.199999999999704, Steps = 385
+2025-04-22 12:51:05,441 - __main__ - INFO - Game 726 started
+2025-04-22 12:51:06,036 - __main__ - INFO - Game 726 ended: Total reward = -84.40000000000143, Steps = 612
+2025-04-22 12:51:06,039 - __main__ - INFO - Game 728 started
+2025-04-22 12:51:06,235 - __main__ - INFO - Game 728 ended: Total reward = 1.799999999999962, Steps = 176
+2025-04-22 12:51:06,238 - __main__ - INFO - Game 730 started
+2025-04-22 12:51:06,712 - __main__ - INFO - Game 730 ended: Total reward = -75.59999999999991, Steps = 478
+2025-04-22 12:51:06,715 - __main__ - INFO - Game 732 started
+2025-04-22 12:51:06,961 - __main__ - INFO - Game 732 ended: Total reward = 47.400000000000055, Steps = 205
+2025-04-22 12:51:06,964 - __main__ - INFO - Game 734 started
+2025-04-22 12:51:07,233 - __main__ - INFO - Game 734 ended: Total reward = -6.399999999999899, Steps = 246
+2025-04-22 12:51:07,236 - __main__ - INFO - Game 736 started
+2025-04-22 12:51:07,498 - __main__ - INFO - Game 736 ended: Total reward = 16.600000000000172, Steps = 238
+2025-04-22 12:51:07,501 - __main__ - INFO - Game 738 started
+2025-04-22 12:51:07,727 - __main__ - INFO - Game 738 ended: Total reward = 63.00000000000012, Steps = 195
+2025-04-22 12:51:07,729 - __main__ - INFO - Game 740 started
+2025-04-22 12:51:08,221 - __main__ - INFO - Game 740 ended: Total reward = -71.20000000000121, Steps = 530
+2025-04-22 12:51:08,224 - __main__ - INFO - Game 742 started
+2025-04-22 12:51:08,507 - __main__ - INFO - Game 742 ended: Total reward = 30.600000000000033, Steps = 249
+2025-04-22 12:51:08,511 - __main__ - INFO - Game 744 started
+2025-04-22 12:51:08,775 - __main__ - INFO - Game 744 ended: Total reward = 11.600000000000115, Steps = 250
+2025-04-22 12:51:08,778 - __main__ - INFO - Game 746 started
+2025-04-22 12:51:09,070 - __main__ - INFO - Game 746 ended: Total reward = -27.199999999999758, Steps = 281
+2025-04-22 12:51:09,073 - __main__ - INFO - Game 748 started
+2025-04-22 12:51:09,390 - __main__ - INFO - Game 748 ended: Total reward = 22.400000000000055, Steps = 268
+2025-04-22 12:51:09,394 - __main__ - INFO - Game 750 started
+2025-04-22 12:51:09,704 - __main__ - INFO - Game 750 ended: Total reward = 6.400000000000212, Steps = 281
+2025-04-22 12:51:09,706 - __main__ - INFO - Game 752 started
+2025-04-22 12:51:10,076 - __main__ - INFO - Game 752 ended: Total reward = -12.799999999999674, Steps = 349
+2025-04-22 12:51:10,079 - __main__ - INFO - Game 754 started
+2025-04-22 12:51:10,342 - __main__ - INFO - Game 754 ended: Total reward = 21.60000000000003, Steps = 234
+2025-04-22 12:51:10,346 - __main__ - INFO - Game 756 started
+2025-04-22 12:51:10,730 - __main__ - INFO - Game 756 ended: Total reward = -5.79999999999983, Steps = 408
+2025-04-22 12:51:10,733 - __main__ - INFO - Game 758 started
+2025-04-22 12:51:10,982 - __main__ - INFO - Game 758 ended: Total reward = 34.600000000000165, Steps = 239
+2025-04-22 12:51:10,985 - __main__ - INFO - Game 760 started
+2025-04-22 12:51:11,294 - __main__ - INFO - Game 760 ended: Total reward = 7.0000000000001315, Steps = 294
+2025-04-22 12:51:11,297 - __main__ - INFO - Game 762 started
+2025-04-22 12:51:11,680 - __main__ - INFO - Game 762 ended: Total reward = -18.19999999999962, Steps = 359
+2025-04-22 12:51:11,683 - __main__ - INFO - Game 764 started
+2025-04-22 12:51:12,052 - __main__ - INFO - Game 764 ended: Total reward = -50.999999999999915, Steps = 385
+2025-04-22 12:51:12,055 - __main__ - INFO - Game 766 started
+2025-04-22 12:51:12,415 - __main__ - INFO - Game 766 ended: Total reward = -10.199999999999664, Steps = 360
+2025-04-22 12:51:12,418 - __main__ - INFO - Game 768 started
+2025-04-22 12:51:12,827 - __main__ - INFO - Game 768 ended: Total reward = 4.600000000000293, Steps = 407
+2025-04-22 12:51:12,831 - __main__ - INFO - Game 770 started
+2025-04-22 12:51:13,214 - __main__ - INFO - Game 770 ended: Total reward = -60.99999999999967, Steps = 405
+2025-04-22 12:51:13,217 - __main__ - INFO - Game 772 started
+2025-04-22 12:51:13,552 - __main__ - INFO - Game 772 ended: Total reward = -0.1999999999996831, Steps = 343
+2025-04-22 12:51:13,556 - __main__ - INFO - Game 774 started
+2025-04-22 12:51:13,816 - __main__ - INFO - Game 774 ended: Total reward = 6.400000000000089, Steps = 236
+2025-04-22 12:51:13,819 - __main__ - INFO - Game 776 started
+2025-04-22 12:51:14,043 - __main__ - INFO - Game 776 ended: Total reward = 16.600000000000083, Steps = 203
+2025-04-22 12:51:14,046 - __main__ - INFO - Game 778 started
+2025-04-22 12:51:14,380 - __main__ - INFO - Game 778 ended: Total reward = -14.199999999999733, Steps = 330
+2025-04-22 12:51:14,383 - __main__ - INFO - Game 780 started
+2025-04-22 12:51:14,841 - __main__ - INFO - Game 780 ended: Total reward = -62.99999999999997, Steps = 493
+2025-04-22 12:51:14,845 - __main__ - INFO - Game 782 started
+2025-04-22 12:51:15,092 - __main__ - INFO - Game 782 ended: Total reward = 4.40000000000017, Steps = 237
+2025-04-22 12:51:15,095 - __main__ - INFO - Game 784 started
+2025-04-22 12:51:15,342 - __main__ - INFO - Game 784 ended: Total reward = 52.800000000000146, Steps = 218
+2025-04-22 12:51:15,345 - __main__ - INFO - Game 786 started
+2025-04-22 12:51:15,627 - __main__ - INFO - Game 786 ended: Total reward = 13.40000000000012, Steps = 266
+2025-04-22 12:51:15,629 - __main__ - INFO - Game 788 started
+2025-04-22 12:51:15,965 - __main__ - INFO - Game 788 ended: Total reward = -35.39999999999967, Steps = 323
+2025-04-22 12:51:15,968 - __main__ - INFO - Game 790 started
+2025-04-22 12:51:16,328 - __main__ - INFO - Game 790 ended: Total reward = 10.000000000000286, Steps = 361
+2025-04-22 12:51:16,331 - __main__ - INFO - Game 792 started
+2025-04-22 12:51:16,901 - __main__ - INFO - Game 792 ended: Total reward = -27.80000000000088, Steps = 641
+2025-04-22 12:51:16,905 - __main__ - INFO - Game 794 started
+2025-04-22 12:51:17,322 - __main__ - INFO - Game 794 ended: Total reward = -23.399999999999913, Steps = 453
+2025-04-22 12:51:17,325 - __main__ - INFO - Game 796 started
+2025-04-22 12:51:17,908 - __main__ - INFO - Game 796 ended: Total reward = -76.80000000000037, Steps = 564
+2025-04-22 12:51:17,911 - __main__ - INFO - Game 798 started
+2025-04-22 12:51:18,198 - __main__ - INFO - Game 798 ended: Total reward = -1.9999999999998117, Steps = 255
+2025-04-22 12:51:18,200 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:51:18,201 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:51:18,201 - __main__ - INFO - Iteration 7 completed in 33.05 seconds
+2025-04-22 12:51:18,202 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:51:18,202 - __main__ - INFO - Starting iteration 8/1000
+2025-04-22 12:51:18,222 - __main__ - INFO - Game 700 started
+2025-04-22 12:51:18,589 - __main__ - INFO - Game 700 ended: Total reward = 17.00000000000015, Steps = 386
+2025-04-22 12:51:18,593 - __main__ - INFO - Game 702 started
+2025-04-22 12:51:18,824 - __main__ - INFO - Game 702 ended: Total reward = 0.4000000000001265, Steps = 227
+2025-04-22 12:51:18,827 - __main__ - INFO - Game 704 started
+2025-04-22 12:51:19,102 - __main__ - INFO - Game 704 ended: Total reward = 0.1999999999999802, Steps = 264
+2025-04-22 12:51:19,106 - __main__ - INFO - Game 706 started
+2025-04-22 12:51:19,402 - __main__ - INFO - Game 706 ended: Total reward = 30.60000000000008, Steps = 286
+2025-04-22 12:51:19,406 - __main__ - INFO - Game 708 started
+2025-04-22 12:51:19,663 - __main__ - INFO - Game 708 ended: Total reward = -1.1999999999999957, Steps = 252
+2025-04-22 12:51:19,666 - __main__ - INFO - Game 710 started
+2025-04-22 12:51:20,050 - __main__ - INFO - Game 710 ended: Total reward = 50.800000000000274, Steps = 406
+2025-04-22 12:51:20,053 - __main__ - INFO - Game 712 started
+2025-04-22 12:51:20,523 - __main__ - INFO - Game 712 ended: Total reward = -94.20000000000023, Steps = 520
+2025-04-22 12:51:20,527 - __main__ - INFO - Game 714 started
+2025-04-22 12:51:20,771 - __main__ - INFO - Game 714 ended: Total reward = 13.0, Steps = 228
+2025-04-22 12:51:20,774 - __main__ - INFO - Game 716 started
+2025-04-22 12:51:21,020 - __main__ - INFO - Game 716 ended: Total reward = 12.800000000000075, Steps = 235
+2025-04-22 12:51:21,023 - __main__ - INFO - Game 718 started
+2025-04-22 12:51:21,455 - __main__ - INFO - Game 718 ended: Total reward = -96.00000000000057, Steps = 477
+2025-04-22 12:51:21,458 - __main__ - INFO - Game 720 started
+2025-04-22 12:51:21,883 - __main__ - INFO - Game 720 ended: Total reward = -55.99999999999956, Steps = 444
+2025-04-22 12:51:21,886 - __main__ - INFO - Game 722 started
+2025-04-22 12:51:22,223 - __main__ - INFO - Game 722 ended: Total reward = 25.600000000000193, Steps = 343
+2025-04-22 12:51:22,226 - __main__ - INFO - Game 724 started
+2025-04-22 12:51:22,491 - __main__ - INFO - Game 724 ended: Total reward = 27.800000000000168, Steps = 251
+2025-04-22 12:51:22,495 - __main__ - INFO - Game 726 started
+2025-04-22 12:51:22,782 - __main__ - INFO - Game 726 ended: Total reward = -1.7999999999998124, Steps = 279
+2025-04-22 12:51:22,786 - __main__ - INFO - Game 728 started
+2025-04-22 12:51:23,112 - __main__ - INFO - Game 728 ended: Total reward = 41.20000000000004, Steps = 323
+2025-04-22 12:51:23,115 - __main__ - INFO - Game 730 started
+2025-04-22 12:51:23,475 - __main__ - INFO - Game 730 ended: Total reward = -35.79999999999978, Steps = 373
+2025-04-22 12:51:23,478 - __main__ - INFO - Game 732 started
+2025-04-22 12:51:23,834 - __main__ - INFO - Game 732 ended: Total reward = -16.99999999999963, Steps = 363
+2025-04-22 12:51:23,837 - __main__ - INFO - Game 734 started
+2025-04-22 12:51:24,075 - __main__ - INFO - Game 734 ended: Total reward = 2.0000000000000417, Steps = 220
+2025-04-22 12:51:24,078 - __main__ - INFO - Game 736 started
+2025-04-22 12:51:24,488 - __main__ - INFO - Game 736 ended: Total reward = -22.59999999999959, Steps = 401
+2025-04-22 12:51:24,491 - __main__ - INFO - Game 738 started
+2025-04-22 12:51:24,748 - __main__ - INFO - Game 738 ended: Total reward = 39.20000000000003, Steps = 242
+2025-04-22 12:51:24,751 - __main__ - INFO - Game 740 started
+2025-04-22 12:51:25,177 - __main__ - INFO - Game 740 ended: Total reward = -31.59999999999956, Steps = 437
+2025-04-22 12:51:25,181 - __main__ - INFO - Game 742 started
+2025-04-22 12:51:25,548 - __main__ - INFO - Game 742 ended: Total reward = -28.19999999999962, Steps = 371
+2025-04-22 12:51:25,552 - __main__ - INFO - Game 744 started
+2025-04-22 12:51:25,847 - __main__ - INFO - Game 744 ended: Total reward = -21.399999999999743, Steps = 283
+2025-04-22 12:51:25,851 - __main__ - INFO - Game 746 started
+2025-04-22 12:51:26,246 - __main__ - INFO - Game 746 ended: Total reward = -15.399999999999622, Steps = 421
+2025-04-22 12:51:26,249 - __main__ - INFO - Game 748 started
+2025-04-22 12:51:26,484 - __main__ - INFO - Game 748 ended: Total reward = 21.399999999999984, Steps = 213
+2025-04-22 12:51:26,487 - __main__ - INFO - Game 750 started
+2025-04-22 12:51:26,768 - __main__ - INFO - Game 750 ended: Total reward = -28.799999999999763, Steps = 284
+2025-04-22 12:51:26,771 - __main__ - INFO - Game 752 started
+2025-04-22 12:51:27,077 - __main__ - INFO - Game 752 ended: Total reward = 22.400000000000237, Steps = 294
+2025-04-22 12:51:27,080 - __main__ - INFO - Game 754 started
+2025-04-22 12:51:27,375 - __main__ - INFO - Game 754 ended: Total reward = -29.599999999999753, Steps = 292
+2025-04-22 12:51:27,378 - __main__ - INFO - Game 756 started
+2025-04-22 12:51:27,655 - __main__ - INFO - Game 756 ended: Total reward = -9.399999999999856, Steps = 276
+2025-04-22 12:51:27,658 - __main__ - INFO - Game 758 started
+2025-04-22 12:51:28,055 - __main__ - INFO - Game 758 ended: Total reward = -56.79999999999963, Steps = 424
+2025-04-22 12:51:28,058 - __main__ - INFO - Game 760 started
+2025-04-22 12:51:28,310 - __main__ - INFO - Game 760 ended: Total reward = 27.400000000000162, Steps = 246
+2025-04-22 12:51:28,313 - __main__ - INFO - Game 762 started
+2025-04-22 12:51:28,732 - __main__ - INFO - Game 762 ended: Total reward = -40.399999999999594, Steps = 443
+2025-04-22 12:51:28,735 - __main__ - INFO - Game 764 started
+2025-04-22 12:51:29,054 - __main__ - INFO - Game 764 ended: Total reward = 38.200000000000195, Steps = 329
+2025-04-22 12:51:29,057 - __main__ - INFO - Game 766 started
+2025-04-22 12:51:29,349 - __main__ - INFO - Game 766 ended: Total reward = 15.000000000000234, Steps = 284
+2025-04-22 12:51:29,352 - __main__ - INFO - Game 768 started
+2025-04-22 12:51:29,781 - __main__ - INFO - Game 768 ended: Total reward = -58.4000000000004, Steps = 454
+2025-04-22 12:51:29,784 - __main__ - INFO - Game 770 started
+2025-04-22 12:51:30,172 - __main__ - INFO - Game 770 ended: Total reward = -43.999999999999574, Steps = 419
+2025-04-22 12:51:30,175 - __main__ - INFO - Game 772 started
+2025-04-22 12:51:30,678 - __main__ - INFO - Game 772 ended: Total reward = -65.00000000000023, Steps = 556
+2025-04-22 12:51:30,681 - __main__ - INFO - Game 774 started
+2025-04-22 12:51:31,026 - __main__ - INFO - Game 774 ended: Total reward = 14.000000000000188, Steps = 371
+2025-04-22 12:51:31,029 - __main__ - INFO - Game 776 started
+2025-04-22 12:51:31,437 - __main__ - INFO - Game 776 ended: Total reward = -25.199999999999676, Steps = 411
+2025-04-22 12:51:31,440 - __main__ - INFO - Game 778 started
+2025-04-22 12:51:31,699 - __main__ - INFO - Game 778 ended: Total reward = 10.800000000000109, Steps = 237
+2025-04-22 12:51:31,702 - __main__ - INFO - Game 780 started
+2025-04-22 12:51:31,964 - __main__ - INFO - Game 780 ended: Total reward = 58.40000000000017, Steps = 248
+2025-04-22 12:51:31,967 - __main__ - INFO - Game 782 started
+2025-04-22 12:51:32,358 - __main__ - INFO - Game 782 ended: Total reward = -35.99999999999956, Steps = 406
+2025-04-22 12:51:32,361 - __main__ - INFO - Game 784 started
+2025-04-22 12:51:32,622 - __main__ - INFO - Game 784 ended: Total reward = -5.399999999999878, Steps = 223
+2025-04-22 12:51:32,625 - __main__ - INFO - Game 786 started
+2025-04-22 12:51:32,965 - __main__ - INFO - Game 786 ended: Total reward = -0.7999999999999812, Steps = 324
+2025-04-22 12:51:32,968 - __main__ - INFO - Game 788 started
+2025-04-22 12:51:33,549 - __main__ - INFO - Game 788 ended: Total reward = -87.20000000000178, Steps = 625
+2025-04-22 12:51:33,553 - __main__ - INFO - Game 790 started
+2025-04-22 12:51:34,089 - __main__ - INFO - Game 790 ended: Total reward = -113.80000000000086, Steps = 557
+2025-04-22 12:51:34,093 - __main__ - INFO - Game 792 started
+2025-04-22 12:51:34,673 - __main__ - INFO - Game 792 ended: Total reward = -31.79999999999943, Steps = 538
+2025-04-22 12:51:34,677 - __main__ - INFO - Game 794 started
+2025-04-22 12:51:35,079 - __main__ - INFO - Game 794 ended: Total reward = -13.399999999999615, Steps = 388
+2025-04-22 12:51:35,082 - __main__ - INFO - Game 796 started
+2025-04-22 12:51:35,420 - __main__ - INFO - Game 796 ended: Total reward = 19.00000000000034, Steps = 332
+2025-04-22 12:51:35,422 - __main__ - INFO - Game 798 started
+2025-04-22 12:51:35,692 - __main__ - INFO - Game 798 ended: Total reward = 0.8000000000002245, Steps = 243
+2025-04-22 12:51:35,695 - __main__ - INFO - Game 800 started
+2025-04-22 12:51:36,103 - __main__ - INFO - Game 800 ended: Total reward = 15.800000000000304, Steps = 422
+2025-04-22 12:51:36,106 - __main__ - INFO - Game 802 started
+2025-04-22 12:51:36,451 - __main__ - INFO - Game 802 ended: Total reward = -23.799999999999663, Steps = 336
+2025-04-22 12:51:36,455 - __main__ - INFO - Game 804 started
+2025-04-22 12:51:36,722 - __main__ - INFO - Game 804 ended: Total reward = 13.400000000000047, Steps = 236
+2025-04-22 12:51:36,725 - __main__ - INFO - Game 806 started
+2025-04-22 12:51:37,013 - __main__ - INFO - Game 806 ended: Total reward = -40.79999999999972, Steps = 284
+2025-04-22 12:51:37,016 - __main__ - INFO - Game 808 started
+2025-04-22 12:51:37,375 - __main__ - INFO - Game 808 ended: Total reward = -6.399999999999897, Steps = 355
+2025-04-22 12:51:37,379 - __main__ - INFO - Game 810 started
+2025-04-22 12:51:37,711 - __main__ - INFO - Game 810 ended: Total reward = 6.400000000000247, Steps = 317
+2025-04-22 12:51:37,714 - __main__ - INFO - Game 812 started
+2025-04-22 12:51:38,016 - __main__ - INFO - Game 812 ended: Total reward = 2.200000000000174, Steps = 295
+2025-04-22 12:51:38,020 - __main__ - INFO - Game 814 started
+2025-04-22 12:51:38,227 - __main__ - INFO - Game 814 ended: Total reward = 19.40000000000006, Steps = 190
+2025-04-22 12:51:38,230 - __main__ - INFO - Game 816 started
+2025-04-22 12:51:38,503 - __main__ - INFO - Game 816 ended: Total reward = -1.1999999999997755, Steps = 254
+2025-04-22 12:51:38,506 - __main__ - INFO - Game 818 started
+2025-04-22 12:51:38,780 - __main__ - INFO - Game 818 ended: Total reward = 76.00000000000017, Steps = 252
+2025-04-22 12:51:38,783 - __main__ - INFO - Game 820 started
+2025-04-22 12:51:39,139 - __main__ - INFO - Game 820 ended: Total reward = -11.599999999999646, Steps = 366
+2025-04-22 12:51:39,142 - __main__ - INFO - Game 822 started
+2025-04-22 12:51:39,531 - __main__ - INFO - Game 822 ended: Total reward = -1.799999999999585, Steps = 396
+2025-04-22 12:51:39,535 - __main__ - INFO - Game 824 started
+2025-04-22 12:51:39,790 - __main__ - INFO - Game 824 ended: Total reward = 3.599999999999967, Steps = 240
+2025-04-22 12:51:39,793 - __main__ - INFO - Game 826 started
+2025-04-22 12:51:40,193 - __main__ - INFO - Game 826 ended: Total reward = -12.799999999999805, Steps = 410
+2025-04-22 12:51:40,196 - __main__ - INFO - Game 828 started
+2025-04-22 12:51:40,483 - __main__ - INFO - Game 828 ended: Total reward = 23.20000000000007, Steps = 274
+2025-04-22 12:51:40,486 - __main__ - INFO - Game 830 started
+2025-04-22 12:51:40,853 - __main__ - INFO - Game 830 ended: Total reward = 11.600000000000236, Steps = 379
+2025-04-22 12:51:40,856 - __main__ - INFO - Game 832 started
+2025-04-22 12:51:41,115 - __main__ - INFO - Game 832 ended: Total reward = 13.200000000000061, Steps = 246
+2025-04-22 12:51:41,118 - __main__ - INFO - Game 834 started
+2025-04-22 12:51:41,439 - __main__ - INFO - Game 834 ended: Total reward = -17.799999999999677, Steps = 326
+2025-04-22 12:51:41,442 - __main__ - INFO - Game 836 started
+2025-04-22 12:51:41,679 - __main__ - INFO - Game 836 ended: Total reward = 2.0000000000001066, Steps = 226
+2025-04-22 12:51:41,682 - __main__ - INFO - Game 838 started
+2025-04-22 12:51:42,097 - __main__ - INFO - Game 838 ended: Total reward = -1.1999999999998732, Steps = 346
+2025-04-22 12:51:42,100 - __main__ - INFO - Game 840 started
+2025-04-22 12:51:42,614 - __main__ - INFO - Game 840 ended: Total reward = -65.40000000000005, Steps = 556
+2025-04-22 12:51:42,617 - __main__ - INFO - Game 842 started
+2025-04-22 12:51:43,083 - __main__ - INFO - Game 842 ended: Total reward = -8.799999999999747, Steps = 501
+2025-04-22 12:51:43,086 - __main__ - INFO - Game 844 started
+2025-04-22 12:51:43,518 - __main__ - INFO - Game 844 ended: Total reward = -21.79999999999955, Steps = 452
+2025-04-22 12:51:43,521 - __main__ - INFO - Game 846 started
+2025-04-22 12:51:43,853 - __main__ - INFO - Game 846 ended: Total reward = -13.799999999999663, Steps = 331
+2025-04-22 12:51:43,856 - __main__ - INFO - Game 848 started
+2025-04-22 12:51:44,171 - __main__ - INFO - Game 848 ended: Total reward = -27.799999999999706, Steps = 310
+2025-04-22 12:51:44,174 - __main__ - INFO - Game 850 started
+2025-04-22 12:51:44,427 - __main__ - INFO - Game 850 ended: Total reward = 45.399999999999984, Steps = 239
+2025-04-22 12:51:44,430 - __main__ - INFO - Game 852 started
+2025-04-22 12:51:44,674 - __main__ - INFO - Game 852 ended: Total reward = 62.600000000000165, Steps = 214
+2025-04-22 12:51:44,677 - __main__ - INFO - Game 854 started
+2025-04-22 12:51:44,909 - __main__ - INFO - Game 854 ended: Total reward = 5.399999999999983, Steps = 211
+2025-04-22 12:51:44,912 - __main__ - INFO - Game 856 started
+2025-04-22 12:51:45,288 - __main__ - INFO - Game 856 ended: Total reward = -8.999999999999822, Steps = 386
+2025-04-22 12:51:45,291 - __main__ - INFO - Game 858 started
+2025-04-22 12:51:45,600 - __main__ - INFO - Game 858 ended: Total reward = 63.000000000000156, Steps = 304
+2025-04-22 12:51:45,603 - __main__ - INFO - Game 860 started
+2025-04-22 12:51:45,915 - __main__ - INFO - Game 860 ended: Total reward = -5.7999999999997325, Steps = 292
+2025-04-22 12:51:45,918 - __main__ - INFO - Game 862 started
+2025-04-22 12:51:46,283 - __main__ - INFO - Game 862 ended: Total reward = 34.20000000000033, Steps = 377
+2025-04-22 12:51:46,286 - __main__ - INFO - Game 864 started
+2025-04-22 12:51:46,641 - __main__ - INFO - Game 864 ended: Total reward = 6.600000000000357, Steps = 347
+2025-04-22 12:51:46,644 - __main__ - INFO - Game 866 started
+2025-04-22 12:51:47,058 - __main__ - INFO - Game 866 ended: Total reward = -0.6000000000001506, Steps = 425
+2025-04-22 12:51:47,062 - __main__ - INFO - Game 868 started
+2025-04-22 12:51:47,408 - __main__ - INFO - Game 868 ended: Total reward = 20.800000000000082, Steps = 357
+2025-04-22 12:51:47,411 - __main__ - INFO - Game 870 started
+2025-04-22 12:51:47,843 - __main__ - INFO - Game 870 ended: Total reward = -30.000000000000412, Steps = 456
+2025-04-22 12:51:47,847 - __main__ - INFO - Game 872 started
+2025-04-22 12:51:48,190 - __main__ - INFO - Game 872 ended: Total reward = -12.399999999999679, Steps = 331
+2025-04-22 12:51:48,193 - __main__ - INFO - Game 874 started
+2025-04-22 12:51:48,516 - __main__ - INFO - Game 874 ended: Total reward = -42.999999999999694, Steps = 320
+2025-04-22 12:51:48,519 - __main__ - INFO - Game 876 started
+2025-04-22 12:51:48,766 - __main__ - INFO - Game 876 ended: Total reward = 31.200000000000042, Steps = 227
+2025-04-22 12:51:48,769 - __main__ - INFO - Game 878 started
+2025-04-22 12:51:49,035 - __main__ - INFO - Game 878 ended: Total reward = 60.20000000000011, Steps = 236
+2025-04-22 12:51:49,038 - __main__ - INFO - Game 880 started
+2025-04-22 12:51:49,333 - __main__ - INFO - Game 880 ended: Total reward = 59.00000000000019, Steps = 293
+2025-04-22 12:51:49,336 - __main__ - INFO - Game 882 started
+2025-04-22 12:51:49,736 - __main__ - INFO - Game 882 ended: Total reward = -40.80000000000052, Steps = 414
+2025-04-22 12:51:49,740 - __main__ - INFO - Game 884 started
+2025-04-22 12:51:50,096 - __main__ - INFO - Game 884 ended: Total reward = 48.60000000000032, Steps = 348
+2025-04-22 12:51:50,099 - __main__ - INFO - Game 886 started
+2025-04-22 12:51:50,400 - __main__ - INFO - Game 886 ended: Total reward = -20.19999999999971, Steps = 294
+2025-04-22 12:51:50,403 - __main__ - INFO - Game 888 started
+2025-04-22 12:51:50,651 - __main__ - INFO - Game 888 ended: Total reward = 28.000000000000064, Steps = 223
+2025-04-22 12:51:50,654 - __main__ - INFO - Game 890 started
+2025-04-22 12:51:51,124 - __main__ - INFO - Game 890 ended: Total reward = -62.200000000000756, Steps = 505
+2025-04-22 12:51:51,128 - __main__ - INFO - Game 892 started
+2025-04-22 12:51:51,674 - __main__ - INFO - Game 892 ended: Total reward = -82.80000000000015, Steps = 606
+2025-04-22 12:51:51,678 - __main__ - INFO - Game 894 started
+2025-04-22 12:51:52,216 - __main__ - INFO - Game 894 ended: Total reward = -76.00000000000081, Steps = 574
+2025-04-22 12:51:52,220 - __main__ - INFO - Game 896 started
+2025-04-22 12:51:52,813 - __main__ - INFO - Game 896 ended: Total reward = -75.99999999999991, Steps = 636
+2025-04-22 12:51:52,816 - __main__ - INFO - Game 898 started
+2025-04-22 12:51:53,131 - __main__ - INFO - Game 898 ended: Total reward = -7.9999999999998295, Steps = 309
+2025-04-22 12:51:53,132 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:51:53,132 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:51:53,133 - __main__ - INFO - Iteration 8 completed in 34.93 seconds
+2025-04-22 12:51:53,133 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:51:53,133 - __main__ - INFO - Starting iteration 9/1000
+2025-04-22 12:51:53,154 - __main__ - INFO - Game 800 started
+2025-04-22 12:51:53,395 - __main__ - INFO - Game 800 ended: Total reward = 40.4, Steps = 212
+2025-04-22 12:51:53,398 - __main__ - INFO - Game 802 started
+2025-04-22 12:51:53,835 - __main__ - INFO - Game 802 ended: Total reward = -58.80000000000025, Steps = 445
+2025-04-22 12:51:53,838 - __main__ - INFO - Game 804 started
+2025-04-22 12:51:53,997 - __main__ - INFO - Game 804 ended: Total reward = 21.80000000000002, Steps = 139
+2025-04-22 12:51:54,000 - __main__ - INFO - Game 806 started
+2025-04-22 12:51:54,283 - __main__ - INFO - Game 806 ended: Total reward = 6.200000000000127, Steps = 264
+2025-04-22 12:51:54,286 - __main__ - INFO - Game 808 started
+2025-04-22 12:51:54,656 - __main__ - INFO - Game 808 ended: Total reward = 28.40000000000021, Steps = 365
+2025-04-22 12:51:54,660 - __main__ - INFO - Game 810 started
+2025-04-22 12:51:55,045 - __main__ - INFO - Game 810 ended: Total reward = 2.800000000000143, Steps = 407
+2025-04-22 12:51:55,048 - __main__ - INFO - Game 812 started
+2025-04-22 12:51:55,397 - __main__ - INFO - Game 812 ended: Total reward = 8.200000000000308, Steps = 339
+2025-04-22 12:51:55,400 - __main__ - INFO - Game 814 started
+2025-04-22 12:51:55,650 - __main__ - INFO - Game 814 ended: Total reward = 61.80000000000016, Steps = 231
+2025-04-22 12:51:55,653 - __main__ - INFO - Game 816 started
+2025-04-22 12:51:56,148 - __main__ - INFO - Game 816 ended: Total reward = 0.6000000000003141, Steps = 405
+2025-04-22 12:51:56,154 - __main__ - INFO - Game 818 started
+2025-04-22 12:51:56,621 - __main__ - INFO - Game 818 ended: Total reward = -42.00000000000021, Steps = 490
+2025-04-22 12:51:56,625 - __main__ - INFO - Game 820 started
+2025-04-22 12:51:57,005 - __main__ - INFO - Game 820 ended: Total reward = 4.200000000000301, Steps = 392
+2025-04-22 12:51:57,008 - __main__ - INFO - Game 822 started
+2025-04-22 12:51:57,396 - __main__ - INFO - Game 822 ended: Total reward = -57.19999999999966, Steps = 408
+2025-04-22 12:51:57,399 - __main__ - INFO - Game 824 started
+2025-04-22 12:51:57,699 - __main__ - INFO - Game 824 ended: Total reward = 13.000000000000016, Steps = 266
+2025-04-22 12:51:57,702 - __main__ - INFO - Game 826 started
+2025-04-22 12:51:58,030 - __main__ - INFO - Game 826 ended: Total reward = 34.60000000000022, Steps = 301
+2025-04-22 12:51:58,033 - __main__ - INFO - Game 828 started
+2025-04-22 12:51:58,422 - __main__ - INFO - Game 828 ended: Total reward = -15.599999999999618, Steps = 388
+2025-04-22 12:51:58,425 - __main__ - INFO - Game 830 started
+2025-04-22 12:51:58,685 - __main__ - INFO - Game 830 ended: Total reward = 47.99999999999996, Steps = 245
+2025-04-22 12:51:58,688 - __main__ - INFO - Game 832 started
+2025-04-22 12:51:58,972 - __main__ - INFO - Game 832 ended: Total reward = 19.199999999999985, Steps = 255
+2025-04-22 12:51:58,976 - __main__ - INFO - Game 834 started
+2025-04-22 12:51:59,238 - __main__ - INFO - Game 834 ended: Total reward = 33.399999999999956, Steps = 229
+2025-04-22 12:51:59,241 - __main__ - INFO - Game 836 started
+2025-04-22 12:51:59,550 - __main__ - INFO - Game 836 ended: Total reward = -16.399999999999785, Steps = 280
+2025-04-22 12:51:59,553 - __main__ - INFO - Game 838 started
+2025-04-22 12:51:59,882 - __main__ - INFO - Game 838 ended: Total reward = -33.19999999999969, Steps = 306
+2025-04-22 12:51:59,886 - __main__ - INFO - Game 840 started
+2025-04-22 12:52:00,105 - __main__ - INFO - Game 840 ended: Total reward = 60.599999999999994, Steps = 191
+2025-04-22 12:52:00,108 - __main__ - INFO - Game 842 started
+2025-04-22 12:52:00,461 - __main__ - INFO - Game 842 ended: Total reward = -7.1999999999997115, Steps = 315
+2025-04-22 12:52:00,464 - __main__ - INFO - Game 844 started
+2025-04-22 12:52:00,941 - __main__ - INFO - Game 844 ended: Total reward = -74.00000000000087, Steps = 475
+2025-04-22 12:52:00,944 - __main__ - INFO - Game 846 started
+2025-04-22 12:52:01,242 - __main__ - INFO - Game 846 ended: Total reward = -9.199999999999783, Steps = 270
+2025-04-22 12:52:01,245 - __main__ - INFO - Game 848 started
+2025-04-22 12:52:01,668 - __main__ - INFO - Game 848 ended: Total reward = -2.7999999999997804, Steps = 402
+2025-04-22 12:52:01,671 - __main__ - INFO - Game 850 started
+2025-04-22 12:52:02,008 - __main__ - INFO - Game 850 ended: Total reward = -19.999999999999744, Steps = 338
+2025-04-22 12:52:02,011 - __main__ - INFO - Game 852 started
+2025-04-22 12:52:02,394 - __main__ - INFO - Game 852 ended: Total reward = -18.199999999999648, Steps = 385
+2025-04-22 12:52:02,397 - __main__ - INFO - Game 854 started
+2025-04-22 12:52:02,745 - __main__ - INFO - Game 854 ended: Total reward = 17.0000000000003, Steps = 313
+2025-04-22 12:52:02,749 - __main__ - INFO - Game 856 started
+2025-04-22 12:52:03,113 - __main__ - INFO - Game 856 ended: Total reward = -24.199999999999662, Steps = 329
+2025-04-22 12:52:03,116 - __main__ - INFO - Game 858 started
+2025-04-22 12:52:03,650 - __main__ - INFO - Game 858 ended: Total reward = -67.60000000000021, Steps = 500
+2025-04-22 12:52:03,653 - __main__ - INFO - Game 860 started
+2025-04-22 12:52:03,978 - __main__ - INFO - Game 860 ended: Total reward = 3.600000000000024, Steps = 296
+2025-04-22 12:52:03,981 - __main__ - INFO - Game 862 started
+2025-04-22 12:52:04,300 - __main__ - INFO - Game 862 ended: Total reward = 65.60000000000022, Steps = 300
+2025-04-22 12:52:04,304 - __main__ - INFO - Game 864 started
+2025-04-22 12:52:04,725 - __main__ - INFO - Game 864 ended: Total reward = -11.999999999999524, Steps = 433
+2025-04-22 12:52:04,728 - __main__ - INFO - Game 866 started
+2025-04-22 12:52:05,144 - __main__ - INFO - Game 866 ended: Total reward = -33.3999999999997, Steps = 431
+2025-04-22 12:52:05,148 - __main__ - INFO - Game 868 started
+2025-04-22 12:52:05,806 - __main__ - INFO - Game 868 ended: Total reward = -121.60000000000238, Steps = 765
+2025-04-22 12:52:05,809 - __main__ - INFO - Game 870 started
+2025-04-22 12:52:06,011 - __main__ - INFO - Game 870 ended: Total reward = 14.000000000000025, Steps = 185
+2025-04-22 12:52:06,014 - __main__ - INFO - Game 872 started
+2025-04-22 12:52:06,674 - __main__ - INFO - Game 872 ended: Total reward = -141.0000000000025, Steps = 723
+2025-04-22 12:52:06,678 - __main__ - INFO - Game 874 started
+2025-04-22 12:52:07,128 - __main__ - INFO - Game 874 ended: Total reward = -61.60000000000005, Steps = 486
+2025-04-22 12:52:07,131 - __main__ - INFO - Game 876 started
+2025-04-22 12:52:07,476 - __main__ - INFO - Game 876 ended: Total reward = 51.000000000000306, Steps = 346
+2025-04-22 12:52:07,479 - __main__ - INFO - Game 878 started
+2025-04-22 12:52:08,026 - __main__ - INFO - Game 878 ended: Total reward = 20.00000000000051, Steps = 504
+2025-04-22 12:52:08,030 - __main__ - INFO - Game 880 started
+2025-04-22 12:52:08,473 - __main__ - INFO - Game 880 ended: Total reward = -31.999999999999638, Steps = 422
+2025-04-22 12:52:08,477 - __main__ - INFO - Game 882 started
+2025-04-22 12:52:08,848 - __main__ - INFO - Game 882 ended: Total reward = 19.800000000000175, Steps = 349
+2025-04-22 12:52:08,851 - __main__ - INFO - Game 884 started
+2025-04-22 12:52:09,312 - __main__ - INFO - Game 884 ended: Total reward = -58.00000000000077, Steps = 504
+2025-04-22 12:52:09,315 - __main__ - INFO - Game 886 started
+2025-04-22 12:52:09,641 - __main__ - INFO - Game 886 ended: Total reward = -2.9999999999997673, Steps = 319
+2025-04-22 12:52:09,644 - __main__ - INFO - Game 888 started
+2025-04-22 12:52:09,942 - __main__ - INFO - Game 888 ended: Total reward = -20.999999999999723, Steps = 295
+2025-04-22 12:52:09,945 - __main__ - INFO - Game 890 started
+2025-04-22 12:52:10,209 - __main__ - INFO - Game 890 ended: Total reward = -14.199999999999768, Steps = 251
+2025-04-22 12:52:10,212 - __main__ - INFO - Game 892 started
+2025-04-22 12:52:10,448 - __main__ - INFO - Game 892 ended: Total reward = 10.200000000000067, Steps = 209
+2025-04-22 12:52:10,451 - __main__ - INFO - Game 894 started
+2025-04-22 12:52:10,761 - __main__ - INFO - Game 894 ended: Total reward = 26.600000000000062, Steps = 318
+2025-04-22 12:52:10,764 - __main__ - INFO - Game 896 started
+2025-04-22 12:52:11,022 - __main__ - INFO - Game 896 ended: Total reward = 18.600000000000158, Steps = 229
+2025-04-22 12:52:11,025 - __main__ - INFO - Game 898 started
+2025-04-22 12:52:11,365 - __main__ - INFO - Game 898 ended: Total reward = -12.199999999999655, Steps = 337
+2025-04-22 12:52:11,368 - __main__ - INFO - Game 900 started
+2025-04-22 12:52:11,788 - __main__ - INFO - Game 900 ended: Total reward = -61.999999999999915, Steps = 429
+2025-04-22 12:52:11,792 - __main__ - INFO - Game 902 started
+2025-04-22 12:52:12,083 - __main__ - INFO - Game 902 ended: Total reward = 10.200000000000081, Steps = 280
+2025-04-22 12:52:12,086 - __main__ - INFO - Game 904 started
+2025-04-22 12:52:12,372 - __main__ - INFO - Game 904 ended: Total reward = -20.799999999999777, Steps = 258
+2025-04-22 12:52:12,375 - __main__ - INFO - Game 906 started
+2025-04-22 12:52:12,851 - __main__ - INFO - Game 906 ended: Total reward = -98.80000000000094, Steps = 508
+2025-04-22 12:52:12,854 - __main__ - INFO - Game 908 started
+2025-04-22 12:52:13,250 - __main__ - INFO - Game 908 ended: Total reward = -65.39999999999979, Steps = 411
+2025-04-22 12:52:13,255 - __main__ - INFO - Game 910 started
+2025-04-22 12:52:13,675 - __main__ - INFO - Game 910 ended: Total reward = -3.5999999999996497, Steps = 412
+2025-04-22 12:52:13,678 - __main__ - INFO - Game 912 started
+2025-04-22 12:52:14,162 - __main__ - INFO - Game 912 ended: Total reward = -41.19999999999959, Steps = 517
+2025-04-22 12:52:14,166 - __main__ - INFO - Game 914 started
+2025-04-22 12:52:14,565 - __main__ - INFO - Game 914 ended: Total reward = -19.799999999999642, Steps = 381
+2025-04-22 12:52:14,568 - __main__ - INFO - Game 916 started
+2025-04-22 12:52:14,902 - __main__ - INFO - Game 916 ended: Total reward = 27.400000000000222, Steps = 317
+2025-04-22 12:52:14,905 - __main__ - INFO - Game 918 started
+2025-04-22 12:52:15,264 - __main__ - INFO - Game 918 ended: Total reward = -39.19999999999963, Steps = 345
+2025-04-22 12:52:15,267 - __main__ - INFO - Game 920 started
+2025-04-22 12:52:15,549 - __main__ - INFO - Game 920 ended: Total reward = 5.000000000000129, Steps = 236
+2025-04-22 12:52:15,552 - __main__ - INFO - Game 922 started
+2025-04-22 12:52:15,834 - __main__ - INFO - Game 922 ended: Total reward = -17.19999999999988, Steps = 268
+2025-04-22 12:52:15,837 - __main__ - INFO - Game 924 started
+2025-04-22 12:52:16,200 - __main__ - INFO - Game 924 ended: Total reward = 5.80000000000015, Steps = 343
+2025-04-22 12:52:16,203 - __main__ - INFO - Game 926 started
+2025-04-22 12:52:16,703 - __main__ - INFO - Game 926 ended: Total reward = -52.800000000001006, Steps = 525
+2025-04-22 12:52:16,706 - __main__ - INFO - Game 928 started
+2025-04-22 12:52:16,957 - __main__ - INFO - Game 928 ended: Total reward = 17.60000000000008, Steps = 227
+2025-04-22 12:52:16,960 - __main__ - INFO - Game 930 started
+2025-04-22 12:52:17,362 - __main__ - INFO - Game 930 ended: Total reward = -34.39999999999981, Steps = 428
+2025-04-22 12:52:17,365 - __main__ - INFO - Game 932 started
+2025-04-22 12:52:18,091 - __main__ - INFO - Game 932 ended: Total reward = -163.80000000000248, Steps = 747
+2025-04-22 12:52:18,095 - __main__ - INFO - Game 934 started
+2025-04-22 12:52:18,405 - __main__ - INFO - Game 934 ended: Total reward = -32.39999999999971, Steps = 302
+2025-04-22 12:52:18,408 - __main__ - INFO - Game 936 started
+2025-04-22 12:52:18,796 - __main__ - INFO - Game 936 ended: Total reward = -29.199999999999648, Steps = 365
+2025-04-22 12:52:18,799 - __main__ - INFO - Game 938 started
+2025-04-22 12:52:19,272 - __main__ - INFO - Game 938 ended: Total reward = -103.00000000000114, Steps = 520
+2025-04-22 12:52:19,276 - __main__ - INFO - Game 940 started
+2025-04-22 12:52:19,581 - __main__ - INFO - Game 940 ended: Total reward = 25.200000000000188, Steps = 293
+2025-04-22 12:52:19,585 - __main__ - INFO - Game 942 started
+2025-04-22 12:52:19,876 - __main__ - INFO - Game 942 ended: Total reward = -14.199999999999719, Steps = 289
+2025-04-22 12:52:19,879 - __main__ - INFO - Game 944 started
+2025-04-22 12:52:20,146 - __main__ - INFO - Game 944 ended: Total reward = 13.200000000000149, Steps = 269
+2025-04-22 12:52:20,151 - __main__ - INFO - Game 946 started
+2025-04-22 12:52:20,407 - __main__ - INFO - Game 946 ended: Total reward = 13.59999999999995, Steps = 241
+2025-04-22 12:52:20,410 - __main__ - INFO - Game 948 started
+2025-04-22 12:52:20,625 - __main__ - INFO - Game 948 ended: Total reward = 10.000000000000062, Steps = 195
+2025-04-22 12:52:20,628 - __main__ - INFO - Game 950 started
+2025-04-22 12:52:20,903 - __main__ - INFO - Game 950 ended: Total reward = 38.80000000000021, Steps = 278
+2025-04-22 12:52:20,907 - __main__ - INFO - Game 952 started
+2025-04-22 12:52:21,179 - __main__ - INFO - Game 952 ended: Total reward = -9.79999999999976, Steps = 259
+2025-04-22 12:52:21,182 - __main__ - INFO - Game 954 started
+2025-04-22 12:52:21,576 - __main__ - INFO - Game 954 ended: Total reward = -24.599999999999923, Steps = 414
+2025-04-22 12:52:21,579 - __main__ - INFO - Game 956 started
+2025-04-22 12:52:22,010 - __main__ - INFO - Game 956 ended: Total reward = -3.7999999999997804, Steps = 430
+2025-04-22 12:52:22,013 - __main__ - INFO - Game 958 started
+2025-04-22 12:52:22,444 - __main__ - INFO - Game 958 ended: Total reward = -39.399999999999594, Steps = 435
+2025-04-22 12:52:22,447 - __main__ - INFO - Game 960 started
+2025-04-22 12:52:22,824 - __main__ - INFO - Game 960 ended: Total reward = 9.40000000000034, Steps = 395
+2025-04-22 12:52:22,828 - __main__ - INFO - Game 962 started
+2025-04-22 12:52:23,070 - __main__ - INFO - Game 962 ended: Total reward = 70.20000000000019, Steps = 226
+2025-04-22 12:52:23,073 - __main__ - INFO - Game 964 started
+2025-04-22 12:52:23,447 - __main__ - INFO - Game 964 ended: Total reward = -45.79999999999991, Steps = 384
+2025-04-22 12:52:23,450 - __main__ - INFO - Game 966 started
+2025-04-22 12:52:23,738 - __main__ - INFO - Game 966 ended: Total reward = 61.200000000000216, Steps = 286
+2025-04-22 12:52:23,741 - __main__ - INFO - Game 968 started
+2025-04-22 12:52:24,048 - __main__ - INFO - Game 968 ended: Total reward = 24.800000000000004, Steps = 278
+2025-04-22 12:52:24,051 - __main__ - INFO - Game 970 started
+2025-04-22 12:52:24,428 - __main__ - INFO - Game 970 ended: Total reward = 14.20000000000024, Steps = 374
+2025-04-22 12:52:24,431 - __main__ - INFO - Game 972 started
+2025-04-22 12:52:24,941 - __main__ - INFO - Game 972 ended: Total reward = 12.800000000000558, Steps = 494
+2025-04-22 12:52:24,945 - __main__ - INFO - Game 974 started
+2025-04-22 12:52:25,299 - __main__ - INFO - Game 974 ended: Total reward = 0.5999999999999885, Steps = 355
+2025-04-22 12:52:25,302 - __main__ - INFO - Game 976 started
+2025-04-22 12:52:25,656 - __main__ - INFO - Game 976 ended: Total reward = 14.800000000000257, Steps = 343
+2025-04-22 12:52:25,659 - __main__ - INFO - Game 978 started
+2025-04-22 12:52:25,959 - __main__ - INFO - Game 978 ended: Total reward = -41.39999999999975, Steps = 299
+2025-04-22 12:52:25,963 - __main__ - INFO - Game 980 started
+2025-04-22 12:52:26,357 - __main__ - INFO - Game 980 ended: Total reward = -16.199999999999612, Steps = 379
+2025-04-22 12:52:26,360 - __main__ - INFO - Game 982 started
+2025-04-22 12:52:26,699 - __main__ - INFO - Game 982 ended: Total reward = 2.984279490192421e-13, Steps = 330
+2025-04-22 12:52:26,702 - __main__ - INFO - Game 984 started
+2025-04-22 12:52:27,305 - __main__ - INFO - Game 984 ended: Total reward = -121.60000000000052, Steps = 684
+2025-04-22 12:52:27,308 - __main__ - INFO - Game 986 started
+2025-04-22 12:52:27,663 - __main__ - INFO - Game 986 ended: Total reward = -57.400000000000084, Steps = 359
+2025-04-22 12:52:27,666 - __main__ - INFO - Game 988 started
+2025-04-22 12:52:27,975 - __main__ - INFO - Game 988 ended: Total reward = -8.599999999999852, Steps = 301
+2025-04-22 12:52:27,977 - __main__ - INFO - Game 990 started
+2025-04-22 12:52:28,314 - __main__ - INFO - Game 990 ended: Total reward = -1.3999999999997215, Steps = 346
+2025-04-22 12:52:28,317 - __main__ - INFO - Game 992 started
+2025-04-22 12:52:28,727 - __main__ - INFO - Game 992 ended: Total reward = -22.39999999999958, Steps = 402
+2025-04-22 12:52:28,730 - __main__ - INFO - Game 994 started
+2025-04-22 12:52:29,095 - __main__ - INFO - Game 994 ended: Total reward = -34.39999999999961, Steps = 374
+2025-04-22 12:52:29,098 - __main__ - INFO - Game 996 started
+2025-04-22 12:52:29,420 - __main__ - INFO - Game 996 ended: Total reward = 2.9999999999999543, Steps = 305
+2025-04-22 12:52:29,423 - __main__ - INFO - Game 998 started
+2025-04-22 12:52:29,876 - __main__ - INFO - Game 998 ended: Total reward = -36.599999999999625, Steps = 484
+2025-04-22 12:52:29,878 - __main__ - INFO - Starting training phase with 0 updates
+2025-04-22 12:52:29,879 - __main__ - INFO - Training losses - Total: 0.0000, Policy: 0.0000, Value: 0.0000
+2025-04-22 12:52:29,879 - __main__ - INFO - Iteration 9 completed in 36.75 seconds
+2025-04-22 12:52:29,879 - __main__ - INFO - Memory buffer size: 0
+2025-04-22 12:52:29,880 - __main__ - INFO - Starting iteration 10/1000
+2025-04-22 12:52:29,901 - __main__ - INFO - Game 900 started
+2025-04-22 12:52:30,309 - __main__ - INFO - Game 900 ended: Total reward = -10.199999999999537, Steps = 445
+2025-04-22 12:52:30,312 - __main__ - INFO - Game 902 started
+2025-04-22 12:52:30,797 - __main__ - INFO - Game 902 ended: Total reward = -25.79999999999952, Steps = 429
+2025-04-22 12:52:30,800 - __main__ - INFO - Game 904 started
+2025-04-22 12:52:31,119 - __main__ - INFO - Game 904 ended: Total reward = 7.0000000000002665, Steps = 298
+2025-04-22 12:52:31,122 - __main__ - INFO - Game 906 started

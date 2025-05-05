@@ -1,0 +1,122 @@
+# Bảng Ánh Xạ Hành Động Trong Splendor
+# Tài liệu này mô tả tất cả các hành động có thể thực hiện trong game và số thứ tự tương ứng
+
+## Lấy Token (0-31)
+# Lấy 1 Token (0-4)
+0: Lấy 1 token Trắng
+1: Lấy 1 token Xanh dương
+2: Lấy 1 token Xanh lá
+3: Lấy 1 token Đỏ
+4: Lấy 1 token Đen
+
+# Lấy 2 Token Cùng Màu (5-9)
+5: Lấy 2 token Trắng
+6: Lấy 2 token Xanh dương
+7: Lấy 2 token Xanh lá
+8: Lấy 2 token Đỏ
+9: Lấy 2 token Đen
+
+# Lấy 3 Token Khác Màu (10-31)
+10: Lấy 1 Trắng + 1 Xanh dương + 1 Xanh lá
+11: Lấy 1 Trắng + 1 Xanh dương + 1 Đỏ
+12: Lấy 1 Trắng + 1 Xanh dương + 1 Đen
+13: Lấy 1 Trắng + 1 Xanh lá + 1 Đỏ
+14: Lấy 1 Trắng + 1 Xanh lá + 1 Đen
+15: Lấy 1 Trắng + 1 Đỏ + 1 Đen
+16: Lấy 1 Xanh dương + 1 Xanh lá + 1 Đỏ
+17: Lấy 1 Xanh dương + 1 Xanh lá + 1 Đen
+18: Lấy 1 Xanh dương + 1 Đỏ + 1 Đen
+19: Lấy 1 Xanh lá + 1 Đỏ + 1 Đen
+
+## Mua Thẻ (32-43)
+# Thẻ Cấp 1 (32-35)
+32: Mua thẻ cấp 1 thứ 1
+33: Mua thẻ cấp 1 thứ 2
+34: Mua thẻ cấp 1 thứ 3
+35: Mua thẻ cấp 1 thứ 4
+
+# Thẻ Cấp 2 (36-39)
+36: Mua thẻ cấp 2 thứ 1
+37: Mua thẻ cấp 2 thứ 2
+38: Mua thẻ cấp 2 thứ 3
+39: Mua thẻ cấp 2 thứ 4
+
+# Thẻ Cấp 3 (40-43)
+40: Mua thẻ cấp 3 thứ 1
+41: Mua thẻ cấp 3 thứ 2
+42: Mua thẻ cấp 3 thứ 3
+43: Mua thẻ cấp 3 thứ 4
+
+## Đặt Trước Thẻ (44-55)
+# Đặt Trước Thẻ Cấp 1 (44-47)
+44: Đặt trước thẻ cấp 1 thứ 1
+45: Đặt trước thẻ cấp 1 thứ 2
+46: Đặt trước thẻ cấp 1 thứ 3
+47: Đặt trước thẻ cấp 1 thứ 4
+
+# Đặt Trước Thẻ Cấp 2 (48-51)
+48: Đặt trước thẻ cấp 2 thứ 1
+49: Đặt trước thẻ cấp 2 thứ 2
+50: Đặt trước thẻ cấp 2 thứ 3
+51: Đặt trước thẻ cấp 2 thứ 4
+
+# Đặt Trước Thẻ Cấp 3 (52-55)
+52: Đặt trước thẻ cấp 3 thứ 1
+53: Đặt trước thẻ cấp 3 thứ 2
+54: Đặt trước thẻ cấp 3 thứ 3
+55: Đặt trước thẻ cấp 3 thứ 4
+
+## Mua Thẻ Đã Đặt Trước (56-58)
+56: Mua thẻ đã đặt trước thứ 1
+57: Mua thẻ đã đặt trước thứ 2
+58: Mua thẻ đã đặt trước thứ 3
+
+## Trả Token (59-89)
+# Trả 1 Token (59-63)
+59: Trả 1 token Trắng
+60: Trả 1 token Xanh dương
+61: Trả 1 token Xanh lá
+62: Trả 1 token Đỏ
+63: Trả 1 token Đen
+
+# Trả 2 Token Cùng Màu (64-68)
+64: Trả 2 token Trắng
+65: Trả 2 token Xanh dương
+66: Trả 2 token Xanh lá
+67: Trả 2 token Đỏ
+68: Trả 2 token Đen
+
+# Trả 3 Token Khác Màu (69-89)
+69: Trả 1 Trắng + 1 Xanh dương + 1 Xanh lá
+70: Trả 1 Trắng + 1 Xanh dương + 1 Đỏ
+71: Trả 1 Trắng + 1 Xanh dương + 1 Đen
+72: Trả 1 Trắng + 1 Xanh lá + 1 Đỏ
+73: Trả 1 Trắng + 1 Xanh lá + 1 Đen
+74: Trả 1 Trắng + 1 Đỏ + 1 Đen
+75: Trả 1 Xanh dương + 1 Xanh lá + 1 Đỏ
+76: Trả 1 Xanh dương + 1 Xanh lá + 1 Đen
+77: Trả 1 Xanh dương + 1 Đỏ + 1 Đen
+78: Trả 1 Xanh lá + 1 Đỏ + 1 Đen
+
+## Bỏ Lượt
+90: Bỏ lượt (khi không có hành động hợp lệ)
+
+## Ghi Chú:
+1. Số thứ tự hành động phụ thuộc vào:
+   - Trạng thái game hiện tại
+   - Số lượng token có sẵn
+   - Số lượng thẻ đã đặt trước
+   - Tài nguyên hiện có của người chơi
+
+2. Một số hành động có thể không khả dụng trong một số trạng thái:
+   - Không thể lấy token nếu không còn token trong bể
+   - Không thể mua thẻ nếu không đủ tài nguyên
+   - Không thể đặt trước thẻ nếu đã có 3 thẻ đặt trước
+   - Không thể lấy thẻ quý tộc nếu không đáp ứng yêu cầu
+   - Không thể có quá 10 token trong tay
+
+3. Tổng số hành động có thể thay đổi tùy thuộc vào:
+   - Số lượng tổ hợp token có thể lấy
+   - Số lượng thẻ còn lại trong mỗi cấp
+   - Số lượng thẻ đã đặt trước
+   - Số lượng tổ hợp token cần trả 

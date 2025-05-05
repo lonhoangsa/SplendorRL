@@ -1,0 +1,6 @@
+2025-05-02 02:38:02,141 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-05-02 02:38:04,490 - __main__ - INFO - Using device: cuda
+2025-05-02 02:38:04,514 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-05-02 02:38:04,515 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-05-02 02:38:11,130 - __main__ - INFO - Successfully loaded model candidate
+2025-05-02 02:38:11,149 - __main__ - INFO - Starting evaluation: 10 games with player types: ['candidate', 'bot', 'bot', 'bot']

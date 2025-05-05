@@ -1,0 +1,8 @@
+2025-04-25 15:22:33,184 - INFO - Initializing AlphaZero trainer
+2025-04-25 15:22:33,409 - INFO - Using device: cuda
+2025-04-25 15:22:34,732 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-25 15:22:34,733 - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=256, replay_size=20000
+2025-04-25 15:22:34,734 - INFO - Starting AlphaZero training for 50 iterations
+2025-04-25 15:22:34,734 - INFO - Starting iteration 1/50
+2025-04-25 15:22:34,734 - INFO - Starting self-play phase
+2025-04-25 15:22:34,747 - INFO - Starting game 1/50

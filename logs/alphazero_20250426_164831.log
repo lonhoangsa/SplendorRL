@@ -1,0 +1,18 @@
+2025-04-26 16:48:31,636 - __main__ - INFO - Initializing AlphaZero trainer
+2025-04-26 16:48:31,637 - __main__ - INFO - Debug mode: False
+2025-04-26 16:48:31,904 - __main__ - INFO - Using device: cuda
+2025-04-26 16:48:33,219 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-26 16:48:33,220 - __main__ - INFO - Training parameters: lr=0.001, weight_decay=0.0001, batch_size=2048, replay_size=20000, num_simulations=50
+2025-04-26 16:48:33,222 - __main__ - INFO - Starting AlphaZero training for 1 iterations
+2025-04-26 16:48:33,222 - __main__ - INFO - Starting iteration 1/1
+2025-04-26 16:48:33,222 - __main__ - INFO - Starting self-play phase
+2025-04-26 16:48:33,237 - __main__ - INFO - Starting game 1/4
+2025-04-26 16:52:09,080 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 16:52:09,082 - __main__ - INFO - Game 1 completed in 1000 steps. Scores: [14, 8, 13, 14], Winners: [0 3]
+2025-04-26 16:52:09,099 - __main__ - INFO - Starting game 2/4
+2025-04-26 16:55:42,197 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 16:55:42,199 - __main__ - INFO - Game 2 completed in 1000 steps. Scores: [14, 13, 12, 13], Winners: [0]
+2025-04-26 16:55:42,216 - __main__ - INFO - Starting game 3/4
+2025-04-26 16:57:48,725 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-04-26 16:57:48,727 - __main__ - INFO - Game 3 completed in 533 steps. Scores: [14, 20, 13, 14], Winners: [1]
+2025-04-26 16:57:48,741 - __main__ - INFO - Starting game 4/4

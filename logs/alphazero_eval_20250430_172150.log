@@ -1,0 +1,72 @@
+2025-04-30 17:21:50,039 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 17:21:50,259 - __main__ - INFO - Using device: cuda
+2025-04-30 17:21:50,290 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 17:21:50,291 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 17:21:52,525 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 17:21:52,530 - __main__ - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:21:52,548 - __main__ - DEBUG - Starting game with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:21:52,549 - __main__ - INFO - 
+==================================================
+2025-04-30 17:21:52,551 - __main__ - INFO - Step 1 - Player 0's turn (candidate)
+2025-04-30 17:21:52,551 - __main__ - INFO - ==================================================
+2025-04-30 17:21:52,551 - __main__ - INFO - 
+Available Tokens:
+2025-04-30 17:21:52,551 - __main__ - INFO - white: 7
+2025-04-30 17:21:52,552 - __main__ - INFO - blue: 7
+2025-04-30 17:21:52,552 - __main__ - INFO - green: 7
+2025-04-30 17:21:52,552 - __main__ - INFO - red: 7
+2025-04-30 17:21:52,552 - __main__ - INFO - black: 7
+2025-04-30 17:21:52,553 - __main__ - INFO - gold: 5
+2025-04-30 17:21:52,553 - __main__ - INFO - 
+Cards on Table:
+2025-04-30 17:21:52,553 - __main__ - INFO - 
+Tier 1 cards:
+2025-04-30 17:21:52,554 - __main__ - INFO - Card 0: Cost [0 2 2 0 1], Points 1, Color 1
+2025-04-30 17:21:52,554 - __main__ - INFO - Card 1: Cost [0 2 0 3 1], Points 1, Color 1
+2025-04-30 17:21:52,554 - __main__ - INFO - Card 2: Cost [0 3 3 0 1], Points 1, Color 0
+2025-04-30 17:21:52,554 - __main__ - INFO - Card 3: Cost [0 4 2 0 0], Points 1, Color 0
+2025-04-30 17:21:52,555 - __main__ - INFO - 
+Tier 2 cards:
+2025-04-30 17:21:52,555 - __main__ - INFO - Card 0: Cost [2 3 0 5 3], Points 2, Color 0
+2025-04-30 17:21:52,555 - __main__ - INFO - Card 1: Cost [2 5 0 3 0], Points 2, Color 5
+2025-04-30 17:21:52,556 - __main__ - INFO - Card 2: Cost [3 4 0 0 0], Points 2, Color 6
+2025-04-30 17:21:52,556 - __main__ - INFO - Card 3: Cost [2 1 5 0 0], Points 2, Color 0
+2025-04-30 17:21:52,557 - __main__ - INFO - 
+Tier 3 cards:
+2025-04-30 17:21:52,557 - __main__ - INFO - Card 0: Cost [3 1 0 5 3], Points 3, Color 3
+2025-04-30 17:21:52,557 - __main__ - INFO - Card 1: Cost [5 5 7 0 0], Points 3, Color 0
+2025-04-30 17:21:52,557 - __main__ - INFO - Card 2: Cost [4 5 6 0 3], Points 3, Color 0
+2025-04-30 17:21:52,558 - __main__ - INFO - Card 3: Cost [3 4 5 3 3], Points 3, Color 0
+2025-04-30 17:21:52,558 - __main__ - INFO - 
+Available Nobles:
+2025-04-30 17:21:52,558 - __main__ - INFO - No nobles available
+2025-04-30 17:21:52,558 - __main__ - INFO - 
+Players' States:
+2025-04-30 17:21:52,558 - __main__ - INFO - 
+Player 0 (candidate):
+2025-04-30 17:21:52,559 - __main__ - INFO - Score: 0
+2025-04-30 17:21:52,559 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 17:21:52,559 - __main__ - INFO - Cards:
+2025-04-30 17:21:52,559 - __main__ - INFO - Nobles:
+2025-04-30 17:21:52,559 - __main__ - INFO - No nobles
+2025-04-30 17:21:52,559 - __main__ - INFO - 
+Player 1 (random):
+2025-04-30 17:21:52,559 - __main__ - INFO - Score: 0
+2025-04-30 17:21:52,559 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 17:21:52,560 - __main__ - INFO - Cards:
+2025-04-30 17:21:52,560 - __main__ - INFO - Nobles:
+2025-04-30 17:21:52,560 - __main__ - INFO - No nobles
+2025-04-30 17:21:52,560 - __main__ - INFO - 
+Player 2 (random):
+2025-04-30 17:21:52,560 - __main__ - INFO - Score: 0
+2025-04-30 17:21:52,560 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 17:21:52,561 - __main__ - INFO - Cards:
+2025-04-30 17:21:52,561 - __main__ - INFO - Nobles:
+2025-04-30 17:21:52,561 - __main__ - INFO - No nobles
+2025-04-30 17:21:52,561 - __main__ - INFO - 
+Player 3 (random):
+2025-04-30 17:21:52,561 - __main__ - INFO - Score: 0
+2025-04-30 17:21:52,562 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 17:21:52,562 - __main__ - INFO - Cards:
+2025-04-30 17:21:52,562 - __main__ - INFO - Nobles:
+2025-04-30 17:21:52,563 - __main__ - INFO - No nobles

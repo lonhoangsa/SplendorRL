@@ -1,0 +1,147 @@
+2025-04-30 18:15:33,001 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 18:15:33,220 - __main__ - INFO - Using device: cuda
+2025-04-30 18:15:33,232 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 18:15:33,241 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 18:15:34,517 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 18:15:34,522 - __main__ - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 18:15:34,537 - __main__ - DEBUG - Starting game with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 18:15:34,538 - __main__ - INFO - 
+==================================================
+2025-04-30 18:15:34,539 - __main__ - INFO - Step 1 - Player 0's turn (candidate)
+2025-04-30 18:15:34,539 - __main__ - INFO - ==================================================
+2025-04-30 18:15:34,539 - __main__ - INFO - 
+Available Tokens:
+2025-04-30 18:15:34,539 - __main__ - INFO - white: 7
+2025-04-30 18:15:34,540 - __main__ - INFO - blue: 7
+2025-04-30 18:15:34,540 - __main__ - INFO - green: 7
+2025-04-30 18:15:34,540 - __main__ - INFO - red: 7
+2025-04-30 18:15:34,540 - __main__ - INFO - black: 7
+2025-04-30 18:15:34,540 - __main__ - INFO - gold: 5
+2025-04-30 18:15:34,540 - __main__ - INFO - 
+Cards on Table:
+2025-04-30 18:15:34,541 - __main__ - INFO - 
+Tier 1 cards:
+2025-04-30 18:15:34,541 - __main__ - INFO - Card 0: Cost [0 5 1 2 1], Points 1, Color 1
+2025-04-30 18:15:34,541 - __main__ - INFO - Card 1: Cost [0 5 1 0 2], Points 1, Color 0
+2025-04-30 18:15:34,541 - __main__ - INFO - Card 2: Cost [1 4 0 0 4], Points 1, Color 0
+2025-04-30 18:15:34,541 - __main__ - INFO - Card 3: Cost [0 3 3 0 1], Points 1, Color 0
+2025-04-30 18:15:34,542 - __main__ - INFO - 
+Tier 2 cards:
+2025-04-30 18:15:34,542 - __main__ - INFO - Card 0: Cost [3 1 6 0 0], Points 2, Color 0
+2025-04-30 18:15:34,542 - __main__ - INFO - Card 1: Cost [3 3 0 0 6], Points 2, Color 0
+2025-04-30 18:15:34,542 - __main__ - INFO - Card 2: Cost [3 2 0 6 0], Points 2, Color 0
+2025-04-30 18:15:34,543 - __main__ - INFO - Card 3: Cost [2 2 0 0 0], Points 2, Color 2
+2025-04-30 18:15:34,543 - __main__ - INFO - 
+Tier 3 cards:
+2025-04-30 18:15:34,544 - __main__ - INFO - Card 0: Cost [4 3 0 6 3], Points 3, Color 3
+2025-04-30 18:15:34,544 - __main__ - INFO - Card 1: Cost [3 4 5 3 3], Points 3, Color 0
+2025-04-30 18:15:34,544 - __main__ - INFO - Card 2: Cost [4 2 0 0 0], Points 3, Color 7
+2025-04-30 18:15:34,544 - __main__ - INFO - Card 3: Cost [4 1 0 0 7], Points 3, Color 0
+2025-04-30 18:15:34,545 - __main__ - INFO - 
+Available Nobles:
+2025-04-30 18:15:34,545 - __main__ - INFO - No nobles available
+2025-04-30 18:15:34,545 - __main__ - INFO - 
+Players' States:
+2025-04-30 18:15:34,545 - __main__ - INFO - 
+Player 0 (candidate):
+2025-04-30 18:15:34,545 - __main__ - INFO - Score: 0
+2025-04-30 18:15:34,546 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:15:34,546 - __main__ - INFO - Cards:
+2025-04-30 18:15:34,546 - __main__ - INFO - Nobles:
+2025-04-30 18:15:34,546 - __main__ - INFO - No nobles
+2025-04-30 18:15:34,546 - __main__ - INFO - 
+Player 1 (random):
+2025-04-30 18:15:34,546 - __main__ - INFO - Score: 0
+2025-04-30 18:15:34,547 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:15:34,547 - __main__ - INFO - Cards:
+2025-04-30 18:15:34,547 - __main__ - INFO - Nobles:
+2025-04-30 18:15:34,548 - __main__ - INFO - No nobles
+2025-04-30 18:15:34,548 - __main__ - INFO - 
+Player 2 (random):
+2025-04-30 18:15:34,548 - __main__ - INFO - Score: 0
+2025-04-30 18:15:34,548 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:15:34,549 - __main__ - INFO - Cards:
+2025-04-30 18:15:34,549 - __main__ - INFO - Nobles:
+2025-04-30 18:15:34,549 - __main__ - INFO - No nobles
+2025-04-30 18:15:34,549 - __main__ - INFO - 
+Player 3 (random):
+2025-04-30 18:15:34,550 - __main__ - INFO - Score: 0
+2025-04-30 18:15:34,550 - __main__ - INFO - Tokens: {'green': 0, 'white': 0, 'blue': 0, 'black': 0, 'red': 0, 'gold': 0}
+2025-04-30 18:15:34,550 - __main__ - INFO - Cards:
+2025-04-30 18:15:34,550 - __main__ - INFO - Nobles:
+2025-04-30 18:15:34,551 - __main__ - INFO - No nobles
+2025-04-30 18:15:34,551 - __main__ - INFO - 
+Valid Actions:
+2025-04-30 18:15:34,552 - __main__ - INFO - Take tokens: 0
+2025-04-30 18:15:34,552 - __main__ - INFO - Take tokens: 1
+2025-04-30 18:15:34,552 - __main__ - INFO - Take tokens: 2
+2025-04-30 18:15:34,552 - __main__ - INFO - Take tokens: 3
+2025-04-30 18:15:34,552 - __main__ - INFO - Take tokens: 4
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 5
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 6
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 7
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 8
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 9
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 10
+2025-04-30 18:15:34,553 - __main__ - INFO - Take tokens: 11
+2025-04-30 18:15:34,554 - __main__ - INFO - Take tokens: 12
+2025-04-30 18:15:34,554 - __main__ - INFO - Take tokens: 13
+2025-04-30 18:15:34,554 - __main__ - INFO - Take tokens: 14
+2025-04-30 18:15:34,554 - __main__ - INFO - Take tokens: 15
+2025-04-30 18:15:34,554 - __main__ - INFO - Take tokens: 16
+2025-04-30 18:15:34,555 - __main__ - INFO - Take tokens: 17
+2025-04-30 18:15:34,555 - __main__ - INFO - Take tokens: 18
+2025-04-30 18:15:34,555 - __main__ - INFO - Take tokens: 19
+2025-04-30 18:15:34,555 - __main__ - INFO - Take tokens: 20
+2025-04-30 18:15:34,555 - __main__ - INFO - Take tokens: 21
+2025-04-30 18:15:34,556 - __main__ - INFO - Take tokens: 22
+2025-04-30 18:15:34,556 - __main__ - INFO - Take tokens: 23
+2025-04-30 18:15:34,556 - __main__ - INFO - Take tokens: 24
+2025-04-30 18:15:34,556 - __main__ - INFO - Take tokens: 25
+2025-04-30 18:15:34,556 - __main__ - INFO - Take tokens: 26
+2025-04-30 18:15:34,557 - __main__ - INFO - Take tokens: 27
+2025-04-30 18:15:34,558 - __main__ - INFO - Take tokens: 28
+2025-04-30 18:15:34,559 - __main__ - INFO - Take tokens: 29
+2025-04-30 18:15:34,559 - __main__ - INFO - Take tokens: 42
+2025-04-30 18:15:34,559 - __main__ - INFO - Take tokens: 43
+2025-04-30 18:15:34,559 - __main__ - INFO - Take tokens: 44
+2025-04-30 18:15:34,560 - __main__ - INFO - Take tokens: 45
+2025-04-30 18:15:34,560 - __main__ - INFO - Take tokens: 46
+2025-04-30 18:15:34,560 - __main__ - INFO - Take tokens: 47
+2025-04-30 18:15:34,561 - __main__ - INFO - Take tokens: 48
+2025-04-30 18:15:34,561 - __main__ - INFO - Take tokens: 49
+2025-04-30 18:15:34,561 - __main__ - INFO - Take tokens: 50
+2025-04-30 18:15:34,562 - __main__ - INFO - Take tokens: 51
+2025-04-30 18:15:34,562 - __main__ - INFO - Take tokens: 52
+2025-04-30 18:15:34,563 - __main__ - INFO - Take tokens: 53
+2025-04-30 18:15:35,779 - __main__ - INFO - 
+Agent action chosen: 26
+2025-04-30 18:15:35,780 - __main__ - INFO - Policy distribution: [9.51474160e-02 2.00641677e-02 4.80843224e-02 7.32331027e-05
+ 1.49685964e-02 1.68832892e-03 8.16980144e-04 1.79188646e-04
+ 4.47873201e-04 6.49061874e-02 4.02048696e-04 2.89985966e-02
+ 2.76131468e-04 2.71553230e-02 3.61572728e-02 4.21531536e-02
+ 4.60575670e-02 2.00631842e-02 1.29940629e-03 6.83957478e-04
+ 5.82340697e-04 9.76357888e-03 3.74265611e-02 5.95744420e-03
+ 6.68342749e-04 1.42430619e-03 4.23125893e-01 2.17256672e-03
+ 1.60609943e-05 6.85339719e-02 1.01808337e-05 5.77517749e-05
+ 7.85621087e-05 2.90620619e-06 3.71038841e-05 2.34033814e-05
+ 3.12341435e-05 1.18037977e-04 6.02736691e-06 1.37101470e-05
+ 6.25519851e-06 1.34694938e-05 6.79850700e-06 2.17693760e-05
+ 1.54343707e-05 1.19463593e-05 1.46385685e-06 7.68513110e-06
+ 1.13232245e-05 2.15856016e-06 7.67140136e-06 2.98455984e-06
+ 2.43971840e-06 2.15094860e-06 1.26906880e-05 6.74889543e-06
+ 1.86339503e-06 2.01090879e-05 6.26523433e-06 1.24351965e-04
+ 9.52076334e-06 6.57877126e-06 8.83095765e-08 6.47847855e-07
+ 1.29694740e-06 4.05918485e-07 2.09901003e-07 4.12061524e-07
+ 1.51205626e-07 5.13326256e-07 2.05648166e-06 3.48335902e-06
+ 6.34596745e-07 1.46098046e-07 3.30626477e-07 9.56612780e-07
+ 7.17670787e-07 4.78876245e-07 2.06871761e-07 8.00701230e-07
+ 5.44942509e-07 5.47575155e-06 4.10853318e-07 4.78284008e-08
+ 9.70366955e-07 2.46932723e-06 1.98332395e-06 4.13016181e-08]
+2025-04-30 18:15:35,781 - __main__ - INFO - Predicted value: -0.8895039558410645
+2025-04-30 18:15:35,783 - __main__ - INFO - 
+==================================================
+2025-04-30 18:15:35,783 - __main__ - INFO - Step 2 - Player 1's turn (random)
+2025-04-30 18:15:35,783 - __main__ - INFO - ==================================================
+2025-04-30 18:15:35,783 - __main__ - INFO - 
+Available Tokens:

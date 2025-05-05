@@ -1,0 +1,4 @@
+2025-04-22 12:09:35,701 - __main__ - INFO - Starting AlphaZero training for SplendorLightZeroEnv
+2025-04-22 12:09:38,004 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-04-22 12:09:38,004 - __main__ - INFO - Training parameters: num_self_play_games=100, num_simulations=800
+2025-04-22 12:09:38,006 - __main__ - INFO - Starting iteration 1/1000

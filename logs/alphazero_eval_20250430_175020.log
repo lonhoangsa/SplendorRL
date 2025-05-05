@@ -1,0 +1,13 @@
+2025-04-30 17:50:20,019 - __main__ - INFO - Initializing AlphaZero evaluator
+2025-04-30 17:50:20,226 - __main__ - INFO - Using device: cuda
+2025-04-30 17:50:20,237 - __main__ - INFO - State dimension: 162, Action dimension: 88
+2025-04-30 17:50:20,237 - __main__ - INFO - Loading model candidate from models/alphazero_final.pth
+2025-04-30 17:50:21,500 - __main__ - INFO - Successfully loaded model candidate
+2025-04-30 17:50:21,505 - __main__ - INFO - Starting evaluation: 1 games with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:50:21,521 - __main__ - DEBUG - Starting game with player types: ['candidate', 'random', 'random', 'random']
+2025-04-30 17:50:21,521 - __main__ - INFO - 
+==================================================
+2025-04-30 17:50:21,522 - __main__ - INFO - Step 1 - Player 0's turn (candidate)
+2025-04-30 17:50:21,523 - __main__ - INFO - ==================================================
+2025-04-30 17:50:21,523 - __main__ - INFO - 
+Available Tokens:
