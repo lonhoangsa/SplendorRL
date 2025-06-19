@@ -60,7 +60,8 @@ class AlphaZeroEvaluator:
             'avg_steps': 0,
             'game_lengths': [],
             'player_scores': [[] for _ in range(4)],  # Scores for all 4 players
-            'player_ranks': [[] for _ in range(4)]    # Rankings for all 4 players
+            'player_ranks': [[] for _ in range(4)],    # Rankings for all 4 players
+            'player_steps': [[] for _ in range(4)]  # Track steps for each player
         }
         
         # Initialize player agents dictionary
@@ -129,7 +130,8 @@ class AlphaZeroEvaluator:
             'avg_steps': 0,
             'game_lengths': [],
             'player_scores': [[] for _ in range(4)],
-            'player_ranks': [[] for _ in range(4)]
+            'player_ranks': [[] for _ in range(4)],
+            'player_steps': [[] for _ in range(4)]  # Track steps for each player
         }
         
         total_steps = 0
@@ -138,7 +140,7 @@ class AlphaZeroEvaluator:
         # Use tqdm for progress bar
         for game_idx in tqdm(range(num_games), desc="Evaluating"):
             # Play one game and record results
-            scores, ranks, steps = self._play_game(player_types)
+            scores, ranks, steps, player_steps = self._play_game(player_types)
             
             # Update statistics
             if ranks[candidate_idx] == 1:  # Candidate won (rank 1)
@@ -151,10 +153,11 @@ class AlphaZeroEvaluator:
             
             self.results['game_lengths'].append(steps)
             
-            # Record scores and ranks for all players
+            # Record scores, ranks and steps for all players
             for i in range(4):
                 self.results['player_scores'][i].append(scores[i])
                 self.results['player_ranks'][i].append(ranks[i])
+                self.results['player_steps'][i].append(player_steps[i])
             
             # Log progress periodically
             if (game_idx + 1) % 10 == 0:
@@ -202,9 +205,8 @@ class AlphaZeroEvaluator:
                     state['observation']['nobles'].flatten()
                 ])
                 # Get best action from agent
-                action, _, _ = agent.get_best_action(obs)
+                action = agent.get_best_action(obs)
             
-            # print(f"current_player: {current_player}, Action: {action}")
             # Take the action
             next_state = env.step(action)
             done = next_state.done
@@ -217,6 +219,7 @@ class AlphaZeroEvaluator:
         
         # Get final scores and calculate ranks
         scores = [p['score'] for p in env.players]
+        player_steps = next_state.info['player_steps']
         
         # Calculate ranks (1 = highest score, 4 = lowest score)
         # Handle ties by giving the same rank
@@ -232,9 +235,9 @@ class AlphaZeroEvaluator:
             ranks[idx] = current_rank
             prev_score = scores[idx]
         
-        self.logger.debug(f"Game ended after {steps} steps. Scores: {scores}, Ranks: {ranks}")
+        self.logger.debug(f"Game ended after {steps} steps. Scores: {scores}, Ranks: {ranks}, Player Steps: {player_steps}")
         
-        return scores, ranks, steps
+        return scores, ranks, steps, player_steps
     
     def _log_results(self, player_types):
         """Log the evaluation results"""
@@ -259,7 +262,11 @@ class AlphaZeroEvaluator:
         for i, p_type in enumerate(player_types):
             avg_score = sum(self.results['player_scores'][i]) / total_games
             avg_rank = sum(self.results['player_ranks'][i]) / total_games
-            self.logger.info(f"Player {i} ({p_type}): Avg score: {avg_score:.2f}, Avg rank: {avg_rank:.2f}")
+            avg_steps = sum(self.results['player_steps'][i]) / total_games if 'player_steps' in self.results else 0
+            self.logger.info(f"Player {i} ({p_type}):")
+            self.logger.info(f"- Avg score: {avg_score:.2f}")
+            self.logger.info(f"- Avg rank: {avg_rank:.2f}")
+            self.logger.info(f"- Avg steps: {avg_steps:.2f}")
             
         self.logger.info("=" * 50)
     
@@ -387,7 +394,7 @@ def main():
     parser.add_argument('--player3_path', type=str, default=None, help='Path to player 3 model (if type is model)')
     parser.add_argument('--player4_type', type=str, default='bot', choices=['random', 'bot', 'model'], help='Type of player 4')
     parser.add_argument('--player4_path', type=str, default=None, help='Path to player 4 model (if type is model)')
-    parser.add_argument('--num_games', type=int, default=50, help='Number of evaluation games to play')
+    parser.add_argument('--num_games', type=int, default=100, help='Number of evaluation games to play')
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
     parser.add_argument('--plot', action='store_true', help='Plot evaluation results')
     args = parser.parse_args()
@@ -440,4 +447,6 @@ def main():
         evaluator.plot_results(player_types, save_path=plot_path)
 
 if __name__ == '__main__':
-    main() 
+    main()
+ 
+# python3 -m train.evaluate_alphazero --candidate_path models/alphazero_final.pth --player2_type model --player2_path models/alphazero_final.pth --player3_type model --player3_path models/alphazero_final.pth --player4_type model --player4_path models/alphazero_final.pth

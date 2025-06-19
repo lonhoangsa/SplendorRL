@@ -7,15 +7,15 @@ import numpy as np
 from train.DuelingDQN.DuelingDQN import DuelingDQN
 
 class DuelingDQNAgent:
-    def __init__(self, state_dim, action_dim, device='cpu', logger=None):
+    def __init__(self, state_dim, action_dim, device=None, logger=None):
         self.state_dim = state_dim
         self.action_dim = action_dim
-        self.device = device
+        self.device = device if device is not None else torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.logger = logger
 
         # Use the Dueling DQN network
-        self.q_network = DuelingDQN(state_dim, action_dim).to(device)
-        self.target_network = DuelingDQN(state_dim, action_dim).to(device)
+        self.q_network = DuelingDQN(state_dim, action_dim, device=self.device)
+        self.target_network = DuelingDQN(state_dim, action_dim, device=self.device)
         self.target_network.load_state_dict(self.q_network.state_dict())
         self.optimizer = optim.Adam(self.q_network.parameters(), lr=0.001)
         self.memory = deque(maxlen=100000)
@@ -23,18 +23,21 @@ class DuelingDQNAgent:
         self.gamma = 0.99
         self.epsilon = 1.0
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.995
+        self.epsilon_decay = 0.98
         self.target_update_freq = 100
         self.steps = 0
+        
+        if self.logger is not None:
+            self.logger.info(f"Initialized DuelingDQNAgent on device: {self.device}")
 
     def act(self, state, action_mask):
         if np.random.random() < self.epsilon:
             legal_actions = np.where(action_mask)[0]
             return np.random.choice(legal_actions)
         
-        # Add batch dimension
-        state_tensor = torch.FloatTensor(state).unsqueeze(0).to(self.device)
-        action_mask_tensor = torch.FloatTensor(action_mask).unsqueeze(0).to(self.device)
+        # Add batch dimension and move to device with non-blocking transfer
+        state_tensor = torch.FloatTensor(state).unsqueeze(0).to(self.device, non_blocking=True)
+        action_mask_tensor = torch.FloatTensor(action_mask).unsqueeze(0).to(self.device, non_blocking=True)
         
         self.q_network.eval()
         with torch.no_grad():
@@ -53,13 +56,14 @@ class DuelingDQNAgent:
         batch = random.sample(self.memory, self.batch_size)
         states, actions, rewards, next_states, dones, action_masks, next_action_masks = zip(*batch)
         
-        states = torch.FloatTensor(np.stack(states)).to(self.device)
-        actions = torch.LongTensor(actions).to(self.device)
-        rewards = torch.FloatTensor(rewards).to(self.device)
-        next_states = torch.FloatTensor(np.stack(next_states)).to(self.device)
-        dones = torch.FloatTensor(dones).to(self.device)
-        action_masks = torch.FloatTensor(np.stack(action_masks)).to(self.device)
-        next_action_masks = torch.FloatTensor(np.stack(next_action_masks)).to(self.device)
+        # Convert to tensors and move to device with non-blocking transfer
+        states = torch.FloatTensor(np.stack(states)).to(self.device, non_blocking=True)
+        actions = torch.LongTensor(actions).to(self.device, non_blocking=True)
+        rewards = torch.FloatTensor(rewards).to(self.device, non_blocking=True)
+        next_states = torch.FloatTensor(np.stack(next_states)).to(self.device, non_blocking=True)
+        dones = torch.FloatTensor(dones).to(self.device, non_blocking=True)
+        action_masks = torch.FloatTensor(np.stack(action_masks)).to(self.device, non_blocking=True)
+        next_action_masks = torch.FloatTensor(np.stack(next_action_masks)).to(self.device, non_blocking=True)
 
         # Current Q-value for selected actions
         q_values = self.q_network(states)
@@ -86,6 +90,10 @@ class DuelingDQNAgent:
         torch.nn.utils.clip_grad_value_(self.q_network.parameters(), 100)
         self.optimizer.step()
 
+        # Clear GPU cache after training
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
         self.steps += 1
         if self.steps % self.target_update_freq == 0:
             self.target_network.load_state_dict(self.q_network.state_dict())
@@ -107,16 +115,35 @@ class DuelingDQNAgent:
             best_action: The action with highest Q-value
             q_values: Q-values for all actions
         """
+        state_tensor = torch.FloatTensor(state).unsqueeze(0).to(self.device, non_blocking=True)
+        action_mask_tensor = torch.FloatTensor(action_mask).unsqueeze(0).to(self.device, non_blocking=True)
+        
         self.q_network.eval()
         with torch.no_grad():
-            state_tensor = torch.FloatTensor(state).unsqueeze(0).to(self.device)
             q_values = self.q_network(state_tensor)
-            q_values = q_values.squeeze(0).cpu().numpy()
+            # Mask illegal actions
+            q_values = q_values.masked_fill(action_mask_tensor == 0, float('-inf'))
+            return q_values.argmax(dim=1).item()
             
-            # If action mask is provided, mask illegal actions
-            if action_mask is not None:
-                q_values = np.where(action_mask, q_values, float('-inf'))
-            
-            best_action = np.argmax(q_values)
-            
-        return best_action, q_values
+    def save(self, path):
+        """Save the agent's network weights"""
+        torch.save({
+            'q_network_state_dict': self.q_network.state_dict(),
+            'target_network_state_dict': self.target_network.state_dict(),
+            'optimizer_state_dict': self.optimizer.state_dict(),
+            'steps': self.steps,
+            'epsilon': self.epsilon,
+            'device': str(self.device)
+        }, path)
+
+    def load(self, path):
+        """Load the agent's network weights"""
+        checkpoint = torch.load(path, map_location=self.device)
+        self.q_network.load_state_dict(checkpoint['q_network_state_dict'])
+        self.target_network.load_state_dict(checkpoint['target_network_state_dict'])
+        if 'optimizer_state_dict' in checkpoint:
+            self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        if 'steps' in checkpoint:
+            self.steps = checkpoint['steps']
+        if 'epsilon' in checkpoint:
+            self.epsilon = checkpoint['epsilon']            

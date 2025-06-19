@@ -35,6 +35,7 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
     wins = [0] * len(agents)
     total_scores = [[] for _ in range(len(agents))]
     winner_steps = []
+    all_player_steps = [[] for _ in range(len(agents))]  # Track steps for each player
 
     valid_episodes = 0
     while valid_episodes < num_episodes:
@@ -63,22 +64,13 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
             
             # Get action and value based on agent type
             if isinstance(agent, (DQNAgent, DuelingDQNAgent)):
-                action = agent.act(state, action_mask)
-                # Get Q-value for the chosen action
-                with torch.no_grad():
-                    state_tensor = torch.FloatTensor(state).unsqueeze(0).to(agent.device)
-                    q_values = agent.q_network(state_tensor)
-                    value = q_values[0, action].item()
+                action = agent.get_best_action(state, action_mask)
             else:  # AlphaZero agent
-                action, value, _ = agent.get_best_action(state)
-                # Convert numpy array to float if needed
-                if isinstance(value, np.ndarray):
-                    value = float(value[0])
+                action  = agent.get_best_action(state, env)
             
             # Log action and value
             logger.info(f"Round {round_count + 1}, Player {current_player + 1} ({model_names[current_player]}):")
             logger.info(f"Action: {action}")
-            logger.info(f"Value: {value:.4f}")
             
             next_state_dict = env.step(action)
             
@@ -95,11 +87,16 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
             done = next_state_dict.done
             
             # Update steps and round count
-            player_steps[current_player] += 1
+            # Only increment player steps if it's not a return token action
+            is_return_token = len(env.pick_tokens) + 24 + 3 <= action and action < len(env.pick_tokens) + 24 + 3 + len(env.pick_tokens)
+            if not is_return_token:
+                player_steps[current_player] += 1
+            
             if next_state_dict.obs['to_play'] == 0:  # New round starts
                 round_count += 1
-                logger.info(f"End of Round {round_count}")
-                logger.info(f"Current scores: {[p['score'] for p in env.players]}")
+                # logger.info(f"End of Round {round_count}")
+                # logger.info(f"Current scores: {[p['score'] for p in env.players]}")
+                # logger.info(f"Current player steps: {player_steps}")
             
             state_dict = next_state_dict.obs
             step_count += 1
@@ -117,22 +114,27 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
             wins[winner] += 1
             for i in range(len(agents)):
                 total_scores[i].append(final_scores[i])
+                all_player_steps[i].append(player_steps[i])
             
             logger.info(f"\nGame {valid_episodes+1} Results:")
             logger.info(f"Final Scores: {final_scores}")
-            logger.info(f"Winner Steps: {player_steps[winner]}")
+            logger.info(f"Player Steps: {player_steps}")
             logger.info(f"Winner: {model_names[winner]}")
             valid_episodes += 1
 
     avg_scores = [np.mean(s) for s in total_scores]
     avg_winner_steps = np.mean(winner_steps) if winner_steps else 0
+    avg_player_steps = [np.mean(steps) for steps in all_player_steps]
     
     logger.info(f"\nEvaluation completed:")
     for i, name in enumerate(model_names):
-        logger.info(f"{name}: Avg Score: {avg_scores[i]:.2f}, Wins: {wins[i]}")
+        logger.info(f"{name}:")
+        logger.info(f"- Avg Score: {avg_scores[i]:.2f}")
+        logger.info(f"- Wins: {wins[i]}")
+        logger.info(f"- Avg Steps: {avg_player_steps[i]:.2f}")
     logger.info(f"Average Winner Steps: {avg_winner_steps:.2f}")
     
-    return avg_scores, avg_winner_steps, wins
+    return avg_scores, avg_winner_steps, wins, avg_player_steps
 
 def compare_all_models():
     logger = setup_logging()
@@ -201,7 +203,7 @@ def compare_all_models():
     logger.info("\n=== Starting Model Comparison ===")
     logger.info("Player order: 1. AlphaZero, 2. DQN1, 3. DQN2, 4. DuelingDQN")
     
-    avg_scores, avg_winner_steps, wins = evaluate_models_against_each_other(
+    avg_scores, avg_winner_steps, wins, avg_player_steps = evaluate_models_against_each_other(
         env, agents, num_episodes, logger, model_names
     )
 
@@ -212,6 +214,7 @@ def compare_all_models():
         logger.info(f"{name}:")
         logger.info(f"- Average Score: {avg_scores[i]:.2f}")
         logger.info(f"- Wins: {wins[i]} ({win_rate:.2%})")
+        logger.info(f"- Average Steps: {avg_player_steps[i]:.2f}")
     
     logger.info(f"\nAverage Winner Steps: {avg_winner_steps:.2f}")
 

@@ -19,15 +19,20 @@ class MCTS:
         self.net = net
         self.num_sim = config['num_simulations']
         self.cpuct = config['cpuct']
-        self.max_depth = config.get('max_depth', 100)
+        self.max_depth = config.get('max_depth', 500)
         # Lưu thiết bị của model
         self.device = next(net.parameters()).device
         # Khởi tạo logger
         self.logger = logging.getLogger("AlphaZero.MCTS")
         self.debug_mode = config.get('debug_mode', False)
+        self.non_blocking = config.get('non_blocking', True)
+        
+        # Enable cuDNN benchmarking for faster inference
+        if torch.cuda.is_available():
+            torch.backends.cudnn.benchmark = True
+            torch.backends.cudnn.deterministic = False
 
     def run(self, env : SplendorLightZeroEnv):
-        # self.logger.debug(f"Starting MCTS search for player {env.current_player_index}")
         root = MCTSNode(prior=1.0)
         obs, mask = self._encode_env(env)
         
@@ -37,16 +42,16 @@ class MCTS:
         # Kiểm tra nếu không có hành động hợp lệ
         if legal_actions_count == 0:
             self.logger.warning("No legal actions available!")
-            # Trả về phân phối đều cho tất cả hành động
             pi = np.ones_like(mask) / len(mask)
             return pi
             
         # Lưu trạng thái train hiện tại
         was_training = self.net.training
-        self.net.eval()  # Chuyển sang chế độ eval để tránh lỗi BatchNorm với batch size 1
+        self.net.eval()
         try:
-            # Dự đoán prior probabilities từ mạng
+            # Dự đoán prior probabilities từ mạng với non-blocking transfer
             with torch.no_grad():
+                obs = obs.to(self.device, non_blocking=self.non_blocking)
                 P, v = self.net(obs.unsqueeze(0))
                 self.logger.debug(f"Initial value prediction: {v.item():.4f}")
                 
@@ -54,7 +59,6 @@ class MCTS:
             if P.sum() > 0:
                 P = P / P.sum()
             else:
-                # Nếu tất cả prior probability bằng 0, sử dụng phân phối đều cho các hành động hợp lệ
                 P = mask.astype(np.float32)
                 P = P / P.sum()
             
@@ -102,32 +106,24 @@ class MCTS:
             # Đảm bảo tổng xác suất bằng 1 sau khi chuẩn hóa
             if total_visits > 0:
                 pi = pi / total_visits
-                # Kiểm tra lỗi số học float
                 if abs(pi.sum() - 1.0) > 1e-9:
-                    # self.logger.warning(f"Pi sum is {pi.sum()}, renormalizing")
                     pi = pi / pi.sum()
             else:
-                # Nếu không có lần thăm nào, sử dụng phân phối đều trên các hành động hợp lệ
                 self.logger.warning("No visits recorded, using uniform distribution")
                 pi = mask.astype(np.float32)
                 pi = pi / pi.sum()
             
             # Kiểm tra cuối cùng để đảm bảo tổng bằng 1
             assert np.isclose(pi.sum(), 1.0), f"Pi sum is {pi.sum()}, not 1.0"
-                
-            # Log các hành động hàng đầu dựa trên số lần thăm
-            # if self.debug_mode:
-            #     top_actions = sorted(visit_counts.items(), key=lambda x: x[1], reverse=True)[:5]
-            #     self.logger.debug("Top actions (action, visit count, probability):")
-            #     for a, count in top_actions:
-            #         self.logger.debug(f"  Action {a}: visits={count}, prob={pi[a]:.4f}")
             
-            # self.logger.debug(f"MCTS search completed with {self.num_sim} simulations")
             return pi
         finally:
             # Khôi phục lại trạng thái train ban đầu
             if was_training:
                 self.net.train()
+            # Clear GPU cache
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
     
     def _select(self, env, node, path=None, depth=0):
         """
@@ -150,11 +146,13 @@ class MCTS:
             
         # Chọn hành động tốt nhất theo UCB
         best_score, best_act, best_child = -float('inf'), None, None
-        total_N = sum(child.N for child in node.children.values())
         
-        # Tính UCB cho mỗi hành động
+        # Tính tổng N^(1/4) cho tất cả các hành động con
+        sum_n_quarter = sum(child.N ** 0.25 for child in node.children.values())
+        
+        # Tính UCB cho mỗi hành động theo công thức: Q(s,a) + cP(s,a) * sum_b(N^(1/4)(s,b)) / (1 + N(s,a))^(1/2)
         for a, child in node.children.items():
-            u = self.cpuct * child.P * math.sqrt(total_N) / (1 + child.N)
+            u = self.cpuct * child.P * sum_n_quarter / ((1 + child.N) ** 0.5)
             score = child.Q + u
             if score > best_score:
                 best_score, best_act, best_child = score, a, child
@@ -173,23 +171,19 @@ class MCTS:
         """
         2. Expansion: Mở rộng node lá bằng cách tạo các node con
         """
-        # Nếu node đã có con, không cần mở rộng
         if node.children:
             return False
             
-        # Lấy observation và action mask
         obs, mask = self._encode_env(env)
         
-        # Đảm bảo mạng ở chế độ eval
         was_training = self.net.training
         self.net.eval()
         
         try:
-            # Dự đoán prior probabilities từ mạng
             with torch.no_grad():
+                obs = obs.to(self.device, non_blocking=self.non_blocking)
                 P, v = self.net(obs.unsqueeze(0))
                 
-            # Áp dụng action mask và chuẩn hóa
             P = P.squeeze(0).cpu().numpy() * mask
             if P.sum() > 0:
                 P = P / P.sum()
@@ -197,7 +191,6 @@ class MCTS:
                 P = mask.astype(np.float32)
                 P = P / P.sum()
             
-            # Tạo các node con
             expanded = False
             for a, prob in enumerate(P):
                 if mask[a]:
@@ -206,7 +199,6 @@ class MCTS:
                     
             return expanded
         finally:
-            # Khôi phục lại trạng thái train ban đầu
             if was_training:
                 self.net.train()
     
@@ -214,39 +206,35 @@ class MCTS:
         """
         3. Simulation: Mô phỏng đến khi game kết thúc hoặc đạt đến độ sâu tối đa
         """
-        # Nếu game đã kết thúc, trả về reward
         if self._game_is_over(env):
             return self._get_reward(env)
             
-        # Nếu đạt đến độ sâu tối đa, dự đoán giá trị của trạng thái hiện tại
         if depth >= self.max_depth:
             obs, _ = self._encode_env(env)
             was_training = self.net.training
             self.net.eval()
             try:
                 with torch.no_grad():
+                    obs = obs.to(self.device, non_blocking=self.non_blocking)
                     _, v = self.net(obs.unsqueeze(0))
                 return v.item()
             finally:
                 if was_training:
                     self.net.train()
                     
-        # Nếu node không được mở rộng (không có node con), chỉ đánh giá giá trị hiện tại
         if not expanded:
             obs, _ = self._encode_env(env)
             was_training = self.net.training
             self.net.eval()
             try:
                 with torch.no_grad():
+                    obs = obs.to(self.device, non_blocking=self.non_blocking)
                     _, v = self.net(obs.unsqueeze(0))
                 return v.item()
             finally:
                 if was_training:
                     self.net.train()
         
-        # Nếu có con, ta chọn một node con để mô phỏng tiếp
-        # Ở Alpha Zero, không cần rollout ngẫu nhiên tới cuối game
-        # mà sử dụng giá trị dự đoán từ mạng neural
         return self._get_reward(env)
     
     def _backup(self, path, v):

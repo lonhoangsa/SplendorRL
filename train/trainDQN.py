@@ -86,8 +86,8 @@ def train_dqn(load_model_path=None):
     state_dim = (4 * card_feature_dim * 3) + 6 + (6 + 5 + card_feature_dim * 3) + (5 * 5)
     action_dim = env.output_nodes
     agent = DQNAgent(state_dim, action_dim, device='cuda' if torch.cuda.is_available() else 'cpu', logger=logger)
-    episodes = 5000
-    save_interval = 500  # Lưu mô hình mỗi 100 episodes
+    episodes = 8000
+    save_interval = 2000  # Lưu mô hình mỗi 100 episodes
     model_dir = '../splendor/models'
     if not os.path.exists(model_dir):
         os.makedirs(model_dir)

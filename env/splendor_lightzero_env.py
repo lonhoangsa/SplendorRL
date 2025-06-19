@@ -21,7 +21,7 @@ MAXIMUM_RESERVATIONS = 3
 class SplendorLightZeroEnv(BaseEnv):
     def __init__(self, cfg={}):
         self.cfg = cfg
-        self.max_episode_steps = cfg.get('max_episode_steps', 1000)
+        self.max_episode_steps = cfg.get('max_episode_steps', 500)
         self.battle_mode = cfg.get('battle_mode', 'self_play_mode')
         self.replay_path = cfg.get('replay_path', None)
         self.prob_random = cfg.get('prob_random_agent', 0.0)
@@ -62,6 +62,9 @@ class SplendorLightZeroEnv(BaseEnv):
             "action_mask": spaces.Box(low=0, high=1, shape=(self.output_nodes,), dtype=np.int8)
         })
         self._reward_space = spaces.Box(low=0, high=100, shape=(self.num_agents,), dtype=np.float32)
+
+        # Add player step counters
+        self.player_steps = [0] * 4
 
         self.reset()
 
@@ -131,38 +134,58 @@ class SplendorLightZeroEnv(BaseEnv):
         return current_action
     
     def _step(self, action):
-        if action not in self.legal_actions:
+        action_mask = self.get_action_mask()
+        if not action_mask[action]:
             action = self.random_action()
             
         current_action = "skip"
         # type of action
         
-            
-        self.episode += 1   
         prev_score = self.players[self.current_player_index]['score']
         prev_card = sum(self.players[self.current_player_index]['cards'].values())
         self._execute_action(action)
         self.check_nobles()
         
-        reward = sum(self.players[self.current_player_index]["cards"].values()) - prev_card + (self.players[self.current_player_index]['score'] - prev_score)**2
+        # Tính toán phần thưởng dựa trên điểm số và thẻ
+        score_increase = self.players[self.current_player_index]['score'] - prev_score
+        card_increase = sum(self.players[self.current_player_index]["cards"].values()) - prev_card
+        
+        # Phần thưởng cơ bản
+        reward = card_increase + (score_increase ** 2)  # Tăng trọng số cho điểm số
+        
+        # Phạt nếu không có tiến triển
         if reward == 0: 
-            reward = -0.4
+            reward = -0.8  # Tăng mức phạt để khuyến khích hành động có hiệu quả
             
-        done = self.players[self.current_player_index]['score'] >= WINNING_SCORE or self.episode >= self.max_episode_steps
+        # Check if any player has reached winning score
+        game_ended = any(player['score'] >= WINNING_SCORE for player in self.players)
+        
+        # Game ends if max steps reached or if we've completed the round after someone reached winning score
+        done = self.episode >= self.max_episode_steps or (game_ended and self.current_player_index == 0)
         
         # Kiểm tra tổng token sau hành động
         total_tokens = sum(self.players[self.current_player_index]['tokens'].values())
-        # Chỉ chuyển lượt nếu total_tokens <= MAXIMUM_TOKENS hoặc hành động không phải trả token
-        if total_tokens <= MAXIMUM_TOKENS or not (len(self.pick_tokens) + 24 + MAXIMUM_RESERVATIONS <= action and action < len(self.pick_tokens) + 24 + MAXIMUM_RESERVATIONS + len(self.pick_tokens)):
+        
+        # Chỉ tăng step và chuyển lượt nếu không phải return token và total_tokens <= MAXIMUM_TOKENS
+        is_return_token = len(self.pick_tokens) + 24 + MAXIMUM_RESERVATIONS <= action and action < len(self.pick_tokens) + 24 + MAXIMUM_RESERVATIONS + len(self.pick_tokens)
+        
+        if not is_return_token and (total_tokens <= MAXIMUM_TOKENS or not is_return_token):
+            self.episode += 1
+            self.player_steps[self.current_player_index] += 1
             self.current_player_index = (self.current_player_index + 1) % self.num_agents
         
         obs = self.observe(self.current_player_index)
-        info = {'eval_episode_return': self.players[self.current_player_index]['score'], 'episode': self.episode, 'player': self.current_player_index} if done else {'player': self.current_player_index}
+        info = {
+            'eval_episode_return': self.players[self.current_player_index]['score'], 
+            'episode': self.episode, 
+            'player': self.current_player_index,
+            'player_steps': self.player_steps
+        } if done else {
+            'player': self.current_player_index,
+            'player_steps': self.player_steps
+        }
         
         self.last_players = copy.deepcopy(self.players)
-        
-        # logger = logging.getLogger(__name__)
-        # logger.info(f"Player {self.current_player_index}, Action {action}, Action type {current_action}, Total tokens {total_tokens}, Next player {self.current_player_index}")
         
         return BaseEnvTimestep(obs, reward, done, info)
 
@@ -198,6 +221,7 @@ class SplendorLightZeroEnv(BaseEnv):
             # print(f"Player {self.current_player_index} returns tokens: {action}")
             tokens = self.pick_tokens[action - len(self.pick_tokens) - 24 - MAXIMUM_RESERVATIONS]
             self.do_return_tokens(tokens)
+            
         else:  # Skip
             pass
 

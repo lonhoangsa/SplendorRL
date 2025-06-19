@@ -28,3 +28,61 @@ Các màu token tương ứng với action 26: [('white', 2)]
 Các màu token tương ứng với action 27: [('blue', 2)]
 Các màu token tương ứng với action 28: [('black', 2)]
 Các màu token tương ứng với action 29: [('red', 2)]
+action 30: mua thẻ T1 thứ 1
+action 31: mua thẻ T1 thứ 2
+action 32: mua thẻ T1 thứ 3
+action 33: mua thẻ T1 thứ 4
+action 34: mua thẻ T2 thứ 1
+action 35: mua thẻ T2 thứ 2
+action 36: mua thẻ T2 thứ 3
+action 37: mua thẻ T2 thứ 4
+action 38: mua thẻ T3 thứ 1
+action 39: mua thẻ T3 thứ 2
+action 40: mua thẻ T3 thứ 3
+action 41: mua thẻ T3 thứ 4
+action 42: đặt trước thẻ T1 thứ 1
+action 43: đặt trước thẻ T1 thứ 2
+action 44: đặt trước thẻ T1 thứ 3
+action 45: đặt trước thẻ T1 thứ 4
+action 46: đặt trước thẻ T2 thứ 1
+action 47: đặt trước thẻ T2 thứ 2
+action 48: đặt trước thẻ T2 thứ 3
+action 49: đặt trước thẻ T2 thứ 4
+action 50: đặt trước thẻ T3 thứ 1
+action 51: đặt trước thẻ T3 thứ 2
+action 52: đặt trước thẻ T3 thứ 3
+action 53: đặt trước thẻ T3 thứ 4
+action 54: mua thẻ đặt trước thứ 1
+action 55: mua thẻ đặt trước thứ 2
+action 56: mua thẻ đặt trước thứ 3
+action 57: trả token green 1
+action 58: trả token white 1
+action 59: trả token blue 1
+action 60: trả token black 1
+action 61: trả token red 1
+action 62: trả token green 1, white 1
+action 63: trả token green 1, blue 1
+action 64: trả token green 1, black 1
+action 65: trả token green 1, red 1
+action 66: trả token white 1, blue 1
+action 67: trả token white 1, black 1
+action 68: trả token white 1, red 1
+action 69: trả token blue 1, black 1
+action 70: trả token blue 1, red 1
+action 71: trả token black 1, red 1
+action 72: trả token green 1, white 1, blue 1
+action 73: trả token green 1, white 1, black 1
+action 74: trả token green 1, white 1, red 1
+action 75: trả token green 1, blue 1, black 1
+action 76: trả token green 1, blue 1, red 1
+action 77: trả token green 1, black 1, red 1
+action 78: trả token white 1, blue 1, black 1
+action 79: trả token white 1, blue 1, red 1
+action 80: trả token white 1, black 1, red 1
+action 81: trả token blue 1, black 1, red 1
+action 82: trả token green 2
+action 83: trả token white 2
+action 84: trả token blue 2
+action 85: trả token black 2
+action 86: trả token red 2
+action 87: bỏ qua lượt 

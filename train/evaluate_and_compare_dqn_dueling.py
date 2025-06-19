@@ -60,11 +60,11 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
             agent = agents[current_player]
             
             # Get action and value based on agent type
-            action, value = agent.get_best_action(state, action_mask)
+            action = agent.get_best_action(state, action_mask)
             
             # Log action and value
-            logger.info(f"Round {round_count + 1}, Player {current_player + 1} ({model_names[current_player]}):")
-            logger.info(f"Action: {action}")
+            # logger.info(f"Round {round_count + 1}, Player {current_player + 1} ({model_names[current_player]}):")
+            # logger.info(f"Action: {action}")
             # logger.info(f"Value: {value:.4f}")
             
             next_state_dict = env.step(action)
@@ -83,10 +83,11 @@ def evaluate_models_against_each_other(env, agents, num_episodes, logger, model_
             
             # Update steps and round count
             player_steps[current_player] += 1
+            
             if next_state_dict.obs['to_play'] == 0:  # New round starts
                 round_count += 1
-                logger.info(f"End of Round {round_count}")
-                logger.info(f"Current scores: {[p['score'] for p in env.players]}")
+                # logger.info(f"End of Round {round_count}")
+                # logger.info(f"Current scores: {[p['score'] for p in env.players]}")
             
             state_dict = next_state_dict.obs
             step_count += 1
@@ -183,6 +184,8 @@ def compare_models():
 
     # Run evaluation
     num_episodes = 100
+
+    
     logger.info("\n=== Starting Model Comparison ===")
     logger.info("Player order: 1. DQN1, 2. DQN2, 3. DuelingDQN1, 4. DuelingDQN2")
     

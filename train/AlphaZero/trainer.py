@@ -36,8 +36,17 @@ class AlphaZeroTrainer:
         self.logger = setup_logging(debug=debug)
         self.logger.info("Initializing AlphaZero trainer")
         
+        # Set device
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.logger.info(f"Using device: {self.device}")
+        
         self.cfg = default_config if config is None else config
         self.cfg['debug_mode'] = debug
+        
+        # Add early stopping parameters
+        self.cfg['patience'] = 10  # Number of evaluations to wait before early stopping
+        self.cfg['min_delta'] = 0.001  # Minimum change in win rate to be considered as improvement
+        self.cfg['gradient_clip'] = 1.0  # Maximum gradient norm
         
         self.logger.info(f"Debug mode: {self.cfg['debug_mode']}")
         
@@ -48,11 +57,24 @@ class AlphaZeroTrainer:
         state_dim = (4 * card_feature_dim * 3) + 6 + (6 + 5 + card_feature_dim * 3) + (5 * 5)
         action_dim = self.env.output_nodes
         
-        # Initialize agent
-        self.agent = AlphaZeroAgent(state_dim, action_dim, self.cfg)
+        # Initialize agent with device
+        self.agent = AlphaZeroAgent(state_dim, action_dim, self.cfg, device=self.device, architecture_type=self.cfg.get('architecture_type', 'simple'))
         
-        # Initialize optimizer
-        self.optimizer = optim.Adam(self.agent.net.parameters(), lr=self.cfg['lr'], weight_decay=self.cfg['weight_decay'])
+        # Initialize optimizer with higher initial learning rate
+        self.optimizer = optim.Adam(self.agent.net.parameters(), 
+                                  lr=self.cfg['lr'], 
+                                  weight_decay=self.cfg['weight_decay'],
+                                  betas=(0.9, 0.999))
+        
+        # Add learning rate scheduler
+        self.scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+            self.optimizer,
+            mode='max',
+            factor=0.5,
+            patience=5,
+            verbose=True,
+            min_lr=1e-6
+        )
         
         # Initialize replay buffer
         self.buffer = ReplayBuffer(self.cfg['replay_size'])
@@ -63,6 +85,12 @@ class AlphaZeroTrainer:
         self.total_loss_history = []
         self.iteration_numbers = []
         self.evaluation_scores = []
+        
+        # Track best model and early stopping
+        self.best_win_rate = 0
+        self.best_model_state = None
+        self.no_improvement_count = 0
+        self.best_iteration = 0
 
         self.logger.info(f"Environment initialized with state_dim={state_dim}, action_dim={action_dim}")
         self.logger.info(f"Training parameters: lr={self.cfg['lr']}, weight_decay={self.cfg['weight_decay']}, "
@@ -161,24 +189,30 @@ class AlphaZeroTrainer:
                 # Calculate additional rewards
                 additional_reward = 0
                 
-                # Noble tile bonus
-                if hasattr(next_state_dict, 'info') and 'noble_acquired' in next_state_dict.info:
-                    noble_counts[current_player] += 1
-                    additional_reward += self.cfg['noble_bonus']
-                
-                # Set bonus (for collecting cards of same color)
-                if hasattr(next_state_dict, 'info') and 'card_acquired' in next_state_dict.info:
-                    if self._check_set_completion(env, current_player):
-                        set_counts[current_player] += 1
-                        additional_reward += self.cfg['set_bonus']
-                
-                # Efficiency bonus (for using resources efficiently)
+                # Efficiency bonus
                 efficiency = self._calculate_efficiency(env, current_player)
+                if(action > 29): efficiency = 0
                 efficiency_scores[current_player] = efficiency
-                additional_reward += efficiency * self.cfg['efficiency_bonus']
+                additional_reward += efficiency * 2
                 
-                # Update total reward with additional bonuses
-                total_env_rewards[current_player] += env_reward + additional_reward
+                # Speed bonus - encourage faster game completion
+                if env_reward > 0:  # If player scored points
+                    # Base speed bonus that decreases with more steps
+                    # Starts at 10.0 and decreases by 0.3 per step, becomes 0 after ~27 steps
+                    speed_bonus = max(10.0 - (steps * 0.2), 0.0)
+                    additional_reward += speed_bonus
+                    self.logger.debug(f"Player {current_player} received speed bonus: {speed_bonus:.2f}")
+                
+                # Calculate step reward
+                step_reward = env_reward + additional_reward
+                
+                # Store step reward
+                if not hasattr(self, 'step_rewards'):
+                    self.step_rewards = []
+                self.step_rewards.append((current_player, step_reward))
+                
+                # Update total reward with environment reward and efficiency bonus
+                total_env_rewards[current_player] += step_reward
                 
                 # Update next observation
                 next_obs = np.concatenate([
@@ -199,30 +233,55 @@ class AlphaZeroTrainer:
             # Get final scores and create combined rewards
             scores = [p['score'] for p in env.players]
             
-            # Debug logging
-            if self.cfg['debug_mode'] or game_idx == 0:
-                self.logger.info("Player performance summary:")
-                for i, player in enumerate(env.players):
-                    self.logger.info(f"Player {i}: Score={player['score']}, "
-                                   f"Total Reward={total_env_rewards[i]}, "
-                                   f"Nobles={noble_counts[i]}, "
-                                   f"Sets={set_counts[i]}, "
-                                   f"Efficiency={efficiency_scores[i]}")
+            # Check if any player has won (score >= 15)
+            max_score = max(scores)
+            if max_score < 15:
+                # Apply heavy penalty to all players when no one wins
+                penalty = -100.0  # Heavy negative reward
+                self.logger.info(f"No player reached 15 points. Applying penalty of {penalty} to all players")
+                for i in range(len(total_env_rewards)):
+                    total_env_rewards[i] += penalty
+                    # Also penalize the last few moves that led to this situation
+                    if len(self.step_rewards) > 0:
+                        last_moves = self.step_rewards[-3:]  # Get last 3 moves
+                        for _, reward in last_moves:
+                            if reward > 0:  # Only penalize positive rewards
+                                reward -= abs(penalty) / 3  # Distribute penalty among last moves
+            else:
+                # Add final speed bonus for the winner
+                winner_idx = scores.index(max_score)
+                # Calculate speed bonus based on total game length
+                # Starts at 15.0 and decreases by 0.5 per step, becomes 0 after 30 steps
+                final_speed_bonus = max(15.0 - (steps * 0.5), 0.0)
+                total_env_rewards[winner_idx] += final_speed_bonus
+                self.logger.info(f"Winner (Player {winner_idx}) received final speed bonus: {final_speed_bonus:.2f}")
+
+                # Apply speed penalties to losing players
+                for i in range(len(total_env_rewards)):
+                    if i != winner_idx:  # For all non-winners
+                        # Calculate speed penalty that increases with game length
+                        # Starts at -5.0 and decreases by 0.3 per step after 20 steps
+                        speed_penalty = -5.0 if steps <= 20 else -5.0 - ((steps - 20) * 0.3)
+                        total_env_rewards[i] += speed_penalty
+                        self.logger.info(f"Losing player {i} received speed penalty: {speed_penalty:.2f}")
             
             combined_rewards = [(scores[i], total_env_rewards[i]) for i in range(env.num_agents)]
             game_rewards.append(combined_rewards)
             
             # Determine winners based on score
-            max_score = max(scores)
             winners = np.array([i for i, score in enumerate(scores) if score == max_score])
             
             self.logger.info(f"Game {game_idx+1} completed in {steps} steps.")
             self.logger.info(f"Scores: {scores}, Total Env Rewards: {total_env_rewards}, Winners: {winners}")
             
-            for st, pi_v, pl in zip(states, pis, players):
-                z = 1 if pl in winners else -1
-                combined_z = (z, combined_rewards[pl])
-                self.buffer.push((st, pi_v, combined_z))
+            # Push states, policies, and rewards to buffer
+            for i, (st, pi_v, pl) in enumerate(zip(states, pis, players)):
+                # Get the reward for this step
+                step_reward = self.step_rewards[i][1] if i < len(self.step_rewards) else 0  # Include step reward in the combined value
+                self.buffer.push((st, pi_v, step_reward))
+            
+            # Clear step rewards for next game
+            self.step_rewards = []
         
         avg_steps = np.mean(game_lengths)
         avg_scores = np.mean([[r[0] for r in rewards] for rewards in game_rewards], axis=0)
@@ -230,65 +289,6 @@ class AlphaZeroTrainer:
         
         self.logger.info(f"Self-play phase completed. Average steps: {avg_steps:.2f}")
         self.logger.info(f"Average scores: {avg_scores}, Average total rewards: {avg_total_rewards}")
-
-    def evaluate(self, num_games=10):
-        """
-        Evaluate the agent by playing against itself
-        Args:
-            num_games: Number of games to play for evaluation
-        Returns:
-            avg_score: Average score across all games
-            win_rate: Win rate of the agent
-        """
-        self.logger.info(f"Starting evaluation phase with {num_games} games")
-        scores = []
-        wins = 0
-        
-        for game_idx in range(num_games):
-            env = SplendorLightZeroEnv({'battle_mode': 'self_play_mode'})
-            state_dict = env.reset()
-            obs = np.concatenate([
-                state_dict['observation']['tier1'].flatten(), 
-                state_dict['observation']['tier2'].flatten(), 
-                state_dict['observation']['tier3'].flatten(), 
-                state_dict['observation']['tokens'], 
-                state_dict['observation']['current_player'], 
-                state_dict['observation']['nobles'].flatten()
-            ])
-            done = False
-            
-            while not done:
-                # Use agent to choose action with low temperature for evaluation
-                action, _ = self.agent.choose_action(env, temperature=0.1)
-                
-                next_state_dict = env.step(action)
-                obs = np.concatenate([
-                    next_state_dict.obs['tier1'].flatten(), 
-                    next_state_dict.obs['tier2'].flatten(), 
-                    next_state_dict.obs['tier3'].flatten(), 
-                    next_state_dict.obs['tokens'], 
-                    next_state_dict.obs['current_player'], 
-                    next_state_dict.obs['nobles'].flatten()
-                ])
-                done = next_state_dict.done
-            
-            # Get final score
-            final_score = env.players[0]['score']
-            scores.append(final_score)
-            
-            # Check if agent won
-            if final_score == max(p['score'] for p in env.players):
-                wins += 1
-            
-            self.logger.info(f"Evaluation game {game_idx+1}/{num_games} completed. Score: {final_score}")
-        
-        avg_score = np.mean(scores)
-        win_rate = wins / num_games
-        
-        self.logger.info(f"Evaluation completed. Average score: {avg_score:.2f}, Win rate: {win_rate:.2%}")
-        self.evaluation_scores.append(avg_score)
-        
-        return avg_score, win_rate
 
     def train(self):
         self.logger.info("Starting training phase")
@@ -303,18 +303,17 @@ class AlphaZeroTrainer:
         self.agent.net.train()
         for epoch in range(self.cfg['epochs']):
             batch = self.buffer.sample(self.cfg['batch_size'])
-            obs_batch, pi_batch, z_batch = [], [], []
+            obs_batch, pi_batch, reward_batch = [], [], []
             
-            for st, pi_v, combined_z in batch:
-                z = combined_z[0] if isinstance(combined_z, tuple) else combined_z
+            for st, pi_v, reward in batch:
                 obs_batch.append(st)
                 pi_batch.append(pi_v)
-                z_batch.append(z)
+                reward_batch.append(reward)
             
-            # Convert to tensors
-            x = torch.tensor(np.array(obs_batch), dtype=torch.float32).to(self.agent.device)
-            target_pi = torch.tensor(np.array(pi_batch), dtype=torch.float32).to(self.agent.device)
-            target_v = torch.tensor(np.array(z_batch), dtype=torch.float32).to(self.agent.device)
+            # Convert to tensors and move to device
+            x = torch.tensor(np.array(obs_batch), dtype=torch.float32).to(self.device)
+            target_pi = torch.tensor(np.array(pi_batch), dtype=torch.float32).to(self.device)
+            target_v = torch.tensor(np.array(reward_batch), dtype=torch.float32).to(self.device)
             
             # Forward pass
             pred_pi, pred_v = self.agent.net(x)
@@ -324,9 +323,10 @@ class AlphaZeroTrainer:
             loss_v = (pred_v - target_v).pow(2).mean()
             loss = loss_p + loss_v
             
-            # Update network
+            # Update network with gradient clipping
             self.optimizer.zero_grad()
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(self.agent.net.parameters(), self.cfg['gradient_clip'])
             self.optimizer.step()
             
             # Accumulate losses
@@ -335,7 +335,7 @@ class AlphaZeroTrainer:
             total_loss += loss.item()
             
             # Log progress
-            if (epoch + 1) % 10 == 0:
+            if (epoch + 1) % 1000 == 0:
                 self.logger.info(f"Epoch {epoch+1}/{self.cfg['epochs']}, "
                                 f"Policy Loss: {loss_p.item():.4f}, "
                                 f"Value Loss: {loss_v.item():.4f}, "
@@ -353,47 +353,197 @@ class AlphaZeroTrainer:
         
         return avg_p_loss, avg_v_loss, avg_loss
 
-    def save_model(self, path='models/alphazero.pth'):
+    def evaluate_models(self, model1, model2, num_games=50):
+        """
+        Evaluate two models against each other in a 4-player game
+        Args:
+            model1: First model (old model)
+            model2: Second model (new model)
+            num_games: Number of games to play
+        Returns:
+            tuple: (model1_wins, model2_wins, draws)
+        """
+        self.logger.info(f"Starting model evaluation: {num_games} games")
+        model1_wins = 0
+        model2_wins = 0
+        draws = 0
+        valid_games = 0  # Count of games where winner's score > 15
+        
+        for game_idx in range(num_games):
+            env = SplendorLightZeroEnv({'battle_mode': 'self_play_mode'})
+            state_dict = env.reset()
+            obs = np.concatenate([
+                state_dict['observation']['tier1'].flatten(), 
+                state_dict['observation']['tier2'].flatten(), 
+                state_dict['observation']['tier3'].flatten(), 
+                state_dict['observation']['tokens'], 
+                state_dict['observation']['current_player'], 
+                state_dict['observation']['nobles'].flatten()
+            ])
+            done = False
+            
+            # Alternate model assignments based on game index
+            if game_idx % 2 == 0:
+                # Even games: model1 for players 0,2; model2 for players 1,3
+                model_assignments = {0: model1, 1: model2, 2: model1, 3: model2}
+            else:
+                # Odd games: model2 for players 0,2; model1 for players 1,3
+                model_assignments = {0: model2, 1: model1, 2: model2, 3: model1}
+            
+            while not done:
+                current_player = env.current_player_index
+                # Get action from current model with temperature=0.1 (small but not zero)
+                current_model = model_assignments[current_player]
+                action = current_model.get_best_action(obs, env)
+                
+                next_state_dict = env.step(action)
+                obs = np.concatenate([
+                    next_state_dict.obs['tier1'].flatten(), 
+                    next_state_dict.obs['tier2'].flatten(), 
+                    next_state_dict.obs['tier3'].flatten(), 
+                    next_state_dict.obs['tokens'], 
+                    next_state_dict.obs['current_player'], 
+                    next_state_dict.obs['nobles'].flatten()
+                ])
+                done = next_state_dict.done
+            
+            # Get final scores
+            scores = [p['score'] for p in env.players]
+            max_score = max(scores)
+            winners = [i for i, score in enumerate(scores) if score == max_score]
+            
+            # Only count results if winner's score > 15
+            if max_score > 15:
+                valid_games += 1
+                # Count wins based on model assignments
+                if len(winners) == 1:  # No draw
+                    winner = winners[0]
+                    winning_model = model_assignments[winner]
+                    if winning_model == model1:
+                        model1_wins += 1
+                    else:
+                        model2_wins += 1
+                else:  # Draw
+                    draws += 1
+            
+            self.logger.info(f"Completed {game_idx + 1}/{num_games} evaluation games")
+            self.logger.info(f"winners: {winners}, scores: {max_score}")
+            self.logger.info(f"Current results: Model1 wins={model1_wins}, Model2 wins={model2_wins}, Draws={draws}")
+            self.logger.info(f"Valid games (score > 15): {valid_games}")
+        
+        # Calculate win rate based on valid games only
+        if valid_games > 0:
+            win_rate = (model2_wins / valid_games) * 100
+            self.logger.info(f"Evaluation results: Model1 wins={model1_wins}, Model2 wins={model2_wins}, "
+                           f"Draws={draws}, Model2 win rate={win_rate:.2f}%")
+            self.logger.info(f"Total valid games: {valid_games} out of {num_games}")
+        else:
+            self.logger.warning("No valid games found (no winner scored above 15 points)")
+            win_rate = 0
+        
+        return model1_wins, model2_wins, draws
+
+    def save_model(self, path='models/alphazero.pth', is_checkpoint=False):
+        """
+        Save model only if it performs better than the previous model
+        """
         model_dir = os.path.dirname(path)
         os.makedirs(model_dir, exist_ok=True)
-        torch.save({
+        
+        # Add architecture type to filename
+        if self.agent.net.architecture_type == 'complex':
+            base_path = os.path.splitext(path)[0]
+            ext = os.path.splitext(path)[1]
+            path = f"{base_path}_complex{ext}"
+        
+        # Save current model state, including architecture type
+        current_state = {
             'network_state_dict': self.agent.net.state_dict(),
             'optimizer_state_dict': self.optimizer.state_dict(),
-            'iteration': len(self.iteration_numbers),
-            'policy_loss_history': self.policy_loss_history,
-            'value_loss_history': self.value_loss_history,
-            'total_loss_history': self.total_loss_history,
-            'iteration_numbers': self.iteration_numbers,
-            'evaluation_scores': self.evaluation_scores,
-            'buffer': self.buffer.buffer if hasattr(self.buffer, 'buffer') else []
-        }, path)
-        self.logger.info(f"Model and training state saved at {path}")
+            'architecture_type': self.agent.net.architecture_type
+        }
+        
+        # If there's an existing model and this is not a checkpoint, evaluate against it
+        if os.path.exists(path) and not is_checkpoint:
+            self.logger.info("Found existing model, evaluating new model against it...")
+            
+            # Calculate state dimension from observation space
+            card_feature_dim = self.env.card_feature_dim
+            state_dim = (4 * card_feature_dim * 3) + 6 + (6 + 5 + card_feature_dim * 3) + (5 * 5)
+            
+            # Load old model with correct dimensions and architecture
+            old_model = AlphaZeroAgent(
+                state_dim=state_dim,
+                action_dim=self.env.output_nodes,
+                config=self.cfg,
+                device=self.device,
+                architecture_type=self.agent.net.architecture_type  # Use same architecture type
+            )
+            checkpoint = torch.load(path, map_location=self.device)
+            old_model.net.load_state_dict(checkpoint['network_state_dict'])
+            
+            # Evaluate models
+            old_wins, new_wins, _ = self.evaluate_models(old_model, self.agent)
+            
+            win_rate = 0.0
+            if (old_wins + new_wins) > 0:
+                win_rate = (new_wins / (old_wins + new_wins)) * 100
+            
+            if win_rate > 50:
+                self.logger.info(f"New model performs better (win rate: {win_rate:.2f}%). Saving...")
+                torch.save(current_state, path)
+                self.logger.info(f"Model saved at {path}")
+                
+                # Update best model if this is better
+                if win_rate > self.best_win_rate:
+                    self.best_win_rate = win_rate
+                    self.best_model_state = current_state
+                    # Save best model checkpoint with architecture type in name
+                    best_model_path = os.path.join(model_dir, f'alphazero_best_{self.agent.net.architecture_type}.pth')
+                    torch.save(current_state, best_model_path)
+                    self.logger.info(f"New best model saved at {best_model_path} with win rate {win_rate:.2f}%")
+            else:
+                self.logger.info(f"New model performs worse (win rate: {win_rate:.2f}%). Keeping old model.")
+        else:
+            # If no existing model or this is a checkpoint, save the current one
+            self.logger.info("Saving current model...")
+            torch.save(current_state, path)
+            self.logger.info(f"Model saved at {path}")
 
     def load_model(self, path):
+        # Add architecture type to filename if using complex architecture
+        if self.agent.net.architecture_type == 'complex':
+            base_path = os.path.splitext(path)[0]
+            ext = os.path.splitext(path)[1]
+            complex_path = f"{base_path}_complex{ext}"
+        
+            path = complex_path
+            # self.logger.info(f"Loading complex architecture model from {path}")
+            # print(path)   
         if os.path.exists(path):
-            checkpoint = torch.load(path)
+            checkpoint = torch.load(path, map_location=self.device)  # Load to correct device
+            
+            # Get architecture type from checkpoint or use default
+            architecture_type = checkpoint.get('architecture_type', 'simple')
+            
+            # Reinitialize network with correct architecture
+            card_feature_dim = self.env.card_feature_dim
+            state_dim = (4 * card_feature_dim * 3) + 6 + (6 + 5 + card_feature_dim * 3) + (5 * 5)
+            self.agent = AlphaZeroAgent(
+                state_dim=state_dim,
+                action_dim=self.env.output_nodes,
+                config=self.cfg,
+                device=self.device,
+                architecture_type=architecture_type
+            )
             
             # Load network state dict
             self.agent.net.load_state_dict(checkpoint['network_state_dict'])
             self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             
-            # Load training history
-            if 'iteration' in checkpoint:
-                iteration = checkpoint['iteration']
-                self.policy_loss_history = checkpoint.get('policy_loss_history', [])
-                self.value_loss_history = checkpoint.get('value_loss_history', [])
-                self.total_loss_history = checkpoint.get('total_loss_history', [])
-                self.iteration_numbers = checkpoint.get('iteration_numbers', [])
-                self.evaluation_scores = checkpoint.get('evaluation_scores', [])
-                
-                if hasattr(checkpoint, 'buffer'):
-                    self.buffer.buffer = checkpoint['buffer']
-                
-                self.logger.info(f"Loaded model from iteration {iteration}")
-                return iteration
-            else:
-                self.logger.info("No iteration information found in checkpoint")
-                return 0
+            self.logger.info(f"Loaded model from {path} with architecture type: {architecture_type}")
+            
+            return 0
         else:
             self.logger.warning(f"Model file {path} not found. Starting with a new model.")
             return 0
@@ -440,10 +590,40 @@ class AlphaZeroTrainer:
             return
         
         plt.figure(figsize=(10, 6))
-        plt.plot(range(1, len(self.evaluation_scores) + 1), self.evaluation_scores, 'b-')
+        
+        # Convert single scores to lists if necessary
+        processed_scores = []
+        for scores in self.evaluation_scores:
+            if isinstance(scores, (int, float, np.number)):
+                processed_scores.append([scores])  # Convert single score to list
+            else:
+                processed_scores.append(scores)
+        
+        # Get the maximum number of players across all evaluations
+        max_players = max(len(scores) for scores in processed_scores)
+        
+        # Plot each player's scores
+        for player_idx in range(max_players):
+            # Extract scores for this player, handling cases where some evaluations might have fewer players
+            player_scores = []
+            for eval_scores in processed_scores:
+                if player_idx < len(eval_scores):
+                    player_scores.append(eval_scores[player_idx])
+                else:
+                    player_scores.append(None)  # Use None for missing scores
+            
+            # Filter out None values and plot
+            valid_indices = [i for i, score in enumerate(player_scores) if score is not None]
+            valid_scores = [score for score in player_scores if score is not None]
+            
+            if valid_scores:  # Only plot if we have valid scores
+                plt.plot([i+1 for i in valid_indices], valid_scores, 
+                        label=f'Player {player_idx+1}')
+        
         plt.title('Evaluation Scores over Time')
         plt.xlabel('Evaluation')
         plt.ylabel('Average Score')
+        plt.legend()
         plt.grid(True)
         
         if save_path:
@@ -456,7 +636,7 @@ class AlphaZeroTrainer:
         else:
             plt.show()
 
-    def run(self, iterations=100, load_path=None, save_interval=1, continue_training=True, eval_interval=5):
+    def run(self, iterations=100, load_path=None, save_interval=4, continue_training=True, eval_interval=5, architecture_type='simple'):
         # Create directories for models and plots
         model_dir = 'models'
         plots_dir = 'plots'
@@ -464,6 +644,25 @@ class AlphaZeroTrainer:
             os.makedirs(model_dir)
         if not os.path.exists(plots_dir):
             os.makedirs(plots_dir)
+        
+        # Update config with architecture type
+        self.cfg['architecture_type'] = architecture_type
+        
+        # Reinitialize agent with new architecture if needed
+        if hasattr(self, 'agent') and self.agent.net.architecture_type != architecture_type:
+            card_feature_dim = self.env.card_feature_dim
+            state_dim = (4 * card_feature_dim * 3) + 6 + (6 + 5 + card_feature_dim * 3) + (5 * 5)
+            self.agent = AlphaZeroAgent(
+                state_dim=state_dim,
+                action_dim=self.env.output_nodes,
+                config=self.cfg,
+                device=self.device,
+                architecture_type=architecture_type
+            )
+            self.optimizer = optim.Adam(self.agent.net.parameters(), 
+                                      lr=self.cfg['lr'], 
+                                      weight_decay=self.cfg['weight_decay'],
+                                      betas=(0.9, 0.999))
         
         # Load existing model if specified and get starting iteration
         start_iteration = 0
@@ -494,26 +693,18 @@ class AlphaZeroTrainer:
                 self.total_loss_history.append(total_loss)
                 self.iteration_numbers.append(i+1)
             
-            # Evaluation phase
-            if (i+1) % eval_interval == 0:
-                avg_score, win_rate = self.evaluate()
-                self.logger.info(f"Evaluation results - Average score: {avg_score:.2f}, Win rate: {win_rate:.2%}")
-            
             # Save model at specified intervals
             if (i+1) % save_interval == 0:
-                model_path = os.path.join(model_dir, 'alphazero_final.pth')
-                self.save_model(model_path)
+                # Save to final model path with architecture type
+                final_model_path = os.path.join(model_dir, f'alphazero_final.pth')
+                self.save_model(final_model_path)
                 
-                # Generate and save plots
-                if len(self.iteration_numbers) > 0:
-                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    loss_plot_path = os.path.join(plots_dir, f'alphazero_loss_history_{timestamp}.png')
-                    eval_plot_path = os.path.join(plots_dir, f'alphazero_evaluation_{timestamp}.png')
-                    self.plot_loss_history(save_path=loss_plot_path)
-                    self.plot_evaluation_scores(save_path=eval_plot_path)
+                # Save checkpoint with iteration number and architecture type
+                checkpoint_path = os.path.join(model_dir, f'alphazero_checkpoint_{i+1}.pth')
+                self.save_model(checkpoint_path, is_checkpoint=True)
         
-        # Save final model
-        final_model_path = os.path.join(model_dir, 'alphazero_final.pth')
+        # Save final model with architecture type
+        final_model_path = os.path.join(model_dir, f'alphazero_final_{architecture_type}.pth')
         self.save_model(final_model_path)
         
         # Generate final plots
@@ -529,11 +720,12 @@ class AlphaZeroTrainer:
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Train AlphaZero agent')
-    parser.add_argument('--iterations', type=int, default=50, help='Number of training iterations')
+    parser.add_argument('--iterations', type=int, default=5, help='Number of training iterations')
     parser.add_argument('--load_path', type=str, default='models/alphazero_final.pth', help='Path to load model from')
-    parser.add_argument('--save_interval', type=int, default=10, help='Number of iterations between model saves')
-    parser.add_argument('--eval_interval', type=int, default=5, help='Number of iterations between evaluations')
+    parser.add_argument('--save_interval', type=int, default=3, help='Number of iterations between model saves')
+    parser.add_argument('--eval_interval', type=int, default=3, help='Number of iterations between evaluations')
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
+    parser.add_argument('--architecture_type', type=str, default='simple', help='Architecture type: simple or complex')
     parser.add_argument('--no_continue', action='store_true', help='Start training from scratch even if loading a model')
     args = parser.parse_args()
     
@@ -542,4 +734,5 @@ if __name__ == '__main__':
                 load_path=args.load_path, 
                 save_interval=args.save_interval,
                 eval_interval=args.eval_interval,
-                continue_training=not args.no_continue)
+                continue_training=not args.no_continue,
+                architecture_type=args.architecture_type)

@@ -90,16 +90,9 @@ class DQNAgent:
             best_action: The action with highest Q-value
             q_values: Q-values for all actions
         """
-        self.q_network.eval()
+        state_tensor = torch.FloatTensor(state).to(self.device)
+        action_mask_tensor = torch.FloatTensor(action_mask).to(self.device)
         with torch.no_grad():
-            state_tensor = torch.FloatTensor(state).unsqueeze(0).to(self.device)
             q_values = self.q_network(state_tensor)
-            q_values = q_values.squeeze(0).cpu().numpy()
-            
-            # If action mask is provided, mask illegal actions
-            if action_mask is not None:
-                q_values = np.where(action_mask, q_values, float('-inf'))
-            
-            best_action = np.argmax(q_values)
-            
-        return best_action, q_values
+            q_values = q_values.masked_fill(action_mask_tensor == 0, float('-inf'))
+            return q_values.argmax().item()
