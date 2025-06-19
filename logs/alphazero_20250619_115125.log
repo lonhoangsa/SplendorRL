@@ -1,0 +1,13 @@
+2025-06-19 11:51:25,430 - __main__ - INFO - Initializing AlphaZero trainer
+2025-06-19 11:51:25,528 - __main__ - INFO - Using device: cuda
+2025-06-19 11:51:25,528 - __main__ - INFO - Debug mode: False
+2025-06-19 11:51:27,523 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 11:51:27,524 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-06-19 11:51:27,524 - __main__ - INFO - Training parameters: lr=0.005, weight_decay=0.0001, batch_size=2048, replay_size=100000, num_simulations=20
+2025-06-19 11:51:27,524 - __main__ - INFO - ==================================================
+2025-06-19 11:51:27,537 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 11:51:27,539 - __main__ - WARNING - Model file models/alphazero_final_complex.pth not found. Starting with a new model.
+2025-06-19 11:51:27,540 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 5 iterations
+2025-06-19 11:51:27,540 - __main__ - INFO - Starting iteration 1/5
+2025-06-19 11:51:27,540 - __main__ - INFO - Starting self-play phase
+2025-06-19 11:51:27,551 - __main__ - INFO - Starting game 1/30

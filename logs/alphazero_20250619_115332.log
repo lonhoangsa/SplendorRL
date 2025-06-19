@@ -1,0 +1,1404 @@
+2025-06-19 11:53:32,740 - __main__ - INFO - Initializing AlphaZero trainer
+2025-06-19 11:53:32,827 - __main__ - INFO - Using device: cuda
+2025-06-19 11:53:32,828 - __main__ - INFO - Debug mode: False
+2025-06-19 11:53:34,077 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 11:53:34,078 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-06-19 11:53:34,078 - __main__ - INFO - Training parameters: lr=0.005, weight_decay=0.0001, batch_size=2048, replay_size=100000, num_simulations=20
+2025-06-19 11:53:34,079 - __main__ - INFO - ==================================================
+2025-06-19 11:53:34,095 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 11:53:34,240 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 11:53:34,248 - __main__ - INFO - Loaded model from models/alphazero_final_complex.pth with architecture type: complex
+2025-06-19 11:53:34,248 - __main__ - INFO - Starting AlphaZero training from iteration 1 for 5 iterations
+2025-06-19 11:53:34,249 - __main__ - INFO - Starting iteration 1/5
+2025-06-19 11:53:34,249 - __main__ - INFO - Starting self-play phase
+2025-06-19 11:53:34,262 - __main__ - INFO - Starting game 1/30
+2025-06-19 11:54:17,393 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:54:17,395 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 11:54:17,396 - __main__ - INFO - Losing player 0 received speed penalty: -87.80
+2025-06-19 11:54:17,396 - __main__ - INFO - Losing player 1 received speed penalty: -87.80
+2025-06-19 11:54:17,396 - __main__ - INFO - Losing player 2 received speed penalty: -87.80
+2025-06-19 11:54:17,397 - __main__ - INFO - Game 1 completed in 296 steps.
+2025-06-19 11:54:17,397 - __main__ - INFO - Scores: [1, 7, 1, 16], Total Env Rewards: [-42.79999999999993, -20.10000000000001, -53.000000000000014, 125.74038461538464], Winners: [3]
+2025-06-19 11:54:17,411 - __main__ - INFO - Starting game 2/30
+2025-06-19 11:56:40,789 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 11:56:40,790 - __main__ - INFO - Game 2 completed in 779 steps.
+2025-06-19 11:56:40,790 - __main__ - INFO - Scores: [5, 4, 3, 5], Total Env Rewards: [-10.707936507936196, -14.19999999999959, -68.78181818181787, -36.10980130980123], Winners: [0 3]
+2025-06-19 11:56:40,801 - __main__ - INFO - Starting game 3/30
+2025-06-19 11:57:33,506 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:57:33,508 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 11:57:33,508 - __main__ - INFO - Losing player 0 received speed penalty: -112.10
+2025-06-19 11:57:33,509 - __main__ - INFO - Losing player 1 received speed penalty: -112.10
+2025-06-19 11:57:33,510 - __main__ - INFO - Losing player 2 received speed penalty: -112.10
+2025-06-19 11:57:33,510 - __main__ - INFO - Game 3 completed in 377 steps.
+2025-06-19 11:57:33,511 - __main__ - INFO - Scores: [1, 10, 1, 16], Total Env Rewards: [-61.69999999999989, -35.09120879120873, -58.89999999999994, 92.53326308194731], Winners: [3]
+2025-06-19 11:57:33,524 - __main__ - INFO - Starting game 4/30
+2025-06-19 11:58:17,266 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:58:17,286 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:58:17,314 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:58:17,336 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:58:17,366 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:58:17,368 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 11:58:17,369 - __main__ - INFO - Losing player 0 received speed penalty: -95.00
+2025-06-19 11:58:17,369 - __main__ - INFO - Losing player 2 received speed penalty: -95.00
+2025-06-19 11:58:17,370 - __main__ - INFO - Losing player 3 received speed penalty: -95.00
+2025-06-19 11:58:17,372 - __main__ - INFO - Game 4 completed in 320 steps.
+2025-06-19 11:58:17,373 - __main__ - INFO - Scores: [7, 17, 0, 1], Total Env Rewards: [-36.66111111111106, 82.78209013209016, -48.19999999999988, -46.99999999999987], Winners: [1]
+2025-06-19 11:58:17,384 - __main__ - INFO - Starting game 5/30
+2025-06-19 11:59:01,447 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 11:59:01,448 - __main__ - INFO - Losing player 1 received speed penalty: -98.00
+2025-06-19 11:59:01,448 - __main__ - INFO - Losing player 2 received speed penalty: -98.00
+2025-06-19 11:59:01,448 - __main__ - INFO - Losing player 3 received speed penalty: -98.00
+2025-06-19 11:59:01,449 - __main__ - INFO - Game 5 completed in 330 steps.
+2025-06-19 11:59:01,449 - __main__ - INFO - Scores: [16, 2, 5, 0], Total Env Rewards: [101.34685314685319, -51.08571428571421, -44.80000000000001, -48.99999999999991], Winners: [0]
+2025-06-19 11:59:01,464 - __main__ - INFO - Starting game 6/30
+2025-06-19 11:59:32,945 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 11:59:32,947 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 11:59:32,948 - __main__ - INFO - Losing player 0 received speed penalty: -66.80
+2025-06-19 11:59:32,948 - __main__ - INFO - Losing player 1 received speed penalty: -66.80
+2025-06-19 11:59:32,949 - __main__ - INFO - Losing player 2 received speed penalty: -66.80
+2025-06-19 11:59:32,950 - __main__ - INFO - Game 6 completed in 226 steps.
+2025-06-19 11:59:32,950 - __main__ - INFO - Scores: [1, 0, 4, 17], Total Env Rewards: [-24.622222222222206, -36.20000000000004, -18.79999999999999, 129.6057359307359], Winners: [3]
+2025-06-19 11:59:32,966 - __main__ - INFO - Starting game 7/30
+2025-06-19 12:02:22,296 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:02:22,297 - __main__ - INFO - Game 7 completed in 795 steps.
+2025-06-19 12:02:22,298 - __main__ - INFO - Scores: [2, 2, 1, 2], Total Env Rewards: [-122.80000000000001, -27.59999999999954, -29.199999999999534, -47.44358974358923], Winners: [0 1 3]
+2025-06-19 12:02:22,309 - __main__ - INFO - Starting game 8/30
+2025-06-19 12:05:00,231 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:05:00,232 - __main__ - INFO - Game 8 completed in 719 steps.
+2025-06-19 12:05:00,232 - __main__ - INFO - Scores: [1, 1, 2, 2], Total Env Rewards: [-136.8, -41.84017094017042, -129.42222222222225, -35.79999999999964], Winners: [2 3]
+2025-06-19 12:05:00,246 - __main__ - INFO - Starting game 9/30
+2025-06-19 12:07:29,205 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:07:29,206 - __main__ - INFO - Game 9 completed in 767 steps.
+2025-06-19 12:07:29,206 - __main__ - INFO - Scores: [2, 11, 6, 7], Total Env Rewards: [-83.19999999999982, -4.481818181817772, -31.305527805527774, -12.46666666666627], Winners: [1]
+2025-06-19 12:07:29,219 - __main__ - INFO - Starting game 10/30
+2025-06-19 12:08:11,804 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:08:11,806 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 12:08:11,807 - __main__ - INFO - Losing player 0 received speed penalty: -86.60
+2025-06-19 12:08:11,807 - __main__ - INFO - Losing player 1 received speed penalty: -86.60
+2025-06-19 12:08:11,808 - __main__ - INFO - Losing player 2 received speed penalty: -86.60
+2025-06-19 12:08:11,809 - __main__ - INFO - Game 10 completed in 292 steps.
+2025-06-19 12:08:11,809 - __main__ - INFO - Scores: [0, 1, 3, 16], Total Env Rewards: [-45.59999999999994, -38.19999999999994, -37.599999999999966, 122.4666666666667], Winners: [3]
+2025-06-19 12:08:11,822 - __main__ - INFO - Starting game 11/30
+2025-06-19 12:09:20,338 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:09:20,339 - __main__ - INFO - Losing player 1 received speed penalty: -132.50
+2025-06-19 12:09:20,339 - __main__ - INFO - Losing player 2 received speed penalty: -132.50
+2025-06-19 12:09:20,339 - __main__ - INFO - Losing player 3 received speed penalty: -132.50
+2025-06-19 12:09:20,340 - __main__ - INFO - Game 11 completed in 445 steps.
+2025-06-19 12:09:20,341 - __main__ - INFO - Scores: [15, 10, 2, 7], Total Env Rewards: [96.10010055304186, -40.41616161616153, -72.09999999999991, -60.63131313131301], Winners: [0]
+2025-06-19 12:09:20,352 - __main__ - INFO - Starting game 12/30
+2025-06-19 12:12:01,964 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:12:01,965 - __main__ - INFO - Game 12 completed in 785 steps.
+2025-06-19 12:12:01,966 - __main__ - INFO - Scores: [3, 4, 3, 3], Total Env Rewards: [-26.761111111110665, -95.39999999999989, -22.59999999999951, -16.599999999999554], Winners: [1]
+2025-06-19 12:12:01,978 - __main__ - INFO - Starting game 13/30
+2025-06-19 12:13:43,461 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:13:43,484 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:13:43,506 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:13:43,508 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:13:43,509 - __main__ - INFO - Losing player 0 received speed penalty: -219.20
+2025-06-19 12:13:43,509 - __main__ - INFO - Losing player 1 received speed penalty: -219.20
+2025-06-19 12:13:43,509 - __main__ - INFO - Losing player 3 received speed penalty: -219.20
+2025-06-19 12:13:43,509 - __main__ - INFO - Game 13 completed in 734 steps.
+2025-06-19 12:13:43,509 - __main__ - INFO - Scores: [4, 7, 19, 2], Total Env Rewards: [-137.7999999999996, -134.24102564102543, 129.18465211259348, -140.79999999999978], Winners: [2]
+2025-06-19 12:13:43,521 - __main__ - INFO - Starting game 14/30
+2025-06-19 12:14:37,774 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:14:37,797 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:14:37,818 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:14:37,821 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:14:37,821 - __main__ - INFO - Losing player 0 received speed penalty: -122.00
+2025-06-19 12:14:37,821 - __main__ - INFO - Losing player 1 received speed penalty: -122.00
+2025-06-19 12:14:37,821 - __main__ - INFO - Losing player 3 received speed penalty: -122.00
+2025-06-19 12:14:37,822 - __main__ - INFO - Game 14 completed in 410 steps.
+2025-06-19 12:14:37,822 - __main__ - INFO - Scores: [4, 0, 18, 8], Total Env Rewards: [-55.19999999999985, -62.79999999999985, 122.91976911976919, -44.78888888888878], Winners: [2]
+2025-06-19 12:14:37,834 - __main__ - INFO - Starting game 15/30
+2025-06-19 12:15:13,444 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:15:13,465 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:15:13,467 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:15:13,467 - __main__ - INFO - Losing player 0 received speed penalty: -77.60
+2025-06-19 12:15:13,468 - __main__ - INFO - Losing player 1 received speed penalty: -77.60
+2025-06-19 12:15:13,468 - __main__ - INFO - Losing player 3 received speed penalty: -77.60
+2025-06-19 12:15:13,468 - __main__ - INFO - Game 15 completed in 262 steps.
+2025-06-19 12:15:13,468 - __main__ - INFO - Scores: [0, 5, 17, 0], Total Env Rewards: [-38.85, -21.985858585858544, 105.05555555555556, -41.599999999999994], Winners: [2]
+2025-06-19 12:15:13,479 - __main__ - INFO - Starting game 16/30
+2025-06-19 12:18:03,340 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:18:03,340 - __main__ - INFO - Game 16 completed in 787 steps.
+2025-06-19 12:18:03,341 - __main__ - INFO - Scores: [3, 2, 3, 3], Total Env Rewards: [-20.599999999999525, -123.20000000000005, -22.199999999999534, -18.399999999999565], Winners: [0 2 3]
+2025-06-19 12:18:03,355 - __main__ - INFO - Starting game 17/30
+2025-06-19 12:18:51,553 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:18:51,554 - __main__ - INFO - Losing player 1 received speed penalty: -103.40
+2025-06-19 12:18:51,554 - __main__ - INFO - Losing player 2 received speed penalty: -103.40
+2025-06-19 12:18:51,555 - __main__ - INFO - Losing player 3 received speed penalty: -103.40
+2025-06-19 12:18:51,555 - __main__ - INFO - Game 17 completed in 348 steps.
+2025-06-19 12:18:51,556 - __main__ - INFO - Scores: [16, 14, 0, 1], Total Env Rewards: [97.14053152729628, -17.23854576795752, -59.79999999999992, -59.3999999999999], Winners: [0]
+2025-06-19 12:18:51,567 - __main__ - INFO - Starting game 18/30
+2025-06-19 12:21:27,484 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:21:27,484 - __main__ - INFO - Game 18 completed in 753 steps.
+2025-06-19 12:21:27,485 - __main__ - INFO - Scores: [6, 8, 8, 6], Total Env Rewards: [-74.86666666666642, -0.39999999999959357, -23.269264069263983, -8.7999999999996], Winners: [1 2]
+2025-06-19 12:21:27,502 - __main__ - INFO - Starting game 19/30
+2025-06-19 12:22:40,451 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:22:40,473 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:22:40,475 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:22:40,476 - __main__ - INFO - Losing player 0 received speed penalty: -161.90
+2025-06-19 12:22:40,476 - __main__ - INFO - Losing player 1 received speed penalty: -161.90
+2025-06-19 12:22:40,477 - __main__ - INFO - Losing player 3 received speed penalty: -161.90
+2025-06-19 12:22:40,477 - __main__ - INFO - Game 19 completed in 543 steps.
+2025-06-19 12:22:40,478 - __main__ - INFO - Scores: [1, 11, 15, 8], Total Env Rewards: [-82.0999999999998, -75.17316017316016, 106.75311355311375, -73.87777777777758], Winners: [2]
+2025-06-19 12:22:40,489 - __main__ - INFO - Starting game 20/30
+2025-06-19 12:24:54,111 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:24:54,111 - __main__ - INFO - Game 20 completed in 745 steps.
+2025-06-19 12:24:54,112 - __main__ - INFO - Scores: [4, 4, 4, 6], Total Env Rewards: [-16.485714285713925, -8.39999999999965, -51.190476190475906, -5.463636363636041], Winners: [3]
+2025-06-19 12:24:54,127 - __main__ - INFO - Starting game 21/30
+2025-06-19 12:27:22,732 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:27:22,733 - __main__ - INFO - Game 21 completed in 757 steps.
+2025-06-19 12:27:22,733 - __main__ - INFO - Scores: [4, 6, 6, 9], Total Env Rewards: [-76.19999999999978, 1.2500000000004121, -23.030769230769153, -14.857575757575816], Winners: [3]
+2025-06-19 12:27:22,745 - __main__ - INFO - Starting game 22/30
+2025-06-19 12:28:34,384 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:28:34,407 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:28:34,409 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:28:34,410 - __main__ - INFO - Losing player 0 received speed penalty: -143.90
+2025-06-19 12:28:34,410 - __main__ - INFO - Losing player 1 received speed penalty: -143.90
+2025-06-19 12:28:34,411 - __main__ - INFO - Losing player 3 received speed penalty: -143.90
+2025-06-19 12:28:34,411 - __main__ - INFO - Game 22 completed in 483 steps.
+2025-06-19 12:28:34,412 - __main__ - INFO - Scores: [12, 6, 15, 5], Total Env Rewards: [-71.57289018171359, -73.9821289821289, 98.78325008325021, -66.69999999999985], Winners: [2]
+2025-06-19 12:28:34,426 - __main__ - INFO - Starting game 23/30
+2025-06-19 12:29:25,429 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:29:25,430 - __main__ - INFO - Losing player 1 received speed penalty: -100.10
+2025-06-19 12:29:25,431 - __main__ - INFO - Losing player 2 received speed penalty: -100.10
+2025-06-19 12:29:25,431 - __main__ - INFO - Losing player 3 received speed penalty: -100.10
+2025-06-19 12:29:25,432 - __main__ - INFO - Game 23 completed in 337 steps.
+2025-06-19 12:29:25,432 - __main__ - INFO - Scores: [15, 8, 1, 2], Total Env Rewards: [89.49780219780223, -32.4818181818181, -57.69999999999998, -55.89999999999996], Winners: [0]
+2025-06-19 12:29:25,446 - __main__ - INFO - Starting game 24/30
+2025-06-19 12:30:40,134 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:30:40,136 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 12:30:40,137 - __main__ - INFO - Losing player 0 received speed penalty: -155.60
+2025-06-19 12:30:40,137 - __main__ - INFO - Losing player 1 received speed penalty: -155.60
+2025-06-19 12:30:40,138 - __main__ - INFO - Losing player 2 received speed penalty: -155.60
+2025-06-19 12:30:40,138 - __main__ - INFO - Game 24 completed in 522 steps.
+2025-06-19 12:30:40,139 - __main__ - INFO - Scores: [7, 9, 1, 15], Total Env Rewards: [-77.94958374958361, -61.199999999999875, -101.39999999999986, 90.94410507792871], Winners: [3]
+2025-06-19 12:30:40,159 - __main__ - INFO - Starting game 25/30
+2025-06-19 12:31:27,286 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:31:27,287 - __main__ - INFO - Losing player 1 received speed penalty: -96.20
+2025-06-19 12:31:27,288 - __main__ - INFO - Losing player 2 received speed penalty: -96.20
+2025-06-19 12:31:27,288 - __main__ - INFO - Losing player 3 received speed penalty: -96.20
+2025-06-19 12:31:27,289 - __main__ - INFO - Game 25 completed in 324 steps.
+2025-06-19 12:31:27,289 - __main__ - INFO - Scores: [16, 2, 10, 2], Total Env Rewards: [95.14382284382292, -43.99999999999991, -19.999999999999943, -47.285714285714214], Winners: [0]
+2025-06-19 12:31:27,303 - __main__ - INFO - Starting game 26/30
+2025-06-19 12:32:30,998 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:32:31,000 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 12:32:31,001 - __main__ - INFO - Losing player 0 received speed penalty: -125.90
+2025-06-19 12:32:31,001 - __main__ - INFO - Losing player 1 received speed penalty: -125.90
+2025-06-19 12:32:31,002 - __main__ - INFO - Losing player 2 received speed penalty: -125.90
+2025-06-19 12:32:31,002 - __main__ - INFO - Game 26 completed in 423 steps.
+2025-06-19 12:32:31,003 - __main__ - INFO - Scores: [6, 6, 3, 16], Total Env Rewards: [-52.95151515151501, -47.29999999999987, -67.29999999999987, 95.36703296703307], Winners: [3]
+2025-06-19 12:32:31,017 - __main__ - INFO - Starting game 27/30
+2025-06-19 12:34:12,933 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:34:12,933 - __main__ - INFO - Losing player 1 received speed penalty: -215.00
+2025-06-19 12:34:12,934 - __main__ - INFO - Losing player 2 received speed penalty: -215.00
+2025-06-19 12:34:12,934 - __main__ - INFO - Losing player 3 received speed penalty: -215.00
+2025-06-19 12:34:12,934 - __main__ - INFO - Game 27 completed in 720 steps.
+2025-06-19 12:34:12,934 - __main__ - INFO - Scores: [18, 4, 1, 2], Total Env Rewards: [139.77092907092933, -118.2222222222219, -137.3484848484846, -130.79999999999973], Winners: [0]
+2025-06-19 12:34:12,948 - __main__ - INFO - Starting game 28/30
+2025-06-19 12:36:15,808 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:36:15,808 - __main__ - INFO - Losing player 1 received speed penalty: -204.80
+2025-06-19 12:36:15,809 - __main__ - INFO - Losing player 2 received speed penalty: -204.80
+2025-06-19 12:36:15,809 - __main__ - INFO - Losing player 3 received speed penalty: -204.80
+2025-06-19 12:36:15,809 - __main__ - INFO - Game 28 completed in 686 steps.
+2025-06-19 12:36:15,810 - __main__ - INFO - Scores: [15, 5, 11, 3], Total Env Rewards: [86.28846153846182, -118.11515151515117, -108.83181818181784, -160.99999999999983], Winners: [0]
+2025-06-19 12:36:15,821 - __main__ - INFO - Starting game 29/30
+2025-06-19 12:39:04,046 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:39:04,046 - __main__ - INFO - Game 29 completed in 779 steps.
+2025-06-19 12:39:04,047 - __main__ - INFO - Scores: [3, 3, 3, 1], Total Env Rewards: [-117.19999999999999, -16.59999999999951, -16.199999999999548, -20.799999999999514], Winners: [0 1 2]
+2025-06-19 12:39:04,061 - __main__ - INFO - Starting game 30/30
+2025-06-19 12:39:58,448 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:39:58,467 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:39:58,469 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:39:58,470 - __main__ - INFO - Losing player 0 received speed penalty: -113.90
+2025-06-19 12:39:58,471 - __main__ - INFO - Losing player 1 received speed penalty: -113.90
+2025-06-19 12:39:58,471 - __main__ - INFO - Losing player 3 received speed penalty: -113.90
+2025-06-19 12:39:58,472 - __main__ - INFO - Game 30 completed in 383 steps.
+2025-06-19 12:39:58,472 - __main__ - INFO - Scores: [1, 0, 17, 5], Total Env Rewards: [-61.49999999999986, -68.69999999999993, 93.22111302010683, -44.74999999999994], Winners: [2]
+2025-06-19 12:39:58,474 - __main__ - INFO - Self-play phase completed. Average steps: 537.57
+2025-06-19 12:39:58,475 - __main__ - INFO - Average scores: [6.3        5.63333333 6.1        6.2       ], Average total rewards: [-25.654675   -44.82076316 -21.56876424 -19.45392585]
+2025-06-19 12:39:58,476 - __main__ - INFO - Starting training phase
+2025-06-19 12:40:11,611 - __main__ - INFO - Epoch 1000/15000, Policy Loss: 1.8134, Value Loss: 2.0514, Total Loss: 3.8647
+2025-06-19 12:40:24,299 - __main__ - INFO - Epoch 2000/15000, Policy Loss: 1.8399, Value Loss: 2.5082, Total Loss: 4.3481
+2025-06-19 12:40:36,445 - __main__ - INFO - Epoch 3000/15000, Policy Loss: 1.8887, Value Loss: 2.2526, Total Loss: 4.1413
+2025-06-19 12:40:48,813 - __main__ - INFO - Epoch 4000/15000, Policy Loss: 1.8917, Value Loss: 1.4982, Total Loss: 3.3899
+2025-06-19 12:41:01,430 - __main__ - INFO - Epoch 5000/15000, Policy Loss: 1.7526, Value Loss: 3.0606, Total Loss: 4.8133
+2025-06-19 12:41:13,624 - __main__ - INFO - Epoch 6000/15000, Policy Loss: 1.8162, Value Loss: 2.7721, Total Loss: 4.5883
+2025-06-19 12:41:26,266 - __main__ - INFO - Epoch 7000/15000, Policy Loss: 1.9129, Value Loss: 1.3628, Total Loss: 3.2757
+2025-06-19 12:41:38,737 - __main__ - INFO - Epoch 8000/15000, Policy Loss: 1.8822, Value Loss: 2.0001, Total Loss: 3.8823
+2025-06-19 12:41:50,954 - __main__ - INFO - Epoch 9000/15000, Policy Loss: 1.8585, Value Loss: 2.5817, Total Loss: 4.4402
+2025-06-19 12:42:03,034 - __main__ - INFO - Epoch 10000/15000, Policy Loss: 1.8432, Value Loss: 4.0701, Total Loss: 5.9133
+2025-06-19 12:42:15,125 - __main__ - INFO - Epoch 11000/15000, Policy Loss: 1.8823, Value Loss: 0.9445, Total Loss: 2.8268
+2025-06-19 12:42:27,739 - __main__ - INFO - Epoch 12000/15000, Policy Loss: 1.9197, Value Loss: 1.4155, Total Loss: 3.3353
+2025-06-19 12:42:40,323 - __main__ - INFO - Epoch 13000/15000, Policy Loss: 1.8390, Value Loss: 1.5329, Total Loss: 3.3719
+2025-06-19 12:42:52,758 - __main__ - INFO - Epoch 14000/15000, Policy Loss: 1.8454, Value Loss: 2.3134, Total Loss: 4.1588
+2025-06-19 12:43:05,744 - __main__ - INFO - Epoch 15000/15000, Policy Loss: 1.9024, Value Loss: 1.7965, Total Loss: 3.6989
+2025-06-19 12:43:05,745 - __main__ - INFO - Training completed. Average Policy Loss: 1.8637, Average Value Loss: 2.0836, Average Total Loss: 3.9474
+2025-06-19 12:43:05,745 - __main__ - INFO - Starting iteration 2/5
+2025-06-19 12:43:05,745 - __main__ - INFO - Starting self-play phase
+2025-06-19 12:43:05,760 - __main__ - INFO - Starting game 1/30
+2025-06-19 12:46:14,935 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:46:14,936 - __main__ - INFO - Game 1 completed in 787 steps.
+2025-06-19 12:46:14,937 - __main__ - INFO - Scores: [1, 2, 1, 1], Total Env Rewards: [-34.5999999999995, -31.402097902097537, -115.19999999999997, -31.999999999999588], Winners: [1]
+2025-06-19 12:46:14,951 - __main__ - INFO - Starting game 2/30
+2025-06-19 12:46:56,740 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:46:56,775 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:46:56,814 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:46:56,852 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:46:56,854 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 12:46:56,855 - __main__ - INFO - Losing player 0 received speed penalty: -75.20
+2025-06-19 12:46:56,855 - __main__ - INFO - Losing player 2 received speed penalty: -75.20
+2025-06-19 12:46:56,855 - __main__ - INFO - Losing player 3 received speed penalty: -75.20
+2025-06-19 12:46:56,856 - __main__ - INFO - Game 2 completed in 254 steps.
+2025-06-19 12:46:56,857 - __main__ - INFO - Scores: [0, 16, 2, 4], Total Env Rewards: [-45.20000000000006, 108.03931623931621, -30.999999999999943, -28.485714285714295], Winners: [1]
+2025-06-19 12:46:56,873 - __main__ - INFO - Starting game 3/30
+2025-06-19 12:47:52,322 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:47:52,347 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:47:52,370 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:47:52,372 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:47:52,373 - __main__ - INFO - Losing player 0 received speed penalty: -102.20
+2025-06-19 12:47:52,373 - __main__ - INFO - Losing player 1 received speed penalty: -102.20
+2025-06-19 12:47:52,373 - __main__ - INFO - Losing player 3 received speed penalty: -102.20
+2025-06-19 12:47:52,373 - __main__ - INFO - Game 3 completed in 344 steps.
+2025-06-19 12:47:52,374 - __main__ - INFO - Scores: [0, 5, 16, 2], Total Env Rewards: [-55.79999999999991, -44.1999999999999, 100.57498057498057, -51.59999999999996], Winners: [2]
+2025-06-19 12:47:52,386 - __main__ - INFO - Starting game 4/30
+2025-06-19 12:49:52,412 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:49:52,412 - __main__ - INFO - Losing player 1 received speed penalty: -167.60
+2025-06-19 12:49:52,412 - __main__ - INFO - Losing player 2 received speed penalty: -167.60
+2025-06-19 12:49:52,413 - __main__ - INFO - Losing player 3 received speed penalty: -167.60
+2025-06-19 12:49:52,413 - __main__ - INFO - Game 4 completed in 562 steps.
+2025-06-19 12:49:52,414 - __main__ - INFO - Scores: [17, 1, 3, 3], Total Env Rewards: [129.0003663003664, -115.39999999999975, -103.19999999999976, -115.1499999999999], Winners: [0]
+2025-06-19 12:49:52,427 - __main__ - INFO - Starting game 5/30
+2025-06-19 12:51:37,749 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 12:51:37,750 - __main__ - INFO - Losing player 1 received speed penalty: -192.20
+2025-06-19 12:51:37,750 - __main__ - INFO - Losing player 2 received speed penalty: -192.20
+2025-06-19 12:51:37,751 - __main__ - INFO - Losing player 3 received speed penalty: -192.20
+2025-06-19 12:51:37,751 - __main__ - INFO - Game 5 completed in 644 steps.
+2025-06-19 12:51:37,752 - __main__ - INFO - Scores: [15, 1, 7, 8], Total Env Rewards: [106.25071872571893, -136.59999999999977, -107.56666666666638, -113.39999999999974], Winners: [0]
+2025-06-19 12:51:37,768 - __main__ - INFO - Starting game 6/30
+2025-06-19 12:54:39,472 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:54:39,472 - __main__ - INFO - Game 6 completed in 772 steps.
+2025-06-19 12:54:39,473 - __main__ - INFO - Scores: [6, 3, 4, 1], Total Env Rewards: [-8.812121212120772, -20.199999999999548, -22.685714285713843, -105.79999999999993], Winners: [0]
+2025-06-19 12:54:39,486 - __main__ - INFO - Starting game 7/30
+2025-06-19 12:56:08,409 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:56:08,434 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:56:08,465 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 12:56:08,467 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 12:56:08,468 - __main__ - INFO - Losing player 0 received speed penalty: -161.60
+2025-06-19 12:56:08,468 - __main__ - INFO - Losing player 1 received speed penalty: -161.60
+2025-06-19 12:56:08,468 - __main__ - INFO - Losing player 3 received speed penalty: -161.60
+2025-06-19 12:56:08,468 - __main__ - INFO - Game 7 completed in 542 steps.
+2025-06-19 12:56:08,469 - __main__ - INFO - Scores: [2, 14, 17, 9], Total Env Rewards: [-98.1999999999998, -81.78937728937723, 113.84990271166751, -76.91313131313113], Winners: [2]
+2025-06-19 12:56:08,481 - __main__ - INFO - Starting game 8/30
+2025-06-19 12:59:19,843 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 12:59:19,844 - __main__ - INFO - Game 8 completed in 785 steps.
+2025-06-19 12:59:19,844 - __main__ - INFO - Scores: [2, 4, 1, 1], Total Env Rewards: [-25.19999999999952, -113.46666666666664, -25.99999999999949, -30.499999999999574], Winners: [1]
+2025-06-19 12:59:19,859 - __main__ - INFO - Starting game 9/30
+2025-06-19 13:02:26,793 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:02:26,793 - __main__ - INFO - Game 9 completed in 757 steps.
+2025-06-19 13:02:26,793 - __main__ - INFO - Scores: [4, 8, 7, 2], Total Env Rewards: [-92.13401663695788, -21.599999999999923, -30.06630036630021, -111.80000000000008], Winners: [1]
+2025-06-19 13:02:26,805 - __main__ - INFO - Starting game 10/30
+2025-06-19 13:05:38,145 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:05:38,146 - __main__ - INFO - Game 10 completed in 831 steps.
+2025-06-19 13:05:38,147 - __main__ - INFO - Scores: [2, 2, 1, 4], Total Env Rewards: [-23.399999999999565, -31.17522477522445, -34.91118881118835, -6.799999999999628], Winners: [3]
+2025-06-19 13:05:38,162 - __main__ - INFO - Starting game 11/30
+2025-06-19 13:08:46,814 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:08:46,814 - __main__ - INFO - Game 11 completed in 785 steps.
+2025-06-19 13:08:46,815 - __main__ - INFO - Scores: [4, 2, 3, 2], Total Env Rewards: [-89.99999999999983, -28.599999999999554, -17.19999999999962, -48.999999999999936], Winners: [0]
+2025-06-19 13:08:46,832 - __main__ - INFO - Starting game 12/30
+2025-06-19 13:11:48,266 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:11:48,267 - __main__ - INFO - Game 12 completed in 773 steps.
+2025-06-19 13:11:48,267 - __main__ - INFO - Scores: [2, 5, 2, 6], Total Env Rewards: [-92.9999999999999, -10.472222222221816, -22.799999999999514, -42.00555555555558], Winners: [3]
+2025-06-19 13:11:48,280 - __main__ - INFO - Starting game 13/30
+2025-06-19 13:14:24,675 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:14:24,675 - __main__ - INFO - Game 13 completed in 775 steps.
+2025-06-19 13:14:24,676 - __main__ - INFO - Scores: [8, 7, 2, 6], Total Env Rewards: [-6.2108003108002805, -35.70793650793625, -24.199999999999548, -14.866666666666276], Winners: [0]
+2025-06-19 13:14:24,691 - __main__ - INFO - Starting game 14/30
+2025-06-19 13:17:04,747 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:17:04,747 - __main__ - INFO - Game 14 completed in 645 steps.
+2025-06-19 13:17:04,747 - __main__ - INFO - Scores: [5, 1, 0, 4], Total Env Rewards: [-120.2, -126.4, -131.40000000000006, -21.66666666666619], Winners: [0]
+2025-06-19 13:17:04,759 - __main__ - INFO - Starting game 15/30
+2025-06-19 13:18:21,645 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:18:21,677 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:18:21,717 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:18:21,751 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:18:21,754 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 13:18:21,754 - __main__ - INFO - Losing player 0 received speed penalty: -143.90
+2025-06-19 13:18:21,755 - __main__ - INFO - Losing player 2 received speed penalty: -143.90
+2025-06-19 13:18:21,755 - __main__ - INFO - Losing player 3 received speed penalty: -143.90
+2025-06-19 13:18:21,755 - __main__ - INFO - Game 15 completed in 483 steps.
+2025-06-19 13:18:21,756 - __main__ - INFO - Scores: [5, 15, 8, 5], Total Env Rewards: [-79.16666666666654, 85.13910256410271, -59.857575757575574, -71.78571428571415], Winners: [1]
+2025-06-19 13:18:21,784 - __main__ - INFO - Starting game 16/30
+2025-06-19 13:21:40,658 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:21:40,659 - __main__ - INFO - Game 16 completed in 787 steps.
+2025-06-19 13:21:40,659 - __main__ - INFO - Scores: [2, 2, 2, 0], Total Env Rewards: [-118.11666666666667, -24.399999999999537, -37.04102564102515, -37.199999999999626], Winners: [0 1 2]
+2025-06-19 13:21:40,671 - __main__ - INFO - Starting game 17/30
+2025-06-19 13:23:58,452 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:23:58,452 - __main__ - INFO - Game 17 completed in 661 steps.
+2025-06-19 13:23:58,452 - __main__ - INFO - Scores: [9, 5, 4, 0], Total Env Rewards: [-7.783333333332905, -69.42222222222202, -69.19999999999976, -78.59999999999974], Winners: [0]
+2025-06-19 13:23:58,464 - __main__ - INFO - Starting game 18/30
+2025-06-19 13:26:46,331 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:26:46,331 - __main__ - INFO - Game 18 completed in 713 steps.
+2025-06-19 13:26:46,332 - __main__ - INFO - Scores: [3, 5, 3, 1], Total Env Rewards: [-98.99999999999987, -57.35588235294113, -112.33333333333337, -82.59999999999987], Winners: [1]
+2025-06-19 13:26:46,345 - __main__ - INFO - Starting game 19/30
+2025-06-19 13:27:55,149 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:27:55,151 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 13:27:55,151 - __main__ - INFO - Losing player 0 received speed penalty: -120.50
+2025-06-19 13:27:55,152 - __main__ - INFO - Losing player 1 received speed penalty: -120.50
+2025-06-19 13:27:55,152 - __main__ - INFO - Losing player 2 received speed penalty: -120.50
+2025-06-19 13:27:55,152 - __main__ - INFO - Game 19 completed in 405 steps.
+2025-06-19 13:27:55,152 - __main__ - INFO - Scores: [1, 2, 2, 18], Total Env Rewards: [-69.34444444444432, -64.09999999999988, -78.69999999999992, 98.06873126873136], Winners: [3]
+2025-06-19 13:27:55,165 - __main__ - INFO - Starting game 20/30
+2025-06-19 13:29:13,136 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:29:13,160 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:29:13,181 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:29:13,204 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:29:13,227 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:29:13,229 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 13:29:13,229 - __main__ - INFO - Losing player 0 received speed penalty: -146.00
+2025-06-19 13:29:13,229 - __main__ - INFO - Losing player 2 received speed penalty: -146.00
+2025-06-19 13:29:13,230 - __main__ - INFO - Losing player 3 received speed penalty: -146.00
+2025-06-19 13:29:13,230 - __main__ - INFO - Game 20 completed in 490 steps.
+2025-06-19 13:29:13,230 - __main__ - INFO - Scores: [4, 15, 0, 10], Total Env Rewards: [-68.3999999999998, 119.19847554406383, -88.79999999999978, -49.390909090908934], Winners: [1]
+2025-06-19 13:29:13,243 - __main__ - INFO - Starting game 21/30
+2025-06-19 13:31:54,164 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:31:54,164 - __main__ - INFO - Game 21 completed in 866 steps.
+2025-06-19 13:31:54,164 - __main__ - INFO - Scores: [2, 1, 4, 8], Total Env Rewards: [-49.1999999999995, -27.827738927738693, -11.399999999999622, -42.290659340659154], Winners: [3]
+2025-06-19 13:31:54,177 - __main__ - INFO - Starting game 22/30
+2025-06-19 13:32:39,526 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:32:39,553 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:32:39,575 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:32:39,604 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:32:39,606 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 13:32:39,607 - __main__ - INFO - Losing player 0 received speed penalty: -91.40
+2025-06-19 13:32:39,607 - __main__ - INFO - Losing player 2 received speed penalty: -91.40
+2025-06-19 13:32:39,608 - __main__ - INFO - Losing player 3 received speed penalty: -91.40
+2025-06-19 13:32:39,608 - __main__ - INFO - Game 22 completed in 308 steps.
+2025-06-19 13:32:39,608 - __main__ - INFO - Scores: [4, 16, 16, 1], Total Env Rewards: [-38.799999999999926, 94.37193362193361, 2.342296918767545, -52.39999999999998], Winners: [1 2]
+2025-06-19 13:32:39,621 - __main__ - INFO - Starting game 23/30
+2025-06-19 13:34:10,343 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:34:10,346 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 13:34:10,346 - __main__ - INFO - Losing player 0 received speed penalty: -172.70
+2025-06-19 13:34:10,346 - __main__ - INFO - Losing player 1 received speed penalty: -172.70
+2025-06-19 13:34:10,346 - __main__ - INFO - Losing player 2 received speed penalty: -172.70
+2025-06-19 13:34:10,346 - __main__ - INFO - Game 23 completed in 579 steps.
+2025-06-19 13:34:10,347 - __main__ - INFO - Scores: [0, 6, 13, 15], Total Env Rewards: [-122.29999999999978, -91.89999999999982, -88.1296703296702, 88.86665154590861], Winners: [3]
+2025-06-19 13:34:10,359 - __main__ - INFO - Starting game 24/30
+2025-06-19 13:35:20,055 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:35:20,081 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:35:20,106 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:35:20,128 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:35:20,130 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 13:35:20,131 - __main__ - INFO - Losing player 0 received speed penalty: -141.20
+2025-06-19 13:35:20,131 - __main__ - INFO - Losing player 2 received speed penalty: -141.20
+2025-06-19 13:35:20,131 - __main__ - INFO - Losing player 3 received speed penalty: -141.20
+2025-06-19 13:35:20,131 - __main__ - INFO - Game 24 completed in 474 steps.
+2025-06-19 13:35:20,132 - __main__ - INFO - Scores: [0, 15, 11, 9], Total Env Rewards: [-104.79999999999995, 70.61794871794879, -56.399999999999906, -67.89267399267388], Winners: [1]
+2025-06-19 13:35:20,145 - __main__ - INFO - Starting game 25/30
+2025-06-19 13:38:10,882 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:38:10,883 - __main__ - INFO - Game 25 completed in 786 steps.
+2025-06-19 13:38:10,883 - __main__ - INFO - Scores: [9, 6, 3, 6], Total Env Rewards: [-12.994444444444355, -62.79999999999983, -30.890909090908792, -16.266666666666254], Winners: [0]
+2025-06-19 13:38:10,895 - __main__ - INFO - Starting game 26/30
+2025-06-19 13:40:10,098 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:40:10,131 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:40:10,157 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:40:10,184 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:40:10,189 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 13:40:10,190 - __main__ - INFO - Losing player 0 received speed penalty: -191.90
+2025-06-19 13:40:10,190 - __main__ - INFO - Losing player 1 received speed penalty: -191.90
+2025-06-19 13:40:10,190 - __main__ - INFO - Losing player 3 received speed penalty: -191.90
+2025-06-19 13:40:10,190 - __main__ - INFO - Game 26 completed in 643 steps.
+2025-06-19 13:40:10,191 - __main__ - INFO - Scores: [3, 4, 16, 9], Total Env Rewards: [-115.79999999999977, -108.69999999999973, 124.96323676323684, -108.84545454545423], Winners: [2]
+2025-06-19 13:40:10,206 - __main__ - INFO - Starting game 27/30
+2025-06-19 13:42:08,408 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:42:08,433 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:42:08,457 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:42:08,459 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 13:42:08,460 - __main__ - INFO - Losing player 0 received speed penalty: -136.70
+2025-06-19 13:42:08,460 - __main__ - INFO - Losing player 1 received speed penalty: -136.70
+2025-06-19 13:42:08,461 - __main__ - INFO - Losing player 2 received speed penalty: -136.70
+2025-06-19 13:42:08,461 - __main__ - INFO - Game 27 completed in 459 steps.
+2025-06-19 13:42:08,462 - __main__ - INFO - Scores: [0, 1, 15, 18], Total Env Rewards: [-79.29999999999978, -80.69999999999985, -35.006347410759105, 111.83346653346662], Winners: [3]
+2025-06-19 13:42:08,477 - __main__ - INFO - Starting game 28/30
+2025-06-19 13:43:19,689 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:43:19,721 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:43:19,748 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:43:19,773 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:43:19,799 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:43:19,802 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 13:43:19,802 - __main__ - INFO - Losing player 0 received speed penalty: -135.50
+2025-06-19 13:43:19,802 - __main__ - INFO - Losing player 2 received speed penalty: -135.50
+2025-06-19 13:43:19,803 - __main__ - INFO - Losing player 3 received speed penalty: -135.50
+2025-06-19 13:43:19,803 - __main__ - INFO - Game 28 completed in 455 steps.
+2025-06-19 13:43:19,803 - __main__ - INFO - Scores: [13, 19, 2, 13], Total Env Rewards: [-33.9465686274509, 117.86518481518483, -81.09999999999991, -45.606055056054984], Winners: [1]
+2025-06-19 13:43:19,818 - __main__ - INFO - Starting game 29/30
+2025-06-19 13:46:26,248 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:46:26,249 - __main__ - INFO - Game 29 completed in 776 steps.
+2025-06-19 13:46:26,249 - __main__ - INFO - Scores: [1, 4, 1, 4], Total Env Rewards: [-112.99999999999994, -17.453896103895673, -25.999999999999503, -17.39999999999958], Winners: [1 3]
+2025-06-19 13:46:26,262 - __main__ - INFO - Starting game 30/30
+2025-06-19 13:47:46,158 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:47:46,185 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:47:46,187 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 13:47:46,187 - __main__ - INFO - Losing player 0 received speed penalty: -149.00
+2025-06-19 13:47:46,188 - __main__ - INFO - Losing player 1 received speed penalty: -149.00
+2025-06-19 13:47:46,188 - __main__ - INFO - Losing player 3 received speed penalty: -149.00
+2025-06-19 13:47:46,188 - __main__ - INFO - Game 30 completed in 500 steps.
+2025-06-19 13:47:46,189 - __main__ - INFO - Scores: [13, 4, 15, 0], Total Env Rewards: [-51.37216117216097, -82.99999999999982, 89.65635296076476, -96.99999999999986], Winners: [2]
+2025-06-19 13:47:46,190 - __main__ - INFO - Self-play phase completed. Average steps: 621.37
+2025-06-19 13:47:46,191 - __main__ - INFO - Average scores: [4.56666667 6.36666667 6.03333333 5.66666667], Average total rewards: [-54.02767128 -29.64804345 -33.65673206 -42.28323394]
+2025-06-19 13:47:46,192 - __main__ - INFO - Starting training phase
+2025-06-19 13:48:03,214 - __main__ - INFO - Epoch 1000/15000, Policy Loss: 1.6936, Value Loss: 1.6650, Total Loss: 3.3586
+2025-06-19 13:48:22,497 - __main__ - INFO - Epoch 2000/15000, Policy Loss: 1.8399, Value Loss: 2.5908, Total Loss: 4.4307
+2025-06-19 13:48:41,079 - __main__ - INFO - Epoch 3000/15000, Policy Loss: 1.8260, Value Loss: 1.0065, Total Loss: 2.8325
+2025-06-19 13:48:58,556 - __main__ - INFO - Epoch 4000/15000, Policy Loss: 1.8889, Value Loss: 3.5004, Total Loss: 5.3893
+2025-06-19 13:49:15,715 - __main__ - INFO - Epoch 5000/15000, Policy Loss: 1.8265, Value Loss: 1.3587, Total Loss: 3.1851
+2025-06-19 13:49:33,467 - __main__ - INFO - Epoch 6000/15000, Policy Loss: 1.8667, Value Loss: 1.9492, Total Loss: 3.8159
+2025-06-19 13:49:50,645 - __main__ - INFO - Epoch 7000/15000, Policy Loss: 1.7489, Value Loss: 1.3993, Total Loss: 3.1482
+2025-06-19 13:50:07,655 - __main__ - INFO - Epoch 8000/15000, Policy Loss: 1.8014, Value Loss: 1.3406, Total Loss: 3.1420
+2025-06-19 13:50:26,695 - __main__ - INFO - Epoch 9000/15000, Policy Loss: 1.8274, Value Loss: 1.0627, Total Loss: 2.8901
+2025-06-19 13:50:44,574 - __main__ - INFO - Epoch 10000/15000, Policy Loss: 1.8567, Value Loss: 2.1879, Total Loss: 4.0446
+2025-06-19 13:51:02,930 - __main__ - INFO - Epoch 11000/15000, Policy Loss: 1.8346, Value Loss: 2.5977, Total Loss: 4.4323
+2025-06-19 13:51:49,751 - __main__ - INFO - Epoch 12000/15000, Policy Loss: 1.8430, Value Loss: 1.8892, Total Loss: 3.7322
+2025-06-19 13:52:16,909 - __main__ - INFO - Epoch 13000/15000, Policy Loss: 1.8229, Value Loss: 1.5279, Total Loss: 3.3509
+2025-06-19 13:52:34,981 - __main__ - INFO - Epoch 14000/15000, Policy Loss: 1.7926, Value Loss: 1.0116, Total Loss: 2.8043
+2025-06-19 13:52:53,145 - __main__ - INFO - Epoch 15000/15000, Policy Loss: 1.7414, Value Loss: 1.2745, Total Loss: 3.0159
+2025-06-19 13:52:53,146 - __main__ - INFO - Training completed. Average Policy Loss: 1.8083, Average Value Loss: 1.7710, Average Total Loss: 3.5794
+2025-06-19 13:52:53,148 - __main__ - INFO - Starting iteration 3/5
+2025-06-19 13:52:53,148 - __main__ - INFO - Starting self-play phase
+2025-06-19 13:52:53,166 - __main__ - INFO - Starting game 1/30
+2025-06-19 13:55:38,185 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 13:55:38,186 - __main__ - INFO - Game 1 completed in 802 steps.
+2025-06-19 13:55:38,186 - __main__ - INFO - Scores: [5, 3, 3, 5], Total Env Rewards: [-24.040093240093213, -18.59999999999961, -16.199999999999534, -34.11443001443001], Winners: [0 3]
+2025-06-19 13:55:38,201 - __main__ - INFO - Starting game 2/30
+2025-06-19 13:57:59,211 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:57:59,212 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 13:57:59,213 - __main__ - INFO - Losing player 0 received speed penalty: -203.30
+2025-06-19 13:57:59,213 - __main__ - INFO - Losing player 1 received speed penalty: -203.30
+2025-06-19 13:57:59,213 - __main__ - INFO - Losing player 2 received speed penalty: -203.30
+2025-06-19 13:57:59,213 - __main__ - INFO - Game 2 completed in 681 steps.
+2025-06-19 13:57:59,214 - __main__ - INFO - Scores: [2, 5, 4, 15], Total Env Rewards: [-132.16666666666632, -136.0999999999997, -143.54999999999976, 120.84761904761939], Winners: [3]
+2025-06-19 13:57:59,227 - __main__ - INFO - Starting game 3/30
+2025-06-19 13:59:12,366 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:59:12,397 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:59:12,419 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 13:59:12,423 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 13:59:12,423 - __main__ - INFO - Losing player 0 received speed penalty: -134.60
+2025-06-19 13:59:12,423 - __main__ - INFO - Losing player 1 received speed penalty: -134.60
+2025-06-19 13:59:12,423 - __main__ - INFO - Losing player 3 received speed penalty: -134.60
+2025-06-19 13:59:12,424 - __main__ - INFO - Game 3 completed in 452 steps.
+2025-06-19 13:59:12,424 - __main__ - INFO - Scores: [10, 1, 17, 1], Total Env Rewards: [-51.24871794871778, -87.39999999999984, 108.30922410922412, -89.39999999999979], Winners: [2]
+2025-06-19 13:59:12,435 - __main__ - INFO - Starting game 4/30
+2025-06-19 14:00:28,293 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:00:28,317 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:00:28,344 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:00:28,369 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:00:28,392 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:00:28,395 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:00:28,396 - __main__ - INFO - Losing player 0 received speed penalty: -142.70
+2025-06-19 14:00:28,396 - __main__ - INFO - Losing player 2 received speed penalty: -142.70
+2025-06-19 14:00:28,397 - __main__ - INFO - Losing player 3 received speed penalty: -142.70
+2025-06-19 14:00:28,397 - __main__ - INFO - Game 4 completed in 479 steps.
+2025-06-19 14:00:28,397 - __main__ - INFO - Scores: [11, 16, 5, 1], Total Env Rewards: [-58.05909090909073, 104.41556776556791, -73.52222222222207, -90.36666666666645], Winners: [1]
+2025-06-19 14:00:28,410 - __main__ - INFO - Starting game 5/30
+2025-06-19 14:03:44,948 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:03:44,948 - __main__ - INFO - Game 5 completed in 796 steps.
+2025-06-19 14:03:44,949 - __main__ - INFO - Scores: [1, 2, 1, 0], Total Env Rewards: [-30.999999999999574, -114.19999999999996, -32.19999999999962, -20.831168831168412], Winners: [1]
+2025-06-19 14:03:44,964 - __main__ - INFO - Starting game 6/30
+2025-06-19 14:05:04,921 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:05:04,949 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:05:04,952 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 14:05:04,952 - __main__ - INFO - Losing player 0 received speed penalty: -131.60
+2025-06-19 14:05:04,953 - __main__ - INFO - Losing player 1 received speed penalty: -131.60
+2025-06-19 14:05:04,953 - __main__ - INFO - Losing player 3 received speed penalty: -131.60
+2025-06-19 14:05:04,953 - __main__ - INFO - Game 6 completed in 442 steps.
+2025-06-19 14:05:04,954 - __main__ - INFO - Scores: [6, 6, 17, 3], Total Env Rewards: [-64.82424242424226, -59.0833333333332, 115.73434065934077, -90.19999999999993], Winners: [2]
+2025-06-19 14:05:04,969 - __main__ - INFO - Starting game 7/30
+2025-06-19 14:06:05,806 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:06:05,827 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:06:05,853 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:06:05,882 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:06:05,884 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:06:05,884 - __main__ - INFO - Losing player 0 received speed penalty: -98.00
+2025-06-19 14:06:05,884 - __main__ - INFO - Losing player 2 received speed penalty: -98.00
+2025-06-19 14:06:05,885 - __main__ - INFO - Losing player 3 received speed penalty: -98.00
+2025-06-19 14:06:05,885 - __main__ - INFO - Game 7 completed in 330 steps.
+2025-06-19 14:06:05,885 - __main__ - INFO - Scores: [4, 15, 0, 0], Total Env Rewards: [-44.999999999999915, 87.63051948051947, -73.20000000000006, -64.20000000000005], Winners: [1]
+2025-06-19 14:06:05,897 - __main__ - INFO - Starting game 8/30
+2025-06-19 14:07:02,518 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:07:02,519 - __main__ - INFO - Losing player 1 received speed penalty: -109.40
+2025-06-19 14:07:02,519 - __main__ - INFO - Losing player 2 received speed penalty: -109.40
+2025-06-19 14:07:02,519 - __main__ - INFO - Losing player 3 received speed penalty: -109.40
+2025-06-19 14:07:02,519 - __main__ - INFO - Game 8 completed in 368 steps.
+2025-06-19 14:07:02,520 - __main__ - INFO - Scores: [17, 1, 0, 9], Total Env Rewards: [116.76452991452993, -51.59999999999989, -65.19999999999995, -33.92810522810517], Winners: [0]
+2025-06-19 14:07:02,534 - __main__ - INFO - Starting game 9/30
+2025-06-19 14:09:37,866 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:09:37,866 - __main__ - INFO - Game 9 completed in 713 steps.
+2025-06-19 14:09:37,867 - __main__ - INFO - Scores: [2, 5, 2, 1], Total Env Rewards: [-83.79999999999978, -7.288888888888465, -47.599999999999646, -111.79999999999994], Winners: [1]
+2025-06-19 14:09:37,881 - __main__ - INFO - Starting game 10/30
+2025-06-19 14:11:17,698 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:11:17,700 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 14:11:17,700 - __main__ - INFO - Losing player 0 received speed penalty: -166.10
+2025-06-19 14:11:17,700 - __main__ - INFO - Losing player 1 received speed penalty: -166.10
+2025-06-19 14:11:17,700 - __main__ - INFO - Losing player 2 received speed penalty: -166.10
+2025-06-19 14:11:17,701 - __main__ - INFO - Game 10 completed in 557 steps.
+2025-06-19 14:11:17,701 - __main__ - INFO - Scores: [1, 9, 11, 17], Total Env Rewards: [-103.4999999999998, -100.49278205454674, -78.2786324786324, 111.0086913086914], Winners: [3]
+2025-06-19 14:11:17,716 - __main__ - INFO - Starting game 11/30
+2025-06-19 14:13:10,213 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:13:10,216 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 14:13:10,216 - __main__ - INFO - Losing player 0 received speed penalty: -206.60
+2025-06-19 14:13:10,216 - __main__ - INFO - Losing player 1 received speed penalty: -206.60
+2025-06-19 14:13:10,217 - __main__ - INFO - Losing player 2 received speed penalty: -206.60
+2025-06-19 14:13:10,217 - __main__ - INFO - Game 11 completed in 692 steps.
+2025-06-19 14:13:10,217 - __main__ - INFO - Scores: [9, 0, 3, 15], Total Env Rewards: [-113.98181818181776, -133.7999999999996, -129.39999999999966, 123.08374958374978], Winners: [3]
+2025-06-19 14:13:10,231 - __main__ - INFO - Starting game 12/30
+2025-06-19 14:14:15,834 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:14:15,835 - __main__ - INFO - Losing player 1 received speed penalty: -129.80
+2025-06-19 14:14:15,835 - __main__ - INFO - Losing player 2 received speed penalty: -129.80
+2025-06-19 14:14:15,836 - __main__ - INFO - Losing player 3 received speed penalty: -129.80
+2025-06-19 14:14:15,836 - __main__ - INFO - Game 12 completed in 436 steps.
+2025-06-19 14:14:15,836 - __main__ - INFO - Scores: [16, 6, 0, 4], Total Env Rewards: [93.71411088911094, -60.28571428571421, -88.6, -65.64999999999988], Winners: [0]
+2025-06-19 14:14:15,849 - __main__ - INFO - Starting game 13/30
+2025-06-19 14:15:02,136 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:15:02,137 - __main__ - INFO - Losing player 1 received speed penalty: -89.90
+2025-06-19 14:15:02,137 - __main__ - INFO - Losing player 2 received speed penalty: -89.90
+2025-06-19 14:15:02,137 - __main__ - INFO - Losing player 3 received speed penalty: -89.90
+2025-06-19 14:15:02,137 - __main__ - INFO - Game 13 completed in 303 steps.
+2025-06-19 14:15:02,138 - __main__ - INFO - Scores: [16, 0, 3, 2], Total Env Rewards: [86.4952380952381, -53.09999999999998, -49.499999999999986, -61.700000000000045], Winners: [0]
+2025-06-19 14:15:02,151 - __main__ - INFO - Starting game 14/30
+2025-06-19 14:16:01,407 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:16:01,409 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 14:16:01,409 - __main__ - INFO - Losing player 0 received speed penalty: -110.00
+2025-06-19 14:16:01,409 - __main__ - INFO - Losing player 1 received speed penalty: -110.00
+2025-06-19 14:16:01,410 - __main__ - INFO - Losing player 2 received speed penalty: -110.00
+2025-06-19 14:16:01,410 - __main__ - INFO - Game 14 completed in 370 steps.
+2025-06-19 14:16:01,410 - __main__ - INFO - Scores: [1, 0, 5, 16], Total Env Rewards: [-59.99999999999992, -56.59999999999993, -44.67272727272717, 98.52340159840162], Winners: [3]
+2025-06-19 14:16:01,423 - __main__ - INFO - Starting game 15/30
+2025-06-19 14:16:38,421 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:16:38,445 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:16:38,472 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:16:38,474 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 14:16:38,475 - __main__ - INFO - Losing player 0 received speed penalty: -72.80
+2025-06-19 14:16:38,475 - __main__ - INFO - Losing player 1 received speed penalty: -72.80
+2025-06-19 14:16:38,476 - __main__ - INFO - Losing player 3 received speed penalty: -72.80
+2025-06-19 14:16:38,476 - __main__ - INFO - Game 15 completed in 246 steps.
+2025-06-19 14:16:38,476 - __main__ - INFO - Scores: [4, 0, 17, 2], Total Env Rewards: [-22.79024309024306, -39.40000000000003, 95.73506493506494, -28.39999999999994], Winners: [2]
+2025-06-19 14:16:38,490 - __main__ - INFO - Starting game 16/30
+2025-06-19 14:19:22,374 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:19:22,374 - __main__ - INFO - Game 16 completed in 792 steps.
+2025-06-19 14:19:22,375 - __main__ - INFO - Scores: [3, 9, 5, 8], Total Env Rewards: [-66.19773755656104, -23.622222222221893, -41.84999999999967, -27.199999999999804], Winners: [1]
+2025-06-19 14:19:22,387 - __main__ - INFO - Starting game 17/30
+2025-06-19 14:21:12,754 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:21:12,755 - __main__ - INFO - Losing player 1 received speed penalty: -177.50
+2025-06-19 14:21:12,755 - __main__ - INFO - Losing player 2 received speed penalty: -177.50
+2025-06-19 14:21:12,755 - __main__ - INFO - Losing player 3 received speed penalty: -177.50
+2025-06-19 14:21:12,755 - __main__ - INFO - Game 17 completed in 595 steps.
+2025-06-19 14:21:12,756 - __main__ - INFO - Scores: [18, 1, 13, 13], Total Env Rewards: [123.16087490940446, -107.69999999999973, -85.42241092241078, -87.70955710955688], Winners: [0]
+2025-06-19 14:21:12,769 - __main__ - INFO - Starting game 18/30
+2025-06-19 14:22:40,182 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:22:40,182 - __main__ - INFO - Losing player 1 received speed penalty: -163.70
+2025-06-19 14:22:40,183 - __main__ - INFO - Losing player 2 received speed penalty: -163.70
+2025-06-19 14:22:40,183 - __main__ - INFO - Losing player 3 received speed penalty: -163.70
+2025-06-19 14:22:40,183 - __main__ - INFO - Game 18 completed in 549 steps.
+2025-06-19 14:22:40,184 - __main__ - INFO - Scores: [15, 4, 10, 4], Total Env Rewards: [89.60996013790148, -92.54999999999983, -71.30404040404021, -91.34646464646451], Winners: [0]
+2025-06-19 14:22:40,198 - __main__ - INFO - Starting game 19/30
+2025-06-19 14:24:37,198 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:24:37,225 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:24:37,250 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:24:37,252 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 14:24:37,252 - __main__ - INFO - Losing player 0 received speed penalty: -186.80
+2025-06-19 14:24:37,252 - __main__ - INFO - Losing player 1 received speed penalty: -186.80
+2025-06-19 14:24:37,252 - __main__ - INFO - Losing player 3 received speed penalty: -186.80
+2025-06-19 14:24:37,253 - __main__ - INFO - Game 19 completed in 626 steps.
+2025-06-19 14:24:37,253 - __main__ - INFO - Scores: [14, 6, 15, 7], Total Env Rewards: [-59.1606060606059, -113.21818181818152, 106.86137196137209, -95.94545454545425], Winners: [2]
+2025-06-19 14:24:37,268 - __main__ - INFO - Starting game 20/30
+2025-06-19 14:27:44,166 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:27:44,167 - __main__ - INFO - Game 20 completed in 806 steps.
+2025-06-19 14:27:44,167 - __main__ - INFO - Scores: [1, 1, 1, 1], Total Env Rewards: [-32.39999999999954, -30.199999999999548, -35.19999999999956, -107.39999999999998], Winners: [0 1 2 3]
+2025-06-19 14:27:44,182 - __main__ - INFO - Starting game 21/30
+2025-06-19 14:28:46,369 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:28:46,372 - __main__ - INFO - Losing player 1 received speed penalty: -123.80
+2025-06-19 14:28:46,372 - __main__ - INFO - Losing player 2 received speed penalty: -123.80
+2025-06-19 14:28:46,372 - __main__ - INFO - Losing player 3 received speed penalty: -123.80
+2025-06-19 14:28:46,372 - __main__ - INFO - Game 21 completed in 416 steps.
+2025-06-19 14:28:46,373 - __main__ - INFO - Scores: [15, 8, 0, 7], Total Env Rewards: [96.34444444444455, -37.03333333333319, -68.19999999999982, -50.38181818181805], Winners: [0]
+2025-06-19 14:28:46,384 - __main__ - INFO - Starting game 22/30
+2025-06-19 14:30:26,343 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:30:26,367 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:30:26,391 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:30:26,416 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:30:26,443 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:30:26,446 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:30:26,446 - __main__ - INFO - Losing player 0 received speed penalty: -154.70
+2025-06-19 14:30:26,446 - __main__ - INFO - Losing player 2 received speed penalty: -154.70
+2025-06-19 14:30:26,447 - __main__ - INFO - Losing player 3 received speed penalty: -154.70
+2025-06-19 14:30:26,447 - __main__ - INFO - Game 22 completed in 519 steps.
+2025-06-19 14:30:26,447 - __main__ - INFO - Scores: [11, 16, 3, 6], Total Env Rewards: [-66.57156177156156, 102.1951381951383, -88.75714285714265, -80.75757575757552], Winners: [1]
+2025-06-19 14:30:26,461 - __main__ - INFO - Starting game 23/30
+2025-06-19 14:31:18,680 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:31:18,702 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:31:18,725 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:31:18,749 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:31:18,751 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:31:18,751 - __main__ - INFO - Losing player 0 received speed penalty: -113.60
+2025-06-19 14:31:18,751 - __main__ - INFO - Losing player 2 received speed penalty: -113.60
+2025-06-19 14:31:18,753 - __main__ - INFO - Losing player 3 received speed penalty: -113.60
+2025-06-19 14:31:18,753 - __main__ - INFO - Game 23 completed in 382 steps.
+2025-06-19 14:31:18,753 - __main__ - INFO - Scores: [0, 16, 3, 5], Total Env Rewards: [-71.79999999999998, 86.08943850267384, -64.79999999999993, -52.19999999999991], Winners: [1]
+2025-06-19 14:31:18,766 - __main__ - INFO - Starting game 24/30
+2025-06-19 14:32:13,308 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:32:13,309 - __main__ - INFO - Losing player 1 received speed penalty: -103.40
+2025-06-19 14:32:13,309 - __main__ - INFO - Losing player 2 received speed penalty: -103.40
+2025-06-19 14:32:13,309 - __main__ - INFO - Losing player 3 received speed penalty: -103.40
+2025-06-19 14:32:13,309 - __main__ - INFO - Game 24 completed in 348 steps.
+2025-06-19 14:32:13,310 - __main__ - INFO - Scores: [16, 0, 4, 7], Total Env Rewards: [91.10000000000002, -63.39999999999988, -54.58181818181813, -30.24999999999993], Winners: [0]
+2025-06-19 14:32:13,322 - __main__ - INFO - Starting game 25/30
+2025-06-19 14:35:11,384 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:35:11,384 - __main__ - INFO - Game 25 completed in 727 steps.
+2025-06-19 14:35:11,385 - __main__ - INFO - Scores: [3, 2, 2, 2], Total Env Rewards: [-110.4, -41.73076923076878, -24.399999999999565, -110.59999999999997], Winners: [0]
+2025-06-19 14:35:11,398 - __main__ - INFO - Starting game 26/30
+2025-06-19 14:37:30,183 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:37:30,184 - __main__ - INFO - Game 26 completed in 797 steps.
+2025-06-19 14:37:30,184 - __main__ - INFO - Scores: [3, 3, 6, 5], Total Env Rewards: [-6.466666666666285, -18.78181818181774, -9.644444444444062, -6.399999999999622], Winners: [2]
+2025-06-19 14:37:30,197 - __main__ - INFO - Starting game 27/30
+2025-06-19 14:40:18,886 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:40:18,886 - __main__ - INFO - Game 27 completed in 763 steps.
+2025-06-19 14:40:18,887 - __main__ - INFO - Scores: [6, 11, 10, 7], Total Env Rewards: [-10.333333333332902, -15.31093906093895, 16.600000000000335, -50.999999999999744], Winners: [1]
+2025-06-19 14:40:18,905 - __main__ - INFO - Starting game 28/30
+2025-06-19 14:41:37,866 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:41:37,867 - __main__ - INFO - Losing player 1 received speed penalty: -145.40
+2025-06-19 14:41:37,867 - __main__ - INFO - Losing player 2 received speed penalty: -145.40
+2025-06-19 14:41:37,867 - __main__ - INFO - Losing player 3 received speed penalty: -145.40
+2025-06-19 14:41:37,867 - __main__ - INFO - Game 28 completed in 488 steps.
+2025-06-19 14:41:37,867 - __main__ - INFO - Scores: [17, 0, 5, 3], Total Env Rewards: [159.5930291930293, -98.59999999999997, -82.37272727272712, -94.19999999999982], Winners: [0]
+2025-06-19 14:41:37,887 - __main__ - INFO - Starting game 29/30
+2025-06-19 14:42:19,180 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:42:19,183 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 14:42:19,183 - __main__ - INFO - Losing player 0 received speed penalty: -76.70
+2025-06-19 14:42:19,183 - __main__ - INFO - Losing player 1 received speed penalty: -76.70
+2025-06-19 14:42:19,183 - __main__ - INFO - Losing player 2 received speed penalty: -76.70
+2025-06-19 14:42:19,183 - __main__ - INFO - Game 29 completed in 259 steps.
+2025-06-19 14:42:19,184 - __main__ - INFO - Scores: [5, 1, 2, 17], Total Env Rewards: [-21.69999999999996, -32.29999999999996, -24.98571428571426, 85.98232111026229], Winners: [3]
+2025-06-19 14:42:19,200 - __main__ - INFO - Starting game 30/30
+2025-06-19 14:43:38,030 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 14:43:38,030 - __main__ - INFO - Losing player 1 received speed penalty: -134.90
+2025-06-19 14:43:38,030 - __main__ - INFO - Losing player 2 received speed penalty: -134.90
+2025-06-19 14:43:38,031 - __main__ - INFO - Losing player 3 received speed penalty: -134.90
+2025-06-19 14:43:38,031 - __main__ - INFO - Game 30 completed in 453 steps.
+2025-06-19 14:43:38,031 - __main__ - INFO - Scores: [15, 14, 2, 12], Total Env Rewards: [89.27221112221113, -30.549999999999898, -98.89999999999998, -62.88473193473183], Winners: [0]
+2025-06-19 14:43:38,032 - __main__ - INFO - Self-play phase completed. Average steps: 539.57
+2025-06-19 14:43:38,033 - __main__ - INFO - Average scores: [8.23333333 5.36666667 5.63333333 6.5       ], Average total rewards: [ -9.64621264 -41.42057728 -38.30339596 -36.64733968]
+2025-06-19 14:43:38,033 - __main__ - INFO - Starting training phase
+2025-06-19 14:43:57,083 - __main__ - INFO - Epoch 1000/15000, Policy Loss: 1.7029, Value Loss: 0.9999, Total Loss: 2.7028
+2025-06-19 14:44:16,673 - __main__ - INFO - Epoch 2000/15000, Policy Loss: 1.8122, Value Loss: 1.3451, Total Loss: 3.1573
+2025-06-19 14:44:36,603 - __main__ - INFO - Epoch 3000/15000, Policy Loss: 1.7543, Value Loss: 3.2165, Total Loss: 4.9708
+2025-06-19 14:44:55,529 - __main__ - INFO - Epoch 4000/15000, Policy Loss: 1.7941, Value Loss: 2.4535, Total Loss: 4.2476
+2025-06-19 14:45:14,297 - __main__ - INFO - Epoch 5000/15000, Policy Loss: 1.7468, Value Loss: 0.9191, Total Loss: 2.6659
+2025-06-19 14:45:33,949 - __main__ - INFO - Epoch 6000/15000, Policy Loss: 1.7431, Value Loss: 2.9245, Total Loss: 4.6676
+2025-06-19 14:45:53,352 - __main__ - INFO - Epoch 7000/15000, Policy Loss: 1.7638, Value Loss: 1.3803, Total Loss: 3.1441
+2025-06-19 14:46:12,435 - __main__ - INFO - Epoch 8000/15000, Policy Loss: 1.7746, Value Loss: 3.4867, Total Loss: 5.2613
+2025-06-19 14:46:31,529 - __main__ - INFO - Epoch 9000/15000, Policy Loss: 1.7011, Value Loss: 1.1567, Total Loss: 2.8577
+2025-06-19 14:46:50,941 - __main__ - INFO - Epoch 10000/15000, Policy Loss: 1.7561, Value Loss: 2.0008, Total Loss: 3.7570
+2025-06-19 14:47:10,188 - __main__ - INFO - Epoch 11000/15000, Policy Loss: 1.7604, Value Loss: 1.8998, Total Loss: 3.6601
+2025-06-19 14:47:28,926 - __main__ - INFO - Epoch 12000/15000, Policy Loss: 1.7520, Value Loss: 1.2663, Total Loss: 3.0183
+2025-06-19 14:47:49,002 - __main__ - INFO - Epoch 13000/15000, Policy Loss: 1.7708, Value Loss: 1.4463, Total Loss: 3.2172
+2025-06-19 14:48:08,790 - __main__ - INFO - Epoch 14000/15000, Policy Loss: 1.8140, Value Loss: 0.8596, Total Loss: 2.6736
+2025-06-19 14:48:27,914 - __main__ - INFO - Epoch 15000/15000, Policy Loss: 1.7554, Value Loss: 3.3024, Total Loss: 5.0578
+2025-06-19 14:48:27,915 - __main__ - INFO - Training completed. Average Policy Loss: 1.7303, Average Value Loss: 1.8677, Average Total Loss: 3.5981
+2025-06-19 14:48:27,917 - __main__ - INFO - Found existing model, evaluating new model against it...
+2025-06-19 14:48:27,935 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-19 14:48:28,084 - __main__ - INFO - Starting model evaluation: 50 games
+2025-06-19 14:48:30,531 - __main__ - INFO - Completed 1/50 evaluation games
+2025-06-19 14:48:30,532 - __main__ - INFO - winners: [0], scores: 13
+2025-06-19 14:48:30,532 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:30,532 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:32,910 - __main__ - INFO - Completed 2/50 evaluation games
+2025-06-19 14:48:32,910 - __main__ - INFO - winners: [2], scores: 8
+2025-06-19 14:48:32,911 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:32,911 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:35,619 - __main__ - INFO - Completed 3/50 evaluation games
+2025-06-19 14:48:35,620 - __main__ - INFO - winners: [3], scores: 3
+2025-06-19 14:48:35,620 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:35,620 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:38,077 - __main__ - INFO - Completed 4/50 evaluation games
+2025-06-19 14:48:38,077 - __main__ - INFO - winners: [2], scores: 6
+2025-06-19 14:48:38,077 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:38,077 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:39,185 - __main__ - INFO - Completed 5/50 evaluation games
+2025-06-19 14:48:39,186 - __main__ - INFO - winners: [3], scores: 15
+2025-06-19 14:48:39,186 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:39,186 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:41,792 - __main__ - INFO - Completed 6/50 evaluation games
+2025-06-19 14:48:41,793 - __main__ - INFO - winners: [3], scores: 6
+2025-06-19 14:48:41,793 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:41,794 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:44,149 - __main__ - INFO - Completed 7/50 evaluation games
+2025-06-19 14:48:44,149 - __main__ - INFO - winners: [2], scores: 11
+2025-06-19 14:48:44,150 - __main__ - INFO - Current results: Model1 wins=0, Model2 wins=0, Draws=0
+2025-06-19 14:48:44,150 - __main__ - INFO - Valid games (score > 15): 0
+2025-06-19 14:48:45,204 - __main__ - INFO - Completed 8/50 evaluation games
+2025-06-19 14:48:45,205 - __main__ - INFO - winners: [1], scores: 17
+2025-06-19 14:48:45,205 - __main__ - INFO - Current results: Model1 wins=1, Model2 wins=0, Draws=0
+2025-06-19 14:48:45,206 - __main__ - INFO - Valid games (score > 15): 1
+2025-06-19 14:48:46,332 - __main__ - INFO - Completed 9/50 evaluation games
+2025-06-19 14:48:46,332 - __main__ - INFO - winners: [0], scores: 18
+2025-06-19 14:48:46,332 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:46,333 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:48:47,914 - __main__ - INFO - Completed 10/50 evaluation games
+2025-06-19 14:48:47,915 - __main__ - INFO - winners: [1], scores: 15
+2025-06-19 14:48:47,915 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:47,915 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:48:50,540 - __main__ - INFO - Completed 11/50 evaluation games
+2025-06-19 14:48:50,541 - __main__ - INFO - winners: [0], scores: 7
+2025-06-19 14:48:50,541 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:50,542 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:48:52,988 - __main__ - INFO - Completed 12/50 evaluation games
+2025-06-19 14:48:52,988 - __main__ - INFO - winners: [1], scores: 9
+2025-06-19 14:48:52,989 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:52,989 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:48:55,127 - __main__ - INFO - Completed 13/50 evaluation games
+2025-06-19 14:48:55,127 - __main__ - INFO - winners: [1, 2, 3], scores: 2
+2025-06-19 14:48:55,128 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:55,128 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:48:57,563 - __main__ - INFO - Completed 14/50 evaluation games
+2025-06-19 14:48:57,563 - __main__ - INFO - winners: [2], scores: 13
+2025-06-19 14:48:57,564 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:48:57,564 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:49:00,156 - __main__ - INFO - Completed 15/50 evaluation games
+2025-06-19 14:49:00,157 - __main__ - INFO - winners: [0], scores: 5
+2025-06-19 14:49:00,157 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:49:00,157 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:49:02,696 - __main__ - INFO - Completed 16/50 evaluation games
+2025-06-19 14:49:02,696 - __main__ - INFO - winners: [0], scores: 4
+2025-06-19 14:49:02,697 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:49:02,697 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:49:05,400 - __main__ - INFO - Completed 17/50 evaluation games
+2025-06-19 14:49:05,401 - __main__ - INFO - winners: [3], scores: 6
+2025-06-19 14:49:05,401 - __main__ - INFO - Current results: Model1 wins=2, Model2 wins=0, Draws=0
+2025-06-19 14:49:05,401 - __main__ - INFO - Valid games (score > 15): 2
+2025-06-19 14:49:06,368 - __main__ - INFO - Completed 18/50 evaluation games
+2025-06-19 14:49:06,369 - __main__ - INFO - winners: [3], scores: 16
+2025-06-19 14:49:06,369 - __main__ - INFO - Current results: Model1 wins=3, Model2 wins=0, Draws=0
+2025-06-19 14:49:06,369 - __main__ - INFO - Valid games (score > 15): 3
+2025-06-19 14:49:08,628 - __main__ - INFO - Completed 19/50 evaluation games
+2025-06-19 14:49:08,628 - __main__ - INFO - winners: [3], scores: 3
+2025-06-19 14:49:08,629 - __main__ - INFO - Current results: Model1 wins=3, Model2 wins=0, Draws=0
+2025-06-19 14:49:08,629 - __main__ - INFO - Valid games (score > 15): 3
+2025-06-19 14:49:09,899 - __main__ - INFO - Completed 20/50 evaluation games
+2025-06-19 14:49:09,899 - __main__ - INFO - winners: [1], scores: 16
+2025-06-19 14:49:09,899 - __main__ - INFO - Current results: Model1 wins=4, Model2 wins=0, Draws=0
+2025-06-19 14:49:09,900 - __main__ - INFO - Valid games (score > 15): 4
+2025-06-19 14:49:13,048 - __main__ - INFO - Completed 21/50 evaluation games
+2025-06-19 14:49:13,049 - __main__ - INFO - winners: [1], scores: 7
+2025-06-19 14:49:13,049 - __main__ - INFO - Current results: Model1 wins=4, Model2 wins=0, Draws=0
+2025-06-19 14:49:13,049 - __main__ - INFO - Valid games (score > 15): 4
+2025-06-19 14:49:14,149 - __main__ - INFO - Completed 22/50 evaluation games
+2025-06-19 14:49:14,149 - __main__ - INFO - winners: [3], scores: 16
+2025-06-19 14:49:14,149 - __main__ - INFO - Current results: Model1 wins=5, Model2 wins=0, Draws=0
+2025-06-19 14:49:14,149 - __main__ - INFO - Valid games (score > 15): 5
+2025-06-19 14:49:17,266 - __main__ - INFO - Completed 23/50 evaluation games
+2025-06-19 14:49:17,266 - __main__ - INFO - winners: [0], scores: 3
+2025-06-19 14:49:17,267 - __main__ - INFO - Current results: Model1 wins=5, Model2 wins=0, Draws=0
+2025-06-19 14:49:17,267 - __main__ - INFO - Valid games (score > 15): 5
+2025-06-19 14:49:18,421 - __main__ - INFO - Completed 24/50 evaluation games
+2025-06-19 14:49:18,421 - __main__ - INFO - winners: [3], scores: 19
+2025-06-19 14:49:18,422 - __main__ - INFO - Current results: Model1 wins=6, Model2 wins=0, Draws=0
+2025-06-19 14:49:18,422 - __main__ - INFO - Valid games (score > 15): 6
+2025-06-19 14:49:19,503 - __main__ - INFO - Completed 25/50 evaluation games
+2025-06-19 14:49:19,503 - __main__ - INFO - winners: [3], scores: 15
+2025-06-19 14:49:19,504 - __main__ - INFO - Current results: Model1 wins=6, Model2 wins=0, Draws=0
+2025-06-19 14:49:19,504 - __main__ - INFO - Valid games (score > 15): 6
+2025-06-19 14:49:22,044 - __main__ - INFO - Completed 26/50 evaluation games
+2025-06-19 14:49:22,044 - __main__ - INFO - winners: [1], scores: 5
+2025-06-19 14:49:22,044 - __main__ - INFO - Current results: Model1 wins=6, Model2 wins=0, Draws=0
+2025-06-19 14:49:22,045 - __main__ - INFO - Valid games (score > 15): 6
+2025-06-19 14:49:22,958 - __main__ - INFO - Completed 27/50 evaluation games
+2025-06-19 14:49:22,958 - __main__ - INFO - winners: [2], scores: 20
+2025-06-19 14:49:22,958 - __main__ - INFO - Current results: Model1 wins=7, Model2 wins=0, Draws=0
+2025-06-19 14:49:22,958 - __main__ - INFO - Valid games (score > 15): 7
+2025-06-19 14:49:24,206 - __main__ - INFO - Completed 28/50 evaluation games
+2025-06-19 14:49:24,207 - __main__ - INFO - winners: [2], scores: 15
+2025-06-19 14:49:24,207 - __main__ - INFO - Current results: Model1 wins=7, Model2 wins=0, Draws=0
+2025-06-19 14:49:24,207 - __main__ - INFO - Valid games (score > 15): 7
+2025-06-19 14:49:25,250 - __main__ - INFO - Completed 29/50 evaluation games
+2025-06-19 14:49:25,251 - __main__ - INFO - winners: [0], scores: 16
+2025-06-19 14:49:25,251 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:25,251 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:27,605 - __main__ - INFO - Completed 30/50 evaluation games
+2025-06-19 14:49:27,606 - __main__ - INFO - winners: [0], scores: 4
+2025-06-19 14:49:27,606 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:27,606 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:30,171 - __main__ - INFO - Completed 31/50 evaluation games
+2025-06-19 14:49:30,171 - __main__ - INFO - winners: [2], scores: 6
+2025-06-19 14:49:30,172 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:30,172 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:32,579 - __main__ - INFO - Completed 32/50 evaluation games
+2025-06-19 14:49:32,579 - __main__ - INFO - winners: [1], scores: 14
+2025-06-19 14:49:32,580 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:32,580 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:35,101 - __main__ - INFO - Completed 33/50 evaluation games
+2025-06-19 14:49:35,102 - __main__ - INFO - winners: [0], scores: 3
+2025-06-19 14:49:35,102 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:35,102 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:37,763 - __main__ - INFO - Completed 34/50 evaluation games
+2025-06-19 14:49:37,764 - __main__ - INFO - winners: [3], scores: 3
+2025-06-19 14:49:37,764 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:37,764 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:40,211 - __main__ - INFO - Completed 35/50 evaluation games
+2025-06-19 14:49:40,212 - __main__ - INFO - winners: [1], scores: 8
+2025-06-19 14:49:40,212 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:40,212 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:42,538 - __main__ - INFO - Completed 36/50 evaluation games
+2025-06-19 14:49:42,538 - __main__ - INFO - winners: [3], scores: 5
+2025-06-19 14:49:42,538 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:42,539 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:45,128 - __main__ - INFO - Completed 37/50 evaluation games
+2025-06-19 14:49:45,129 - __main__ - INFO - winners: [2], scores: 7
+2025-06-19 14:49:45,129 - __main__ - INFO - Current results: Model1 wins=8, Model2 wins=0, Draws=0
+2025-06-19 14:49:45,129 - __main__ - INFO - Valid games (score > 15): 8
+2025-06-19 14:49:46,125 - __main__ - INFO - Completed 38/50 evaluation games
+2025-06-19 14:49:46,126 - __main__ - INFO - winners: [1], scores: 21
+2025-06-19 14:49:46,126 - __main__ - INFO - Current results: Model1 wins=9, Model2 wins=0, Draws=0
+2025-06-19 14:49:46,127 - __main__ - INFO - Valid games (score > 15): 9
+2025-06-19 14:49:47,169 - __main__ - INFO - Completed 39/50 evaluation games
+2025-06-19 14:49:47,170 - __main__ - INFO - winners: [0], scores: 16
+2025-06-19 14:49:47,170 - __main__ - INFO - Current results: Model1 wins=10, Model2 wins=0, Draws=0
+2025-06-19 14:49:47,170 - __main__ - INFO - Valid games (score > 15): 10
+2025-06-19 14:49:48,062 - __main__ - INFO - Completed 40/50 evaluation games
+2025-06-19 14:49:48,063 - __main__ - INFO - winners: [1], scores: 18
+2025-06-19 14:49:48,063 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:49:48,063 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:49:50,238 - __main__ - INFO - Completed 41/50 evaluation games
+2025-06-19 14:49:50,239 - __main__ - INFO - winners: [0], scores: 4
+2025-06-19 14:49:50,239 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:49:50,239 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:49:53,240 - __main__ - INFO - Completed 42/50 evaluation games
+2025-06-19 14:49:53,240 - __main__ - INFO - winners: [1], scores: 4
+2025-06-19 14:49:53,241 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:49:53,241 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:49:55,824 - __main__ - INFO - Completed 43/50 evaluation games
+2025-06-19 14:49:55,825 - __main__ - INFO - winners: [3], scores: 10
+2025-06-19 14:49:55,825 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:49:55,825 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:49:58,575 - __main__ - INFO - Completed 44/50 evaluation games
+2025-06-19 14:49:58,575 - __main__ - INFO - winners: [1], scores: 4
+2025-06-19 14:49:58,575 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:49:58,575 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:01,046 - __main__ - INFO - Completed 45/50 evaluation games
+2025-06-19 14:50:01,047 - __main__ - INFO - winners: [2], scores: 6
+2025-06-19 14:50:01,047 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:01,047 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:04,050 - __main__ - INFO - Completed 46/50 evaluation games
+2025-06-19 14:50:04,050 - __main__ - INFO - winners: [1, 3], scores: 8
+2025-06-19 14:50:04,051 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:04,051 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:06,911 - __main__ - INFO - Completed 47/50 evaluation games
+2025-06-19 14:50:06,912 - __main__ - INFO - winners: [0], scores: 14
+2025-06-19 14:50:06,912 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:06,912 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:09,839 - __main__ - INFO - Completed 48/50 evaluation games
+2025-06-19 14:50:09,839 - __main__ - INFO - winners: [0], scores: 2
+2025-06-19 14:50:09,840 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:09,840 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:12,362 - __main__ - INFO - Completed 49/50 evaluation games
+2025-06-19 14:50:12,362 - __main__ - INFO - winners: [3], scores: 5
+2025-06-19 14:50:12,363 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:12,363 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:15,030 - __main__ - INFO - Completed 50/50 evaluation games
+2025-06-19 14:50:15,030 - __main__ - INFO - winners: [2], scores: 5
+2025-06-19 14:50:15,030 - __main__ - INFO - Current results: Model1 wins=11, Model2 wins=0, Draws=0
+2025-06-19 14:50:15,031 - __main__ - INFO - Valid games (score > 15): 11
+2025-06-19 14:50:15,031 - __main__ - INFO - Evaluation results: Model1 wins=11, Model2 wins=0, Draws=0, Model2 win rate=0.00%
+2025-06-19 14:50:15,031 - __main__ - INFO - Total valid games: 11 out of 50
+2025-06-19 14:50:15,031 - __main__ - INFO - New model performs worse (win rate: 0.00%). Keeping old model.
+2025-06-19 14:50:15,036 - __main__ - INFO - Saving current model...
+2025-06-19 14:50:15,162 - __main__ - INFO - Model saved at models/alphazero_checkpoint_3_complex.pth
+2025-06-19 14:50:15,162 - __main__ - INFO - Starting iteration 4/5
+2025-06-19 14:50:15,163 - __main__ - INFO - Starting self-play phase
+2025-06-19 14:50:15,178 - __main__ - INFO - Starting game 1/30
+2025-06-19 14:51:20,165 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:51:20,191 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:51:20,220 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:51:20,252 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:51:20,283 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:51:20,285 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:51:20,285 - __main__ - INFO - Losing player 0 received speed penalty: -107.30
+2025-06-19 14:51:20,286 - __main__ - INFO - Losing player 2 received speed penalty: -107.30
+2025-06-19 14:51:20,286 - __main__ - INFO - Losing player 3 received speed penalty: -107.30
+2025-06-19 14:51:20,286 - __main__ - INFO - Game 1 completed in 361 steps.
+2025-06-19 14:51:20,287 - __main__ - INFO - Scores: [4, 15, 2, 8], Total Env Rewards: [-46.4999999999999, 87.19590409590413, -62.899999999999935, -40.62424242424231], Winners: [1]
+2025-06-19 14:51:20,303 - __main__ - INFO - Starting game 2/30
+2025-06-19 14:52:23,006 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:52:23,038 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:52:23,066 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:52:23,090 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:52:23,092 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:52:23,092 - __main__ - INFO - Losing player 0 received speed penalty: -114.50
+2025-06-19 14:52:23,092 - __main__ - INFO - Losing player 2 received speed penalty: -114.50
+2025-06-19 14:52:23,093 - __main__ - INFO - Losing player 3 received speed penalty: -114.50
+2025-06-19 14:52:23,093 - __main__ - INFO - Game 2 completed in 385 steps.
+2025-06-19 14:52:23,093 - __main__ - INFO - Scores: [0, 16, 2, 8], Total Env Rewards: [-66.49999999999989, 99.58209013209016, -68.89999999999985, -35.27878787878777], Winners: [1]
+2025-06-19 14:52:23,106 - __main__ - INFO - Starting game 3/30
+2025-06-19 14:53:37,837 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:53:37,944 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:53:37,973 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:53:37,998 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 14:53:38,002 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 14:53:38,003 - __main__ - INFO - Losing player 0 received speed penalty: -128.60
+2025-06-19 14:53:38,003 - __main__ - INFO - Losing player 2 received speed penalty: -128.60
+2025-06-19 14:53:38,003 - __main__ - INFO - Losing player 3 received speed penalty: -128.60
+2025-06-19 14:53:38,005 - __main__ - INFO - Game 3 completed in 432 steps.
+2025-06-19 14:53:38,005 - __main__ - INFO - Scores: [5, 17, 0, 5], Total Env Rewards: [-63.79999999999988, 106.15954878454885, -78.39999999999984, -60.399999999999864], Winners: [1]
+2025-06-19 14:53:38,021 - __main__ - INFO - Starting game 4/30
+2025-06-19 14:56:23,769 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:56:23,769 - __main__ - INFO - Game 4 completed in 764 steps.
+2025-06-19 14:56:23,770 - __main__ - INFO - Scores: [9, 0, 3, 10], Total Env Rewards: [7.200000000000415, -68.79999999999984, -52.49696969696951, -14.290126050420156], Winners: [3]
+2025-06-19 14:56:23,783 - __main__ - INFO - Starting game 5/30
+2025-06-19 14:59:23,591 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 14:59:23,591 - __main__ - INFO - Game 5 completed in 755 steps.
+2025-06-19 14:59:23,591 - __main__ - INFO - Scores: [3, 5, 6, 8], Total Env Rewards: [-24.799999999999585, -77.6857142857141, -13.612121212120769, -25.463636363636326], Winners: [3]
+2025-06-19 14:59:23,605 - __main__ - INFO - Starting game 6/30
+2025-06-19 15:00:38,493 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:00:38,494 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 15:00:38,495 - __main__ - INFO - Losing player 0 received speed penalty: -142.40
+2025-06-19 15:00:38,495 - __main__ - INFO - Losing player 1 received speed penalty: -142.40
+2025-06-19 15:00:38,495 - __main__ - INFO - Losing player 2 received speed penalty: -142.40
+2025-06-19 15:00:38,496 - __main__ - INFO - Game 6 completed in 478 steps.
+2025-06-19 15:00:38,496 - __main__ - INFO - Scores: [1, 3, 11, 15], Total Env Rewards: [-84.19999999999987, -77.62222222222208, -48.881818181818076, 128.38663003663018], Winners: [3]
+2025-06-19 15:00:38,512 - __main__ - INFO - Starting game 7/30
+2025-06-19 15:01:48,665 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,688 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,712 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,742 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,769 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,795 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:01:48,798 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 15:01:48,798 - __main__ - INFO - Losing player 0 received speed penalty: -124.70
+2025-06-19 15:01:48,799 - __main__ - INFO - Losing player 2 received speed penalty: -124.70
+2025-06-19 15:01:48,799 - __main__ - INFO - Losing player 3 received speed penalty: -124.70
+2025-06-19 15:01:48,799 - __main__ - INFO - Game 7 completed in 419 steps.
+2025-06-19 15:01:48,799 - __main__ - INFO - Scores: [6, 21, 3, 5], Total Env Rewards: [-59.89999999999989, 146.29450549450547, -80.89999999999996, -62.58571428571416], Winners: [1]
+2025-06-19 15:01:48,814 - __main__ - INFO - Starting game 8/30
+2025-06-19 15:02:34,495 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:02:34,525 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:02:34,528 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 15:02:34,528 - __main__ - INFO - Losing player 1 received speed penalty: -85.10
+2025-06-19 15:02:34,528 - __main__ - INFO - Losing player 2 received speed penalty: -85.10
+2025-06-19 15:02:34,529 - __main__ - INFO - Losing player 3 received speed penalty: -85.10
+2025-06-19 15:02:34,529 - __main__ - INFO - Game 8 completed in 287 steps.
+2025-06-19 15:02:34,529 - __main__ - INFO - Scores: [15, 4, 15, 0], Total Env Rewards: [90.15097125097121, -28.499999999999915, 3.7846153846154635, -45.9], Winners: [0 2]
+2025-06-19 15:02:34,543 - __main__ - INFO - Starting game 9/30
+2025-06-19 15:03:32,608 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:03:32,610 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 15:03:32,610 - __main__ - INFO - Losing player 0 received speed penalty: -110.90
+2025-06-19 15:03:32,611 - __main__ - INFO - Losing player 1 received speed penalty: -110.90
+2025-06-19 15:03:32,611 - __main__ - INFO - Losing player 2 received speed penalty: -110.90
+2025-06-19 15:03:32,611 - __main__ - INFO - Game 9 completed in 373 steps.
+2025-06-19 15:03:32,611 - __main__ - INFO - Scores: [3, 0, 0, 17], Total Env Rewards: [-54.91515151515145, -68.09999999999994, -62.69999999999989, 91.31212121212118], Winners: [3]
+2025-06-19 15:03:32,623 - __main__ - INFO - Starting game 10/30
+2025-06-19 15:04:35,676 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:04:35,701 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:04:35,730 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:04:35,755 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:04:35,780 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:04:35,782 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 15:04:35,782 - __main__ - INFO - Losing player 0 received speed penalty: -115.10
+2025-06-19 15:04:35,782 - __main__ - INFO - Losing player 2 received speed penalty: -115.10
+2025-06-19 15:04:35,782 - __main__ - INFO - Losing player 3 received speed penalty: -115.10
+2025-06-19 15:04:35,783 - __main__ - INFO - Game 10 completed in 387 steps.
+2025-06-19 15:04:35,783 - __main__ - INFO - Scores: [5, 15, 3, 4], Total Env Rewards: [-36.69999999999989, 81.83516483516485, -56.2999999999999, -62.585714285714275], Winners: [1]
+2025-06-19 15:04:35,796 - __main__ - INFO - Starting game 11/30
+2025-06-19 15:07:48,716 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:07:48,717 - __main__ - INFO - Game 11 completed in 838 steps.
+2025-06-19 15:07:48,717 - __main__ - INFO - Scores: [1, 1, 1, 1], Total Env Rewards: [-41.39999999999961, -29.399999999999537, -43.53333333333282, -120.00000000000006], Winners: [0 1 2 3]
+2025-06-19 15:07:48,731 - __main__ - INFO - Starting game 12/30
+2025-06-19 15:09:23,942 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 15:09:23,942 - __main__ - INFO - Losing player 1 received speed penalty: -137.00
+2025-06-19 15:09:23,943 - __main__ - INFO - Losing player 2 received speed penalty: -137.00
+2025-06-19 15:09:23,943 - __main__ - INFO - Losing player 3 received speed penalty: -137.00
+2025-06-19 15:09:23,943 - __main__ - INFO - Game 12 completed in 460 steps.
+2025-06-19 15:09:23,944 - __main__ - INFO - Scores: [17, 0, 3, 4], Total Env Rewards: [108.17932330827068, -113.80000000000007, -92.20000000000005, -73.53724053724042], Winners: [0]
+2025-06-19 15:09:23,961 - __main__ - INFO - Starting game 13/30
+2025-06-19 15:11:53,131 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:11:53,132 - __main__ - INFO - Game 13 completed in 875 steps.
+2025-06-19 15:11:53,132 - __main__ - INFO - Scores: [5, 1, 7, 7], Total Env Rewards: [-16.622222222222007, -33.59999999999958, -29.485714285713854, -16.9818181818177], Winners: [2 3]
+2025-06-19 15:11:53,144 - __main__ - INFO - Starting game 14/30
+2025-06-19 15:13:22,305 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:13:22,332 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:13:22,354 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:13:22,383 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:13:22,385 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 15:13:22,386 - __main__ - INFO - Losing player 0 received speed penalty: -156.20
+2025-06-19 15:13:22,386 - __main__ - INFO - Losing player 1 received speed penalty: -156.20
+2025-06-19 15:13:22,386 - __main__ - INFO - Losing player 2 received speed penalty: -156.20
+2025-06-19 15:13:22,387 - __main__ - INFO - Game 14 completed in 524 steps.
+2025-06-19 15:13:22,387 - __main__ - INFO - Scores: [0, 16, 6, 21], Total Env Rewards: [-98.59999999999982, -41.22662337662322, -73.39999999999982, 146.19066227889772], Winners: [3]
+2025-06-19 15:13:22,405 - __main__ - INFO - Starting game 15/30
+2025-06-19 15:14:21,585 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:14:21,612 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:14:21,646 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:14:21,675 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:14:21,677 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 15:14:21,677 - __main__ - INFO - Losing player 0 received speed penalty: -103.40
+2025-06-19 15:14:21,677 - __main__ - INFO - Losing player 2 received speed penalty: -103.40
+2025-06-19 15:14:21,677 - __main__ - INFO - Losing player 3 received speed penalty: -103.40
+2025-06-19 15:14:21,678 - __main__ - INFO - Game 15 completed in 348 steps.
+2025-06-19 15:14:21,678 - __main__ - INFO - Scores: [11, 19, 2, 5], Total Env Rewards: [-39.5916083916084, 131.7940947940948, -50.39999999999991, -40.39999999999992], Winners: [1]
+2025-06-19 15:14:21,694 - __main__ - INFO - Starting game 16/30
+2025-06-19 15:17:57,381 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:17:57,382 - __main__ - INFO - Game 16 completed in 719 steps.
+2025-06-19 15:17:57,382 - __main__ - INFO - Scores: [1, 1, 1, 1], Total Env Rewards: [-134.00000000000006, -132.60000000000005, -33.999999999999545, -30.799999999999528], Winners: [0 1 2 3]
+2025-06-19 15:17:57,415 - __main__ - INFO - Starting game 17/30
+2025-06-19 15:20:51,601 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:20:51,601 - __main__ - INFO - Game 17 completed in 774 steps.
+2025-06-19 15:20:51,602 - __main__ - INFO - Scores: [7, 4, 11, 5], Total Env Rewards: [-26.015384615384562, -70.44999999999968, -23.646095571095216, -23.999999999999616], Winners: [2]
+2025-06-19 15:20:51,615 - __main__ - INFO - Starting game 18/30
+2025-06-19 15:23:56,430 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:23:56,430 - __main__ - INFO - Game 18 completed in 840 steps.
+2025-06-19 15:23:56,431 - __main__ - INFO - Scores: [5, 3, 3, 5], Total Env Rewards: [-6.399999999999665, -17.885714285713917, -34.585897435896996, -16.345454545454146], Winners: [0 3]
+2025-06-19 15:23:56,446 - __main__ - INFO - Starting game 19/30
+2025-06-19 15:27:07,220 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:27:07,220 - __main__ - INFO - Game 19 completed in 797 steps.
+2025-06-19 15:27:07,221 - __main__ - INFO - Scores: [5, 2, 4, 3], Total Env Rewards: [-25.23333333333288, -30.18181818181776, -26.19999999999959, -88.04999999999978], Winners: [0]
+2025-06-19 15:27:07,236 - __main__ - INFO - Starting game 20/30
+2025-06-19 15:30:07,752 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:30:07,752 - __main__ - INFO - Game 20 completed in 710 steps.
+2025-06-19 15:30:07,752 - __main__ - INFO - Scores: [2, 0, 3, 5], Total Env Rewards: [-112.19999999999993, -125.40000000000005, -67.34362745098032, -28.999999999999574], Winners: [3]
+2025-06-19 15:30:07,773 - __main__ - INFO - Starting game 21/30
+2025-06-19 15:30:49,768 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 15:30:49,769 - __main__ - INFO - Losing player 1 received speed penalty: -74.60
+2025-06-19 15:30:49,769 - __main__ - INFO - Losing player 2 received speed penalty: -74.60
+2025-06-19 15:30:49,769 - __main__ - INFO - Losing player 3 received speed penalty: -74.60
+2025-06-19 15:30:49,769 - __main__ - INFO - Game 21 completed in 252 steps.
+2025-06-19 15:30:49,770 - __main__ - INFO - Scores: [15, 0, 5, 2], Total Env Rewards: [84.83244206773618, -52.600000000000044, -24.624242424242425, -28.399999999999977], Winners: [0]
+2025-06-19 15:30:49,784 - __main__ - INFO - Starting game 22/30
+2025-06-19 15:33:01,227 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:01,256 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:01,282 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:01,306 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:01,333 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:01,335 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 15:33:01,335 - __main__ - INFO - Losing player 0 received speed penalty: -200.90
+2025-06-19 15:33:01,335 - __main__ - INFO - Losing player 2 received speed penalty: -200.90
+2025-06-19 15:33:01,336 - __main__ - INFO - Losing player 3 received speed penalty: -200.90
+2025-06-19 15:33:01,336 - __main__ - INFO - Game 22 completed in 673 steps.
+2025-06-19 15:33:01,336 - __main__ - INFO - Scores: [6, 19, 5, 12], Total Env Rewards: [-129.8499999999998, 106.06379176379188, -110.37272727272692, -95.45745920745897], Winners: [1]
+2025-06-19 15:33:01,351 - __main__ - INFO - Starting game 23/30
+2025-06-19 15:33:56,701 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:33:56,703 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 15:33:56,703 - __main__ - INFO - Losing player 0 received speed penalty: -122.30
+2025-06-19 15:33:56,703 - __main__ - INFO - Losing player 1 received speed penalty: -122.30
+2025-06-19 15:33:56,704 - __main__ - INFO - Losing player 2 received speed penalty: -122.30
+2025-06-19 15:33:56,704 - __main__ - INFO - Game 23 completed in 411 steps.
+2025-06-19 15:33:56,704 - __main__ - INFO - Scores: [0, 11, 3, 18], Total Env Rewards: [-68.29999999999981, -42.182917082917044, -61.09999999999987, 97.40144447056214], Winners: [3]
+2025-06-19 15:33:56,718 - __main__ - INFO - Starting game 24/30
+2025-06-19 15:34:51,741 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 15:34:51,742 - __main__ - INFO - Losing player 1 received speed penalty: -112.70
+2025-06-19 15:34:51,742 - __main__ - INFO - Losing player 2 received speed penalty: -112.70
+2025-06-19 15:34:51,742 - __main__ - INFO - Losing player 3 received speed penalty: -112.70
+2025-06-19 15:34:51,742 - __main__ - INFO - Game 24 completed in 379 steps.
+2025-06-19 15:34:51,743 - __main__ - INFO - Scores: [16, 3, 0, 6], Total Env Rewards: [108.51969696969705, -50.99090909090902, -60.099999999999895, -40.39696969696959], Winners: [0]
+2025-06-19 15:34:51,755 - __main__ - INFO - Starting game 25/30
+2025-06-19 15:37:45,518 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:37:45,518 - __main__ - INFO - Game 25 completed in 714 steps.
+2025-06-19 15:37:45,519 - __main__ - INFO - Scores: [3, 4, 3, 0], Total Env Rewards: [-26.599999999999554, -21.53030303030262, -117.99999999999997, -124.79999999999998], Winners: [1]
+2025-06-19 15:37:45,532 - __main__ - INFO - Starting game 26/30
+2025-06-19 15:41:08,958 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:41:08,959 - __main__ - INFO - Game 26 completed in 780 steps.
+2025-06-19 15:41:08,959 - __main__ - INFO - Scores: [2, 2, 2, 2], Total Env Rewards: [-30.599999999999525, -24.19999999999952, -112.19999999999996, -25.199999999999548], Winners: [0 1 2 3]
+2025-06-19 15:41:08,974 - __main__ - INFO - Starting game 27/30
+2025-06-19 15:43:41,588 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:43:41,588 - __main__ - INFO - Game 27 completed in 756 steps.
+2025-06-19 15:43:41,589 - __main__ - INFO - Scores: [10, 10, 7, 6], Total Env Rewards: [-16.85361305361306, -9.167676767676383, -46.518181818181596, -13.19999999999969], Winners: [0 1]
+2025-06-19 15:43:41,602 - __main__ - INFO - Starting game 28/30
+2025-06-19 15:44:46,286 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:44:46,314 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:44:46,345 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:44:46,348 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 15:44:46,348 - __main__ - INFO - Losing player 1 received speed penalty: -127.70
+2025-06-19 15:44:46,349 - __main__ - INFO - Losing player 2 received speed penalty: -127.70
+2025-06-19 15:44:46,349 - __main__ - INFO - Losing player 3 received speed penalty: -127.70
+2025-06-19 15:44:46,349 - __main__ - INFO - Game 28 completed in 429 steps.
+2025-06-19 15:44:46,350 - __main__ - INFO - Scores: [16, 9, 15, 0], Total Env Rewards: [111.93333333333344, -53.69848484848471, -36.404466611819515, -68.29999999999984], Winners: [0]
+2025-06-19 15:44:46,363 - __main__ - INFO - Starting game 29/30
+2025-06-19 15:46:01,038 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:46:01,062 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:46:01,083 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:46:01,086 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 15:46:01,087 - __main__ - INFO - Losing player 0 received speed penalty: -125.30
+2025-06-19 15:46:01,087 - __main__ - INFO - Losing player 1 received speed penalty: -125.30
+2025-06-19 15:46:01,088 - __main__ - INFO - Losing player 2 received speed penalty: -125.30
+2025-06-19 15:46:01,088 - __main__ - INFO - Game 29 completed in 421 steps.
+2025-06-19 15:46:01,088 - __main__ - INFO - Scores: [3, 1, 15, 18], Total Env Rewards: [-81.70000000000002, -83.89999999999992, -10.963961038961003, 111.30998674528085], Winners: [3]
+2025-06-19 15:46:01,101 - __main__ - INFO - Starting game 30/30
+2025-06-19 15:47:05,239 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:47:05,267 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:47:05,294 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:47:05,297 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 15:47:05,298 - __main__ - INFO - Losing player 0 received speed penalty: -123.20
+2025-06-19 15:47:05,299 - __main__ - INFO - Losing player 1 received speed penalty: -123.20
+2025-06-19 15:47:05,299 - __main__ - INFO - Losing player 3 received speed penalty: -123.20
+2025-06-19 15:47:05,300 - __main__ - INFO - Game 30 completed in 414 steps.
+2025-06-19 15:47:05,300 - __main__ - INFO - Scores: [2, 3, 17, 4], Total Env Rewards: [-57.599999999999895, -56.38585858585843, 98.7989010989012, -61.348484848484766], Winners: [2]
+2025-06-19 15:47:05,301 - __main__ - INFO - Self-play phase completed. Average steps: 558.50
+2025-06-19 15:47:05,302 - __main__ - INFO - Average scores: [5.93333333 6.83333333 5.26666667 6.83333333], Average total rewards: [-27.93551821 -18.36610473 -49.25285466 -22.29149345]
+2025-06-19 15:47:05,303 - __main__ - INFO - Starting training phase
+2025-06-19 15:47:24,666 - __main__ - INFO - Epoch 1000/15000, Policy Loss: 1.7655, Value Loss: 1.0278, Total Loss: 2.7933
+2025-06-19 15:47:43,681 - __main__ - INFO - Epoch 2000/15000, Policy Loss: 1.7035, Value Loss: 0.7319, Total Loss: 2.4354
+2025-06-19 15:48:02,789 - __main__ - INFO - Epoch 3000/15000, Policy Loss: 1.7037, Value Loss: 2.7982, Total Loss: 4.5019
+2025-06-19 15:48:21,671 - __main__ - INFO - Epoch 4000/15000, Policy Loss: 1.7504, Value Loss: 0.6880, Total Loss: 2.4385
+2025-06-19 15:48:40,895 - __main__ - INFO - Epoch 5000/15000, Policy Loss: 1.7909, Value Loss: 2.1928, Total Loss: 3.9836
+2025-06-19 15:49:00,737 - __main__ - INFO - Epoch 6000/15000, Policy Loss: 1.7236, Value Loss: 2.3273, Total Loss: 4.0509
+2025-06-19 15:49:20,260 - __main__ - INFO - Epoch 7000/15000, Policy Loss: 1.7633, Value Loss: 2.9794, Total Loss: 4.7427
+2025-06-19 15:49:39,928 - __main__ - INFO - Epoch 8000/15000, Policy Loss: 1.7821, Value Loss: 2.1695, Total Loss: 3.9515
+2025-06-19 15:49:59,354 - __main__ - INFO - Epoch 9000/15000, Policy Loss: 1.6898, Value Loss: 1.0534, Total Loss: 2.7432
+2025-06-19 15:50:19,400 - __main__ - INFO - Epoch 10000/15000, Policy Loss: 1.6829, Value Loss: 1.9653, Total Loss: 3.6482
+2025-06-19 15:50:38,726 - __main__ - INFO - Epoch 11000/15000, Policy Loss: 1.7068, Value Loss: 1.0929, Total Loss: 2.7997
+2025-06-19 15:50:58,162 - __main__ - INFO - Epoch 12000/15000, Policy Loss: 1.7699, Value Loss: 3.6566, Total Loss: 5.4265
+2025-06-19 15:51:17,565 - __main__ - INFO - Epoch 13000/15000, Policy Loss: 1.7172, Value Loss: 2.4089, Total Loss: 4.1260
+2025-06-19 15:51:36,625 - __main__ - INFO - Epoch 14000/15000, Policy Loss: 1.7283, Value Loss: 1.6337, Total Loss: 3.3621
+2025-06-19 15:51:56,094 - __main__ - INFO - Epoch 15000/15000, Policy Loss: 1.7408, Value Loss: 0.7900, Total Loss: 2.5308
+2025-06-19 15:51:56,095 - __main__ - INFO - Training completed. Average Policy Loss: 1.7186, Average Value Loss: 1.9430, Average Total Loss: 3.6617
+2025-06-19 15:51:56,097 - __main__ - INFO - Starting iteration 5/5
+2025-06-19 15:51:56,098 - __main__ - INFO - Starting self-play phase
+2025-06-19 15:51:56,110 - __main__ - INFO - Starting game 1/30
+2025-06-19 15:53:22,324 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:53:22,361 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:53:22,369 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 15:53:22,371 - __main__ - INFO - Losing player 0 received speed penalty: -152.30
+2025-06-19 15:53:22,375 - __main__ - INFO - Losing player 1 received speed penalty: -152.30
+2025-06-19 15:53:22,377 - __main__ - INFO - Losing player 3 received speed penalty: -152.30
+2025-06-19 15:53:22,379 - __main__ - INFO - Game 1 completed in 511 steps.
+2025-06-19 15:53:22,381 - __main__ - INFO - Scores: [3, 3, 20, 7], Total Env Rewards: [-78.89999999999982, -89.98571428571405, 154.83040293040304, -72.36153846153834], Winners: [2]
+2025-06-19 15:53:22,396 - __main__ - INFO - Starting game 2/30
+2025-06-19 15:55:56,738 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:55:56,766 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 15:55:56,769 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 15:55:56,770 - __main__ - INFO - Losing player 0 received speed penalty: -239.60
+2025-06-19 15:55:56,770 - __main__ - INFO - Losing player 1 received speed penalty: -239.60
+2025-06-19 15:55:56,770 - __main__ - INFO - Losing player 3 received speed penalty: -239.60
+2025-06-19 15:55:56,771 - __main__ - INFO - Game 2 completed in 802 steps.
+2025-06-19 15:55:56,771 - __main__ - INFO - Scores: [4, 4, 17, 9], Total Env Rewards: [-153.70793650793615, -208.79999999999976, 140.45431235431286, -153.7566433566429], Winners: [2]
+2025-06-19 15:55:56,785 - __main__ - INFO - Starting game 3/30
+2025-06-19 15:58:44,790 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 15:58:44,790 - __main__ - INFO - Game 3 completed in 760 steps.
+2025-06-19 15:58:44,791 - __main__ - INFO - Scores: [2, 6, 4, 5], Total Env Rewards: [-32.999999999999574, -14.613131313130879, -71.50909090909063, -24.28663003662996], Winners: [1]
+2025-06-19 15:58:44,803 - __main__ - INFO - Starting game 4/30
+2025-06-19 16:00:33,220 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:00:33,245 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:00:33,274 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:00:33,303 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:00:33,329 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:00:33,331 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 16:00:33,331 - __main__ - INFO - Losing player 0 received speed penalty: -171.20
+2025-06-19 16:00:33,331 - __main__ - INFO - Losing player 2 received speed penalty: -171.20
+2025-06-19 16:00:33,332 - __main__ - INFO - Losing player 3 received speed penalty: -171.20
+2025-06-19 16:00:33,332 - __main__ - INFO - Game 4 completed in 574 steps.
+2025-06-19 16:00:33,332 - __main__ - INFO - Scores: [12, 16, 9, 11], Total Env Rewards: [-83.74523809523794, 116.0237762237765, -86.70404040404034, -65.20757575757551], Winners: [1]
+2025-06-19 16:00:33,350 - __main__ - INFO - Starting game 5/30
+2025-06-19 16:03:36,317 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:03:36,317 - __main__ - INFO - Game 5 completed in 778 steps.
+2025-06-19 16:03:36,317 - __main__ - INFO - Scores: [4, 5, 3, 5], Total Env Rewards: [-30.379487179486887, -95.5999999999999, -22.127272727272256, -25.799999999999585], Winners: [1 3]
+2025-06-19 16:03:36,331 - __main__ - INFO - Starting game 6/30
+2025-06-19 16:04:29,546 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:04:29,546 - __main__ - INFO - Losing player 1 received speed penalty: -106.70
+2025-06-19 16:04:29,546 - __main__ - INFO - Losing player 2 received speed penalty: -106.70
+2025-06-19 16:04:29,546 - __main__ - INFO - Losing player 3 received speed penalty: -106.70
+2025-06-19 16:04:29,547 - __main__ - INFO - Game 6 completed in 359 steps.
+2025-06-19 16:04:29,547 - __main__ - INFO - Scores: [15, 6, 0, 5], Total Env Rewards: [94.41010101010106, -38.599300699300656, -68.5, -57.89523809523809], Winners: [0]
+2025-06-19 16:04:29,559 - __main__ - INFO - Starting game 7/30
+2025-06-19 16:05:24,340 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:05:24,342 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 16:05:24,342 - __main__ - INFO - Losing player 0 received speed penalty: -100.40
+2025-06-19 16:05:24,342 - __main__ - INFO - Losing player 1 received speed penalty: -100.40
+2025-06-19 16:05:24,343 - __main__ - INFO - Losing player 2 received speed penalty: -100.40
+2025-06-19 16:05:24,343 - __main__ - INFO - Game 7 completed in 338 steps.
+2025-06-19 16:05:24,343 - __main__ - INFO - Scores: [3, 3, 0, 15], Total Env Rewards: [-45.99999999999989, -50.799999999999876, -57.199999999999974, 100.10028011204483], Winners: [3]
+2025-06-19 16:05:24,356 - __main__ - INFO - Starting game 8/30
+2025-06-19 16:07:01,658 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:01,680 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:01,705 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:01,708 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 16:07:01,709 - __main__ - INFO - Losing player 0 received speed penalty: -148.10
+2025-06-19 16:07:01,709 - __main__ - INFO - Losing player 1 received speed penalty: -148.10
+2025-06-19 16:07:01,710 - __main__ - INFO - Losing player 3 received speed penalty: -148.10
+2025-06-19 16:07:01,710 - __main__ - INFO - Game 8 completed in 497 steps.
+2025-06-19 16:07:01,710 - __main__ - INFO - Scores: [5, 6, 16, 13], Total Env Rewards: [-87.73333333333315, -72.1303030303028, 136.6000000000001, -63.08634698634701], Winners: [2]
+2025-06-19 16:07:01,723 - __main__ - INFO - Starting game 9/30
+2025-06-19 16:07:54,558 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:54,584 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:54,610 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:54,637 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:54,667 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:07:54,669 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 16:07:54,670 - __main__ - INFO - Losing player 0 received speed penalty: -100.40
+2025-06-19 16:07:54,670 - __main__ - INFO - Losing player 2 received speed penalty: -100.40
+2025-06-19 16:07:54,670 - __main__ - INFO - Losing player 3 received speed penalty: -100.40
+2025-06-19 16:07:54,670 - __main__ - INFO - Game 9 completed in 338 steps.
+2025-06-19 16:07:54,671 - __main__ - INFO - Scores: [3, 16, 0, 5], Total Env Rewards: [-45.44999999999993, 88.4298786181139, -55.39999999999989, -38.399999999999906], Winners: [1]
+2025-06-19 16:07:54,686 - __main__ - INFO - Starting game 10/30
+2025-06-19 16:08:47,336 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:08:47,337 - __main__ - INFO - Losing player 1 received speed penalty: -94.40
+2025-06-19 16:08:47,337 - __main__ - INFO - Losing player 2 received speed penalty: -94.40
+2025-06-19 16:08:47,337 - __main__ - INFO - Losing player 3 received speed penalty: -94.40
+2025-06-19 16:08:47,338 - __main__ - INFO - Game 10 completed in 318 steps.
+2025-06-19 16:08:47,338 - __main__ - INFO - Scores: [16, 1, 2, 1], Total Env Rewards: [101.99321475625823, -51.999999999999915, -52.39999999999997, -56.59999999999995], Winners: [0]
+2025-06-19 16:08:47,350 - __main__ - INFO - Starting game 11/30
+2025-06-19 16:10:18,998 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:10:19,027 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:10:19,029 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 16:10:19,030 - __main__ - INFO - Losing player 0 received speed penalty: -184.70
+2025-06-19 16:10:19,030 - __main__ - INFO - Losing player 1 received speed penalty: -184.70
+2025-06-19 16:10:19,030 - __main__ - INFO - Losing player 3 received speed penalty: -184.70
+2025-06-19 16:10:19,031 - __main__ - INFO - Game 11 completed in 619 steps.
+2025-06-19 16:10:19,031 - __main__ - INFO - Scores: [2, 3, 16, 6], Total Env Rewards: [-108.4999999999997, -111.46767676767645, 98.28265068265081, -98.63333333333308], Winners: [2]
+2025-06-19 16:10:19,046 - __main__ - INFO - Starting game 12/30
+2025-06-19 16:13:27,638 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:13:27,639 - __main__ - INFO - Game 12 completed in 861 steps.
+2025-06-19 16:13:27,639 - __main__ - INFO - Scores: [2, 2, 1, 3], Total Env Rewards: [-27.7999999999996, -22.872222222221808, -34.99999999999952, -22.449999999999534], Winners: [3]
+2025-06-19 16:13:27,661 - __main__ - INFO - Starting game 13/30
+2025-06-19 16:16:26,660 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:16:26,661 - __main__ - INFO - Game 13 completed in 782 steps.
+2025-06-19 16:16:26,661 - __main__ - INFO - Scores: [4, 5, 5, 4], Total Env Rewards: [-87.79999999999984, -19.24040404040366, -32.09976689976658, -18.949494949494536], Winners: [1 2]
+2025-06-19 16:16:26,676 - __main__ - INFO - Starting game 14/30
+2025-06-19 16:17:27,321 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:17:27,355 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:17:27,392 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:17:27,394 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 16:17:27,395 - __main__ - INFO - Losing player 0 received speed penalty: -122.30
+2025-06-19 16:17:27,395 - __main__ - INFO - Losing player 1 received speed penalty: -122.30
+2025-06-19 16:17:27,395 - __main__ - INFO - Losing player 3 received speed penalty: -122.30
+2025-06-19 16:17:27,396 - __main__ - INFO - Game 14 completed in 411 steps.
+2025-06-19 16:17:27,396 - __main__ - INFO - Scores: [6, 2, 16, 5], Total Env Rewards: [-52.899999999999906, -65.89999999999989, 93.03416371210497, -62.48585858585844], Winners: [2]
+2025-06-19 16:17:27,412 - __main__ - INFO - Starting game 15/30
+2025-06-19 16:19:43,014 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:19:43,015 - __main__ - INFO - Losing player 1 received speed penalty: -189.50
+2025-06-19 16:19:43,015 - __main__ - INFO - Losing player 2 received speed penalty: -189.50
+2025-06-19 16:19:43,015 - __main__ - INFO - Losing player 3 received speed penalty: -189.50
+2025-06-19 16:19:43,016 - __main__ - INFO - Game 15 completed in 635 steps.
+2025-06-19 16:19:43,016 - __main__ - INFO - Scores: [17, 0, 2, 3], Total Env Rewards: [130.30833333333362, -127.69999999999968, -120.03333333333305, -171.90000000000003], Winners: [0]
+2025-06-19 16:19:43,030 - __main__ - INFO - Starting game 16/30
+2025-06-19 16:22:34,238 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:22:34,238 - __main__ - INFO - Game 16 completed in 787 steps.
+2025-06-19 16:22:34,238 - __main__ - INFO - Scores: [4, 10, 4, 4], Total Env Rewards: [-30.62222222222188, 4.459090909091287, -83.5504828504827, -29.649999999999466], Winners: [1]
+2025-06-19 16:22:34,251 - __main__ - INFO - Starting game 17/30
+2025-06-19 16:25:07,606 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:25:07,607 - __main__ - INFO - Game 17 completed in 752 steps.
+2025-06-19 16:25:07,607 - __main__ - INFO - Scores: [11, 1, 6, 6], Total Env Rewards: [5.867156862745475, -16.399999999999565, -24.818181818181586, -0.2606060606057383], Winners: [0]
+2025-06-19 16:25:07,620 - __main__ - INFO - Starting game 18/30
+2025-06-19 16:26:02,871 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:26:02,873 - __main__ - INFO - Winner (Player 3) received final speed bonus: 0.00
+2025-06-19 16:26:02,874 - __main__ - INFO - Losing player 0 received speed penalty: -89.60
+2025-06-19 16:26:02,874 - __main__ - INFO - Losing player 1 received speed penalty: -89.60
+2025-06-19 16:26:02,874 - __main__ - INFO - Losing player 2 received speed penalty: -89.60
+2025-06-19 16:26:02,874 - __main__ - INFO - Game 18 completed in 302 steps.
+2025-06-19 16:26:02,875 - __main__ - INFO - Scores: [1, 6, 2, 17], Total Env Rewards: [-52.199999999999974, -31.80404040404038, -40.79999999999995, 137.9630036630037], Winners: [3]
+2025-06-19 16:26:02,889 - __main__ - INFO - Starting game 19/30
+2025-06-19 16:27:07,056 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:27:07,057 - __main__ - INFO - Losing player 1 received speed penalty: -127.70
+2025-06-19 16:27:07,057 - __main__ - INFO - Losing player 2 received speed penalty: -127.70
+2025-06-19 16:27:07,058 - __main__ - INFO - Losing player 3 received speed penalty: -127.70
+2025-06-19 16:27:07,058 - __main__ - INFO - Game 19 completed in 429 steps.
+2025-06-19 16:27:07,058 - __main__ - INFO - Scores: [15, 0, 6, 2], Total Env Rewards: [83.07396819726549, -84.09999999999995, -56.899999999999906, -75.1444444444443], Winners: [0]
+2025-06-19 16:27:07,074 - __main__ - INFO - Starting game 20/30
+2025-06-19 16:30:06,519 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:30:06,520 - __main__ - INFO - Game 20 completed in 731 steps.
+2025-06-19 16:30:06,520 - __main__ - INFO - Scores: [1, 1, 1, 1], Total Env Rewards: [-37.9999999999996, -62.49444444444443, -115.8, -107.84999999999994], Winners: [0 1 2 3]
+2025-06-19 16:30:06,540 - __main__ - INFO - Starting game 21/30
+2025-06-19 16:31:46,809 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:31:46,834 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:31:46,862 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:31:46,864 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 16:31:46,864 - __main__ - INFO - Losing player 0 received speed penalty: -166.40
+2025-06-19 16:31:46,864 - __main__ - INFO - Losing player 1 received speed penalty: -166.40
+2025-06-19 16:31:46,864 - __main__ - INFO - Losing player 3 received speed penalty: -166.40
+2025-06-19 16:31:46,865 - __main__ - INFO - Game 21 completed in 558 steps.
+2025-06-19 16:31:46,865 - __main__ - INFO - Scores: [5, 2, 15, 6], Total Env Rewards: [-111.50333000332989, -109.7999999999998, 109.99224109224122, -72.42857142857119], Winners: [2]
+2025-06-19 16:31:46,879 - __main__ - INFO - Starting game 22/30
+2025-06-19 16:32:39,561 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:32:39,562 - __main__ - INFO - Losing player 1 received speed penalty: -102.20
+2025-06-19 16:32:39,562 - __main__ - INFO - Losing player 2 received speed penalty: -102.20
+2025-06-19 16:32:39,563 - __main__ - INFO - Losing player 3 received speed penalty: -102.20
+2025-06-19 16:32:39,563 - __main__ - INFO - Game 22 completed in 344 steps.
+2025-06-19 16:32:39,563 - __main__ - INFO - Scores: [16, 0, 10, 2], Total Env Rewards: [89.42914979757086, -58.59999999999988, -30.482967032966982, -55.199999999999946], Winners: [0]
+2025-06-19 16:32:39,580 - __main__ - INFO - Starting game 23/30
+2025-06-19 16:33:27,522 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:33:27,553 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:33:27,582 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:33:27,610 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:33:27,612 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 16:33:27,612 - __main__ - INFO - Losing player 0 received speed penalty: -89.30
+2025-06-19 16:33:27,613 - __main__ - INFO - Losing player 2 received speed penalty: -89.30
+2025-06-19 16:33:27,613 - __main__ - INFO - Losing player 3 received speed penalty: -89.30
+2025-06-19 16:33:27,613 - __main__ - INFO - Game 23 completed in 301 steps.
+2025-06-19 16:33:27,613 - __main__ - INFO - Scores: [9, 16, 6, 1], Total Env Rewards: [-7.68888888888884, 97.17431457431462, -26.692307692307644, -42.69999999999992], Winners: [1]
+2025-06-19 16:33:27,627 - __main__ - INFO - Starting game 24/30
+2025-06-19 16:35:57,417 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:35:57,423 - __main__ - INFO - Game 24 completed in 794 steps.
+2025-06-19 16:35:57,423 - __main__ - INFO - Scores: [0, 3, 7, 7], Total Env Rewards: [-21.399999999999636, -22.62222222222185, 7.0181818181821995, -6.599999999999582], Winners: [2 3]
+2025-06-19 16:35:57,444 - __main__ - INFO - Starting game 25/30
+2025-06-19 16:36:53,635 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:36:53,636 - __main__ - INFO - Losing player 1 received speed penalty: -112.40
+2025-06-19 16:36:53,636 - __main__ - INFO - Losing player 2 received speed penalty: -112.40
+2025-06-19 16:36:53,636 - __main__ - INFO - Losing player 3 received speed penalty: -112.40
+2025-06-19 16:36:53,636 - __main__ - INFO - Game 25 completed in 378 steps.
+2025-06-19 16:36:53,637 - __main__ - INFO - Scores: [15, 0, 5, 0], Total Env Rewards: [93.95665706842176, -91.60000000000007, -53.61776556776549, -77.0], Winners: [0]
+2025-06-19 16:36:53,650 - __main__ - INFO - Starting game 26/30
+2025-06-19 16:38:33,692 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:38:33,716 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:38:33,718 - __main__ - INFO - Winner (Player 2) received final speed bonus: 0.00
+2025-06-19 16:38:33,718 - __main__ - INFO - Losing player 0 received speed penalty: -170.00
+2025-06-19 16:38:33,718 - __main__ - INFO - Losing player 1 received speed penalty: -170.00
+2025-06-19 16:38:33,718 - __main__ - INFO - Losing player 3 received speed penalty: -170.00
+2025-06-19 16:38:33,719 - __main__ - INFO - Game 26 completed in 570 steps.
+2025-06-19 16:38:33,719 - __main__ - INFO - Scores: [0, 3, 16, 14], Total Env Rewards: [-131.19999999999987, -101.62222222222198, 106.65990675990695, -83.90422910422895], Winners: [2]
+2025-06-19 16:38:33,735 - __main__ - INFO - Starting game 27/30
+2025-06-19 16:41:42,116 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:41:42,117 - __main__ - INFO - Game 27 completed in 790 steps.
+2025-06-19 16:41:42,117 - __main__ - INFO - Scores: [1, 2, 1, 0], Total Env Rewards: [-25.599999999999582, -100.22222222222213, -19.622222222221822, -30.799999999999628], Winners: [1]
+2025-06-19 16:41:42,130 - __main__ - INFO - Starting game 28/30
+2025-06-19 16:42:47,016 - __main__ - INFO - Winner (Player 0) received final speed bonus: 0.00
+2025-06-19 16:42:47,016 - __main__ - INFO - Losing player 1 received speed penalty: -132.50
+2025-06-19 16:42:47,016 - __main__ - INFO - Losing player 2 received speed penalty: -132.50
+2025-06-19 16:42:47,017 - __main__ - INFO - Losing player 3 received speed penalty: -132.50
+2025-06-19 16:42:47,017 - __main__ - INFO - Game 28 completed in 445 steps.
+2025-06-19 16:42:47,017 - __main__ - INFO - Scores: [16, 11, 0, 9], Total Env Rewards: [103.36227106227122, -41.41717171717161, -77.09999999999988, -56.66363636363627], Winners: [0]
+2025-06-19 16:42:47,032 - __main__ - INFO - Starting game 29/30
+2025-06-19 16:43:38,627 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:43:38,653 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:43:38,679 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:43:38,707 - AlphaZero.MCTS - WARNING - No visits recorded, using uniform distribution
+2025-06-19 16:43:38,709 - __main__ - INFO - Winner (Player 1) received final speed bonus: 0.00
+2025-06-19 16:43:38,710 - __main__ - INFO - Losing player 0 received speed penalty: -100.70
+2025-06-19 16:43:38,710 - __main__ - INFO - Losing player 2 received speed penalty: -100.70
+2025-06-19 16:43:38,710 - __main__ - INFO - Losing player 3 received speed penalty: -100.70
+2025-06-19 16:43:38,711 - __main__ - INFO - Game 29 completed in 339 steps.
+2025-06-19 16:43:38,711 - __main__ - INFO - Scores: [1, 16, 3, 0], Total Env Rewards: [-61.49999999999998, 108.52883782883784, -44.899999999999984, -78.30000000000001], Winners: [1]
+2025-06-19 16:43:38,729 - __main__ - INFO - Starting game 30/30
+2025-06-19 16:46:25,701 - __main__ - INFO - No player reached 15 points. Applying penalty of -100.0 to all players
+2025-06-19 16:46:25,701 - __main__ - INFO - Game 30 completed in 757 steps.
+2025-06-19 16:46:25,702 - __main__ - INFO - Scores: [1, 3, 3, 6], Total Env Rewards: [-62.19999999999969, -61.188025210083985, -39.39999999999967, -29.657142857142546], Winners: [3]
+2025-06-19 16:46:25,703 - __main__ - INFO - Self-play phase completed. Average steps: 562.00
+2025-06-19 16:46:25,704 - __main__ - INFO - Average scores: [6.46666667 5.06666667 6.53333333 5.73333333], Average total rewards: [-22.51431947 -44.56544009 -12.25951907 -47.99693353]
+2025-06-19 16:46:25,704 - __main__ - INFO - Starting training phase
+2025-06-19 16:46:46,431 - __main__ - INFO - Epoch 1000/15000, Policy Loss: 1.6376, Value Loss: 2.9916, Total Loss: 4.6292
+2025-06-19 16:47:08,982 - __main__ - INFO - Epoch 2000/15000, Policy Loss: 1.6279, Value Loss: 1.0336, Total Loss: 2.6615
+2025-06-19 16:47:29,887 - __main__ - INFO - Epoch 3000/15000, Policy Loss: 1.7291, Value Loss: 2.4536, Total Loss: 4.1826
+2025-06-19 16:47:52,595 - __main__ - INFO - Epoch 4000/15000, Policy Loss: 1.6640, Value Loss: 1.4530, Total Loss: 3.1170
+2025-06-19 16:48:14,281 - __main__ - INFO - Epoch 5000/15000, Policy Loss: 1.7404, Value Loss: 1.2737, Total Loss: 3.0141
+2025-06-19 16:48:36,491 - __main__ - INFO - Epoch 6000/15000, Policy Loss: 1.6722, Value Loss: 0.9315, Total Loss: 2.6037
+2025-06-19 16:48:58,707 - __main__ - INFO - Epoch 7000/15000, Policy Loss: 1.7084, Value Loss: 1.8615, Total Loss: 3.5700
+2025-06-19 16:49:20,666 - __main__ - INFO - Epoch 8000/15000, Policy Loss: 1.7134, Value Loss: 1.4482, Total Loss: 3.1616
+2025-06-19 16:49:42,752 - __main__ - INFO - Epoch 9000/15000, Policy Loss: 1.5878, Value Loss: 1.7629, Total Loss: 3.3506
+2025-06-19 16:50:15,208 - __main__ - INFO - Epoch 10000/15000, Policy Loss: 1.7341, Value Loss: 1.8101, Total Loss: 3.5442
+2025-06-19 16:50:37,399 - __main__ - INFO - Epoch 11000/15000, Policy Loss: 1.7227, Value Loss: 1.0644, Total Loss: 2.7870
+2025-06-19 16:50:59,860 - __main__ - INFO - Epoch 12000/15000, Policy Loss: 1.7834, Value Loss: 2.7651, Total Loss: 4.5485
+2025-06-19 16:51:21,029 - __main__ - INFO - Epoch 13000/15000, Policy Loss: 1.6996, Value Loss: 0.8207, Total Loss: 2.5203
+2025-06-19 16:51:42,750 - __main__ - INFO - Epoch 14000/15000, Policy Loss: 1.7150, Value Loss: 2.7284, Total Loss: 4.4434
+2025-06-19 16:52:03,641 - __main__ - INFO - Epoch 15000/15000, Policy Loss: 1.7289, Value Loss: 0.8229, Total Loss: 2.5518
+2025-06-19 16:52:03,642 - __main__ - INFO - Training completed. Average Policy Loss: 1.6839, Average Value Loss: 1.9922, Average Total Loss: 3.6761
+2025-06-19 16:52:03,649 - __main__ - INFO - Saving current model...
+2025-06-19 16:52:03,810 - __main__ - INFO - Model saved at models/alphazero_final_complex_complex.pth
+2025-06-19 16:52:04,373 - __main__ - INFO - Loss history plots saved to plots/alphazero_final_loss_history_20250619_165203.png
+2025-06-19 16:52:04,373 - __main__ - WARNING - No evaluation scores to plot
+2025-06-19 16:52:04,374 - __main__ - INFO - AlphaZero training completed. Final model saved at models/alphazero_final_complex.pth

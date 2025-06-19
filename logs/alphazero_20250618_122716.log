@@ -1,0 +1,9 @@
+2025-06-18 12:27:16,137 - __main__ - INFO - Initializing AlphaZero trainer
+2025-06-18 12:27:16,252 - __main__ - INFO - Using device: cuda
+2025-06-18 12:27:16,252 - __main__ - INFO - Debug mode: False
+2025-06-18 12:27:18,041 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-18 12:27:18,042 - __main__ - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-06-18 12:27:18,042 - __main__ - INFO - Training parameters: lr=0.005, weight_decay=0.0001, batch_size=2048, replay_size=100000, num_simulations=20
+2025-06-18 12:27:18,043 - __main__ - INFO - ==================================================
+2025-06-18 12:27:18,075 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda
+2025-06-18 12:27:18,173 - train.AlphaZero.agent - INFO - Initialized AlphaZeroAgent on device: cuda

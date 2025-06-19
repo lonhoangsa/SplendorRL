@@ -1,0 +1,38 @@
+2025-06-19 14:38:03,320 - INFO - Starting DQN training for SplendorLightZeroEnv
+2025-06-19 14:38:06,123 - INFO - Loaded model weights from ../splendor/models/dqn_model_final.pth
+2025-06-19 14:38:06,124 - INFO - Environment initialized with state_dim=162, action_dim=88
+2025-06-19 14:38:06,124 - INFO - Training parameters: episodes=20000, batch_size=512, gamma=0.99, epsilon_start=1.0
+2025-06-19 14:38:06,713 - INFO - Episode 1/20000, Reward: [-67.39999999999986, 13.999999999999979, -77.39999999999984, -59.79999999999989], Steps: 398, Epsilon: 1.000, Avg Loss: 0.0000
+2025-06-19 14:38:09,390 - INFO - Episode 2/20000, Reward: [27.599999999999998, 37.800000000000004, -45.79999999999997, -44.199999999999974], Steps: 212, Epsilon: 0.615, Avg Loss: 179021393864218415803660052419575808.0000
+2025-06-19 14:38:09,425 - INFO - Target network updated at step 100
+2025-06-19 14:38:10,364 - INFO - Target network updated at step 200
+2025-06-19 14:38:11,093 - INFO - Episode 3/20000, Reward: [18.6, 21.6, -4.999999999999998, 22.400000000000002], Steps: 174, Epsilon: 0.258, Avg Loss: 100443763434413122983668744426881024.0000
+2025-06-19 14:38:11,422 - INFO - Target network updated at step 300
+2025-06-19 14:38:12,502 - INFO - Target network updated at step 400
+2025-06-19 14:38:13,066 - INFO - Episode 4/20000, Reward: [-23.200000000000024, 0.7999999999999972, -20.40000000000002, 34.400000000000006], Steps: 187, Epsilon: 0.102, Avg Loss: 71757108120709811523826377134440448.0000
+2025-06-19 14:38:13,535 - INFO - Target network updated at step 500
+2025-06-19 14:38:14,569 - INFO - Target network updated at step 600
+2025-06-19 14:38:14,894 - INFO - Episode 5/20000, Reward: [47.199999999999996, -16.800000000000022, 15.0, -2.200000000000008], Steps: 174, Epsilon: 0.043, Avg Loss: 55003570809461948288518392943476736.0000
+2025-06-19 14:38:15,626 - INFO - Target network updated at step 700
+2025-06-19 14:38:16,871 - INFO - Target network updated at step 800
+2025-06-19 14:38:17,106 - INFO - Episode 6/20000, Reward: [-4.199999999999997, 21.2, -10.200000000000012, -3.1999999999999966], Steps: 192, Epsilon: 0.016, Avg Loss: 56539936725367545215850421325660160.0000
+2025-06-19 14:38:17,912 - INFO - Target network updated at step 900
+2025-06-19 14:38:18,855 - INFO - Target network updated at step 1000
+2025-06-19 14:38:19,687 - INFO - Episode 7/20000, Reward: [-15.000000000000004, 11.2, -60.39999999999992, -4.400000000000016], Steps: 268, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:19,832 - INFO - Target network updated at step 1100
+2025-06-19 14:38:20,831 - INFO - Target network updated at step 1200
+2025-06-19 14:38:21,330 - INFO - Episode 8/20000, Reward: [-7.799999999999998, -5.800000000000007, 11.2, 32.4], Steps: 158, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:21,918 - INFO - Target network updated at step 1300
+2025-06-19 14:38:23,007 - INFO - Target network updated at step 1400
+2025-06-19 14:38:24,213 - INFO - Target network updated at step 1500
+2025-06-19 14:38:24,261 - INFO - Episode 9/20000, Reward: [7.599999999999994, 22.799999999999986, -19.400000000000023, -29.80000000000003], Steps: 261, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:25,401 - INFO - Target network updated at step 1600
+2025-06-19 14:38:26,124 - INFO - Episode 10/20000, Reward: [3.9999999999999964, 42.6, -29.20000000000002, 25.2], Steps: 173, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:26,373 - INFO - Target network updated at step 1700
+2025-06-19 14:38:27,660 - INFO - Target network updated at step 1800
+2025-06-19 14:38:29,041 - INFO - Episode 11/20000, Reward: [23.6, -29.39999999999999, -7.200000000000017, -9.400000000000018], Steps: 222, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:29,089 - INFO - Target network updated at step 1900
+2025-06-19 14:38:30,444 - INFO - Target network updated at step 2000
+2025-06-19 14:38:31,463 - INFO - Target network updated at step 2100
+2025-06-19 14:38:31,655 - INFO - Episode 12/20000, Reward: [44.000000000000014, -27.800000000000022, -6.399999999999999, -4.8], Steps: 225, Epsilon: 0.010, Avg Loss: inf
+2025-06-19 14:38:32,535 - INFO - Target network updated at step 2200
